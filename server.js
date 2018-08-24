@@ -1,40 +1,53 @@
-// *****************************************************************************
-// Server.js - This file is the initial starting point for the Node/Express server.
-//
-// ******************************************************************************
-// *** Dependencies
-// =============================================================
-var express = require("express");
-var bodyParser = require("body-parser");
+// Server.js - Sets express server and dependencies
+/// DEPENDENCIES ///
 
-// Sets up the Express App
-// =============================================================
+var bodyParser = require("body-parser");
+// Requiring the models folder for access to mysql methods via db.Method calls
+var db = require("./models");
+
+// EXPRESS APP REQUIREMENTS
+var express = require("express");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-// Requiring our models for syncing
-var db = require("./models");
-
-// Sets up the Express app to handle data parsing
-
-// parse application/x-www-form-urlencoded
+// Sets up the Express app to handle data parsing - parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
-// parse application/json
 app.use(bodyParser.json());
 
+// Set Handlebars as the default templating engine.
+var exphbs = require("express-handlebars");
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
 // Static directory
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.use(express.static("public"));
 
-// Routes
-// =============================================================
-require("./routes/html-routes.js")(app);
-require("./routes/author-api-routes.js")(app);
-require("./routes/post-api-routes.js")(app);
+/// ROUTES ///
 
-// Syncing our sequelize models and then starting our Express app
-// =============================================================
-db.sequelize.sync({ force: true }).then(function() {
-  app.listen(PORT, function() {
+require("./routes/html-routes.js")(app);
+require("./routes/api-routes.js")(app);
+
+// Sync sequelize models and then start the Express app
+db.sequelize.sync({ force: true }).then(function () { //add force true for restarting db
+  app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
+
+    //Seeds to DB//
+    // var animSeeds = require("./public/js/animSeeds.js");
+    // var imgSeeds = require("../public/js/imgSeeds.js");
+    var wepSeeds = require("./public/js/wepSeeds.js");
+    setTimeout(function() {
+      var masterSeeds = require("./public/js/masterSeed.js");
+    }, 500);
+    
   });
 });
+
+/// END ///

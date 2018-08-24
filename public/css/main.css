@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: radial-gradient(circle, cornsilk, wheat, sienna);
+    font-weight: 600;
+}
+
+a {
+    color: black;
+    font-weight: 200;
+}
+
+/* Sidebar Styles */
+.nav {
+    background-image: radial-gradient(yellow, gold, orangered, firebrick);
+}
+
+/* Header Styles */
+.headerUnder {
+    border-bottom: 1px solid black;
+}
+
+.headerText {
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Body Styles */
+
+.gif {
+    border-radius: 7px 7px 0 0;
+    width: 90%;
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.4);
+}
+
+.animName {
+    font-size: small;
+}
+
+.imgIcon {
+    max-height: 16px;
+    width: auto;
+    margin: -5px 2px 0px;
+}
+
+.authorText {
+    font-weight: 100;
+    font-size: xx-small; 
+}
+
+.cardbg {
+    line-height: 1.5;
+    background: radial-gradient(cadetblue 65%, darkslategray);
+    width: 90%;
+    /* margin-left: 11%; */
+    /* max-width: 90%; */
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.4);
+}
+
+.category {
+    display: none;
+}

@@ -1,0 +1,34 @@
+<h1 class="col-12 headerText headerUnder">
+  FEGBA Graphical Animation Repo
+</h1>
+
+<!--Insert Navbar from partial-->
+{{> navbar}}
+
+<div class="container">
+  <div class="row">
+    <!--Mainbody-->
+    <div class="col-12" id="mainBody">
+
+      <!--Body Row 2: About Placeholder-->
+      {{> about}} {{#each animRow}}
+      <div class="row">
+        <div class="col-12 category text-center" data-disp="{{disp}}" id={{aRowID}}>
+          {{~catHeader~}}
+          <div class="col-12">
+            {{#each classes}}
+
+            <button type="button" class="btn btn-light classBtn m-1" data-prof="{{this}}" data-toggle="button" data-filled="false" aria-pressed="false"
+              autocomplete="off">
+              {{this}}
+            </button>
+
+            {{/each}}
+
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
