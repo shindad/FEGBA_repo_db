@@ -12,9 +12,9 @@ function addWep(wepName) {
 addWep("sword");
 addWep("lance");
 addWep("axe");
+addWep("handaxe");
 addWep("bow");
 addWep("fire");
 addWep("dark");
 addWep("light");
 addWep("staff");
-addWep("handaxe");

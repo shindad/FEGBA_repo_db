@@ -25,6 +25,7 @@ navMaker("about", "About", "img/global/scroll.gif", "false", "aboutFill");
 navMaker("sword", "Swords", "img/global/myrm.gif", "false", "swordFill");
 navMaker("lance", "Lances", "img/global/soldier.gif", "false", "lanceFill");
 navMaker("axe", "Axes", "img/global/fighter.gif", "false", "axeFill");
+navMaker("bow", "Bows", "img/global/archer.gif", "false", "bowFill");
 navMaker("knight", "Armor", "img/global/knight.gif", "false", "knightFill");
 navMaker("cavalry", "Cavalry", "img/global/cav.gif", "false", "cavFill");
 navMaker("flier", "Fliers", "img/global/peg.gif", "false", "flierFill");
