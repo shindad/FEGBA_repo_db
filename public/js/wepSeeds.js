@@ -17,3 +17,4 @@ addWep("fire");
 addWep("dark");
 addWep("light");
 addWep("staff");
+addWep("handaxe");

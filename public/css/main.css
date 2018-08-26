@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: radial-gradient(circle, cornsilk, wheat, sienna);
     font-weight: 600;
+    background-attachment: fixed;
 }
 
 a {
@@ -9,9 +10,25 @@ a {
     font-weight: 200;
 }
 
-/* Sidebar Styles */
+/* Navbar Styles */
 .nav {
     background-image: radial-gradient(yellow, gold, orangered, firebrick);
+}
+
+#sideBar {
+    z-index: 100;
+}
+
+.navtext {
+    font-size: 0.8em;
+}
+
+.fullNav {
+    display: inline-block;
+}
+
+.smallNav {
+    display: none;
 }
 
 /* Header Styles */
@@ -59,4 +76,18 @@ a {
 
 .category {
     display: none;
+}
+
+.navimg {
+    max-height: 16px;
+}
+
+@media screen and (max-width: 750px) {
+    .fullNav{
+       display: none;
+    }
+
+    .smallNav{
+       display: inline-block;
+    }
 }

@@ -1,8 +1,10 @@
-<nav class="navbar navbar-nav navbar-dark bg-dark flex-row flex-wrap" id="sideBar">
+<nav class="navbar sticky-top navbar-nav navbar-dark bg-dark flex-row flex-wrap" id="sideBar">
     {{#each navItem}}
-    <button type="button" class="nav-link btn btn-secondary mx-auto p-1" data-toggle="button" data-disp="{{disp}}"
-        data-fill="{{fill}}" id={{title}}>
-        {{dispTitle}}
+    <button type="button" class="nav-link btn btn-secondary navtext mx-auto p-1" data-toggle="button" data-disp="{{disp}}" data-fill="{{fill}}" id={{title}}>
+        <span class="fullNav">{{dispTitle}}</span>
+        <span class="smallNav">
+            <img class="navimg" src={{short}}>
+        </span>
     </button>
     {{/each}}
 </nav>

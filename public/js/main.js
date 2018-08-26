@@ -127,7 +127,6 @@ $(".container").on("click", ".classBtn", function () {
         })
         this.setAttribute("data-filled", "true");
     };
-
 });
 
 //Animates the images when clicked
