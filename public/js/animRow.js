@@ -22,11 +22,11 @@ rowMaker("axeFill", "false", "Axe Infantry", "Axe", [
 rowMaker("bowFill", "false", "Bow Units", "Bow", [
     "Archer", "Ballistae", "Nomad", "Nomad Trooper", "Ranger", "Sniper"
 ]);
-rowMaker("knightFill", "false", "Armored Units", "Knight", [
+rowMaker("armorFill", "false", "Armored Units", "Knight", [
     "Knight", "General", "King"
 ]);
 rowMaker("cavFill", "false", "Cavalry Units", "Cavalry", [
-    "Cavalier", "Paladin", "Great Knight", "Master Knight"
+    "Cavalier", "Paladin", "Great Knight"
 ]);
 rowMaker("flierFill", "false", "Flying Units", "Flyer", [
     "Pegasus Knight", "Falcoknight", "Griffon Knight", "Wyvern Rider", "Wyvern Lord", "Wyvern Knight"

@@ -20,7 +20,7 @@ function Anim(anim) {
         var animImg = $("<img>");
         animImg.addClass("gif");
         animImg.attr({
-            id: this.feClass + this.id, //needed for targeting with img icons
+            id: (this.feClass + this.id).split(' ').join(''), //needed for targeting with img icons
             src: this.weapons[0].AnimWepIm.still,
             "data-weapon": this.weapons[0].name, //holds current weapon displayed
             "data-state": "still",
@@ -51,11 +51,12 @@ function Anim(anim) {
                 src: "img/global/" + this.weapons[i].name + ".gif",
                 "data-animate": this.weapons[i].AnimWepIm.gif,
                 "data-still": this.weapons[i].AnimWepIm.still,
-                "data-target": this.feClass + this.id
+                "data-target": this.feClass.split(' ').join('') + this.id
             });
             icon.addClass("imgIcon mt-0");
             icons.append(icon);
         };
+        icons.append("<br>");
 
         //Author
         var authDiv = $("<span>");
@@ -89,14 +90,14 @@ function makeAnimRow(anim) {
     // Title div. Main function is displaying class name for selected group
     var headerDiv = $("<div>");
     headerDiv.html(anim[0].feClass);
-    headerDiv.addClass("col-12 text-center " + anim[0].feClass + "Row");
+    var classRow = (anim[0].feClass + "Row").split(' ').join('')
+    headerDiv.addClass("col-12 text-center " + classRow);
 
     // Init subrow that contains all the anim cards
     var fRow = $("<div>");
-    fRow.addClass("row text-center " + anim[0].feClass + "Row");
+    fRow.addClass("row text-center " + classRow);
     for (var i = 0; i < anim.length; i++) {
         var tempAnim = new Anim(anim[i]);
-        console.log(tempAnim);
         fRow.append(tempAnim.makeCard());
     };
 
@@ -120,7 +121,7 @@ var API = {
 
 //Major listener for values populated by category selection
 $(".container").on("click", ".classBtn", function () {
-    $("." + this.getAttribute("data-prof") + "Row").toggle();
+    $("." + this.getAttribute("data-prof").split(' ').join('') + "Row").toggle();
     if (this.getAttribute("data-filled") === 'false') {
         API.getAnims(this.getAttribute("data-prof")).then(function (animArr) {
             makeAnimRow(animArr);
@@ -150,9 +151,7 @@ $(".container").on("click", ".gif", function () {
 });
 
 $(document).on("click", ".imgIcon", function() {
-    console.log(this);
-    var target = $(this).attr("data-target");
-    console.log(target);
+    var target = $(this).attr("data-target")
     $("#" + target).attr({
         "data-animate": $(this).attr("data-animate"),
         "data-still": $(this).attr("data-still"),

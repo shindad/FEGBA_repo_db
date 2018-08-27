@@ -122,6 +122,58 @@ function magfAlt(anName, urlstr) {
     };
 }
 
+function mrSeedr(category, feClass, anName, URL, dlName, weaponArr, srcName) {
+    db.Anim.create({
+        category: category,
+        feClass: feClass,
+        anName: anName,
+        URL: URL + ".7z",
+        dlName: dlName,
+        srcName: srcName,
+
+    }).then(function (anim) {
+        for (var i = 0; i < weaponArr.length; i++) {
+            db.Weapon.findOne({
+                where: {
+                    name: weaponArr[i]
+                }
+            }).then(function (weapon) {
+                var wep;
+                switch (weapon.name) {
+                    case "sword":
+                        wep = "_sw";
+                        break;
+                    case "lance":
+                        wep = "_lance";
+                        break;
+                    case "axe":
+                        wep = "_axe";
+                        break;
+                    case "handaxe":
+                        wep = "_ha";
+                        break;
+                    case "bow":
+                        wep = "_bow";
+                        break;
+                    case "fire" || "light" || "dark":
+                        wep = "_mag";
+                        break;
+                    case "staff":
+                        wep = "_st";
+                        break;
+                };
+                anim.addWeapon(weapon, {
+                    through: {
+                        still: URL + wep + ".png",
+                        gif: URL + wep + ".gif",
+                        name: feClass
+                    }
+                });
+            });
+        };
+    });
+};
+
 // Assassins
 buildSeeds("sword", "Assassin", "Assassin F", "img/sin/f_gt.7z", "Assassin_F_GRT.7z", "Greentea, DerTheVaporeon", "sword", "img/sin/f_gt.png", "img/sin/f_gt.gif");
 buildSeeds("sword", "Assassin", "Assassin F Hoodless Skirt", "img/sin/f_hl_pony.7z", "Assassin_F_Skirt.7z", "Moocavo, Riku", "sword", "img/sin/f_hl_pony.png", "img/sin/f_hl_pony.gif");
@@ -252,8 +304,8 @@ buildfSeeds("axe", "Pirate", "Pirate M E Repalette", p + "m_pwan", "Pirate_PWAN.
 buildfSeeds("axe", "Pirate", "Pirate M Sword", p + "m_sw", "Pirate_Sw.7z", "sword", "Pimpstick");
 
 // Warrior
-buildfSeeds("axe", "Warrior", "Warrior F", "img/war/f_t", "Warrior_F.7z", "axe", "bow", "TempMael");
-buildfSeeds("axe", "Warrior", "Warrior M", "img/war/m", "Warrior.7z", "axe", "bow", "IS");
+buildfSeeds("axe", "Warrior", "Warrior F", "img/war/f_t", "Warrior_F.7z", "axe", "TempMael");
+buildfSeeds("axe", "Warrior", "Warrior M", "img/war/m", "Warrior.7z", "axe", "IS");
 
 // Archer
 let a = "img/archer/";
@@ -296,6 +348,54 @@ buildfSeeds("bow", "Ranger", "Ranger F", ranPath + "f_l", "Ranger_F_Lnc.7z", "bo
 buildfSeeds("bow", "Ranger", "Ranger Rebecca", ranPath + "f_reb", "Ranger_Rebecca.7z", "bow", "Teraspark");
 buildfSeeds("bow", "Ranger", "Ranger F Twintails", ranPath + "f_tt", "Ranger_F_TT.7z", "bow", "GoofyfanG56");
 buildfSeeds("bow", "Ranger", "Ranger M", ranPath + "m_l", "Ranger_M_Lnc.7z", "bow", "Skitty, Feaw");
+
+// Sniper
+snipPath = "img/snip/"
+buildfSeeds("bow", "Sniper", "Sniper F FE6", snipPath + "f_e6", "Sniper_F_FE6.7z", "bow", "IS");
+buildfSeeds("bow", "Sniper", "Sniper F", snipPath + "f", "Sniper_F.7z", "bow", "IS");
+buildfSeeds("bow", "Sniper", "Sniper F Quiver", snipPath + "f_quiv_reb", "Sniper_F_Quiv.7z", "bow", "Nuramon");
+buildfSeeds("bow", "Sniper", "Sniper Rebecca Quiver", snipPath + "f_quiv_reb", "Sniper_Reb_Quiv.7z", "bow", "Nuramon, Temp");
+buildfSeeds("bow", "Sniper", "Sniper Rebecca", snipPath + "f_reb", "Sniper_Rebecca.7z", "bow", "Temp, Wan");
+buildfSeeds("bow", "Sniper", "Sniper M FE6", snipPath + "m_e6", "Sniper_M_FE6.7z", "bow", "IS");
+buildfSeeds("bow", "Sniper", "Sniper M", snipPath + "m", "Sniper_M.7z", "bow", "IS");
+buildfSeeds("bow", "Sniper", "Sniper M Hat", snipPath + "m_hat", "Sniper_M_Hat.7z", "bow", "Swain");
+buildfSeeds("bow", "Sniper", "Sniper M Hat w/ Quiver Nuramon", snipPath + "m_quiv_gen", "Sniper_M_Quiv_Gen.7z", "bow", "Nuramon, Swain");
+buildfSeeds("bow", "Sniper", "Sniper M Quiver", snipPath + "m_quiv", "Sniper_M_Quiv.7z", "bow", "Nuramon");
+buildfSeeds("bow", "Sniper", "Sniper Wil", snipPath + "m_wil", "Sniper_M_Wil.7z", "bow", "Greentea, DerTheVaporeon");
+buildfSeeds("bow", "Sniper", "Hunter M", snipPath + "hunt", "Hunter.7z", "bow", "Deranger");
+
+// Knights
+knPath = "img/kn/";
+buildfSeeds("armor", "Knight", "Knight", knPath + "u", "Knight.7z", "lance", "IS, The Blind Archer");
+buildfSeeds("armor", "Knight", "Knight FE10", knPath + "u_10", "Knight_FEX,7z", "lance", "Iscaneus, Nuramon");
+buildfSeeds("armor", "Knight", "Knight FEDS", knPath + "u_ds", "Knight_DS.7z", "lance", "Mageknight404");
+buildfSeeds("armor", "Knight", "Knight FEDS Repalette", knPath + "u_ds_p", "Knight_FEDS_Pal.7z", "lance");
+
+// General
+genPath = "img/gen/"
+buildfSeeds("armor", "General", "Baron", genPath + "u_bar", "Baron.7z", "lance", "St Jack, The Blind Archer");
+buildfSeeds("armor", "General", "General", genPath + "u_gen", "General.7z", "lance", "IS, The Blind Archer, DerTheVaporeon, PrimeFusion");
+buildfSeeds("armor", "General", "General Repalette", genPath + "u_gen_p", "General_Pal.7z", "lance", "Skitty");
+buildfSeeds("armor", "General", "General w/ Shield", genPath + "u_gen_s", "General_Shield.7z", "lance", "Nuramon, The Blind Archer");
+
+// King
+kingPath = "img/king/"
+buildfSeeds("armor", "King", "King Zephiel", kingPath + "m", "King.7z", "sword", "IS");
+buildfSeeds("armor", "King", "Marshal Zelgius", kingPath + "m_z", "Zelgius.7z", "sword", "Nuramon, Luerock");
+buildfSeeds("armor", "King", "Black Knight", kingPath + "u_bk", "Black_Knight.7z", "sword", "Luerock, CanasNiimeHugh");
+buildfSeeds("armor", "King", "Emperor", kingPath + "u_emp", "Emperor.7z", "sword", "St Jack, The Blind Archer");
+
+// Cavalier
+let cav = "img/cav/"
+buildfSeeds("cav", "Cavalier", "Cavalier F", cav + "f", "Cavalier_F.7z", "lance", "IS, Genocike");
+buildfSeeds("cav", "Cavalier", "Cavalier M Prime", cav + "m_p", "Cavalier_M_Prime.7z", "lance", "IS, Primefusion");
+buildfSeeds("cav", "Cavalier", "Cavalier M Skitty", cav + "m_s", "Cavalier_M_Skit.7z", "lance", "IS, Skitty");
+buildfSeeds("cav", "Cavalier", "Cavalier M Team SALVAGED", cav + "m_ts", "Cavalier_TS.7z", "lance", "team SALVAGED");
+
+// Paladins
+var pal = "img/pal/"
+buildfSeeds("cav", "Paladin", "Paladin M", pal + "m", "Paladin_M.7z", "lance", "IS, Primefusion");
+buildfSeeds("cav", "Paladin", "Paladin F", pal + "f", "Paladin_F.7z", "lance", "IS, Genocike, DerTheVaporeon");
 
 // Assassins + weps
 altWep("Assassin M Hoodless", "bow", "img/sin/m_hl_bow.png", "img/sin/m_hl_bow.gif");
@@ -357,7 +457,7 @@ altWep("Journeyman M", "handaxe", "img/jman/m_ha.png", "img/jman/m_ha.gif");
 // Pirate + weps
 altfWep("Pirate M", "handaxe", p + "m_ha");
 altfWep("Pirate M S Repalette", "handaxe", p + "m_p_ha");
-altfWep("Pirate M E Repalette", "handaxe", "m_pwan_ha");
+altfWep("Pirate M E Repalette", "handaxe", p + "m_pwan_ha");
 
 // Warrior + weps
 altfWep("Warrior F", "handaxe", "img/war/f_t_ha");
@@ -372,39 +472,113 @@ altfWep("Nmd Trooper M FE6", "sword", nomTPath + "m_e6_sw");
 altfWep("Nmd Trooper M", "sword", nomTPath + "m_sw");
 
 // Ranger
-altfWep("Ranger F", "sword", ranPath + "f_l_sw")
-altfWep("Ranger F", "lance", ranPath + "f_lance")
-altfWep("Ranger Rebecca", "sword", ranPath + "f_reb_sw")
-altfWep("Ranger F Twintails", "sword", ranPath + "f_tt_sw")
-altfWep("Ranger M", "sword", ranPath + "m_l_sw")
-altfWep("Ranger M", "lance", ranPath + "m_lance")
+altfWep("Ranger F", "sword", ranPath + "f_l_sw");
+altfWep("Ranger F", "lance", ranPath + "f_lance");
+altfWep("Ranger Rebecca", "sword", ranPath + "f_reb_sw");
+altfWep("Ranger F Twintails", "sword", ranPath + "f_tt_sw");
+altfWep("Ranger M", "sword", ranPath + "m_l_sw");
+altfWep("Ranger M", "lance", ranPath + "m_lance");
 
-// Sniper
-snipPath = "img/snip/"
-buildfSeeds("bow", "Sniper", "Sniper F FE6", snipPath + "f_e6", "Sniper_F_FE6.7z", "bow", "IS");
-buildfSeeds("bow", "Sniper", "Sniper F", snipPath + "f", "Sniper_F.7z", "bow", "IS");
-buildfSeeds("bow", "Sniper", "Sniper F Quiver", snipPath + "f_quiv_reb", "Sniper_F_Quiv.7z", "bow", "Nuramon");
-buildfSeeds("bow", "Sniper", "Sniper Rebecca Quiver", snipPath + "f_quiv_reb", "Sniper_Reb_Quiv.7z", "bow", "Nuramon, Temp");
-buildfSeeds("bow", "Sniper", "Sniper Rebecca", snipPath + "f_reb", "Sniper_Rebecca.7z", "bow", "Temp, Wan");
-buildfSeeds("Hunter M", snipPath + "hunt", "Hunter.7z", "bow", "Deranger");
-buildfSeeds("bow", "Sniper", "Sniper M FE6", snipPath + "m_e6", "Sniper_M_FE6.7z", "bow", "IS");
-buildfSeeds("bow", "Sniper", "Sniper M", snipPath + "m", "Sniper_M.7z", "bow", "IS");
-buildfSeeds("bow", "Sniper", "Sniper M Hat", snipPath + "m_hat", "Sniper_M_Hat.7z", "bow", "Swain");
-buildfSeeds("bow", "Sniper", "Sniper M Hat w/ Quiver Nuramon", snipPath + "m_quiv_gen", "Sniper_M_Quiv_Gen.7z", "bow", "Nuramon, Swain");
-buildfSeeds("bow", "Sniper", "Sniper M Quiver", snipPath + "m_quiv", "Sniper_M_Quiv.7z", "bow", "Nuramon");
-buildfSeeds("bow", "Sniper", "Sniper Wil", snipPath + "m_wil", "Sniper_M_Wil.7z", "bow", "Greentea, DerTheVaporeon")
+// Knight + weps
+altfWep("Knight", "sword", knPath + "u_sw");
+altfWep("Knight", "axe", knPath + "u_axe");
+altfWep("Knight", "handaxe", knPath + "u_ha");
+altfWep("Knight", "bow", knPath + "u_bow");
+altfWep("Knight FE10", "sword", knPath + "u_10_sw");
+altfWep("Knight FE10", "axe", knPath + "u_10_axe");
+altfWep("Knight FE10", "handaxe", knPath + "u_10_ha");
+altfWep("Knight FE10", "bow", knPath + "u_10_bow");
 
-//         kniU = new Anim("Knight", knPath + "u", "Knight.7z", "sword", "lance", "axe", "bow", "IS, The Blind Archer");
-//         kniUX = new Anim("Knight FE10", knPath + "u_10", "Knight_FEX,7z", "sword", "lance", "axe", "bow", "Iscaneus, Nuramon");
-//         kniDS = new Anim("Knight FEDS", knPath + "u_ds", "Knight_DS.7z", "lance", "Mageknight404");
-//         kniDSp = new Anim("Knight FEDS Repalette", knPath + "u_ds_p", "Knight_FEDS_Pal.7z", "lance")
+// General + Weps
+altfWep("General", "sword", genPath + "u_gen_sw");
+altfWep("General", "axe", genPath + "u_gen_axe");
+// altfWep("General", "axe", genPath + "u_gen_axes");
+altfWep("General", "handaxe", genPath + "u_gen_ha");
+altfWep("General", "bow", genPath + "u_gen_bow");
+// altfWep("General", "bow", genPath + "u_gen_bowc");
+magfAlt("General", genPath + "u_gen_mag");
+altfWep("Baron", "sword", genPath + "u_bar_sword");
+altfWep("Baron", "axe", genPath + "u_bar_axe");
+altfWep("Baron", "handaxe", genPath + "u_bar_ha");
+altfWep("Baron", "bow", genPath + "u_bar_bow");
+magfAlt("Baron", genPath + "u_bar_mag");
+altfWep("Baron", "staff", genPath + "u_bar_st");
+altfWep("General Repalette", "sword", genPath + "u_gen_p_sw");
+altfWep("General Repalette", "axe", genPath + "u_gen_p_axe");
+altfWep("General Repalette", "handaxe", genPath + "u_gen_p_ha");
+altfWep("General w/ Shield", "sword", genPath + "u_gen_s_sw");
+altfWep("General w/ Shield", "axe", genPath + "u_gen_s_axe");
+// altfWep("General w/ Shield", "axe", genPath + "u_gen_s_axes");
+altfWep("General w/ Shield", "handaxe", genPath + "u_gen_s_ha");
+magfAlt("General w/ Shield", genPath + "u_gen_s_mag");
 
-//         baru = new Anim("Baron", genPath + "u_bar", "Baron.7z", "sword", "lance", "axe", "bow", "fire", "light", "dark", "staff", "St Jack, The Blind Archer");
-//         genu = new Anim("General", genPath + "u_gen", "General.7z", "sword", "lance", "axe", "bow", "fire", "light", "dark", "staff", "IS, The Blind Archer, DerTheVaporeon, PrimeFusion");
-//         genup = new Anim("General Repalette", genPath + "u_gen_p", "General_Pal.7z", "sword", "lance", "axe", "Skitty");
-//         gens = new Anim("General w/ Shield", genPath + "u_gen_s", "General_Shield.7z", "sword", "lance", "axe", "fire", "light", "dark", "Nuramon, The Blind Archer")
+// King + weps
+altfWep("Emperor", "lance", kingPath + "u_emp_lance");
+altfWep("Emperor", "axe", kingPath + "u_emp_axe");
+altfWep("Emperor", "handaxe", kingPath + "u_emp_ha");
+altfWep("Emperor", "bow", kingPath + "u_emp_bow");
+magfAlt("Emperor", kingPath + "u_emp_mag");
+altfWep("Emperor", "staff", kingPath + "u_emp_st");
 
-//         kgm = new Anim("King Zephiel", kingPath + "m", "King.7z", "sword", "IS");
-//         coz = new Anim("Marshal Zelgius", kingPath + "m_z", "Zelgius.7z", "sword", "Nuramon, Luerock");
-//         bkz = new Anim("Black Knight", kingPath + "u_bk", "Black_Knight.7z", "sword", "Luerock, CanasNiimeHugh");
-//         emp = new Anim("Emperor", kingPath + "u_emp", "Emperor.7z", "sword", "lance", "axe", "bow", "fire", "light", "dark", "staff", "St Jack, The Blind Archer")
+// Cavalier + weps
+altfWep("Cavalier F", "sword", cav + "f_s");
+altfWep("Cavalier F", "bow", cav + "f_bow");
+altfWep("Cavalier M Prime", "sword", cav + "m_p_sw");
+altfWep("Cavalier M Prime", "axe", cav + "m_p_axe");
+altfWep("Cavalier M Prime", "handaxe", cav + "m_p_ha");
+altfWep("Cavalier M Skitty", "sword", cav + "m_s_sw");
+altfWep("Cavalier M Skitty", "axe", cav + "m_s_axe");
+altfWep("Cavalier M Skitty", "handaxe", cav + "m_s_ha");
+
+altfWep("Cavalier M Team SALVAGED", "sword", cav + "m_ts_sw");
+altfWep("Cavalier M Team SALVAGED", "axe", cav + "m_ts_axe");
+altfWep("Cavalier M Team SALVAGED", "handaxe", cav + "m_ts_ha");
+
+altfWep("Paladin M", "sword", pal + "m_sw");
+altfWep("Paladin M", "axe", pal + "m_axe");
+altfWep("Paladin M", "handaxe", pal + "m_ha");
+altfWep("Paladin M", "bow", pal + "m_bow");
+magfAlt("Paladin M", pal + "m_mag");
+altfWep("Paladin M", "staff", pal + "m_st");
+
+altfWep("Paladin F", "sword", pal + "f_sw");
+altfWep("Paladin F", "axe", pal + "f_axe");
+altfWep("Paladin F", "handaxe", pal + "f_ha");
+altfWep("Paladin F", "bow", pal + "f_bow");
+altfWep("Paladin F", "staff", pal + "f_st");
+
+mrSeedr("cav", "Paladin", "Master Knight F", pal + "f_mk", "Master_Kn_F.7z", ["sword", "lance", "axe", "handaxe", "bow", "fire", "dark", "light", "staff"], "Trueblade 1990, St Jack");
+mrSeedr("cav", "Paladin", "Master Knight M", pal + "m_mk", "Master_Kn_M.7z", ["sword", "lance", "axe", "handaxe", "bow", "fire", "dark", "light", "staff"], "Trueblade 1990, St Jack");
+mrSeedr("cav", "Paladin", "Grand Paladin", pal + "m_gp", "Grand_Paladin.7z", ["sword", "lance", "axe", "handaxe", "bow"], "Aruka, Kenpuhu, Nuramon");
+
+// Great Knights
+var gk = "img/gk/";
+mrSeedr("cav", "Great Knight", "Great Knight Repalette", gk + "u_p", "Great_Knight_Pal.7z", ["sword", "lance", "axe", "handaxe"], "Skitty");
+mrSeedr("cav", "Great Knight", "Great Knight", gk + "u", "Great Knight.7z", ["sword", "lance", "axe", "handaxe", "fire", "light", "dark", "staff"], "IS, Primefusion");
+
+// Griffon Knights
+var grf = "img/griff/";
+mrSeedr("flier", "Griffon Knight", "Griffon Knight", grf + "u", "Griffon_Kn.7z", ["sword", "axe", "handaxe"], "Blue Druid");
+mrSeedr("flier", "Griffon Knight", "Griffon Knight Repalette", grf + "u_p", "Griffon_Kn.7z", ["sword", "axe", "handaxe", "bow"], "Blue Druid");
+
+// Pegasus Knights
+var peg = "img/peg/";
+mrSeedr("flier", "Pegasus Knight", "Pegasus Knight", peg + "f", "Peg_Kn.7z", ["lance"], "IS");
+mrSeedr("flier", "Pegasus Knight", "Pegasus Knight Sword", peg + "f2", "Peg_Kn_Sword.7z", ["sword"], "Mageknight 404");
+mrSeedr("flier", "Pegasus Knight", "Pegasus Knight Repalette", peg + "f_p", "Peg_Kn_Pal.7z", ["lance"], "Oreostyx");
+
+let falc = "img/falco/";
+mrSeedr("flier", "Falcoknight", "Falcoknight", falc + "f", "Falcon_Knight.7z", ["sword", "lance", "staff"], "IS, ShadowOfChaos");
+
+// Wyvern Knights
+var wyvk = "img/wyv_kn/";
+mrSeedr("flier", "Wyvern Knight", "Wyvern Knight", wyvk + "u", "Wyvern_Kn.7z", ["lance", "axe", "handaxe"], "IS, St Jack");
+mrSeedr("flier", "Wyvern Knight", "Wyvern Knight Repalette", wyvk + "u_p", "Wyvern_Kn_Pal.7z", ["lance"], "Feaw");
+mrSeedr("Flier", "Wyvern Knight", "Wyvern Knight Helmetless", wyvk + "m_hl", "Wyvern_Kn_HL.7z", ["lance", "axe", "handaxe"], "St Jack");
+mrSeedr("Flier", "Wyvern Knight", "Wicked Flier", wyvk + "u_wf", "Wicked Flier.7z", ["lance", "fire", "light", "dark"], "Alfred Kamon, Blue Druid");
+
+let wyvl = "img/wyv_lord/";
+mrSeedr("flier", "Wyvern Lord", "Wyvern Lord", wyvl + "u", "Wyvern_Lord.7z", ["sword", "lance", "axe", "handaxe", "bow"], "IS, The Blind Archer, Princess Kilvas, Spud, Blue Druid");
+
+let wyv = "img/wyv_rider/";
+mrSeedr("flier", "Wyvern Rider", "Wyvern Rider", wyv + "u", "Wyvern_Rider.7z", ["lance", "axe", "handaxe", "bow"], "IS, Oracle_Of_Fire, Alfred Kamon, Princess Kilvas, Spud, Blue Druid");
