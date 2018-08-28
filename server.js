@@ -35,13 +35,12 @@ require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
 // Sync sequelize models and then start the Express app
-db.sequelize.sync({ force: true }).then(function () { //add force true for restarting db
+// db.sequelize.sync({ force: true }).then(function () { //add force true for restarting db
+db.sequelize.sync({}).then(function () {
   app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
-
-    //Seeds to DB//
-    // var animSeeds = require("./public/js/animSeeds.js");
-    // var imgSeeds = require("../public/js/imgSeeds.js");
+    
+    //Seeds to DB
     var wepSeeds = require("./public/js/wepSeeds.js");
     setTimeout(function() {
       var masterSeeds = require("./public/js/masterSeed.js");
