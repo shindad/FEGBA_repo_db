@@ -41,10 +41,10 @@ db.sequelize.sync({}).then(function () {
     console.log("App listening on PORT " + PORT);
     
     //Seeds to DB
-    var wepSeeds = require("./public/js/wepSeeds.js");
-    setTimeout(function() {
-      var masterSeeds = require("./public/js/masterSeed.js");
-    }, 500);
+    // var wepSeeds = require("./public/js/wepSeeds.js");
+    // setTimeout(function() {
+    //   var masterSeeds = require("./public/js/masterSeed.js");
+    // }, 500);
     
   });
 });

@@ -82,6 +82,20 @@ a {
     max-height: 16px;
 }
 
+/*Footer Styles*/
+.fixed-bottom {
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: #666666;
+    color: #4aaaa5;
+}
+
+.ftcol {
+    color: lightblue;
+}
+
 @media screen and (max-width: 750px) {
     .fullNav{
        display: none;
