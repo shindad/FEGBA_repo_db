@@ -45,8 +45,12 @@ a {
 
 .gif {
     border-radius: 7px 7px 0 0;
-    width: 90%;
-    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.4);
+    width: 20rem;
+    height: 15rem;
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.7);
+    object-fit: cover;
+    object-position: 0 0;
+    overflow: hidden;
 }
 
 .animName {
@@ -67,11 +71,11 @@ a {
 .cardbg {
     line-height: 1.5;
     background: radial-gradient(cadetblue 65%, darkslategray);
-    width: 90%;
+    width: 20rem;
     /* margin-left: 11%; */
     /* max-width: 90%; */
     border-radius: 0 0 7px 7px;
-    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.7);
 }
 
 .category {

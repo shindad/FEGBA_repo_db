@@ -2,12 +2,14 @@
 
 module.exports = function (sequelize, DataTypes) {
   const Anim = sequelize.define("Anim", {
+    tier: DataTypes.STRING,
     category: DataTypes.STRING,
     feClass: DataTypes.STRING,
-    anName: DataTypes.STRING,
-    URL: DataTypes.STRING,
+    gender: DataTypes.STRING,
+    name: DataTypes.STRING,
+    URL: { type: DataTypes.STRING, unique: true },
     dlName: DataTypes.STRING,
-    srcName: DataTypes.STRING
+    credit: DataTypes.STRING
   });
 
   Anim.associate = (models) => {

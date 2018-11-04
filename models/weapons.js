@@ -1,15 +1,8 @@
 module.exports = function(sequelize, DataTypes) {
   const Weapon = sequelize.define("Weapon", {
-    name: DataTypes.STRING
-    //weaponsAvail: DataTypes.JSON
+    still: {type: DataTypes.STRING, unique: true},
+    gif: DataTypes.STRING
   });
-
-  Weapon.associate = (models) => {
-    Weapon.belongsToMany(models.Anim, {
-      through: 'AnimWepIm'
-      //foreignKey: 'weaponId'
-    });
-  };
 
   return Weapon;
 };

@@ -3,29 +3,31 @@
 // Creates an object of the class animation to be placed on the page
 // weapons needs to be sent in as an array
 function Anim(anim) {
-    this.feClass = anim.feClass;
-    this.URL = anim.URL;
-    this.name = anim.anName;
-    this.dlName = anim.dlName;
-    this.author = anim.srcName;
+    this.category = anim.category; //section on the page to append to
+    this.feClass = anim.feClass; // name of the class
+    this.URL = anim.URL; // for download
+    this.gender = anim.gender; // sorting option
+    this.name = anim.name; // 
+    this.dlName = anim.dlName; //dlname
+    this.credit = anim.credit; // creators
     this.id = anim.id;
     //array containing all weapons, stills, and gifs
     this.weapons = anim.Weapons;
 
     this.makeCard = function () {
         var colDiv = $("<div>");
-        colDiv.addClass("col-lg-4 col-md-6 col-sm-12 my-2");
+        colDiv.addClass("col-xl-4 col-md-6 col-sm-12 my-2");
 
         //All Image data
         var animImg = $("<img>");
         animImg.addClass("gif");
         animImg.attr({
             id: (this.feClass + this.id).split(' ').join(''), //needed for targeting with img icons
-            src: this.weapons[0].AnimWepIm.still,
-            "data-weapon": this.weapons[0].name, //holds current weapon displayed
+            src: this.weapons[0].still,
+            "data-weapon": this.weapons[0].AnimWepIm.weapon, //holds current weapon displayed
             "data-state": "still",
-            "data-animate": this.weapons[0].AnimWepIm.gif,
-            "data-still": this.weapons[0].AnimWepIm.still
+            "data-animate": this.weapons[0].gif,
+            "data-still": this.weapons[0].still
         });
 
         var midRow = $("<div>");
@@ -33,7 +35,7 @@ function Anim(anim) {
         //Link and name of animation
         var animName = $("<a>");
         animName.addClass("animName text-center");
-        animName.html(this.name);
+        animName.html(`${this.feClass} ${this.gender} ${this.name}`);
         animName.attr({
             href: this.URL,
             download: this.dlName
@@ -44,13 +46,13 @@ function Anim(anim) {
 
         //insert weapon icons
         var icons = $("<span>");
-        icons.addClass("iconmt")
+        icons.addClass("iconmt");
         for (var i = 0; i < this.weapons.length; i++) {
             var icon = $("<img>");
             icon.attr({
-                src: "img/global/" + this.weapons[i].name + ".gif",
-                "data-animate": this.weapons[i].AnimWepIm.gif,
-                "data-still": this.weapons[i].AnimWepIm.still,
+                src: "img/global/" + this.weapons[i].AnimWepIm.weapon + ".png",
+                "data-animate": this.weapons[i].gif,
+                "data-still": this.weapons[i].still,
                 "data-target": this.feClass.split(' ').join('') + this.id
             });
             icon.addClass("imgIcon mt-0");
@@ -60,7 +62,7 @@ function Anim(anim) {
 
         //Author
         var authDiv = $("<span>");
-        authDiv.html(this.author);
+        authDiv.html(this.credit);
         authDiv.addClass("authorText text-center");
 
         // DIV ALIGNMENT //
@@ -75,7 +77,9 @@ function Anim(anim) {
         textSect.append(midRow, botRow);
 
         // All together
-        colDiv.append(animImg, textSect);
+        const cardParent = $("<div>");
+        cardParent.append(animImg, textSect);
+        colDiv.append(cardParent);
         return colDiv;
     };
 };
@@ -86,7 +90,7 @@ function Anim(anim) {
 
 //Initializes the div for holding all the anims and then makes a card for all relevant anims.
 function makeAnimRow(anim) {
-
+    console.log(anim);
     // Title div. Main function is displaying class name for selected group
     var headerDiv = $("<div>");
     headerDiv.html(anim[0].feClass);
@@ -125,7 +129,7 @@ $(".container").on("click", ".classBtn", function () {
     if (this.getAttribute("data-filled") === 'false') {
         API.getAnims(this.getAttribute("data-prof")).then(function (animArr) {
             makeAnimRow(animArr);
-        })
+        });
         this.setAttribute("data-filled", "true");
     };
 });
@@ -150,7 +154,8 @@ $(".container").on("click", ".gif", function () {
     };
 });
 
-$(document).on("click", ".imgIcon", function() {
+// Changes the weapon to the alternate type when clicking on the weapon
+$(document).on("click", ".imgIcon", function () {
     var target = $(this).attr("data-target")
     $("#" + target).attr({
         "data-animate": $(this).attr("data-animate"),
