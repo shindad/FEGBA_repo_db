@@ -90,7 +90,7 @@ const findAnims = () => {
             const catCeiling = 1;
             categories.forEach(category => {
                 // temporary limiter. To be expanded / removed w/ further testing
-                if (category === 'Infantry') {
+                if (category === 'Lords') {
                     fs.readdir(images + category + "/", (err, units) => {
                         console.log("units to count: " + units.length);
                         let unitCounter = 0;

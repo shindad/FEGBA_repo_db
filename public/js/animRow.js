@@ -11,7 +11,7 @@ function rowMaker(aRowID, disp, catHeader, cat, classes) {
 };
 
 rowMaker("SWDFill", "false", "Sword Infantry", "Sword", [
-    "Mercenary", "Hero", "Myrmidon", "Swordmaster", "Thief", "Assassin", "Rogue"
+    "Squire", "Mercenary", "Hero", "Myrmidon", "Swordmaster", "Thief", "Assassin", "Rogue"
 ]);
 rowMaker("LNCFill", "false", "Lance Infantry", "Lance", [
     "Recruit", "Soldier", "Halberdier"
@@ -32,10 +32,9 @@ rowMaker("FLYFill", "false", "Flying Units", "Flyer", [
     "Pegasus Knight", "Falcoknight", "Griffon Knight", "Wyvern Rider", "Wyvern Lord", "Wyvern Knight"
 ]);
 rowMaker("LRDFill", "false", "Lord Units", "Lord", [
-    "Eirika", "Eirika Great Lord", "Ephraim", "Ephraim Great Lord",
-    "Eliwood", "Eliwood Knight Lord", "Hector", "Hector Great Lord",
-    "Lyn", "Lyn Blade Lord", "Roy",
-    "Ike Ranger", "Ike Vanguard", "Greil", "Marth"
+    "Eirika Lord", "Eirika Great Lord", "Ephraim Lord", "Ephraim Great Lord",
+    "Eliwood Lord", "Eliwood Knight Lord", "Hector Lord", "Hector Great Lord",
+    "Lyn Lord", "Lyn Blade Lord", "Roy", "Custom"
 ]);
 rowMaker("MAGFill", "false", "Magic Users", "Mage", [
     "Pupil", "Mage", "Sage", "Archsage",

@@ -1,0 +1,291 @@
+/// - Mode 1
+C03
+C07
+5 p- Scythe_000.png
+3 p- Scythe_001.png
+6 p- Scythe_002.png
+C04
+C41
+3 p- Scythe_003.png
+3 p- Scythe_004.png
+4 p- Scythe_005.png
+C04
+C36
+8 p- Scythe_006.png
+12 p- Scythe_007.png
+C04
+C25
+3 p- Scythe_008.png
+12 p- Scythe_009.png
+C04
+C14
+C1F
+2 p- Scythe_010.png
+6 p- Scythe_011.png
+5 p- Scythe_012.png
+C04
+C1A
+C1F
+2 p- Scythe_013.png
+3 p- Scythe_014.png
+C04
+C1A
+C1F
+C25
+4 p- Scythe_009.png
+5 p- Scythe_015.png
+5 p- Scythe_016.png
+5 p- Scythe_017.png
+5 p- Scythe_018.png
+12 p- Scythe_019.png
+C04
+C41
+C15
+4 p- Scythe_020.png
+2 p- Scythe_021.png
+1 p- Scythe_022.png
+5 p- Scythe_023.png
+5 p- Scythe_024.png
+5 p- Scythe_025.png
+5 p- Scythe_000.png
+C01
+C06
+C0D
+~~~
+/// - Mode 3
+C03
+C07
+5 p- Scythe_000.png
+3 p- Scythe_001.png
+10 p- Scythe_002.png
+C04
+C41
+C4B
+1 p- Scythe_026.png
+3 p- Scythe_027.png
+1 p- Scythe_028.png
+3 p- Scythe_029.png
+1 p- Scythe_030.png
+3 p- Scythe_031.png
+1 p- Scythe_032.png
+3 p- Scythe_033.png
+1 p- Scythe_034.png
+3 p- Scythe_035.png
+1 p- Scythe_036.png
+3 p- Scythe_037.png
+1 p- Scythe_038.png
+3 p- Scythe_039.png
+1 p- Scythe_040.png
+3 p- Scythe_041.png
+1 p- Scythe_040.png
+3 p- Scythe_041.png
+1 p- Scythe_040.png
+3 p- Scythe_041.png
+3 p- Scythe_041.png
+2 p- Scythe_040.png
+3 p- Scythe_041.png
+2 p- Scythe_040.png
+3 p- Scythe_041.png
+C04
+C15
+C25
+C1F
+1 p- Scythe_042.png
+2 p- Scythe_043.png
+1 p- Scythe_044.png
+2 p- Scythe_045.png
+1 p- Scythe_046.png
+12 p- Scythe_009.png
+C04
+C15
+C1F
+2 p- Scythe_047.png
+1 p- Scythe_048.png
+1 p- Scythe_049.png
+8 p- Scythe_009.png
+C04
+C1F
+C15
+1 p- Scythe_050.png
+2 p- Scythe_051.png
+1 p- Scythe_052.png
+8 p- Scythe_009.png
+C04
+C15
+C1F
+1 p- Scythe_053.png
+1 p- Scythe_009.png
+1 p- Scythe_053.png
+1 p- Scythe_009.png
+2 p- Scythe_054.png
+1 p- Scythe_009.png
+1 p- Scythe_055.png
+8 p- Scythe_009.png
+C04
+C1F
+C15
+1 p- Scythe_056.png
+1 p- Scythe_009.png
+2 p- Scythe_057.png
+1 p- Scythe_009.png
+1 p- Scythe_058.png
+1 p- Scythe_059.png
+1 p- Scythe_009.png
+1 p- Scythe_059.png
+1 p- Scythe_009.png
+1 p- Scythe_059.png
+1 p- Scythe_009.png
+1 p- Scythe_059.png
+1 p- Scythe_009.png
+C04
+C15
+C1F
+4 p- Scythe_059.png
+4 p- Scythe_009.png
+2 p- Scythe_060.png
+1 p- Scythe_061.png
+2 p- Scythe_009.png
+4 p- Scythe_062.png
+1 p- Scythe_063.png
+8 p- Scythe_062.png
+1 p- Scythe_063.png
+C04
+C15
+C1F
+1 p- Scythe_063.png
+2 p- Scythe_064.png
+1 p- Scythe_065.png
+5 p- Scythe_009.png
+C04
+C15
+C1F
+1 p- Scythe_066.png
+1 p- Scythe_011.png
+2 p- Scythe_067.png
+1 p- Scythe_011.png
+1 p- Scythe_068.png
+C04
+C1A
+C1F
+1 p- Scythe_011.png
+5 p- Scythe_012.png
+2 p- Scythe_013.png
+3 p- Scythe_014.png
+C04
+C1A
+C1F
+C25
+4 p- Scythe_009.png
+5 p- Scythe_015.png
+5 p- Scythe_016.png
+5 p- Scythe_017.png
+5 p- Scythe_018.png
+12 p- Scythe_019.png
+C04
+C41
+C15
+4 p- Scythe_020.png
+2 p- Scythe_021.png
+1 p- Scythe_022.png
+5 p- Scythe_023.png
+5 p- Scythe_024.png
+5 p- Scythe_025.png
+5 p- Scythe_000.png
+C04
+C01
+C06
+C0D
+~~~
+/// - Mode 5
+C03
+C07
+5 p- Scythe_000.png
+C05
+5 p- Scythe_000.png
+C01
+C06
+C0D
+~~~
+/// - Mode 6
+C03
+C07
+5 p- Scythe_000.png
+C05
+5 p- Scythe_000.png
+C01
+C06
+C0D
+~~~
+/// - Mode 7
+C02
+6 p- Scythe_069.png
+8 p- Scythe_070.png
+C0E
+C01
+C0D
+~~~
+/// - Mode 8
+C02
+6 p- Scythe_069.png
+8 p- Scythe_070.png
+C0E
+C01
+C0D
+~~~
+/// - Mode 9
+32 p- Scythe_000.png
+C01
+~~~
+/// - Mode 10
+32 p- Scythe_000.png
+C01
+~~~
+/// - Mode 11
+32 p- Scythe_000.png
+C01
+~~~
+/// - Mode 12
+C03
+C07
+5 p- Scythe_000.png
+3 p- Scythe_001.png
+6 p- Scythe_002.png
+C41
+3 p- Scythe_003.png
+4 p- Scythe_004.png
+C36
+8 p- Scythe_006.png
+12 p- Scythe_007.png
+C25
+3 p- Scythe_008.png
+12 p- Scythe_009.png
+C14
+C1F
+2 p- Scythe_010.png
+6 p- Scythe_011.png
+5 p- Scythe_012.png
+C1F
+2 p- Scythe_013.png
+3 p- Scythe_014.png
+C04
+C1F
+C25
+4 p- Scythe_009.png
+5 p- Scythe_015.png
+5 p- Scythe_016.png
+5 p- Scythe_017.png
+5 p- Scythe_018.png
+12 p- Scythe_019.png
+C41
+C15
+4 p- Scythe_020.png
+2 p- Scythe_021.png
+1 p- Scythe_022.png
+5 p- Scythe_023.png
+5 p- Scythe_024.png
+5 p- Scythe_025.png
+C01
+C06
+C0D
+~~~
+/// - End of animation
