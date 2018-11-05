@@ -38,7 +38,7 @@ rowMaker("LRDFill", "false", "Lord Units", "Lord", [
 ]);
 rowMaker("MAGFill", "false", "Magic Users", "Mage", [
     "Pupil", "Mage", "Sage", "Archsage",
-    "Priest", "Cleric", "Monk", "Bishop", "Patriarch",
+    "Priest", "Cleric", "Monk", "Bishop", "Saint",
     "Shaman", "Druid", "Dark Knight", "Summoner", "Dark Druid", "Necromancer",
     "Troubadour", "Mage Knight", "Valkyrie"
 ]);
