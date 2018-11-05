@@ -90,7 +90,7 @@ const findAnims = () => {
             const catCeiling = 1;
             categories.forEach(category => {
                 // temporary limiter. To be expanded / removed w/ further testing
-                if (category === 'Mages') {
+                if (category === 'Cavalry and Armors') {
                     fs.readdir(images + category + "/", (err, units) => {
                         console.log("units to count: " + units.length);
                         let unitCounter = 0;
@@ -114,7 +114,7 @@ const findAnims = () => {
                                         let wep = weapon.replace(/\d*?\.\s/, "").split(" ");
                                         wep = wep[0].toString();
                                         wepCounter++;
-                                        if (weapon.includes("png") || weapon.includes("gif") || weapon.includes("txt")) {
+                                        if (weapon.includes("png") || weapon.includes("gif") || weapon.includes("txt") || weapon.includes(".dat")) {
                                             console.log("not a wep");
                                         } else {
                                             anim.weapons.push(
