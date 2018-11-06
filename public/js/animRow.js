@@ -43,8 +43,9 @@ rowMaker("MAGFill", "false", "Magic Users", "Mage", [
     "Troubadour", "Mage Knight", "Valkyrie"
 ]);
 rowMaker("MONFill", "false", "Creatures", "Creature", [
-    "Dragon", "Manakete", "Ghost", "Bael", "Centaur", "Cyclops", "Gargoyle",
-    "Mogall", "Gorgon", "Skeleton", "Zombie", "Succubus"
+    "Bonewalker", "Revenant", "Bael", "Mauthe Doog", "Mogall", "Ghost", "Gargoyle", "Tarvos",
+    "Gorgon", "Cyclops", "Manakete", "Dragon", "Demon King"
+    
 ]);
 rowMaker("MISCFill", "false", "Dancers, Bards, & More", "Dancer", [
     "Bard", "Dancer", "Magic Seal", "Merlinus"
