@@ -1,4 +1,4 @@
 -- Drops the blogger if it exists currently --
-DROP DATABASE IF EXISTS feu_db;
+DROP DATABASE IF EXISTS emblem_anims;
 -- Creates the "blogger" database --
-CREATE DATABASE feu_db;
+CREATE DATABASE emblem_anims;

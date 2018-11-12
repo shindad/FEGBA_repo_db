@@ -10,47 +10,47 @@ function rowMaker(aRowID, disp, catHeader, cat, classes) {
     });
 };
 
-rowMaker("swordFill", "false", "Sword Infantry", "Sword", [
-    "Mercenary", "Hero", "Myrmidon", "Swordmaster", "Thief", "Assassin", "Rogue"
+rowMaker("SWDFill", "false", "Sword Infantry", "Sword", [
+    "Squire", "Mercenary", "Hero", "Myrmidon", "Swordmaster", "Thief", "Assassin", "Rogue"
 ]);
-rowMaker("lanceFill", "false", "Lance Infantry", "Lance", [
+rowMaker("LNCFill", "false", "Lance Infantry", "Lance", [
     "Recruit", "Soldier", "Halberdier"
 ]);
-rowMaker("axeFill", "false", "Axe Infantry", "Axe", [
-    "Journeyman", "Brigand", "Pirate", "Berserker", "Fighter", "Warrior"
+rowMaker("AXEFill", "false", "Axe Infantry", "Axe", [
+    "Journeyman", "Phantom", "Brigand", "Pirate", "Berserker", "Fighter", "Warrior"
 ]);
-rowMaker("bowFill", "false", "Bow Units", "Bow", [
-    "Archer", "Ballistae", "Nomad", "Nomad Trooper", "Ranger", "Sniper"
+rowMaker("BOWFill", "false", "Bow Units", "Bow", [
+    "Archer", "Ballista", "Nomad", "Nomad Trooper", "Ranger", "Sniper"
 ]);
-rowMaker("armorFill", "false", "Armored Units", "Knight", [
-    "Knight", "General", "King"
+rowMaker("ARMFill", "false", "Armored Units", "Knight", [
+    "Knight", "General", "Marshall"
 ]);
-rowMaker("cavFill", "false", "Cavalry Units", "Cavalry", [
-    "Cavalier", "Paladin", "Great Knight"
+rowMaker("CAVFill", "false", "Cavalry Units", "Cavalry", [
+    "Cavalier", "Paladin", "Great Knight", "Master Knight"
 ]);
-rowMaker("flierFill", "false", "Flying Units", "Flyer", [
+rowMaker("FLYFill", "false", "Flying Units", "Flyer", [
     "Pegasus Knight", "Falcoknight", "Griffon Knight", "Wyvern Rider", "Wyvern Lord", "Wyvern Knight"
 ]);
-rowMaker("lordFill", "false", "Lord Units", "Lord", [
-    "Eirika", "Eirika Great Lord", "Ephraim", "Ephraim Great Lord",
-    "Eliwood", "Eliwood Knight Lord", "Hector", "Hector Great Lord",
-    "Lyn", "Lyn Blade Lord", "Roy",
-    "Ike Ranger", "Ike Vanguard", "Greil", "Marth"
+rowMaker("LRDFill", "false", "Lord Units", "Lord", [
+    "Eirika Lord", "Eirika Great Lord", "Ephraim Lord", "Ephraim Great Lord",
+    "Eliwood Lord", "Eliwood Knight Lord", "Hector Lord", "Hector Great Lord",
+    "Lyn Lord", "Lyn Blade Lord", "Roy", "Custom"
 ]);
-rowMaker("magicFill", "false", "Magic Users", "Mage", [
+rowMaker("MAGFill", "false", "Magic Users", "Mage", [
     "Pupil", "Mage", "Sage", "Archsage",
-    "Priest", "Cleric", "Monk", "Bishop", "Patriarch",
+    "Priest", "Cleric", "Monk", "Bishop", "Saint",
     "Shaman", "Druid", "Dark Knight", "Summoner", "Dark Druid", "Necromancer",
     "Troubadour", "Mage Knight", "Valkyrie"
 ]);
-rowMaker("monsterFill", "false", "Creatures", "Creature", [
-    "Dragon", "Manakete", "Ghost", "Bael", "Centaur", "Cyclops", "Gargoyle",
-    "Mogall", "Gorgon", "Skeleton", "Zombie", "Succubus"
+rowMaker("MONFill", "false", "Creatures", "Creature", [
+    "Bonewalker", "Revenant", "Bael", "Mauthe Doog", "Mogall", "Ghost", "Gargoyle", "Tarvos",
+    "Gorgon", "Cyclops", "Manakete", "Dragon", "Demon King"
+    
 ]);
-rowMaker("dancerFill", "false", "Dancers, Bards, & More", "Dancer", [
+rowMaker("MISCFill", "false", "Dancers, Bards, & More", "Dancer", [
     "Bard", "Dancer", "Magic Seal", "Merlinus"
 ]);
-rowMaker("spellFill", "false", "Spells", "Spell", [
+rowMaker("SPLFill", "false", "Spells", "Spell", [
     "Aircalibur", "Aqua", "Aqua Edge", "Arcthunder", "Artemis", "Aura", "Crimson Eye", "Donbettyr", "Bolganone"
 ]);
 

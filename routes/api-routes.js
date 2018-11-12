@@ -13,7 +13,7 @@ module.exports = function (app) {
         include: [{
           model: db.Weapon,
           through: {
-            attributes: ['still', 'gif']
+            attributes: ['weapon']
           }}]}).then(function (response) {
       console.log(response);
       res.json(response);

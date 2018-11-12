@@ -21,7 +21,7 @@ app.set("view engine", "handlebars");
 
 // Static directory
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
@@ -35,17 +35,18 @@ require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
 // Sync sequelize models and then start the Express app
-// db.sequelize.sync({ force: true }).then(function () { //add force true for restarting db
-db.sequelize.sync({}).then(function () {
+ db.sequelize.sync({ force: true }).then(function () { //add force true for restarting db
+//db.sequelize.sync({}).then(function () {
   app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
-    
+
     //Seeds to DB
-    // var wepSeeds = require("./public/js/wepSeeds.js");
-    // setTimeout(function() {
-    //   var masterSeeds = require("./public/js/masterSeed.js");
-    // }, 500);
-    
+    //var wepSeeds = require("./public/js/wepSeeds.js");
+    setTimeout(function () {
+      //   var masterSeeds = require("./public/js/masterSeed.js");
+      const repoSeeder = require("./public/js/repoSeeder");
+    }, 500);
+
   });
 });
 
