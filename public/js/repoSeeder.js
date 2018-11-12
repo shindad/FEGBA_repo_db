@@ -87,7 +87,7 @@ const findAnims = () => {
             console.log(err);
         } else {
             let catCounter = 0;
-            const catCeiling = categories.length -2;
+            const catCeiling = categories.length -1;
             categories.forEach(category => {
                 // temporary limiter. To be expanded / removed w/ further testing
                 // 'Infantry' 'Lords' 'Mages' 'Cavalry and Armors'
