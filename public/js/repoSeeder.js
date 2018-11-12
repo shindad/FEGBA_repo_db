@@ -87,11 +87,11 @@ const findAnims = () => {
             console.log(err);
         } else {
             let catCounter = 0;
-            const catCeiling = 1;
+            const catCeiling = categories.length -1;
             categories.forEach(category => {
                 // temporary limiter. To be expanded / removed w/ further testing
                 // 'Infantry' 'Lords' 'Mages' 'Cavalry and Armors'
-                if (category === 'Monsters') {
+                if (category !== 'global') {
                     fs.readdir(images + category + "/", (err, units) => {
                         console.log("units to count: " + units.length);
                         let unitCounter = 0;

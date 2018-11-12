@@ -17,7 +17,7 @@ rowMaker("LNCFill", "false", "Lance Infantry", "Lance", [
     "Recruit", "Soldier", "Halberdier"
 ]);
 rowMaker("AXEFill", "false", "Axe Infantry", "Axe", [
-    "Journeyman", "Brigand", "Pirate", "Berserker", "Fighter", "Warrior"
+    "Journeyman", "Phantom", "Brigand", "Pirate", "Berserker", "Fighter", "Warrior"
 ]);
 rowMaker("BOWFill", "false", "Bow Units", "Bow", [
     "Archer", "Ballista", "Nomad", "Nomad Trooper", "Ranger", "Sniper"
