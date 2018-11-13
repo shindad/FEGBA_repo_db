@@ -93,7 +93,7 @@ const findAnims = () => {
                 // 'Infantry' 'Lords' 'Mages' 'Cavalry and Armors'
                 if (category !== 'global') {
                     fs.readdir(images + category + "/", (err, units) => {
-                        console.log("units to count: " + units.length);
+                        console.log("units to count: " + units.length + " Category: " + category);
                         let unitCounter = 0;
                         units.forEach(unit => {
                             const tempInfoArray = unit.match(/[^[\[\{\(\]\}\)]+/g)
@@ -111,6 +111,9 @@ const findAnims = () => {
                                 } else {
                                     let wepCeiling = weps.length;
                                     let wepCounter = 0;
+                                    // if (wepCeiling === 0) {
+                                    //     console.log(anim.name + " doesn't have any weapons!");
+                                    // }
                                     weps.forEach(weapon => {
                                         let wep = weapon.replace(/\d*?\.\s/, "").split(" ");
                                         wep = wep[0].toString();
@@ -125,7 +128,7 @@ const findAnims = () => {
                                                     still: 'img/' + category + "/" + unit + "/" + weapon + "/" + wep + "_000.png",
                                                     gif: 'img/' + category + "/" + unit + "/" + weapon + "/" + wep + ".gif"
                                                 });
-                                            console.log(wepCounter + "/" + weps.length + " " + anim.name);
+                                            console.log(wepCounter + "/" + weps.length + " " + anim.name + " " + unitCounter);
                                             // Increments the unit count for the category when all weapon pushes have been incremented through
 
                                         }
@@ -135,7 +138,7 @@ const findAnims = () => {
                                             // console.log(unitCounter, units.length);
                                             if (unitCounter === units.length) {
                                                 catCounter++;
-                                                console.log("unitCount = " + unitCounter + "/" + units.length + ". Categories = " + catCounter + "/" + catCeiling);
+                                                console.log("Category: " + category + " unitCount = " + unitCounter + "/" + units.length + ". Categories = " + catCounter + "/" + catCeiling);
                                                 if (catCounter === catCeiling) {
                                                     completeArray();
                                                     return;
