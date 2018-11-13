@@ -33,12 +33,12 @@ function Anim(anim) {
         var midRow = $("<div>");
 
         //Link and name of animation
-        var animName = $("<a>");
+        var animName = $("<div>");
         animName.addClass("animName text-center");
         animName.html(`${this.feClass} ${this.gender} ${this.name}`);
         animName.attr({
-            href: this.URL,
-            download: this.dlName
+            "data-folder": this.dlName,
+            "data-url": this.URL
         });
 
         var botRow = $("<div>");
@@ -116,6 +116,12 @@ var API = {
             url: "/api/anims/" + feClass,
             type: "GET"
         });
+    },
+    downloadAnim: function (unit, path) {
+        return $.get("/api/unit/" + unit, {
+            path: path,
+            unit: unit
+        })
     }
 };
 
@@ -154,9 +160,17 @@ $(".container").on("click", ".gif", function () {
     };
 });
 
+$(".container").on("click", ".animName", function () {
+    const folder = $(this).attr("data-folder");
+    const path = $(this).attr("data-url");
+    API.downloadAnim(folder, path).then(function (response) {
+        document.getElementById('hidDownloads').src = response;
+    });
+});
+
 // Changes the weapon to the alternate type when clicking on the weapon
 $(document).on("click", ".imgIcon", function () {
-    var target = $(this).attr("data-target")
+    var target = $(this).attr("data-target");
     $("#" + target).attr({
         "data-animate": $(this).attr("data-animate"),
         "data-still": $(this).attr("data-still"),

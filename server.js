@@ -42,10 +42,10 @@ db.sequelize.sync({}).then(function () {
 
     //Seeds to DB
     //var wepSeeds = require("./public/js/wepSeeds.js");
-    setTimeout(function () {
-      //   var masterSeeds = require("./public/js/masterSeed.js");
-      const repoSeeder = require("./public/js/repoSeeder");
-    }, 500);
+    // setTimeout(function () {
+    //   //   var masterSeeds = require("./public/js/masterSeed.js");
+    //   const repoSeeder = require("./public/js/repoSeeder");
+    // }, 500);
 
   });
 });

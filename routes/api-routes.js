@@ -1,4 +1,31 @@
 var db = require("../models");
+const fs = require('fs');
+const util = require('util');
+const path = require('path');
+var archiver = require('archiver');
+
+function zipDirectory(source, out) {
+  const archive = archiver('zip', { zlib: { level: 9 } });
+  const stream = fs.createWriteStream(out);
+  console.log(source);
+
+  return new Promise((resolve, reject) => {
+    archive
+      .directory(source, false)
+      .on('error', err => {
+        console.log(err);
+        reject(err)
+      })
+      .pipe(stream)
+      ;
+
+    stream.on('close', () => {
+      console.log("success ", archive.pointer());
+      resolve(out)
+    });
+    archive.finalize();
+  });
+};
 
 module.exports = function (app) {
   app.get("/api/anims/:class", function (req, res, next) {
@@ -8,16 +35,30 @@ module.exports = function (app) {
       where: {
         feClass: req.params.class
       },
-        //include all weapons through the linking table
-        //along with attributes still and gif from the linking table
-        include: [{
-          model: db.Weapon,
-          through: {
-            attributes: ['weapon']
-          }}]}).then(function (response) {
+      //include all weapons through the linking table
+      //along with attributes still and gif from the linking table
+      include: [{
+        model: db.Weapon,
+        through: {
+          attributes: ['weapon']
+        }
+      }]
+    }).then(function (response) {
       console.log(response);
       res.json(response);
     });
+  });
+
+  app.get("/api/unit/:path", function (req, res, next) {
+    console.log(" reqquerypath " + req.query.path);
+    console.log("reqparamspath " + req.params.path);
+
+    let promise = zipDirectory("./public/" + req.query.path, "./public/download/" + req.params.path + ".zip");
+    promise.then(
+      out => {
+        console.log("./public/download/" + req.params.path);
+        res.json("./download/" + req.params.path + ".zip")}, 
+      err => console.log(err));
   });
 
   // app.get("/api/classes/:category", function (req, res) {
