@@ -11,9 +11,6 @@ a {
 }
 
 /* Navbar Styles */
-.nav {
-    background-image: radial-gradient(yellow, gold, orangered, firebrick);
-}
 
 #sideBar {
     z-index: 100;
@@ -31,6 +28,10 @@ a {
     display: none;
 }
 
+.dropdown-toggle::after {
+    display:none !important;
+}
+
 /* Header Styles */
 .headerUnder {
     border-bottom: 1px solid black;
@@ -42,7 +43,6 @@ a {
 }
 
 /* Body Styles */
-
 .gif {
     border-radius: 7px 7px 0 0;
     width: 20rem;
@@ -55,6 +55,10 @@ a {
 
 .animName {
     font-size: small;
+}
+
+.genderIcon {
+    font-weight: bolder;
 }
 
 .imgIcon {

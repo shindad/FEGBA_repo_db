@@ -1,10 +1,24 @@
-<nav class="navbar sticky-top navbar-nav navbar-dark bg-dark flex-row flex-wrap" id="sideBar">
-    {{#each navItem}}
-    <button type="button" class="nav-link btn btn-secondary navtext mx-auto p-1" data-toggle="button" data-disp="{{disp}}" data-fill="{{fill}}" id={{dispTitle}}>
-        <span class="fullNav">{{dispTitle}}</span>
-        <span class="smallNav">
-            <img class="navimg" src={{short}}>
-        </span>
-    </button>
-    {{/each}}
+<nav class="navbar sticky-top navbar-dark bg-dark" id="sideBar">
+    <div class="container-fluid">
+        {{#each navItem}}
+        <ul class="dropdown my-0">
+            <button type="button" class="nav-link btn btn-secondary dropdown-toggle navtext mx-auto p-1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" data-disp="{{disp}}" data-fill="{{fill}}" id={{dispTitle}}>
+                <span class="fullNav">{{dispTitle}}</span>
+                <span class="smallNav">
+                    <img class="navimg" src={{short}}>
+                </span>
+            </button>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                {{#each classes}}
+                <button class="dropdown-item classBtn navtext mx-auto" data-toggle="button" data-prof="{{this}}" data-filled="false" aria-pressed="false">
+                    {{this}}
+                </button>
+                {{/each}}
+            </ul>
+        </ul>
+
+        {{/each}}
+    </div>
 </nav>

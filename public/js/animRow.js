@@ -5,53 +5,21 @@ function rowMaker(aRowID, disp, catHeader, cat, classes) {
         aRowID: aRowID,
         disp: disp,
         catHeader: catHeader,
-        cat: cat,
-        classes: classes
+        cat: cat
     });
 };
 
-rowMaker("SWDFill", "false", "Sword Infantry", "Sword", [
-    "Squire", "Mercenary", "Hero", "Myrmidon", "Swordmaster", "Thief", "Assassin", "Rogue"
-]);
-rowMaker("LNCFill", "false", "Lance Infantry", "Lance", [
-    "Recruit", "Soldier", "Halberdier"
-]);
-rowMaker("AXEFill", "false", "Axe Infantry", "Axe", [
-    "Journeyman", "Phantom", "Brigand", "Pirate", "Berserker", "Fighter", "Warrior"
-]);
-rowMaker("BOWFill", "false", "Bow Units", "Bow", [
-    "Archer", "Ballista", "Nomad", "Nomad Trooper", "Ranger", "Sniper"
-]);
-rowMaker("ARMFill", "false", "Armored Units", "Knight", [
-    "Knight", "General", "Marshall"
-]);
-rowMaker("CAVFill", "false", "Cavalry Units", "Cavalry", [
-    "Cavalier", "Paladin", "Great Knight", "Master Knight"
-]);
-rowMaker("FLYFill", "false", "Flying Units", "Flyer", [
-    "Pegasus Knight", "Falcoknight", "Griffon Knight", "Wyvern Rider", "Wyvern Lord", "Wyvern Knight"
-]);
-rowMaker("LRDFill", "false", "Lord Units", "Lord", [
-    "Eirika Lord", "Eirika Great Lord", "Ephraim Lord", "Ephraim Great Lord",
-    "Eliwood Lord", "Eliwood Knight Lord", "Hector Lord", "Hector Great Lord",
-    "Lyn Lord", "Lyn Blade Lord", "Roy", "Custom"
-]);
-rowMaker("MAGFill", "false", "Magic Users", "Mage", [
-    "Pupil", "Mage", "Sage", "Archsage",
-    "Priest", "Cleric", "Monk", "Bishop", "Saint",
-    "Shaman", "Druid", "Dark Knight", "Summoner", "Dark Druid", "Necromancer",
-    "Troubadour", "Mage Knight", "Valkyrie"
-]);
-rowMaker("MONFill", "false", "Creatures", "Creature", [
-    "Bonewalker", "Revenant", "Bael", "Mauthe Doog", "Mogall", "Ghost", "Gargoyle", "Tarvos",
-    "Gorgon", "Cyclops", "Manakete", "Dragon", "Demon King"
-    
-]);
-rowMaker("MISCFill", "false", "Dancers, Bards, & More", "Dancer", [
-    "Bard", "Dancer", "Magic Seal", "Merlinus"
-]);
-rowMaker("SPLFill", "false", "Spells", "Spell", [
-    "Aircalibur", "Aqua", "Aqua Edge", "Arcthunder", "Artemis", "Aura", "Crimson Eye", "Donbettyr", "Bolganone"
-]);
+rowMaker("SWDFill", "false", "Sword Infantry", "Sword");
+rowMaker("LNCFill", "false", "Lance Infantry", "Lance");
+rowMaker("AXEFill", "false", "Axe Infantry", "Axe");
+rowMaker("BOWFill", "false", "Bow Units", "Bow");
+rowMaker("ARMFill", "false", "Armored Units", "Knight");
+rowMaker("CAVFill", "false", "Cavalry Units", "Cavalry");
+rowMaker("FLYFill", "false", "Flying Units", "Flyer");
+rowMaker("LRDFill", "false", "Lord Units", "Lord");
+rowMaker("MAGFill", "false", "Magic Users", "Mage");
+rowMaker("MONFill", "false", "Creatures", "Creature");
+rowMaker("MISCFill", "false", "Dancers, Bards, & More", "Dancer");
+rowMaker("SPLFill", "false", "Spells", "Spell");
 
 module.exports = animRow;

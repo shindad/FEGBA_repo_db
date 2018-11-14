@@ -14,7 +14,7 @@ C07                                     #Start attack animation; should be prece
 3 p- Magic_005.png
 3 p- Magic_006.png
 3 p- Magic_007.png
-C4C                                     #FE7:Play Athos' magic casting SFE
+C79
 2 p- Magic_008.png
 2 p- Magic_009.png
 2 p- Magic_010.png
@@ -68,7 +68,7 @@ C4B                                     #Play monk's magic casting SFE
 2 p- Magic_045.png
 2 p- Magic_046.png
 2 p- Magic_047.png
-C4C                                     #FE7:Play Athos' magic casting SFE
+C79
 2 p- Magic_048.png
 2 p- Magic_049.png
 2 p- Magic_050.png
@@ -106,7 +106,7 @@ C07                                     #Start attack animation; should be prece
 3 p- Magic_005.png
 3 p- Magic_006.png
 3 p- Magic_007.png
-C4C                                     #FE7:Play Athos' magic casting SFE
+C79
 2 p- Magic_008.png
 2 p- Magic_009.png
 2 p- Magic_010.png
@@ -160,7 +160,7 @@ C4B                                     #Play monk's magic casting SFE
 2 p- Magic_045.png
 2 p- Magic_046.png
 2 p- Magic_047.png
-C4C                                     #FE7:Play Athos' magic casting SFE
+C79
 2 p- Magic_048.png
 2 p- Magic_049.png
 2 p- Magic_050.png
@@ -228,7 +228,7 @@ C07                                     #Start attack animation; should be prece
 3 p- Magic_005.png
 3 p- Magic_006.png
 3 p- Magic_007.png
-C4C                                     #FE7:Play Athos' magic casting SFE
+C79
 2 p- Magic_008.png
 2 p- Magic_009.png
 2 p- Magic_010.png

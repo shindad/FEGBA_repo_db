@@ -34,12 +34,29 @@ function Anim(anim) {
 
         //Link and name of animation
         var animName = $("<div>");
-        animName.addClass("animName text-center");
-        animName.html(`${this.feClass} ${this.gender} ${this.name}`);
+        animName.addClass("animName text-center pt-1");
+        let genderI;
+        switch (this.gender) {
+            case "U":
+                genderI = "genderIcon fa fa-venus-mars";
+                break;
+            case "F":
+                genderI = "genderIcon fa fa-venus";
+                break;
+            case "M":
+                genderI = "genderIcon fa fa-mars";
+                break;
+        };
+
+        let genderDiv = $("<i>");
+        genderDiv.addClass(genderI);
+        
+        animName.html(` ${this.name}`);
         animName.attr({
             "data-folder": this.dlName,
             "data-url": this.URL
         });
+        animName.prepend(genderDiv);
 
         var botRow = $("<div>");
         botRow.addClass("col-12 botRow");
@@ -91,22 +108,29 @@ function Anim(anim) {
 //Initializes the div for holding all the anims and then makes a card for all relevant anims.
 function makeAnimRow(anim) {
     console.log(anim);
+
+    var classRow = (anim[0].feClass + "Row").split(' ').join('')
+
+    let parentDiv = $("<div>");
+    parentDiv.addClass(classRow + " my-2");
+
     // Title div. Main function is displaying class name for selected group
     var headerDiv = $("<div>");
     headerDiv.html(anim[0].feClass);
-    var classRow = (anim[0].feClass + "Row").split(' ').join('')
-    headerDiv.addClass("col-12 text-center " + classRow);
+    headerDiv.addClass("col-12 text-center");
 
     // Init subrow that contains all the anim cards
     var fRow = $("<div>");
-    fRow.addClass("row text-center " + classRow);
+    fRow.addClass("row text-center");
     for (var i = 0; i < anim.length; i++) {
         var tempAnim = new Anim(anim[i]);
         fRow.append(tempAnim.makeCard());
     };
 
+    parentDiv.append(headerDiv, fRow);
+
     //Send compiled data to html
-    $("#" + anim[0].category + "Fill").append(headerDiv, fRow);
+    $("#mainBody").prepend(parentDiv);
 };
 
 //API Routing calls, can be expanded if future functionality desired.
@@ -130,7 +154,8 @@ var API = {
 /// EVENT LISTENERS ///
 
 //Major listener for values populated by category selection
-$(".container").on("click", ".classBtn", function () {
+$(document).on("click", ".classBtn", function () {
+    console.log("clicked");
     $("." + this.getAttribute("data-prof").split(' ').join('') + "Row").toggle();
     if (this.getAttribute("data-filled") === 'false') {
         API.getAnims(this.getAttribute("data-prof")).then(function (animArr) {
