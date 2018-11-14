@@ -92,7 +92,7 @@ const findAnims = () => {
                 // temporary limiter. To be expanded / removed w/ further testing
                 // 'Infantry' 'Lords' 'Mages' 'Cavalry and Armors'
                 //if (category !== 'global') {
-                if (category === "Infantry") { //temp to push data slowly
+                if (category === "1. Infantry") { //temp to push data slowly
                     fs.readdir(images + category + "/", (err, units) => {
                         console.log("units to count: " + units.length + " Category: " + category);
                         let unitCounter = 0;
