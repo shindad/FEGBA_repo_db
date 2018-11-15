@@ -1,22 +1,44 @@
 <nav class="navbar sticky-top navbar-dark bg-dark" id="sideBar">
     <div class="container-fluid">
+        <ul class="my-0">
+            <button type="button" class="classBtn btn btn-secondary navtext p-1" data-disp="false" data-prof="About"
+                id="About">
+                <span class="fullNav">About</span>
+                <span class="smallNav">
+                    <img class="navimg" src="img/global/scroll.gif">
+                </span>
+            </button>
+        </ul>
         {{#each navItem}}
         <ul class="dropdown my-0">
             <button type="button" class="nav-link btn btn-secondary dropdown-toggle navtext mx-auto p-1" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false" data-disp="{{disp}}" data-fill="{{fill}}" id={{dispTitle}}>
+                aria-haspopup="true" aria-expanded="false" data-disp="{{disp}}" id={{dispTitle}}>
                 <span class="fullNav">{{dispTitle}}</span>
                 <span class="smallNav">
                     <img class="navimg" src={{short}}>
                 </span>
             </button>
 
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            {{#if dropdown}}
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                 {{#each classes}}
-                <button class="dropdown-item classBtn navtext mx-auto" data-toggle="button" data-prof="{{this}}" data-filled="false" aria-pressed="false">
+                <button class="dropdown-item classBtn navtext" data-toggle="button" data-prof="{{this}}" data-filled="false"
+                    aria-pressed="false">
                     {{this}}
                 </button>
                 {{/each}}
             </ul>
+            {{else}}
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                {{#each classes}}
+                <button class="dropdown-item classBtn navtext" data-toggle="button" data-prof="{{this}}" data-filled="false"
+                    aria-pressed="false">
+                    {{this}}
+                </button>
+                {{/each}}
+            </ul>
+            {{/if}}
+
         </ul>
 
         {{/each}}

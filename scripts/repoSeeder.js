@@ -1,7 +1,7 @@
 /// DEPENDENCIES ///
 
 const fs = require('fs');
-const db = require("../../models");
+const db = require("../models");
 
 /// END DEPENDENCIES ///
 
@@ -34,9 +34,10 @@ const tempArray = [];
 
 /// FUNCTIONS ///
 
-// Takes an element from the array of completed 
+// Takes an element from the array of completed folders, grabs all the relevant data, and adds it to the sql database
 const masterSeeder = tempanim => {
     db.Anim.findOrCreate({ //utilizes findorCreate so that the search will always proceed to the next level. This ensures that if new animations are added to existing units, they are checked
+        // This can be shortened in the future to searching by category, feClass, and gender; then updating the rest of the fields.
         where: {
             tier: tempanim.tier,
             category: tempanim.category,
@@ -48,10 +49,12 @@ const masterSeeder = tempanim => {
             credit: tempanim.credit,
         }
     }).then(function (anim) {
+        // each weapon has the image data per weapon and links to the anim table
         tempanim.weapons.forEach(weapon => {
             db.Weapon.create({ //Utilizes create. Any already-existing weapon will be cause an err.
                 still: weapon.still,
                 gif: weapon.gif,
+                // for searching purposes, feclass is added. weapon type is also added.
             }).then(function (sqlWeapon) {
                 anim[0].addWeapon(sqlWeapon, {
                     through: {
@@ -77,7 +80,6 @@ const completeArray = () => {
     tempArray.forEach(unit => {
         masterSeeder(unit);
     });
-    //masterSeeder(tempArray[0]);
 };
 
 // Searches the filesystem to grab the relevant details for each unit within each category.
@@ -90,7 +92,6 @@ const findAnims = () => {
             const catCeiling = categories.length -1;
             categories.forEach(category => {
                 // temporary limiter. To be expanded / removed w/ further testing
-                // 'Infantry' 'Lords' 'Mages' 'Cavalry and Armors'
                 if (category !== 'global') {
                     fs.readdir(images + category + "/", (err, units) => {
                         console.log("units to count: " + units.length + " Category: " + category);

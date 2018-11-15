@@ -33,8 +33,9 @@ function Anim(anim) {
         var midRow = $("<div>");
 
         //Link and name of animation
-        var animName = $("<div>");
-        animName.addClass("animName text-center pt-1");
+        var midRow = $("<div>");
+        midRow.addClass("text-center pt-1");
+
         let genderI;
         switch (this.gender) {
             case "U":
@@ -48,15 +49,19 @@ function Anim(anim) {
                 break;
         };
 
-        let genderDiv = $("<i>");
-        genderDiv.addClass(genderI);
-        
-        animName.html(` ${this.name}`);
-        animName.attr({
-            "data-folder": this.dlName,
-            "data-url": this.URL
-        });
-        animName.prepend(genderDiv);
+        let genderDiv = $("<i>")
+            .addClass(genderI + " animName")
+            .attr({
+                "data-folder": this.dlName,
+                "data-url": this.URL
+            });
+
+        let nameDiv = $("<span>")
+            .addClass("midName")
+            .html(` ${this.name}`)
+
+        genderDiv.append(nameDiv);
+        midRow.append(genderDiv);
 
         var botRow = $("<div>");
         botRow.addClass("col-12 botRow");
@@ -88,7 +93,6 @@ function Anim(anim) {
         var textSect = $("<div>");
         textSect.addClass("cardbg mx-auto")
 
-        midRow.append(animName)
         botRow.append(icons, authDiv);
 
         textSect.append(midRow, botRow);
@@ -109,25 +113,33 @@ function Anim(anim) {
 function makeAnimRow(anim) {
     console.log(anim);
 
+    // reorders the anims by gender for the selected class.
+    anim.sort(function (a, b) {
+        var x = a.gender;
+        var y = b.gender;
+        if (x < y) { return -1; }
+        if (x > y) { return 1; }
+        return 0;
+    });
+
     var classRow = (anim[0].feClass + "Row").split(' ').join('')
 
-    let parentDiv = $("<div>");
-    parentDiv.addClass(classRow + " my-2");
+    let parentDiv = $("<div>")
+        .addClass(classRow + " row my-2 sectMain text-center")
 
     // Title div. Main function is displaying class name for selected group
-    var headerDiv = $("<div>");
-    headerDiv.html(anim[0].feClass);
-    headerDiv.addClass("col-12 text-center");
+    var headerDiv = $("<div>")
+        .html(anim[0].feClass)
+        .addClass("col-12 text-center sectHead")
+        .attr({ "data-prof": "." + classRow });
 
     // Init subrow that contains all the anim cards
-    var fRow = $("<div>");
-    fRow.addClass("row text-center");
     for (var i = 0; i < anim.length; i++) {
         var tempAnim = new Anim(anim[i]);
-        fRow.append(tempAnim.makeCard());
+        parentDiv.append(tempAnim.makeCard());
     };
 
-    parentDiv.append(headerDiv, fRow);
+    parentDiv.prepend(headerDiv);
 
     //Send compiled data to html
     $("#mainBody").prepend(parentDiv);
@@ -155,14 +167,32 @@ var API = {
 
 //Major listener for values populated by category selection
 $(document).on("click", ".classBtn", function () {
-    console.log("clicked");
-    $("." + this.getAttribute("data-prof").split(' ').join('') + "Row").toggle();
+    const row = "." + this.getAttribute("data-prof").split(' ').join('') + "Row"
+    $(row).toggle();
     if (this.getAttribute("data-filled") === 'false') {
         API.getAnims(this.getAttribute("data-prof")).then(function (animArr) {
             makeAnimRow(animArr);
+
+            const scrollPos = $(row).offset().top
+            $('html, body').animate({
+                scrollTop: (scrollPos - 44)
+            }, 300);
         });
         this.setAttribute("data-filled", "true");
+    } else {
+        //console.log(document.getElementsByClassName(this.getAttribute("data-prof").split(' ').join('') + "Row")[0])
+        if (document.getElementsByClassName(this.getAttribute("data-prof").split(' ').join('') + "Row")[0].style.display !== "none") {
+            const scrollPos = $(row).offset().top
+            $('html, body').animate({
+                scrollTop: (scrollPos - 44)
+            }, 300);
+        };
     };
+});
+
+$(document).on("click", ".sectHead", function () {
+    console.log("clicked");
+    $(this.getAttribute("data-prof")).toggle();
 });
 
 //Animates the images when clicked
@@ -201,11 +231,6 @@ $(document).on("click", ".imgIcon", function () {
         "data-still": $(this).attr("data-still"),
         "src": $(this).attr("data-still")
     });
-});
-
-//When a nav Link is clicked, toggle a section and load data if it hasn't yet been loaded.
-$(document).on("click", ".nav-link", function () {
-    $("#" + this.getAttribute("data-fill")).toggle();
 });
 
 /// END EVENT LISTENERS ///

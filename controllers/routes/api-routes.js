@@ -1,13 +1,11 @@
-var db = require("../models");
+var db = require("../../models");
 const fs = require('fs');
-const util = require('util');
-const path = require('path');
 var archiver = require('archiver');
 
+// Zips the directory and all subdirectories together.
 function zipDirectory(source, out) {
   const archive = archiver('zip', { zlib: { level: 9 } });
   const stream = fs.createWriteStream(out);
-  console.log(source);
 
   return new Promise((resolve, reject) => {
     archive
@@ -16,8 +14,7 @@ function zipDirectory(source, out) {
         console.log(err);
         reject(err)
       })
-      .pipe(stream)
-      ;
+      .pipe(stream);
 
     stream.on('close', () => {
       console.log("success ", archive.pointer());
@@ -50,13 +47,9 @@ module.exports = function (app) {
   });
 
   app.get("/api/unit/:path", function (req, res, next) {
-    console.log(" reqquerypath " + req.query.path);
-    console.log("reqparamspath " + req.params.path);
-
     let promise = zipDirectory("./public/" + req.query.path, "./public/download/" + req.params.path + ".zip");
     promise.then(
       out => {
-        console.log("./public/download/" + req.params.path);
         res.json("./download/" + req.params.path + ".zip")}, 
       err => console.log(err));
   });

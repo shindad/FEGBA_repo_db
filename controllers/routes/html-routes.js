@@ -7,9 +7,8 @@
 var path = require("path");
 
 function homePg(cb) {
-  var navItem = require("../public/js/navitem.js");
-  var animRow = require("../public/js/animRow.js");
-  cb(navItem, animRow);
+  var navItem = require("../../scripts/navitem");
+  cb(navItem);
 };
 
 // Routes
@@ -19,11 +18,10 @@ module.exports = function(app) {
   // Each of the below routes just handles the HTML page that the user gets sent to.
 
   // index route loads view.html
-  homePg(function(navItem, animRow, animClasses) {
+  homePg(function(navItem) {
     app.get("/", function(req, res, next) {
       res.render("index", { 
         navItem: navItem,
-        animRow: animRow
       });
     });
   });
