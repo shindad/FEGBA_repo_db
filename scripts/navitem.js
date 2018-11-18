@@ -50,7 +50,7 @@ navMaker("lord", "Unique", "img/global/lord.gif", "false", "LRDFill", [
     "Eliwood Lord", "Eliwood Knight Lord", "Hector Lord", "Hector Great Lord",
     "Lyn Lord", "Lyn Blade Lord", "Roy", "Bard", "Dancer", "Magic Seal", "Merlinus", "Custom"
 ], "right");
-navMaker("mage", "Mages", "img/global/mage.gif", "false", "MAGFill", [
+navMaker("mage", "Magi", "img/global/mage.gif", "false", "MAGFill", [
     "Pupil", "Mage", "Sage", "Archsage",
     "Priest", "Cleric", "Monk", "Bishop", "Saint",
     "Shaman", "Druid", "Summoner", "Dark Knight", "Necromancer",
