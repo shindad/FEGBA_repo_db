@@ -237,13 +237,13 @@ C25
 11 p- Sword_011.png
 C23
 C04
-2 p- Sword_012.png
-C24
 2 p- Sword_054.png
+C24
 2 p- Sword_055.png
-1 p- Sword_056.png
+2 p- Sword_056.png
+1 p- Sword_057.png
 C01
-3 p- Sword_057.png
+3 p- Sword_058.png
 8 p- Sword_017.png
 5 p- Sword_018.png
 C25
