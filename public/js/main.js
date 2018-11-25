@@ -66,6 +66,12 @@ function Anim(anim) {
         var botRow = $("<div>");
         botRow.addClass("col-12 botRow");
 
+        //icon sort//
+        const order = ["Sword", "Lance", "Axe", "Handaxe", "Bow", "Magic", "Staff", "Refresh", "Monster", "Dragonstone", "Legendary", "Unarmed"];
+        this.weapons.sort(function (a, b) {
+            return order.indexOf(a.AnimWepIm.weapon) < order.indexOf(b.AnimWepIm.weapon) ? -1 : 1;
+        });
+
         //insert weapon icons
         var icons = $("<span>");
         icons.addClass("iconmt");
@@ -111,7 +117,7 @@ function Anim(anim) {
 
 //Initializes the div for holding all the anims and then makes a card for all relevant anims.
 function makeAnimRow(anim) {
-    console.log(anim);
+    //console.log(anim);
 
     // reorders the anims by gender for the selected class.
     anim.sort(function (a, b) {
@@ -191,7 +197,6 @@ $(document).on("click", ".classBtn", function () {
 });
 
 $(document).on("click", ".sectHead", function () {
-    console.log("clicked");
     $(this.getAttribute("data-prof")).toggle();
 });
 
