@@ -18,6 +18,12 @@ function Anim(anim) {
         var colDiv = $("<div>");
         colDiv.addClass("col-xl-4 col-md-6 col-sm-12 my-2");
 
+        //weapon and icon sort//
+        const order = ["Sword", "Lance", "Axe", "Handaxe", "Bow", "Magic", "Staff", "Refresh", "Monster", "Dragonstone", "Legendary", "Unarmed"];
+        this.weapons.sort(function (a, b) {
+            return order.indexOf(a.AnimWepIm.weapon) < order.indexOf(b.AnimWepIm.weapon) ? -1 : 1;
+        });
+
         //All Image data
         var animImg = $("<img>");
         animImg.addClass("gif");
@@ -65,12 +71,6 @@ function Anim(anim) {
 
         var botRow = $("<div>");
         botRow.addClass("col-12 botRow");
-
-        //icon sort//
-        const order = ["Sword", "Lance", "Axe", "Handaxe", "Bow", "Magic", "Staff", "Refresh", "Monster", "Dragonstone", "Legendary", "Unarmed"];
-        this.weapons.sort(function (a, b) {
-            return order.indexOf(a.AnimWepIm.weapon) < order.indexOf(b.AnimWepIm.weapon) ? -1 : 1;
-        });
 
         //insert weapon icons
         var icons = $("<span>");
