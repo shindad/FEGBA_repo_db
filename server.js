@@ -36,7 +36,7 @@ require("./controllers/routes/api-routes.js")(app);
 
 // Sync sequelize models and then start the Express app
 // db.sequelize.sync({ force: true }).then(function () { //add force true for restarting db
-db.sequelize.sync({}).then(function () {
+CXdb.sequelize.sync({}).then(function () {
   app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
 
