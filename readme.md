@@ -29,6 +29,7 @@ Each of the buttons has a dropdown for classes in that category. Each class name
 
 The entire site is mobile friendly. The nav bar switches from text to icons on smaller browsers and anims go from 3-2-1 per line depending on viewport.
 ![Mobile Friendly](https://imgur.com/hqWoI5f.png)
+![Mobile Friendly](https://imgur.com/hqWoI5f.png)
 
 ![populating](https://imgur.com/mnyoImr.gif)
 
