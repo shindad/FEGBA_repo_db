@@ -1,0 +1,76 @@
+#######################################################
+#
+#When importing to FEditorAdv delete # and after each line.
+#######################################################
+/// - Start Animation
+C00                               #NOP
+C00                               #NOP
+C00                               #NOP
+C00                               #NOP
+C00                               #NOP
+C00                               #NOP
+C00                               #NOP
+C00                               #NOP
+C00                               #NOP
+C40                               #Scrolls the screen from being centered on the attacker to being centered on the defender
+C00                               #NOP
+C00                               #NOP
+C00                               #NOP
+C00                               #NOP
+C00                               #NOP
+C00                               #NOP
+C061029                               #Background brightness and opacity XX
+O  p- Spell_o_000.png
+B  p- Spell_b_001.png
+4
+CBE48                               #Sound 190 SE:Water tile coming up
+C091029                               #Background brightness and opacity XX
+O  p- Spell_o_000.png
+B  p- Spell_b_002.png
+4
+O  p- Spell_o_000.png
+B  p- Spell_b_003.png
+4
+C0B1029                               #Background brightness and opacity XX
+O  p- Spell_o_000.png
+B  p- Spell_b_004.png
+4
+C0D1029                               #Background brightness and opacity XX
+CBE48                               #Sound 190 SE:Water tile coming up
+O  p- Spell_o_000.png
+B  p- Spell_b_005.png
+4
+O  p- Spell_o_000.png
+B  p- Spell_b_006.png
+4
+O  p- Spell_o_000.png
+B  p- Spell_b_007.png
+4
+C02E248                               #Sound 738 SE:Eclipse striking (shorter)
+O  p- Spell_o_000.png
+B  p- Spell_b_008.png
+4
+O  p- Spell_o_000.png
+B  p- Spell_b_009.png
+4
+C1A                               #Required before 1F or miss termination branch
+C1F                               #Play a hit tone (requires 1A just before)
+~                               #miss terminator
+C51                               #Show brief white flash animation
+O  p- Spell_o_000.png
+B  p- Spell_b_010.png
+4
+C091029                               #Background brightness and opacity XX
+O  p- Spell_o_000.png
+B  p- Spell_b_010.png
+4
+C061029                               #Background brightness and opacity XX
+O  p- Spell_o_000.png
+B  p- Spell_b_011.png
+4
+C100029                               #Background brightness and opacity XX
+O  p- Spell_o_000.png
+B  p- Spell_b_012.png
+6
+C012A                               #Background display during battle  YY
+/// - End of animation

@@ -65,7 +65,7 @@ navMaker("creature", "Creatures", "img/global/rev.gif", "false", "MONFill", [
 //     "Bard", "Dancer", "Magic Seal", "Merlinus"
 // ]);
 navMaker("spell", "Spells", "img/global/tome.gif", "false", "SPLFill", [
-    "Aircalibur", "Aqua", "Aqua Edge", "Arcthunder", "Artemis", "Aura", "Crimson Eye", "Donbettyr", "Bolganone"
+    "Water", "Earth", "Fire", "Air", "Thunder", "Dark", "Light"
 ], "right");
 
 module.exports = navItem;

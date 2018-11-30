@@ -26,7 +26,11 @@ function Anim(anim) {
 
         //All Image data
         var animImg = $("<img>");
-        animImg.addClass("gif");
+        if (this.category === 'SPL') {
+            animImg.addClass("spellGif");
+        } else {
+            animImg.addClass("gif");
+        }
         animImg.attr({
             id: (this.feClass + this.id).split(' ').join(''), //needed for targeting with img icons
             src: this.weapons[0].still,
@@ -74,19 +78,21 @@ function Anim(anim) {
 
         //insert weapon icons
         var icons = $("<span>");
-        icons.addClass("iconmt");
-        for (var i = 0; i < this.weapons.length; i++) {
-            var icon = $("<img>");
-            icon.attr({
-                src: "img/global/" + this.weapons[i].AnimWepIm.weapon + ".png",
-                "data-animate": this.weapons[i].gif,
-                "data-still": this.weapons[i].still,
-                "data-target": this.feClass.split(' ').join('') + this.id
-            });
-            icon.addClass("imgIcon mt-0");
-            icons.append(icon);
+        if (this.category !== "SPL") {
+            icons.addClass("iconmt");
+            for (var i = 0; i < this.weapons.length; i++) {
+                var icon = $("<img>");
+                icon.attr({
+                    src: "img/global/" + this.weapons[i].AnimWepIm.weapon + ".png",
+                    "data-animate": this.weapons[i].gif,
+                    "data-still": this.weapons[i].still,
+                    "data-target": this.feClass.split(' ').join('') + this.id
+                });
+                icon.addClass("imgIcon mt-0");
+                icons.append(icon);
+            };
+            icons.append("<br>");
         };
-        icons.append("<br>");
 
         //Author
         var authDiv = $("<span>");
@@ -202,6 +208,26 @@ $(document).on("click", ".sectHead", function () {
 
 //Animates the images when clicked
 $(".container").on("click", ".gif", function () {
+    var state = $(this).attr("data-state");
+
+    //Check if gif is set to PNG. If set, run this. Sets to GIF.
+    if (state === "still") {
+        $(this).attr({
+            "src": $(this).attr("data-animate"),
+            "data-state": "animate"
+        });
+
+        //If the gif is currently looping, run this. Sets to PNG.
+    } else {
+        $(this).attr({
+            "src": $(this).attr("data-still"),
+            "data-state": "still"
+        });
+    };
+});
+
+//Animates the images when clicked
+$(".container").on("click", ".spellGif", function () {
     var state = $(this).attr("data-state");
 
     //Check if gif is set to PNG. If set, run this. Sets to GIF.

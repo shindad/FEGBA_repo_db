@@ -1,0 +1,72 @@
+/// - Start Animation
+C00
+C00
+C00
+C00
+C00
+C00
+C00
+C00
+C00
+C40
+C00
+C00
+C00
+C00
+C00
+C00
+C061029
+O  p- Spell_o_000.png
+B  p- Spell_b_001.png
+4
+CBE48
+C091029
+O  p- Spell_o_000.png
+B  p- Spell_b_002.png
+4
+O  p- Spell_o_000.png
+B  p- Spell_b_003.png
+4
+C0B1029
+O  p- Spell_o_000.png
+B  p- Spell_b_004.png
+4
+C0D1029
+CBE48
+O  p- Spell_o_000.png
+B  p- Spell_b_005.png
+4
+O  p- Spell_o_000.png
+B  p- Spell_b_006.png
+4
+O  p- Spell_o_000.png
+B  p- Spell_b_007.png
+4
+C02E248
+O  p- Spell_o_000.png
+B  p- Spell_b_008.png
+4
+O  p- Spell_o_000.png
+B  p- Spell_b_009.png
+4
+C1A
+C1F
+~
+C51
+O  p- Spell_o_000.png
+B  p- Spell_b_010.png
+4
+C091029
+O  p- Spell_o_000.png
+B  p- Spell_b_010.png
+4
+C061029
+O  p- Spell_o_000.png
+B  p- Spell_b_011.png
+4
+C100029
+O  p- Spell_o_000.png
+B  p- Spell_b_012.png
+6
+C012A
+/// - End of animation

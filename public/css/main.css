@@ -80,6 +80,16 @@ a {
     overflow: hidden;
 }
 
+.spellGif {
+    box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.7);
+    width: 20rem;
+    height: 10rem;
+    object-fit: fill;
+    object-position: 0 0;
+    overflow: hidden;
+    border-radius: 7px 7px 0 0;
+}
+
 .sectHead {
     background-color: darkslateblue;
     color: gold;

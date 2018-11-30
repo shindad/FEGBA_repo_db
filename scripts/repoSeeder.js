@@ -78,6 +78,7 @@ const masterSeeder = tempanim => {
 // Function to be called at the completion of findAnims. Handles completed array.
 const completeArray = () => {
     tempArray.forEach(unit => {
+        console.log(unit);
         masterSeeder(unit);
     });
 };
@@ -89,10 +90,42 @@ const findAnims = () => {
             console.log(err);
         } else {
             let catCounter = 0;
-            const catCeiling = categories.length -1;
+            const catCeiling = categories.length - 1;
             categories.forEach(category => {
-                // temporary limiter. To be expanded / removed w/ further testing
-                if (category !== 'global') {
+
+                //Special Spell Route
+                if (category === '7. Spells') {
+                    fs.readdir(images + category + "/", (err, spells) => {
+                        console.log("Spells to count: " + spells.length);
+                        let spellCounter = 0;
+
+                        spells.forEach(spell => {
+                            const tempInfoArray = spell.match(/[^[\[\{\(\]\}\)]+/g)
+                            let anim = new Anim("Spell", "SPL", tempInfoArray[0], tempInfoArray[2], tempInfoArray[1], tempInfoArray[3], 'img/' + category + "/" + spell, spell, []);
+                            anim.weapons.push(
+                                {
+                                    type: "Spell",
+                                    fullName: spell,
+                                    still: 'img/' + category + "/" + spell + "/" + "Spell_b_001.png",
+                                    gif: 'img/' + category + "/" + spell + "/" + "Spell.gif"
+                                });
+
+                            tempArray.push(anim);
+                            spellCounter++;
+                            if (spellCounter === spells.length) {
+                                catCounter++;
+                                console.log("Category: " + category + " spellCount = " + spellCounter + "/" + spells.length + ". Categories = " + catCounter + "/" + catCeiling);
+                                if (catCounter === catCeiling) {
+                                    console.log('here')
+                                    completeArray();
+                                    return;
+                                };
+                            };
+                        });
+                    });
+
+                    // temporary limiter. To be expanded / removed w/ further testing
+                } else if (category !== 'global') {
                     fs.readdir(images + category + "/", (err, units) => {
                         console.log("units to count: " + units.length + " Category: " + category);
                         let unitCounter = 0;
