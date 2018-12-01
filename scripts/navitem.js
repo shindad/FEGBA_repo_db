@@ -40,7 +40,7 @@ navMaker("knight", "Armor", "img/global/knight.gif", "false", "ARMFill", [
     "Knight", "General", "Marshall"
 ]);
 navMaker("cavalry", "Cavalry", "img/global/cav.gif", "false", "CAVFill", [
-    "Cavalier", "Paladin", "Great Knight", "Master Knight"
+    "Cavalier", "Paladin", "Great Knight", "Master Knight", "Saurian Rider"
 ]);
 navMaker("flier", "Fliers", "img/global/peg.gif", "false", "FLYFill", [
     "Pegasus Knight", "Falcoknight", "Griffon Knight", "Wyvern Rider", "Wyvern Lord", "Wyvern Knight"
