@@ -1,6 +1,12 @@
-var db = require("../../models");
+/// DEPENDENCIES ///
+
+const db = require("../../models");
 const fs = require('fs');
-var archiver = require('archiver');
+const archiver = require('archiver');
+
+/// END DEPENDENCIES ///
+
+/// FUNCTIONS ///
 
 // Zips the directory and all subdirectories together.
 function zipDirectory(source, out) {
@@ -24,9 +30,15 @@ function zipDirectory(source, out) {
   });
 };
 
+/// END FUNCTIONS ///
+
+/// ROUTES ///
+
 module.exports = function (app) {
+
+  // Gathers animations based on the selected class category
   app.get("/api/anims/:class", function (req, res, next) {
-    console.log(req.params);
+    //console.log(req.params);
     // Search for all anims of the class selected
     db.Anim.findAll({
       where: {
@@ -41,64 +53,41 @@ module.exports = function (app) {
         }
       }]
     }).then(function (response) {
-      console.log(response);
+      // console.log(response);
       res.json(response);
     });
   });
 
+  // Search API route takes search term as an object and searches the database using term info
+  app.get("/api/search/", function (req, res, next) {
+    Object.keys(req.query).forEach((key) => (req.query[key] == '' || req.query[key] == 'T') && delete req.query[key]);
+    //console.log(req.query)
+
+    db.Anim.findAll({
+      where: req.query,
+      //include all weapons through the linking table
+      //along with attributes still and gif from the linking table
+      include: [{
+        model: db.Weapon,
+        through: {
+          attributes: ['weapon']
+        }
+      }]
+    }).then(function (response) {
+      //console.log(response);
+      res.json(response);
+    });
+  });
+
+  // Download path zips the item selected and outputs it
   app.get("/api/unit/:path", function (req, res, next) {
     let promise = zipDirectory("./public/" + req.query.path, "./public/download/" + req.params.path + ".zip");
     promise.then(
       out => {
-        res.json("./download/" + req.params.path + ".zip")}, 
+        res.json("./download/" + req.params.path + ".zip")
+      },
       err => console.log(err));
   });
-
-  // app.get("/api/classes/:category", function (req, res) {
-  //   db.Anim.findAll({
-  //     where: {
-  //       category: req.params.title
-  //     }
-  //   }).then(function (response) {
-  //     console.log(response);
-  //     res.json(response);
-  //   });
-  // });
 };
 
-// Add back in if posting functionality is desired
-//   app.post("/api/anims", function (req, res) {
-//     db.Anims.create(req.body).then(function (anims) {
-//       res.json(anims);
-//     });
-//   });
-
-//   app.post("/api/images", function () {
-//     db.Images.create(req.body).then(function (images) {
-//       res.json(images);
-//     });
-//   });
-// };
-
-/// EXAMPLES ///
-
-  // app.get("/api/authors/:id", function(req, res) {
-  //   // 2; Add a join to include all of the Author's Posts here
-  //   db.Author.findOne({
-  //     where: {
-  //       id: req.params.id
-  //     }
-  //   }).then(function(dbAuthor) {
-  //     res.json(dbAuthor);
-  //   });
-  // });
-
-  // app.delete("/api/authors/:id", function(req, res) {
-  //   db.Author.destroy({
-  //     where: {
-  //       id: req.params.id
-  //     }
-  //   }).then(function(dbAuthor) {
-  //     res.json(dbAuthor);
-  //   });
-  // });
+/// END ROUTES ///

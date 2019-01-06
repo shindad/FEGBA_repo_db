@@ -80,6 +80,10 @@ a {
     overflow: hidden;
 }
 
+.gif:hover {
+    cursor: pointer;
+}
+
 .spellGif {
     box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.7);
     width: 20rem;
@@ -90,7 +94,17 @@ a {
     border-radius: 7px 7px 0 0;
 }
 
+.spellGif:hover {
+    cursor: pointer;
+}
+
 .sectHead {
+    background-color: darkslateblue;
+    color: gold;
+    border-radius: 5px 5px 0 0;
+}
+
+.sectSubHead {
     background-color: darkslateblue;
     color: gold;
     border-radius: 5px 5px 0 0;
@@ -98,7 +112,15 @@ a {
 
 .sectMain {
     background-color: gray;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.7);
     border-radius: 5px;
+}
+
+.searchBody {
+    background-color: darkgray;
+    margin-bottom: .6em;
+    padding-bottom: .3em;
+    border-radius: 0 0 5px 5px;
 }
 
 .animName {
@@ -129,6 +151,14 @@ a {
     max-height: 16px;
     width: auto;
     margin: -5px 2px 0px;
+}
+
+.imgIcon:hover {
+    cursor: pointer;
+}
+
+.noResImg {
+    max-height: 160px;
 }
 
 .authorText {

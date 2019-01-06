@@ -4,10 +4,10 @@
 
 // Dependencies
 // =============================================================
-var path = require("path");
+const path = require("path");
 
 function homePg(cb) {
-  var navItem = require("../../scripts/navitem");
+  const navItem = require("../../scripts/navitem");
   cb(navItem);
 };
 

@@ -3,29 +3,26 @@
 // Creates an object of the class animation to be placed on the page
 // weapons needs to be sent in as an array
 function Anim(anim) {
-    this.category = anim.category; //section on the page to append to
+    this.category = anim.category; // section on the page to append to
     this.feClass = anim.feClass; // name of the class
     this.URL = anim.URL; // for download
     this.gender = anim.gender; // sorting option
-    this.name = anim.name; // 
-    this.dlName = anim.dlName; //dlname
+    this.name = anim.name; // identifier
+    this.dlName = anim.dlName; // dlname
     this.credit = anim.credit; // creators
-    this.id = anim.id;
-    //array containing all weapons, stills, and gifs
-    this.weapons = anim.Weapons;
+    this.id = anim.id; // unique id
+    this.weapons = anim.Weapons; //array containing all weapons, stills, and gifs
 
     this.makeCard = function () {
-        var colDiv = $("<div>");
-        colDiv.addClass("col-xl-4 col-md-6 col-sm-12 my-2");
 
-        //weapon and icon sort//
+        // weapon and icon sort
         const order = ["Sword", "Lance", "Axe", "Handaxe", "Bow", "Magic", "Staff", "Refresh", "Monster", "Dragonstone", "Legendary", "Unarmed"];
         this.weapons.sort(function (a, b) {
             return order.indexOf(a.AnimWepIm.weapon) < order.indexOf(b.AnimWepIm.weapon) ? -1 : 1;
         });
 
         //All Image data
-        var animImg = $("<img>");
+        const animImg = $("<img>");
         if (this.category === 'SPL') {
             animImg.addClass("spellGif");
         } else {
@@ -40,12 +37,6 @@ function Anim(anim) {
             "data-still": this.weapons[0].still
         });
 
-        var midRow = $("<div>");
-
-        //Link and name of animation
-        var midRow = $("<div>");
-        midRow.addClass("text-center pt-1");
-
         let genderI;
         switch (this.gender) {
             case "U":
@@ -59,60 +50,66 @@ function Anim(anim) {
                 break;
         };
 
-        let genderDiv = $("<i>")
+        // Organizing Middle Row data
+        const nameDiv = $("<span>")
+            .addClass("midName")
+            .html(` ${this.name}`);
+
+        const genderDiv = $("<i>")
             .addClass(genderI + " animName")
             .attr({
                 "data-folder": this.dlName,
                 "data-url": this.URL
-            });
+            })
+            .append(nameDiv);
 
-        let nameDiv = $("<span>")
-            .addClass("midName")
-            .html(` ${this.name}`)
+        //Link and name of animation
+        const midRow = $("<div>")
+            .addClass("text-center pt-1")
+            .append(genderDiv);
 
-        genderDiv.append(nameDiv);
-        midRow.append(genderDiv);
-
-        var botRow = $("<div>");
-        botRow.addClass("col-12 botRow");
-
-        //insert weapon icons
-        var icons = $("<span>");
+        // insert weapon icons
+        const icons = $("<span>");
         if (this.category !== "SPL") {
             icons.addClass("iconmt");
-            for (var i = 0; i < this.weapons.length; i++) {
-                var icon = $("<img>");
-                icon.attr({
-                    src: "img/global/" + this.weapons[i].AnimWepIm.weapon + ".png",
-                    "data-animate": this.weapons[i].gif,
-                    "data-still": this.weapons[i].still,
-                    "data-target": this.feClass.split(' ').join('') + this.id
-                });
-                icon.addClass("imgIcon mt-0");
+            for (let i = 0; i < this.weapons.length; i++) {
+                const icon = $("<img>")
+                    .attr({
+                        src: "img/global/" + this.weapons[i].AnimWepIm.weapon + ".png",
+                        "data-animate": this.weapons[i].gif,
+                        "data-still": this.weapons[i].still,
+                        "data-target": this.feClass.split(' ').join('') + this.id
+                    })
+                    .addClass("imgIcon mt-0");
                 icons.append(icon);
             };
             icons.append("<br>");
         };
 
         //Author
-        var authDiv = $("<span>");
-        authDiv.html(this.credit);
-        authDiv.addClass("authorText text-center");
+        const authDiv = $("<span>")
+            .html(this.credit)
+            .addClass("authorText text-center");
 
         // DIV ALIGNMENT //
 
-        //Holds mid and botrow for uniform bg.
-        var textSect = $("<div>");
-        textSect.addClass("cardbg mx-auto")
+        const botRow = $("<div>")
+            .addClass("col-12 botRow")
+            .append(icons, authDiv);
 
-        botRow.append(icons, authDiv);
-
-        textSect.append(midRow, botRow);
+        // Holds mid and botrow for uniform bg.
+        const textSect = $("<div>")
+            .addClass("cardbg mx-auto")
+            .append(midRow, botRow);
 
         // All together
-        const cardParent = $("<div>");
-        cardParent.append(animImg, textSect);
-        colDiv.append(cardParent);
+        const cardParent = $("<div>")
+            .append(animImg, textSect);
+
+        const colDiv = $("<div>")
+            .addClass("col-xl-4 col-md-6 col-sm-12 my-2")
+            .append(cardParent);
+
         return colDiv;
     };
 };
@@ -127,8 +124,8 @@ function makeAnimRow(anim) {
 
     // reorders the anims by gender for the selected class.
     anim.sort(function (a, b) {
-        var x = a.gender;
-        var y = b.gender;
+        const x = a.gender;
+        const y = b.gender;
         if (x < y) { return -1; }
         if (x > y) { return 1; }
         if (a.name < b.name) { return -1; }
@@ -136,20 +133,20 @@ function makeAnimRow(anim) {
         return 0;
     });
 
-    var classRow = (anim[0].feClass + "Row").split(' ').join('')
+    const classRow = (anim[0].feClass + "Row").split(' ').join('')
 
-    let parentDiv = $("<div>")
+    const parentDiv = $("<div>")
         .addClass(classRow + " row my-2 sectMain text-center")
 
     // Title div. Main function is displaying class name for selected group
-    var headerDiv = $("<div>")
+    const headerDiv = $("<div>")
         .html(anim[0].feClass)
         .addClass("col-12 text-center sectHead")
         .attr({ "data-prof": "." + classRow });
 
     // Init subrow that contains all the anim cards
-    for (var i = 0; i < anim.length; i++) {
-        var tempAnim = new Anim(anim[i]);
+    for (let i = 0; i < anim.length; i++) {
+        let tempAnim = new Anim(anim[i]);
         parentDiv.append(tempAnim.makeCard());
     };
 
@@ -159,8 +156,61 @@ function makeAnimRow(anim) {
     $("#mainBody").prepend(parentDiv);
 };
 
-//API Routing calls, can be expanded if future functionality desired.
-var API = {
+function makeAnimSearchRow(anim, searchName, searchCredit) {
+    //console.log(anim);
+
+    // reorders the anims by gender for the selected class.
+    anim.sort(function (a, b) {
+        const x = a.category;
+        const y = b.category;
+        if (x < y) { return -1; }
+        if (x > y) { return 1; }
+        if (a.gender < b.gender) { return -1; }
+        if (a.gender > b.gender) { return 1; }
+        return 0;
+    });
+
+    const classRow = searchName.split(' ').join('') + searchCredit.split(' ').join('') + "Row";
+
+    const parentDiv = $("<div>")
+        .addClass(classRow + " searchRow row my-2 sectMain text-center");
+
+    // Title div. Main function is displaying class name for selected group
+    const headerDiv = $("<div>")
+        .html(searchName + " " + searchCredit)
+        .addClass("col-12 text-center sectHead")
+        .attr({ "data-prof": "." + classRow });
+
+    // Init subrow that contains all the anim cards
+    for (let i = 0; i < anim.length; i++) {
+        const tempAnim = new Anim(anim[i]);
+        parentDiv.append(tempAnim.makeCard());
+    };
+
+    if (!anim.length) {
+        const bodyDiv = $("<div>")
+            .addClass("col-12 text-center my-1")
+            .html("No results found. Please revise your search.");
+
+        const noResultsImg = ["img/global/elicry.jpg", "img/global/sharcry.png", "img/global/faeangry.jpg", "img/global/nergal.png"];
+        const src = noResultsImg[Math.floor(Math.random() * noResultsImg.length)]
+        const bodyImg = $("<img>")
+            .addClass("mx-auto mb-3 noResImg")
+            .attr({
+                src: src
+            });
+
+        parentDiv.append(bodyDiv, bodyImg);
+    }
+
+    parentDiv.prepend(headerDiv);
+
+    //Send compiled data to html
+    $("#mainBody").prepend(parentDiv);
+};
+
+// API Routing calls, can be expanded if future functionality desired.
+const API = {
     getAnims: function (feClass) {
         return $.ajax({
             url: "/api/anims/" + feClass,
@@ -172,6 +222,15 @@ var API = {
             path: path,
             unit: unit
         })
+    },
+    searchAnims: function (name, credit, category, tier, gender) {
+        return $.get("/api/search/", {
+            name: name,
+            credit: credit,
+            category: category,
+            tier: tier,
+            gender: gender
+        });
     }
 };
 
@@ -204,13 +263,37 @@ $(document).on("click", ".classBtn", function () {
     };
 });
 
+// Search Listener
+$(document).on("click", "#formSubmit", function () {
+    event.preventDefault();
+    document.getElementById("formSubmit").disabled = true;
+
+    const name = { like: '%' + $("#formName").val().trim() + '%' };
+    const credit = { like: '%' + $("#formAuthor").val().trim() + '%' };
+    const category = $("#formCategory").val().trim();
+    const tier = 'T' + $("#formTier").val().trim();
+    const gender = $("#formGender").val().trim();
+
+    const row = ".searchRow";
+    API.searchAnims(name, credit, category, tier, gender).then(function (animArr) {
+        //console.log(animArr);
+        makeAnimSearchRow(animArr, $("#formName").val().trim(), $("#formAuthor").val().trim());
+
+        const scrollPos = $(row).offset().top
+        $('html, body').animate({
+            scrollTop: (scrollPos - 44)
+        }, 300);
+    });
+});
+
+// Hides the section on click
 $(document).on("click", ".sectHead", function () {
     $(this.getAttribute("data-prof")).toggle();
 });
 
 //Animates the images when clicked
 $(".container").on("click", ".gif", function () {
-    var state = $(this).attr("data-state");
+    const state = $(this).attr("data-state");
 
     //Check if gif is set to PNG. If set, run this. Sets to GIF.
     if (state === "still") {
@@ -228,9 +311,9 @@ $(".container").on("click", ".gif", function () {
     };
 });
 
-//Animates the images when clicked
+// Animates the images when clicked
 $(".container").on("click", ".spellGif", function () {
-    var state = $(this).attr("data-state");
+    const state = $(this).attr("data-state");
 
     //Check if gif is set to PNG. If set, run this. Sets to GIF.
     if (state === "still") {
@@ -248,6 +331,7 @@ $(".container").on("click", ".spellGif", function () {
     };
 });
 
+// Downloads the single anim on click
 $(".container").on("click", ".animName", function () {
     const folder = $(this).attr("data-folder");
     const path = $(this).attr("data-url");
@@ -258,12 +342,36 @@ $(".container").on("click", ".animName", function () {
 
 // Changes the weapon to the alternate type when clicking on the weapon
 $(document).on("click", ".imgIcon", function () {
-    var target = $(this).attr("data-target");
+    const target = $(this).attr("data-target");
     $("#" + target).attr({
         "data-animate": $(this).attr("data-animate"),
         "data-still": $(this).attr("data-still"),
         "src": $(this).attr("data-still")
     });
+});
+
+// Listener for one of the two required input fields for the search bar
+document.getElementById("formName").addEventListener("keyup", function () {
+    //console.log(document.getElementById("formName").value);
+    if (document.getElementById("formName").value.length > 2) {
+        $("#formSubmit").removeAttr('disabled');
+    } else if (document.getElementById("formName").value.length < 3) {
+        if (document.getElementById("formAuthor").value.length < 2) {
+            document.getElementById("formSubmit").disabled = true;
+        };
+    };
+});
+
+// Listener for one of the two required input fields for the search bar
+document.getElementById("formAuthor").addEventListener("keyup", function () {
+    //console.log(document.getElementById("formAuthor").value);
+    if (document.getElementById("formAuthor").value.length > 1) {
+        $("#formSubmit").removeAttr('disabled');
+    } else if (document.getElementById("formAuthor").value.length < 2) {
+        if (document.getElementById("formName").value.length < 3) {
+            document.getElementById("formSubmit").disabled = true;
+        };
+    };
 });
 
 /// END EVENT LISTENERS ///

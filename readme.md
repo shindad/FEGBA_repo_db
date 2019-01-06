@@ -9,15 +9,21 @@ It utilizes:
 + HTML, CSS, Javascript
 
 # Table of Contents
-- [Project Overview](#Project%20Overview)
-  * [Getting Started](#Getting%20Started)
-  * [Classes](#Classes)
-  * [Anims](#Anims)
-    + [Main Image](#Main%20Image)
-	+ [Identifier](#Identifier)
-	+ [Weapon Row](#Weapon%20Row)
-	+ [Credit](#Credit)
-  * [ToDo](#ToDo)
+- [Emblem Anims](#emblem-anims)
+- [Table of Contents](#table-of-contents)
+  - [Project Overview](#project-overview)
+    - [Getting Started](#getting-started)
+    - [Classes](#classes)
+    - [Anims](#anims)
+      - [Main Image](#main-image)
+      - [Identifier](#identifier)
+      - [Weapon Row](#weapon-row)
+      - [Credit](#credit)
+    - [Searching](#searching)
+      - [Search Text Submission](#search-text-submission)
+      - [Search Filters](#search-filters)
+      - [No Results](#no-results)
+  - [ToDo](#todo)
 
 ## Project Overview
 ![Landing page](https://imgur.com/nduuiBt.png)
@@ -63,8 +69,33 @@ Clicking on a weapon icon results in the image changing weapons and reverting to
 The credit row contains all authors that have worked on any weapon or part of the design that the Anim uses.
 More granular credit can be seen in the downloaded files.
 
-### ToDo
+### Searching
+The search bar is located under the "Home" section. 
+![Search Bar](https://i.imgur.com/CghrvZN.png)
+Given at least an author or name input, and optional filters by category, tier, and gender, the database will be searched through and animations produced.
+
+#### Search Text Submission
+Both name and author allow for partial name searches. A search for authors with the name "Yeti" will pull up all results despite it not being the full name of the any authors.
+![Basic Results](https://i.imgur.com/HIKjxzC.png)
+
+#### Search Filters
+By adding filters, one can narrow results even further.
+![Filtered Search](https://i.imgur.com/piWfmrG.png)
+![Filtered Results](https://i.imgur.com/GEzba2O.png)
+
+One can also search by both name and author to be even more precise.
+![Fully Filtered Search](https://i.imgur.com/aNLJUsY.png)
+![Fully Filtered Res](https://i.imgur.com/1puJuwJ.png)
+
+#### No Results
+In the case of search terms without results, a random image out of several will display with a message.
+![Imgur](https://i.imgur.com/EsIA4MV.png)
+
+## ToDo
 + **Convert to ES6/React**
-+ Add Search Bar
++ ~~Add Search Bar~~ *done!*
+  + Add pseudonym/common misspelling corrections
+  + Autofill
 + Add Newsfeed
-+ Add Spells
++ ~~Add Spells~~ *done!*
++ Potentially expand functionality to include other graphics such as map sprites

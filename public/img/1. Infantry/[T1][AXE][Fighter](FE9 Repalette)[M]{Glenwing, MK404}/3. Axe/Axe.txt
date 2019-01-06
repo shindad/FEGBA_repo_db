@@ -1,7 +1,7 @@
 #######################################################
+#01 lorm_sp1 Lord Lance
 #
-#
-#When importing to FEEditorAdv delete # and after each line.
+#When importing to FEditorAdv delete # and after each line.
 #######################################################
 /// - Mode 1                            #Melee Animation
 C03                                     #Start attack animation; should be followed by 0x07
@@ -18,11 +18,11 @@ C07                                     #Start attack animation; should be prece
 3 p- Axe_007.png
 10 p- Axe_006.png
 1 p- Axe_009.png
-C42                                     #Refresh long axe swinging SFE
+C42                                     #Play long axe swinging SFE
 2 p- Axe_009.png
-C04                                     #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C04                                     #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
 C1A                                     #Normal hit
-C1F                                     #Refresh hit SFE (sounds like Eliwood with sword's hit)
+C1F                                     #Play hit SFE (sounds like Eliwood with sword's hit)
 2 p- Axe_010.png
 3 p- Axe_011.png
 C01                                     #NOP
@@ -33,7 +33,7 @@ C01                                     #NOP
 3 p- Axe_016.png
 3 p- Axe_017.png
 1 p- Axe_000.png
-C1B                                     #Refresh quick "heavy step" SFE
+C1B                                     #Play quick "heavy step" SFE
 2 p- Axe_000.png
 3 p- Axe_018.png
 8 p- Axe_019.png
@@ -55,13 +55,13 @@ C07                                     #Start attack animation; should be prece
 3 p- Axe_007.png
 3 p- Axe_008.png
 1 p- Axe_020.png
-C38                                     #Refresh heavy spear spinning SFE
+C38                                     #Play heavy spear spinning SFE
 2 p- Axe_020.png
 2 p- Axe_021.png
 3 p- Axe_022.png
 2 p- Axe_023.png
 1 p- Axe_020.png
-C38                                     #Refresh heavy spear spinning SFE
+C38                                     #Play heavy spear spinning SFE
 2 p- Axe_020.png
 2 p- Axe_021.png
 3 p- Axe_022.png
@@ -69,11 +69,11 @@ C38                                     #Refresh heavy spear spinning SFE
 3 p- Axe_007.png
 10 p- Axe_006.png
 1 p- Axe_009.png
-C42                                     #Refresh long axe swinging SFE
+C42                                     #Play long axe swinging SFE
 2 p- Axe_009.png
 1 p- Axe_024.png
 C51                                     #Show brief white flash animation
-C1F                                     #Refresh hit SFE (sounds like Eliwood with sword's hit)
+C1F                                     #Play hit SFE (sounds like Eliwood with sword's hit)
 C15                                     #Slight vibration of screen
 2 p- Axe_024.png
 4 p- Axe_025.png
@@ -83,15 +83,15 @@ C15                                     #Slight vibration of screen
 4 p- Axe_029.png
 3 p- Axe_030.png
 1 p- Axe_031.png
-C42                                     #Refresh long axe swinging SFE
+C42                                     #Play long axe swinging SFE
 1 p- Axe_031.png
 1 p- Axe_032.png
 1 p- Axe_033.png
-C1B                                     #Refresh quick "heavy step" SFE
+C1B                                     #Play quick "heavy step" SFE
 C15                                     #Slight vibration of screen
-C04                                     #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C04                                     #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
 C08                                     #Critical hit
-C1F                                     #Refresh hit SFE (sounds like Eliwood with sword's hit)
+C1F                                     #Play hit SFE (sounds like Eliwood with sword's hit)
 1 p- Axe_033.png
 1 p- Axe_034.png
 4 p- Axe_035.png
@@ -107,7 +107,7 @@ C01                                     #NOP
 3 p- Axe_016.png
 3 p- Axe_017.png
 1 p- Axe_000.png
-C1B                                     #Refresh quick "heavy step" SFE
+C1B                                     #Play quick "heavy step" SFE
 2 p- Axe_000.png
 3 p- Axe_018.png
 8 p- Axe_019.png
@@ -131,11 +131,11 @@ C07                                     #Start attack animation; should be prece
 3 p- Axe_007.png
 10 p- Axe_006.png
 1 p- Axe_009.png
-C42                                     #Refresh long axe swinging SFE
+C42                                     #Play long axe swinging SFE
 2 p- Axe_009.png
-C04                                     #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C04                                     #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
 C1A                                     #Normal hit
-C1F                                     #Refresh hit SFE (sounds like Eliwood with sword's hit)
+C1F                                     #Play hit SFE (sounds like Eliwood with sword's hit)
 2 p- Axe_042.png
 3 p- Axe_043.png
 C01                                     #NOP
@@ -146,7 +146,7 @@ C01                                     #NOP
 3 p- Axe_016.png
 3 p- Axe_017.png
 1 p- Axe_000.png
-C1B                                     #Refresh quick "heavy step" SFE
+C1B                                     #Play quick "heavy step" SFE
 2 p- Axe_000.png
 3 p- Axe_018.png
 8 p- Axe_019.png
@@ -168,13 +168,13 @@ C07                                     #Start attack animation; should be prece
 3 p- Axe_007.png
 3 p- Axe_008.png
 1 p- Axe_020.png
-C38                                     #Refresh heavy spear spinning SFE
+C38                                     #Play heavy spear spinning SFE
 2 p- Axe_020.png
 2 p- Axe_021.png
 3 p- Axe_022.png
 2 p- Axe_023.png
 1 p- Axe_020.png
-C38                                     #Refresh heavy spear spinning SFE
+C38                                     #Play heavy spear spinning SFE
 2 p- Axe_020.png
 2 p- Axe_021.png
 3 p- Axe_022.png
@@ -182,11 +182,11 @@ C38                                     #Refresh heavy spear spinning SFE
 3 p- Axe_007.png
 10 p- Axe_006.png
 1 p- Axe_009.png
-C42                                     #Refresh long axe swinging SFE
+C42                                     #Play long axe swinging SFE
 2 p- Axe_009.png
 1 p- Axe_024.png
 C51                                     #Show brief white flash animation
-C1F                                     #Refresh hit SFE (sounds like Eliwood with sword's hit)
+C1F                                     #Play hit SFE (sounds like Eliwood with sword's hit)
 C15                                     #Slight vibration of screen
 2 p- Axe_024.png
 4 p- Axe_025.png
@@ -196,15 +196,15 @@ C15                                     #Slight vibration of screen
 4 p- Axe_029.png
 3 p- Axe_030.png
 1 p- Axe_031.png
-C42                                     #Refresh long axe swinging SFE
+C42                                     #Play long axe swinging SFE
 1 p- Axe_031.png
 1 p- Axe_032.png
 1 p- Axe_033.png
-C1B                                     #Refresh quick "heavy step" SFE
+C1B                                     #Play quick "heavy step" SFE
 C15                                     #Slight vibration of screen
-C04                                     #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C04                                     #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
 C08                                     #Critical hit
-C1F                                     #Refresh hit SFE (sounds like Eliwood with sword's hit)
+C1F                                     #Play hit SFE (sounds like Eliwood with sword's hit)
 1 p- Axe_033.png
 1 p- Axe_034.png
 4 p- Axe_035.png
@@ -220,7 +220,7 @@ C01                                     #NOP
 3 p- Axe_016.png
 3 p- Axe_017.png
 1 p- Axe_000.png
-C1B                                     #Refresh quick "heavy step" SFE
+C1B                                     #Play quick "heavy step" SFE
 2 p- Axe_000.png
 3 p- Axe_018.png
 8 p- Axe_019.png
@@ -278,9 +278,9 @@ C07                                     #Start attack animation; should be prece
 3 p- Axe_007.png
 10 p- Axe_006.png
 1 p- Axe_009.png
-C42                                     #Refresh long axe swinging SFE
+C42                                     #Play long axe swinging SFE
 2 p- Axe_009.png
-C04                                     #Prepare HP depletion routine; needed to animate return to standing frame after hit
+C04                                     #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
 2 p- Axe_042.png
 3 p- Axe_043.png
 C01                                     #NOP
@@ -291,7 +291,7 @@ C01                                     #NOP
 3 p- Axe_016.png
 3 p- Axe_017.png
 1 p- Axe_000.png
-C1B                                     #Refresh quick "heavy step" SFE
+C1B                                     #Play quick "heavy step" SFE
 2 p- Axe_000.png
 3 p- Axe_018.png
 8 p- Axe_019.png
