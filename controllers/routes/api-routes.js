@@ -55,39 +55,36 @@ module.exports = function (app) {
 
   // Download path zips the item selected and outputs it
   app.get("/api/unit/:path", function (req, res, next) {
-    let promise = new Promise(function (resolve, reject) {
+    new Promise(function (resolve, reject) {
       const out = "./public/download/" + req.params.path + ".zip";
       const source = "./public/" + req.query.path;
       const archive = archiver('zip', { zlib: { level: 9 } });
-      const stream = fs.createWriteStream(out);
+
+      const stream = fs.createWriteStream(out)
+        .on('close', () => {
+          console.log("success ", archive.pointer());
+          resolve(out)
+        });
+
       archive
         .directory(source, false)
         .on('error', err => {
           console.log(err);
           reject(err)
         })
-        .pipe(stream);
-
-      stream.on('close', () => {
-        console.log("success ", archive.pointer());
-        resolve(out)
-      });
-
-      stream.on('warning', function (err) {
-        if (err.code === 'ENOENT') {
-          // log warning
-        } else {
-          // throw error
-          throw err;
-        }
-      });
-
-      stream.on('error', function (err) {
-        throw err;
-      });
+        .on('warning', function (err) {
+          if (err.code === 'ENOENT') {
+            // log warning
+          } else {
+            // throw error
+            throw err;
+          }
+        })
+        .pipe(stream)
+        
       archive.finalize();
-    });
-    promise.then(
+
+    }).then(
       out => {
         res.json("./download/" + req.params.path + ".zip")
       },
