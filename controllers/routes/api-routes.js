@@ -60,6 +60,8 @@ module.exports = function (app) {
     const archive = archiver('zip', { zlib: { level: 9 } });
     var stream = fs.createWriteStream(out)
 
+    console.log(process.cwd());
+
     const promise = new Promise(function (resolve, reject) {
       console.log("Before Stream")
 
@@ -82,7 +84,7 @@ module.exports = function (app) {
 
       stream.on('close', () => {
         console.log("success ", archive.pointer());
-        resolve()
+        resolve();
       });
       stream.on('error', err => {
         console.log(err);
