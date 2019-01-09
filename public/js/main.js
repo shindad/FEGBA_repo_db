@@ -335,8 +335,10 @@ $(".container").on("click", ".spellGif", function () {
 $(".container").on("click", ".animName", function () {
     const folder = $(this).attr("data-folder");
     const path = $(this).attr("data-url");
-    API.downloadAnim(folder, path).then(function (response) {
-        document.getElementById('hidDownloads').src = response;
+    API.downloadAnim(folder, path).then(response => {
+        document.getElementById('hidDownloads').src = response
+    }, error => {
+        console.log(error);
     });
 });
 
