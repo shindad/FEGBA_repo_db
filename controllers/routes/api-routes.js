@@ -10,8 +10,8 @@ const archiver = require('archiver');
 
 // Zips the directory and all subdirectories together.
 function zipDirectory(source, out) {
-  const archive = archiver('zip', { zlib: { level: 9 } });
-  const stream = fs.createWriteStream(out);
+  var archive = archiver('zip', { zlib: { level: 9 } });
+  var stream = fs.createWriteStream(out);
 
   return new Promise((resolve, reject) => {
     archive
@@ -81,7 +81,7 @@ module.exports = function (app) {
 
   // Download path zips the item selected and outputs it
   app.get("/api/unit/:path", function (req, res, next) {
-    let promise = zipDirectory("./public/" + req.query.path, "./public/download/" + req.params.path + ".zip");
+    var promise = zipDirectory("./public/" + req.query.path, "./public/download/" + req.params.path + ".zip");
     promise.then(
       out => {
         res.json("./download/" + req.params.path + ".zip")
