@@ -55,22 +55,17 @@ module.exports = function (app) {
 
   // Download path zips the item selected and outputs it
   app.get("/api/unit/:path", function (req, res, next) {
-    const promise = new Promise(function (resolve, reject) {
-      const out = __dirname + "../../../public/download/" + req.params.path + ".zip";
-      const source = __dirname + "../../../public/" + req.query.path;
-      const archive = archiver('zip', { zlib: { level: 9 } });
+    const out = "./public/download/" + req.params.path + ".zip";
+    const source = "./public/" + req.query.path;
+    const archive = archiver('zip', { zlib: { level: 9 } });
+    var stream = fs.createWriteStream(out)
 
-      console.log(__dirname)
+    const promise = new Promise(function (resolve, reject) {
       console.log("Before Stream")
-      var stream = fs.createWriteStream(out)
-        
-      stream.on('close', () => {
-          console.log("success ", archive.pointer());
-          resolve(out)
-        });
 
       console.log("Before Archive")
       archive
+        .directory(source, false)
         .on('error', err => {
           console.log(err);
           reject(err)
@@ -84,9 +79,15 @@ module.exports = function (app) {
           }
         })
         .pipe(stream)
-        
-      console.log("finalize")
-      archive.directory(source, false).finalize();
+
+      stream.on('close', () => {
+        console.log("success ", archive.pointer());
+        resolve()
+      });
+
+      console.log("finalize");
+      console.log(source);
+      archive.finalize();
 
     });
     promise.then(
