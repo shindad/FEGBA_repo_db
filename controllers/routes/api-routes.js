@@ -60,12 +60,14 @@ module.exports = function (app) {
       const source = "./public/" + req.query.path;
       const archive = archiver('zip', { zlib: { level: 9 } });
 
+      console.log("Before Stream")
       const stream = fs.createWriteStream(out)
         .on('close', () => {
           console.log("success ", archive.pointer());
           resolve(out)
         });
 
+      console.log("Before Archive")
       archive
         .directory(source, false)
         .on('error', err => {
@@ -82,10 +84,12 @@ module.exports = function (app) {
         })
         .pipe(stream)
         
+      console.log("finalize")
       archive.finalize();
 
     }).then(
       out => {
+        console.log("promise complete");
         res.json("./download/" + req.params.path + ".zip")
       },
       error => console.log(error));
