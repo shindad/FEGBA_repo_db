@@ -84,6 +84,9 @@ module.exports = function (app) {
         console.log("success ", archive.pointer());
         resolve()
       });
+      stream.on('error', err => {
+        console.log(err);
+      }
 
       console.log("finalize");
       console.log(source);
