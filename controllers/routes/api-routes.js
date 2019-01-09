@@ -61,7 +61,7 @@ module.exports = function (app) {
       const archive = archiver('zip', { zlib: { level: 9 } });
 
       console.log("Before Stream")
-      const stream = fs.createWriteStream(out)
+      var stream = fs.createWriteStream(out)
         .on('close', () => {
           console.log("success ", archive.pointer());
           resolve(out)
