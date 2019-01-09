@@ -6,32 +6,6 @@ const archiver = require('archiver');
 
 /// END DEPENDENCIES ///
 
-/// FUNCTIONS ///
-
-// Zips the directory and all subdirectories together.
-function zipDirectory(source, out) {
-  var archive = archiver('zip', { zlib: { level: 9 } });
-  var stream = fs.createWriteStream(out);
-
-  return new Promise((resolve, reject) => {
-    archive
-      .directory(source, false)
-      .on('error', err => {
-        console.log(err);
-        reject(err)
-      })
-      .pipe(stream);
-
-    stream.on('close', () => {
-      console.log("success ", archive.pointer());
-      resolve(out)
-    });
-    archive.finalize();
-  });
-};
-
-/// END FUNCTIONS ///
-
 /// ROUTES ///
 
 module.exports = function (app) {
@@ -81,7 +55,27 @@ module.exports = function (app) {
 
   // Download path zips the item selected and outputs it
   app.get("/api/unit/:path", function (req, res, next) {
-    var promise = zipDirectory("./public/" + req.query.path, "./public/download/" + req.params.path + ".zip");
+    const out = "./public/download/" + req.params.path + ".zip";
+    const archive = archiver('zip', { zlib: { level: 9 } });
+    const stream = fs.createWriteStream(out);
+
+    const source = "./public/" + req.query.path;
+
+    let promise = new Promise(function (resolve, reject) {
+      archive
+        .directory(source, false)
+        .on('error', err => {
+          console.log(err);
+          reject(err)
+        })
+        .pipe(stream);
+
+      stream.on('close', () => {
+        console.log("success ", archive.pointer());
+        resolve(out)
+      });
+      archive.finalize();
+    });
     promise.then(
       out => {
         res.json("./download/" + req.params.path + ".zip")
