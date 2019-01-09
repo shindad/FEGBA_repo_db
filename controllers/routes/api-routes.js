@@ -55,13 +55,11 @@ module.exports = function (app) {
 
   // Download path zips the item selected and outputs it
   app.get("/api/unit/:path", function (req, res, next) {
-    const out = "./public/download/" + req.params.path + ".zip";
-    const source = "./public/" + req.query.path;
-    
-    const archive = archiver('zip', { zlib: { level: 9 } });
-    const stream = fs.createWriteStream(out);
-
     let promise = new Promise(function (resolve, reject) {
+      const out = "./public/download/" + req.params.path + ".zip";
+      const source = "./public/" + req.query.path;
+      const archive = archiver('zip', { zlib: { level: 9 } });
+      const stream = fs.createWriteStream(out);
       archive
         .directory(source, false)
         .on('error', err => {
@@ -75,7 +73,7 @@ module.exports = function (app) {
         resolve(out)
       });
 
-      stream.on('warning', function(err) {
+      stream.on('warning', function (err) {
         if (err.code === 'ENOENT') {
           // log warning
         } else {
@@ -84,7 +82,7 @@ module.exports = function (app) {
         }
       });
 
-      stream.on('error', function(err) {
+      stream.on('error', function (err) {
         throw err;
       });
       archive.finalize();
