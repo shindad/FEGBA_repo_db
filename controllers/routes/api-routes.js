@@ -86,7 +86,7 @@ module.exports = function (app) {
       });
       stream.on('error', err => {
         console.log(err);
-      }
+      });
 
       console.log("finalize");
       console.log(source);
