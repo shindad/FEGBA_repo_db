@@ -1,18 +1,32 @@
-/// DEPENDENCIES ///
-
-const db = require("../../models");
+var db = require("../../models");
 const fs = require('fs');
-const archiver = require('archiver');
+var archiver = require('archiver');
 
-/// END DEPENDENCIES ///
+// Zips the directory and all subdirectories together.
+function zipDirectory(source, out) {
+  const archive = archiver('zip', { zlib: { level: 9 } });
+  const stream = fs.createWriteStream(out);
 
-/// ROUTES ///
+  return new Promise((resolve, reject) => {
+    archive
+      .directory(source, false)
+      .on('error', err => {
+        console.log(err);
+        reject(err)
+      })
+      .pipe(stream);
+
+    stream.on('close', () => {
+      console.log("success ", archive.pointer());
+      resolve(out)
+    });
+    archive.finalize();
+  });
+};
 
 module.exports = function (app) {
-
-  // Gathers animations based on the selected class category
   app.get("/api/anims/:class", function (req, res, next) {
-    //console.log(req.params);
+    console.log(req.params);
     // Search for all anims of the class selected
     db.Anim.findAll({
       where: {
@@ -27,12 +41,19 @@ module.exports = function (app) {
         }
       }]
     }).then(function (response) {
-      // console.log(response);
+      console.log(response);
       res.json(response);
     });
   });
 
-  // Search API route takes search term as an object and searches the database using term info
+  app.get("/api/unit/:path", function (req, res, next) {
+    let promise = zipDirectory("./public/" + req.query.path, "./public/download/" + req.params.path + ".zip");
+    promise.then(
+      out => {
+        res.json("./download/" + req.params.path + ".zip")
+      },
+      err => console.log(err));
+  });
   app.get("/api/search/", function (req, res, next) {
     Object.keys(req.query).forEach((key) => (req.query[key] == '' || req.query[key] == 'T') && delete req.query[key]);
     //console.log(req.query)
@@ -51,48 +72,6 @@ module.exports = function (app) {
       //console.log(response);
       res.json(response);
     });
-  });
-
-  // Download path zips the item selected and outputs it
-  app.get("/api/unit/:path", function (req, res, next) {
-    new Promise(function (resolve, reject) {
-      const out = "./public/download/" + req.params.path + ".zip";
-      const source = "./public/" + req.query.path;
-      const archive = archiver('zip', { zlib: { level: 9 } });
-
-      console.log(__dirname)
-      console.log("Before Stream")
-      var stream = fs.createWriteStream(out)
-        .on('close', () => {
-          console.log("success ", archive.pointer());
-          resolve(out)
-        });
-
-      console.log("Before Archive")
-      archive
-        .on('error', err => {
-          console.log(err);
-          reject(err)
-        })
-        .on('warning', function (err) {
-          if (err.code === 'ENOENT') {
-            // log warning
-          } else {
-            // throw error
-            throw err;
-          }
-        })
-        .pipe(stream)
-        
-      console.log("finalize")
-      archive.directory(source, false).finalize();
-
-    }).then(
-      out => {
-        console.log("promise complete");
-        res.json("./download/" + req.params.path + ".zip")
-      },
-      error => console.log(error));
   });
 };
 
