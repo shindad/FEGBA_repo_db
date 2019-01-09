@@ -60,6 +60,7 @@ module.exports = function (app) {
       const source = "./public/" + req.query.path;
       const archive = archiver('zip', { zlib: { level: 9 } });
 
+      console.log(__dirname)
       console.log("Before Stream")
       var stream = fs.createWriteStream(out)
         .on('close', () => {
@@ -69,7 +70,6 @@ module.exports = function (app) {
 
       console.log("Before Archive")
       archive
-        .directory(source, false)
         .on('error', err => {
           console.log(err);
           reject(err)
@@ -85,7 +85,7 @@ module.exports = function (app) {
         .pipe(stream)
         
       console.log("finalize")
-      archive.finalize();
+      archive.directory(source, false).finalize();
 
     }).then(
       out => {
