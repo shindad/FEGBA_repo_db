@@ -55,9 +55,11 @@ module.exports = function (app) {
 
   // Download path zips the item selected and outputs it
   app.get("/api/unit/:path", function (req, res, next) {
-    const out = __dirname + "/../../../public/" + req.params.path + ".zip";
+    const out = process.cwd() + "/public/" + req.params.path + ".zip";
     const source = "./public/" + req.query.path;
     const archive = archiver('zip', { zlib: { level: 9 } });
+
+    console.log(out);
 
     const promise = new Promise(function (resolve, reject) {
       console.log("Before Stream")
