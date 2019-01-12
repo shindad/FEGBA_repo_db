@@ -64,33 +64,35 @@ module.exports = function (app) {
 
       console.log("Before Archive")
       var stream = fs.createWriteStream(out)
-      archive
-        .directory(source, false)
-        .on('error', err => {
+      stream.on('open', function () {
+        archive
+          .directory(source, false)
+          .on('error', err => {
+            console.log(err);
+            reject(err);
+          })
+          .on('warning', function (err) {
+            if (err.code === 'ENOENT') {
+              // log warning
+            } else {
+              // throw error
+              throw err;
+            };
+          })
+          .pipe(stream)
+
+        stream.on('close', () => {
+          console.log("success ", archive.pointer());
+          resolve()
+        });
+        stream.on('error', err => {
           console.log(err);
-          reject(err)
-        })
-        .on('warning', function (err) {
-          if (err.code === 'ENOENT') {
-            // log warning
-          } else {
-            // throw error
-            throw err;
-          }
-        })
-        .pipe(stream)
+        });
 
-      stream.on('close', () => {
-        console.log("success ", archive.pointer());
-        resolve()
+        console.log("finalize");
+        console.log(source);
+        archive.finalize();
       });
-      stream.on('error', err => {
-        console.log(err);
-      });
-
-      console.log("finalize");
-      console.log(source);
-      archive.finalize();
 
     });
     promise.then(
