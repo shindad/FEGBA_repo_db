@@ -55,17 +55,15 @@ module.exports = function (app) {
 
   // Download path zips the item selected and outputs it
   app.get("/api/unit/:path", function (req, res, next) {
-    const out = process.cwd() + "/public/download/" + req.params.path + ".zip";
+    const out = "./public/download/" + req.params.path + ".zip";
     const source = "./public/" + req.query.path;
     const archive = archiver('zip', { zlib: { level: 9 } });
-    var stream = fs.createWriteStream(out)
-
-    console.log(process.cwd());
 
     const promise = new Promise(function (resolve, reject) {
       console.log("Before Stream")
 
       console.log("Before Archive")
+      var stream = fs.createWriteStream(out)
       archive
         .directory(source, false)
         .on('error', err => {
@@ -84,7 +82,7 @@ module.exports = function (app) {
 
       stream.on('close', () => {
         console.log("success ", archive.pointer());
-        resolve();
+        resolve()
       });
       stream.on('error', err => {
         console.log(err);
