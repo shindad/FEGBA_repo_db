@@ -55,7 +55,7 @@ module.exports = function (app) {
 
   // Download path zips the item selected and outputs it
   app.get("/api/unit/:path", function (req, res, next) {
-    const out = "./public/download/" + req.params.path + ".zip";
+    const out = __dirname + "/download/" + req.params.path + ".zip";
     const source = "./public/" + req.query.path;
     const archive = archiver('zip', { zlib: { level: 9 } });
 
@@ -64,35 +64,33 @@ module.exports = function (app) {
 
       console.log("Before Archive")
       var stream = fs.createWriteStream(out)
-      stream.on('open', function () {
-        archive
-          .directory(source, false)
-          .on('error', err => {
-            console.log(err);
-            reject(err);
-          })
-          .on('warning', function (err) {
-            if (err.code === 'ENOENT') {
-              // log warning
-            } else {
-              // throw error
-              throw err;
-            };
-          })
-          .pipe(stream)
-
-        stream.on('close', () => {
-          console.log("success ", archive.pointer());
-          resolve()
-        });
-        stream.on('error', err => {
+      archive
+        .directory(source, false)
+        .on('error', err => {
           console.log(err);
-        });
+          reject(err)
+        })
+        .on('warning', function (err) {
+          if (err.code === 'ENOENT') {
+            // log warning
+          } else {
+            // throw error
+            throw err;
+          }
+        })
+        .pipe(stream)
 
-        console.log("finalize");
-        console.log(source);
-        archive.finalize();
+      stream.on('close', () => {
+        console.log("success ", archive.pointer());
+        resolve()
       });
+      stream.on('error', err => {
+        console.log(err);
+      });
+
+      console.log("finalize");
+      console.log(source);
+      archive.finalize();
 
     });
     promise.then(
