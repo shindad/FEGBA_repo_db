@@ -1,0 +1,264 @@
+/// - Mode 1
+C07
+C03
+1 p- Skelemonk_000.png
+4 p- Skelemonk_001.png
+3 p- Skelemonk_002.png
+2 p- Skelemonk_003.png
+2 p- Skelemonk_004.png
+C4B
+2 p- Skelemonk_005.png
+2 p- Skelemonk_006.png
+3 p- Skelemonk_005.png
+3 p- Skelemonk_007.png
+3 p- Skelemonk_005.png
+2 p- Skelemonk_008.png
+2 p- Skelemonk_005.png
+3 p- Skelemonk_009.png
+3 p- Skelemonk_005.png
+2 p- Skelemonk_010.png
+15 p- Skelemonk_005.png
+C23
+2 p- Skelemonk_011.png
+C1B
+5 p- Skelemonk_012.png
+4 p- Skelemonk_013.png
+3 p- Skelemonk_014.png
+2 p- Skelemonk_015.png
+8 p- Skelemonk_016.png
+C22
+3 p- Skelemonk_017.png
+C05
+C1B
+6 p- Skelemonk_018.png
+5 p- Skelemonk_019.png
+3 p- Skelemonk_020.png
+1 p- Skelemonk_021.png
+C01
+1 p- Skelemonk_022.png
+C06
+2 p- Skelemonk_022.png
+4 p- Skelemonk_023.png
+C0D
+~~~
+/// - Mode 3
+C07
+C03
+1 p- Skelemonk_000.png
+2 p- Skelemonk_001.png
+2 p- Skelemonk_002.png
+C4B
+1 p- Skelemonk_004.png
+2 p- Skelemonk_008.png
+2 p- Skelemonk_009.png
+1 p- Skelemonk_024.png
+2 p- Skelemonk_025.png
+1 p- Skelemonk_026.png
+4 p- Skelemonk_027.png
+2 p- Skelemonk_028.png
+4 p- Skelemonk_029.png
+2 p- Skelemonk_028.png
+2 p- Skelemonk_030.png
+4 p- Skelemonk_031.png
+1 p- Skelemonk_032.png
+1 p- Skelemonk_033.png
+1 p- Skelemonk_034.png
+1 p- Skelemonk_033.png
+1 p- Skelemonk_034.png
+1 p- Skelemonk_033.png
+1 p- Skelemonk_034.png
+1 p- Skelemonk_011.png
+2 p- Skelemonk_035.png
+2 p- Skelemonk_036.png
+2 p- Skelemonk_037.png
+4 p- Skelemonk_038.png
+2 p- Skelemonk_039.png
+C23
+2 p- Skelemonk_040.png
+C1B
+C22
+3 p- Skelemonk_017.png
+C1B
+6 p- Skelemonk_018.png
+4 p- Skelemonk_019.png
+3 p- Skelemonk_020.png
+1 p- Skelemonk_021.png
+C01
+1 p- Skelemonk_022.png
+C06
+2 p- Skelemonk_022.png
+4 p- Skelemonk_023.png
+C0D
+~~~
+/// - Mode 5
+C07
+C03
+1 p- Skelemonk_000.png
+4 p- Skelemonk_001.png
+3 p- Skelemonk_002.png
+2 p- Skelemonk_003.png
+2 p- Skelemonk_004.png
+C4B
+2 p- Skelemonk_005.png
+2 p- Skelemonk_006.png
+3 p- Skelemonk_005.png
+3 p- Skelemonk_007.png
+3 p- Skelemonk_005.png
+2 p- Skelemonk_008.png
+2 p- Skelemonk_005.png
+3 p- Skelemonk_009.png
+3 p- Skelemonk_005.png
+2 p- Skelemonk_010.png
+15 p- Skelemonk_005.png
+C23
+2 p- Skelemonk_011.png
+C1B
+5 p- Skelemonk_012.png
+4 p- Skelemonk_013.png
+3 p- Skelemonk_014.png
+2 p- Skelemonk_015.png
+8 p- Skelemonk_016.png
+C22
+3 p- Skelemonk_017.png
+C05
+C1B
+6 p- Skelemonk_018.png
+5 p- Skelemonk_019.png
+3 p- Skelemonk_020.png
+1 p- Skelemonk_021.png
+C01
+1 p- Skelemonk_022.png
+C06
+2 p- Skelemonk_022.png
+4 p- Skelemonk_023.png
+C0D
+~~~
+/// - Mode 6
+C07
+C03
+1 p- Skelemonk_000.png
+2 p- Skelemonk_001.png
+2 p- Skelemonk_002.png
+C4B
+1 p- Skelemonk_004.png
+2 p- Skelemonk_008.png
+2 p- Skelemonk_009.png
+1 p- Skelemonk_024.png
+2 p- Skelemonk_025.png
+1 p- Skelemonk_026.png
+4 p- Skelemonk_027.png
+2 p- Skelemonk_028.png
+4 p- Skelemonk_029.png
+2 p- Skelemonk_028.png
+2 p- Skelemonk_030.png
+4 p- Skelemonk_031.png
+1 p- Skelemonk_032.png
+2 p- Skelemonk_034.png
+3 p- Skelemonk_033.png
+2 p- Skelemonk_034.png
+3 p- Skelemonk_033.png
+2 p- Skelemonk_034.png
+3 p- Skelemonk_033.png
+2 p- Skelemonk_034.png
+C23
+2 p- Skelemonk_011.png
+C1B
+5 p- Skelemonk_012.png
+4 p- Skelemonk_036.png
+5 p- Skelemonk_037.png
+2 p- Skelemonk_038.png
+4 p- Skelemonk_039.png
+C22
+3 p- Skelemonk_040.png
+C1B
+6 p- Skelemonk_018.png
+C0C
+C1F
+4 p- Skelemonk_019.png
+C04
+3 p- Skelemonk_020.png
+3 p- Skelemonk_021.png
+C01
+1 p- Skelemonk_022.png
+C06
+2 p- Skelemonk_022.png
+4 p- Skelemonk_023.png
+C0D
+~~~
+/// - Mode 7
+C02
+1 p- Skelemonk_000.png
+C0E
+3 p- Skelemonk_041.png
+3 p- Skelemonk_042.png
+3 p- Skelemonk_043.png
+C01
+3 p- Skelemonk_042.png
+C0D
+~~~
+/// - Mode 8
+C02
+1 p- Skelemonk_000.png
+C0E
+3 p- Skelemonk_042.png
+1 p- Skelemonk_043.png
+C01
+3 p- Skelemonk_042.png
+C0D
+~~~
+/// - Mode 9
+1 p- Skelemonk_000.png
+C01
+~~~
+/// - Mode 10
+1 p- Skelemonk_000.png
+C01
+~~~
+/// - Mode 11
+1 p- Skelemonk_000.png
+C01
+~~~
+/// - Mode 12
+C03
+C07
+1 p- Skelemonk_000.png
+4 p- Skelemonk_001.png
+3 p- Skelemonk_002.png
+2 p- Skelemonk_003.png
+2 p- Skelemonk_004.png
+2 p- Skelemonk_005.png
+C4B
+2 p- Skelemonk_006.png
+3 p- Skelemonk_005.png
+3 p- Skelemonk_007.png
+3 p- Skelemonk_005.png
+2 p- Skelemonk_008.png
+2 p- Skelemonk_005.png
+3 p- Skelemonk_009.png
+3 p- Skelemonk_005.png
+2 p- Skelemonk_010.png
+15 p- Skelemonk_005.png
+C23
+2 p- Skelemonk_011.png
+C1B
+5 p- Skelemonk_012.png
+4 p- Skelemonk_013.png
+3 p- Skelemonk_014.png
+2 p- Skelemonk_015.png
+8 p- Skelemonk_016.png
+C22
+3 p- Skelemonk_017.png
+C05
+C1B
+6 p- Skelemonk_018.png
+5 p- Skelemonk_019.png
+3 p- Skelemonk_020.png
+1 p- Skelemonk_021.png
+C01
+1 p- Skelemonk_022.png
+C06
+2 p- Skelemonk_022.png
+4 p- Skelemonk_023.png
+C0D
+~~~
+/// - End of animation

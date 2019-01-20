@@ -59,12 +59,8 @@ module.exports = function (app) {
     const source = "./public/" + req.query.path;
     const archive = archiver('zip', { zlib: { level: 9 } });
 
-    console.log(out);
-
     const promise = new Promise(function (resolve, reject) {
-      console.log("Before Stream")
-
-      console.log("Before Archive")
+      
       var stream = fs.createWriteStream(out)
       archive
         .directory(source, false)
@@ -90,14 +86,11 @@ module.exports = function (app) {
         console.log(err);
       });
 
-      console.log("finalize");
-      console.log(source);
       archive.finalize();
 
     });
     promise.then(
       out => {
-        console.log("promise complete");
         res.json("./" + req.params.path + ".zip")
       },
       error => console.log(error));

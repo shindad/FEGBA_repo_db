@@ -1,5 +1,5 @@
 #######################################################
-#03 lorf_sw1 Lord Sword
+#02 lorm_sp1 Lord Item
 #
 #When importing to FEditorAdv delete # and after each line.
 #######################################################
@@ -14,6 +14,7 @@ C1E                               #Similar to 0x1D; a bit louder
 6 p- Sword_003.png
 5 p- Sword_004.png
 3 p- Sword_005.png
+C1C                               #Play light horse stepping SFE; pitch decreases
 2 p- Sword_006.png
 2 p- Sword_007.png
 3 p- Sword_008.png
@@ -32,7 +33,6 @@ C1E                               #Similar to 0x1D; a bit louder
 3 p- Sword_015.png
 3 p- Sword_016.png
 4 p- Sword_017.png
-C1C                               #Play light horse stepping SFE; pitch decreases
 C1E                               #Similar to 0x1D; a bit louder
 5 p- Sword_018.png
 5 p- Sword_019.png
@@ -86,11 +86,11 @@ C4A                               #Play valkyrie's magic charging SFE
 1 p- Sword_000.png
 5 p- Sword_001.png
 6 p- Sword_002.png
-C1C                               #Play light horse stepping SFE; pitch decreases
 C1E                               #Similar to 0x1D; a bit louder
 6 p- Sword_003.png
 5 p- Sword_004.png
 3 p- Sword_005.png
+C1C                               #Play light horse stepping SFE; pitch decreases
 2 p- Sword_006.png
 2 p- Sword_007.png
 3 p- Sword_008.png
@@ -224,6 +224,7 @@ C1E                               #Similar to 0x1D; a bit louder
 6 p- Sword_003.png
 5 p- Sword_004.png
 3 p- Sword_005.png
+C1C                               #Play light horse stepping SFE; pitch decreases
 2 p- Sword_006.png
 2 p- Sword_007.png
 3 p- Sword_008.png
@@ -238,7 +239,6 @@ C04                               #Prepare HP depletion routine; needed to anima
 3 p- Sword_015.png
 3 p- Sword_016.png
 4 p- Sword_017.png
-C1C                               #Play light horse stepping SFE; pitch decreases
 C1E                               #Similar to 0x1D; a bit louder
 5 p- Sword_018.png
 5 p- Sword_019.png
