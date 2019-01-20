@@ -52,7 +52,7 @@ navMaker("mage", "Magi", "img/global/mage.gif", "false", "MAGFill", [
     "Pupil", "Mage", "Sage", "Archsage",
     "Clergy", "Monk", "Bishop", "Saint",
     "Shaman", "Druid", "Summoner", "Necromancer",
-    "Troubadour", "Mage Knight", "Valkyrie", "Dark Knight"
+    "Troubadour", "Mage Knight", "Valkyrie", "Dark Knight", "Custom Magi"
 ], "right");
 navMaker("creature", "Creatures", "img/global/rev.gif", "false", "MONFill", [
     "Phantom", "Bonewalker", "Revenant", "Bael", "Mauthe Doog", "Mogall", "Ghost", "Gargoyle", "Tarvos",
