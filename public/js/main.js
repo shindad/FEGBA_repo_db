@@ -24,7 +24,7 @@ function Anim(anim) {
         //All Image data
         const animImg = $("<img>");
         if (this.category === 'SPL') {
-            animImg.addClass("spellGif");
+            animImg.addClass("gif spellGif");
         } else {
             animImg.addClass("gif");
         }
@@ -234,6 +234,13 @@ const API = {
     }
 };
 
+function scrollTo(row) {
+    const scrollPos = $(row).offset().top
+    $('html, body').animate({
+        scrollTop: (scrollPos - 44)
+    }, 300);
+}
+
 /// END FUNCTIONS ///
 
 /// EVENT LISTENERS ///
@@ -241,25 +248,22 @@ const API = {
 //Major listener for values populated by category selection
 $(document).on("click", ".classBtn", function () {
     const row = "." + this.getAttribute("data-prof").split(' ').join('') + "Row"
-    
+
     if (this.getAttribute("data-filled") === 'false') {
         API.getAnims(this.getAttribute("data-prof")).then(function (animArr) {
             makeAnimRow(animArr);
 
-            const scrollPos = $(row).offset().top
-            $('html, body').animate({
-                scrollTop: (scrollPos - 44)
-            }, 300);
+            scrollTo(row);
         });
         this.setAttribute("data-filled", "true");
     } else {
         //console.log(document.getElementsByClassName(this.getAttribute("data-prof").split(' ').join('') + "Row")[0])
         if (document.getElementsByClassName(this.getAttribute("data-prof").split(' ').join('') + "Row")[0].style.display !== "none") {
-            const scrollPos = $(row).offset().top
-            $('html, body').animate({
-                scrollTop: (scrollPos - 44)
-            }, 300);
-        };
+            scrollTo(row);
+        } else {
+            $(row).toggle();
+            scrollTo(row);
+        }
     };
 });
 
@@ -286,12 +290,12 @@ $(document).on("click", "#formSubmit", function () {
     });
 });
 
-// Hides the section on click
+// Listener to hide a class section on clicking the header
 $(document).on("click", ".sectHead", function () {
     $(this.getAttribute("data-prof")).toggle();
 });
 
-//Animates the images when clicked
+// Listener to animate anims when clicked
 $(".container").on("click", ".gif", function () {
     const state = $(this).attr("data-state");
 
@@ -311,31 +315,11 @@ $(".container").on("click", ".gif", function () {
     };
 });
 
-// Animates the images when clicked
-$(".container").on("click", ".spellGif", function () {
-    const state = $(this).attr("data-state");
-
-    //Check if gif is set to PNG. If set, run this. Sets to GIF.
-    if (state === "still") {
-        $(this).attr({
-            "src": $(this).attr("data-animate"),
-            "data-state": "animate"
-        });
-
-        //If the gif is currently looping, run this. Sets to PNG.
-    } else {
-        $(this).attr({
-            "src": $(this).attr("data-still"),
-            "data-state": "still"
-        });
-    };
-});
-
-// Downloads the single anim on click
+// Listener to download a single anim on click
 $(".container").on("click", ".animName", function () {
     const folder = $(this).attr("data-folder");
     const path = $(this).attr("data-url");
-    console.log(path);
+    //console.log(path);
     API.downloadAnim(folder, path).then(response => {
         document.getElementById('hidDownloads').src = response
     }, error => {
@@ -343,7 +327,7 @@ $(".container").on("click", ".animName", function () {
     });
 });
 
-// Changes the weapon to the alternate type when clicking on the weapon
+// Listener for weapon icon click to change an anim's displayed weapon/animation
 $(document).on("click", ".imgIcon", function () {
     const target = $(this).attr("data-target");
     $("#" + target).attr({
@@ -353,28 +337,16 @@ $(document).on("click", ".imgIcon", function () {
     });
 });
 
-// Listener for one of the two required input fields for the search bar
-document.getElementById("formName").addEventListener("keyup", function () {
-    //console.log(document.getElementById("formName").value);
-    if (document.getElementById("formName").value.length > 2) {
-        $("#formSubmit").removeAttr('disabled');
-    } else if (document.getElementById("formName").value.length < 3) {
-        if (document.getElementById("formAuthor").value.length < 2) {
+// Listener for the two required input fields for the search bar
+const searchKey = document.getElementsByClassName("formKey");
+Array.from(searchKey).forEach(function (element) {
+    element.addEventListener("keyup", function () {
+        if (document.getElementById("formAuthor").value.length > 1 || document.getElementById("formName").value.length > 2) {
+            $("#formSubmit").removeAttr('disabled');
+        } else if (document.getElementById("formAuthor").value.length < 2 && document.getElementById("formName").value.length < 3) {
             document.getElementById("formSubmit").disabled = true;
         };
-    };
-});
-
-// Listener for one of the two required input fields for the search bar
-document.getElementById("formAuthor").addEventListener("keyup", function () {
-    //console.log(document.getElementById("formAuthor").value);
-    if (document.getElementById("formAuthor").value.length > 1) {
-        $("#formSubmit").removeAttr('disabled');
-    } else if (document.getElementById("formAuthor").value.length < 2) {
-        if (document.getElementById("formName").value.length < 3) {
-            document.getElementById("formSubmit").disabled = true;
-        };
-    };
+    });
 });
 
 /// END EVENT LISTENERS ///

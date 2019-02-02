@@ -90,7 +90,7 @@ const findAnims = () => {
             console.log(err);
         } else {
             let catCounter = 0;
-            const catCeiling = categories.length - 1;
+            const catCeiling = categories.length - 2;
             categories.forEach(category => {
 
                 //Special Spell Route
@@ -137,7 +137,7 @@ const findAnims = () => {
                         units.forEach(unit => {
                             if (unit.includes("desktop")) {
                                 console.log(unit + " is not a unit");
-                                unit++;
+                                unitCounter++;
                             } else {
                                 const tempInfoArray = unit.match(/[^[\[\{\(\]\}\)]+/g)
                                 let anim = new Anim(tempInfoArray[0], tempInfoArray[1], tempInfoArray[2], tempInfoArray[3], tempInfoArray[4], tempInfoArray[5], 'img/' + category + "/" + unit, unit, []);
