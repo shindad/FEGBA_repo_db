@@ -241,7 +241,7 @@ const API = {
 //Major listener for values populated by category selection
 $(document).on("click", ".classBtn", function () {
     const row = "." + this.getAttribute("data-prof").split(' ').join('') + "Row"
-    $(row).toggle();
+    
     if (this.getAttribute("data-filled") === 'false') {
         API.getAnims(this.getAttribute("data-prof")).then(function (animArr) {
             makeAnimRow(animArr);

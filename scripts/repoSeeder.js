@@ -100,23 +100,28 @@ const findAnims = () => {
                         let spellCounter = 0;
 
                         spells.forEach(spell => {
-                            const tempInfoArray = spell.match(/[^[\[\{\(\]\}\)]+/g)
-                            let anim = new Anim("Spell", "SPL", tempInfoArray[0], tempInfoArray[2], tempInfoArray[1], tempInfoArray[3], 'img/' + category + "/" + spell, spell, []);
-                            anim.weapons.push(
-                                {
-                                    type: "Spell",
-                                    fullName: spell,
-                                    still: 'img/' + category + "/" + spell + "/" + "Spell_b_001.png",
-                                    gif: 'img/' + category + "/" + spell + "/" + "Spell.gif"
-                                });
 
-                            tempArray.push(anim);
                             spellCounter++;
+                            if (spell.toLowerCase().includes("png") || spell.toLowerCase().includes("gif") || spell.toLowerCase().includes("txt") || spell.toLowerCase().includes(".dat") || spell.toLowerCase().includes("desktop")) {
+                                console.log("not a spell");
+                            } else {
+                                const tempInfoArray = spell.match(/[^[\[\{\(\]\}\)]+/g)
+                                let anim = new Anim("Spell", "SPL", tempInfoArray[0], tempInfoArray[2], tempInfoArray[1], tempInfoArray[3], 'img/' + category + "/" + spell, spell, []);
+                                anim.weapons.push(
+                                    {
+                                        type: "Spell",
+                                        fullName: spell,
+                                        still: 'img/' + category + "/" + spell + "/" + "Spell_b_001.png",
+                                        gif: 'img/' + category + "/" + spell + "/" + "Spell.gif"
+                                    });
+
+                                tempArray.push(anim);
+                            }
                             if (spellCounter === spells.length) {
                                 catCounter++;
                                 console.log("Category: " + category + " spellCount = " + spellCounter + "/" + spells.length + ". Categories = " + catCounter + "/" + catCeiling);
                                 if (catCounter === catCeiling) {
-                                    console.log('here')
+                                    //console.log('here')
                                     completeArray();
                                     return;
                                 };
@@ -130,58 +135,65 @@ const findAnims = () => {
                         console.log("units to count: " + units.length + " Category: " + category);
                         let unitCounter = 0;
                         units.forEach(unit => {
-                            const tempInfoArray = unit.match(/[^[\[\{\(\]\}\)]+/g)
-                            let anim = new Anim(tempInfoArray[0], tempInfoArray[1], tempInfoArray[2], tempInfoArray[3], tempInfoArray[4], tempInfoArray[5], 'img/' + category + "/" + unit, unit, []);
+                            if (unit.includes("desktop")) {
+                                console.log(unit + " is not a unit");
+                                unit++;
+                            } else {
+                                const tempInfoArray = unit.match(/[^[\[\{\(\]\}\)]+/g)
+                                let anim = new Anim(tempInfoArray[0], tempInfoArray[1], tempInfoArray[2], tempInfoArray[3], tempInfoArray[4], tempInfoArray[5], 'img/' + category + "/" + unit, unit, []);
 
-                            if (tempInfoArray.length === 5) {
-                                anim.name = "";
-                                anim.gender = tempInfoArray[3];
-                                anim.credit = tempInfoArray[4];
-                                anim.download = 'img/' + category + "/" + unit;
-                            };
-                            fs.readdir(images + category + "/" + unit + "/", (err, weps) => {
-                                if (err) {
-                                    console.log(err);
-                                } else {
-                                    let wepCeiling = weps.length;
-                                    let wepCounter = 0;
-                                    // if (wepCeiling === 0) {
-                                    //     console.log(anim.name + " doesn't have any weapons!");
-                                    // }
-                                    weps.forEach(weapon => {
-                                        let wep = weapon.replace(/\d*?\.\s/, "").split(" ");
-                                        wep = wep[0].toString();
-                                        wepCounter++;
-                                        if (weapon.toLowerCase().includes("png") || weapon.toLowerCase().includes("gif") || weapon.toLowerCase().includes("txt") || weapon.toLowerCase().includes(".dat")) {
-                                            console.log("not a wep");
-                                        } else {
-                                            anim.weapons.push(
-                                                {
-                                                    type: wep,
-                                                    fullName: weapon,
-                                                    still: 'img/' + category + "/" + unit + "/" + weapon + "/" + wep + "_000.png",
-                                                    gif: 'img/' + category + "/" + unit + "/" + weapon + "/" + wep + ".gif"
-                                                });
-                                            console.log(wepCounter + "/" + weps.length + " " + anim.name + " " + unitCounter);
-                                            // Increments the unit count for the category when all weapon pushes have been incremented through
+                                if (tempInfoArray.length === 5) {
+                                    anim.name = "";
+                                    anim.gender = tempInfoArray[3];
+                                    anim.credit = tempInfoArray[4];
+                                    anim.download = 'img/' + category + "/" + unit;
+                                };
+                                fs.readdir(images + category + "/" + unit + "/", (err, weps) => {
+                                    if (err) {
+                                        console.log(err);
+                                        unit++;
+                                    } else {
+                                        let wepCeiling = weps.length;
+                                        let wepCounter = 0;
+                                        // if (wepCeiling === 0) {
+                                        //     console.log(anim.name + " doesn't have any weapons!");
+                                        // }
+                                        weps.forEach(weapon => {
+                                            let wep = weapon.replace(/\d*?\.\s/, "").split(" ");
+                                            wep = wep[0].toString();
+                                            wepCounter++;
+                                            if (weapon.toLowerCase().includes("png") || weapon.toLowerCase().includes("gif") || weapon.toLowerCase().includes("txt") || weapon.toLowerCase().includes(".dat") || weapon.toLowerCase().includes("desktop")) {
+                                                console.log("not a wep: unit count =" + unitCounter + "/" + units.length + " categories = " + catCounter + "/" + catCeiling);
+                                            } else {
+                                                anim.weapons.push(
+                                                    {
+                                                        type: wep,
+                                                        fullName: weapon,
+                                                        still: 'img/' + category + "/" + unit + "/" + weapon + "/" + wep + "_000.png",
+                                                        gif: 'img/' + category + "/" + unit + "/" + weapon + "/" + wep + ".gif"
+                                                    });
+                                                console.log(wepCounter + "/" + weps.length + " " + anim.name + " " + unitCounter);
+                                                // Increments the unit count for the category when all weapon pushes have been incremented through
 
-                                        }
-                                        if (wepCounter === wepCeiling) {
-                                            tempArray.push(anim);
-                                            unitCounter++;
-                                            // console.log(unitCounter, units.length);
-                                            if (unitCounter === units.length) {
-                                                catCounter++;
-                                                console.log("Category: " + category + " unitCount = " + unitCounter + "/" + units.length + ". Categories = " + catCounter + "/" + catCeiling);
-                                                if (catCounter === catCeiling) {
-                                                    completeArray();
-                                                    return;
+                                            }
+                                            if (wepCounter === wepCeiling) {
+                                                tempArray.push(anim);
+                                                unitCounter++;
+                                                // console.log(unitCounter, units.length);
+                                                if (unitCounter === units.length) {
+                                                    catCounter++;
+                                                    console.log("Category: " + category + " unitCount = " + unitCounter + "/" + units.length + ". Categories = " + catCounter + "/" + catCeiling);
+                                                    if (catCounter === catCeiling) {
+                                                        completeArray();
+                                                        return;
+                                                    };
                                                 };
                                             };
-                                        };
-                                    });
-                                };
-                            });
+                                        });
+                                    };
+                                });
+                            }
+
                         });
                     });
                 };

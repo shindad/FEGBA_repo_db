@@ -46,7 +46,7 @@ navMaker("flier", "Fliers", "img/global/peg.gif", "false", "FLYFill", [
     "Pegasus Knight", "Falcoknight", "Griffon Knight", "Wyvern Rider", "Wyvern Lord", "Wyvern Knight"
 ]);
 navMaker("lord", "Unique", "img/global/lord.gif", "false", "LRDFill", [
-    "Lord", "Great Lord", "Refresh", "Miscellaneous"
+    "Lord", "Great Lord", "Refresh", "Miscellaneous", "Crossover"
 ], "right");
 navMaker("mage", "Magi", "img/global/mage.gif", "false", "MAGFill", [
     "Pupil", "Mage", "Sage", "Archsage",
