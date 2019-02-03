@@ -118,6 +118,35 @@ function Anim(anim) {
 
 /// FUNCTIONS ///
 
+// Creates a placeholder div during loading
+const makePlaceholder = (searchTerm) => {
+    const headerDiv = $("<div>")
+        .html(`Loading ${searchTerm}...`)
+        .addClass("col-12 text-center loadingHead");
+
+    const placeholderBody0 = $("<div>")
+        .addClass("col-xl-4 col-md-6 col-sm-12 my-2")
+        .append("<div><div class='mx-auto content-placeholder'></div></div>");
+    const placeholderBody1 = $("<div>")
+        .addClass("col-xl-4 col-md-6 col-sm-12 my-2")
+        .append("<div><div class='mx-auto content-placeholder'></div></div>");
+    const placeholderBody2 = $("<div>")
+        .addClass("col-xl-4 col-md-6 col-sm-12 my-2")
+        .append("<div><div class='mx-auto content-placeholder'></div></div>");
+
+    const placeholderDiv = $("<div>")
+        .addClass("placeholder row my-2 sectMain text-center")
+        .append(placeholderBody0, placeholderBody1, placeholderBody2)
+        .prepend(headerDiv);
+
+    $("#mainBody").prepend(placeholderDiv);
+};
+
+// Removes any created placeholders. Not ideal functionality due to removing ALL other placeholders --stopgap
+const removePlaceholder = () => {
+    $(".placeholder").remove();
+}
+
 //Initializes the div for holding all the anims and then makes a card for all relevant anims.
 function makeAnimRow(anim, searchBool, searchName, searchCredit) {
     //console.log(anim);
@@ -163,6 +192,7 @@ function makeAnimRow(anim, searchBool, searchName, searchCredit) {
     parentDiv.prepend(headerDiv);
 
     //Send compiled data to html
+    removePlaceholder();
     $("#mainBody").prepend(parentDiv);
 };
 
@@ -227,6 +257,7 @@ $(document).on("click", ".classBtn", function () {
 
     if (this.getAttribute("data-filled") === 'false') {
         API.getAnims(this.getAttribute("data-prof")).then(function (animArr) {
+            makePlaceholder(animArr[0].feClass);
             makeAnimRow(animArr, false, animArr[0].feClass);
             scrollTo(row);
         });
@@ -256,6 +287,7 @@ $(document).on("click", "#formSubmit", function () {
     const row = ".searchRow";
     API.searchAnims(name, credit, category, tier, gender).then(function (animArr) {
         //console.log(animArr);
+        makePlaceholder(`${$("#formName").val().trim()} ${$("#formAuthor").val().trim()}`);
         makeAnimRow(animArr, true, $("#formName").val().trim(), $("#formAuthor").val().trim());
         scrollTo(row);
     });
