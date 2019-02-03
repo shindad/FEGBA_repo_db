@@ -55,13 +55,8 @@ navMaker("mage", "Magi", "img/global/mage.gif", "false", "MAGFill", [
     "Troubadour", "Mage Knight", "Valkyrie", "Dark Knight", "Custom Magi"
 ], "right");
 navMaker("creature", "Creatures", "img/global/rev.gif", "false", "MONFill", [
-    "Phantom", "Bonewalker", "Revenant", "Bael", "Mauthe Doog", "Mogall", "Ghost", "Gargoyle", "Tarvos",
-    "Gorgon", "Cyclops", "Manakete", "Dragon", "Demon King", "Custom Monster"
+    "Undead", "Demon", "Mauthe Doog", "Manakete", "Dragon", "Custom Monster"
 ], "right");
-// Commented section out to clean up webpage navigation. Classes have been added to lord.
-// navMaker("dancer", "Bards/Other", "img/global/bard.gif", "false", "MISCFill", [
-//     "Bard", "Dancer", "Magic Seal", "Merlinus"
-// ]);
 navMaker("spell", "Spells", "img/global/tome.gif", "false", "SPLFill", [
     "Water", "Earth", "Fire", "Wind", "Thunder", "Dark", "Light", "Physical"
 ], "right");

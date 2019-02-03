@@ -13,6 +13,7 @@ function Anim(anim) {
     this.id = anim.id; // unique id
     this.weapons = anim.Weapons; //array containing all weapons, stills, and gifs
 
+    // Custom card design
     this.makeCard = function () {
 
         // weapon and icon sort
@@ -22,20 +23,19 @@ function Anim(anim) {
         });
 
         //All Image data
-        const animImg = $("<img>");
+        const animImg = $("<img>")
+            .addClass("gif")
+            .attr({
+                id: (this.feClass + this.id).split(' ').join(''), //needed for targeting with img icons
+                src: this.weapons[0].still,
+                "data-weapon": this.weapons[0].AnimWepIm.weapon, //holds current weapon displayed
+                "data-state": "still",
+                "data-animate": this.weapons[0].gif,
+                "data-still": this.weapons[0].still
+            });
         if (this.category === 'SPL') {
-            animImg.addClass("gif spellGif");
-        } else {
-            animImg.addClass("gif");
-        }
-        animImg.attr({
-            id: (this.feClass + this.id).split(' ').join(''), //needed for targeting with img icons
-            src: this.weapons[0].still,
-            "data-weapon": this.weapons[0].AnimWepIm.weapon, //holds current weapon displayed
-            "data-state": "still",
-            "data-animate": this.weapons[0].gif,
-            "data-still": this.weapons[0].still
-        });
+            animImg.addClass("spellGif");
+        };
 
         let genderI;
         switch (this.gender) {
@@ -56,7 +56,7 @@ function Anim(anim) {
             .html(` ${this.name}`);
 
         const genderDiv = $("<i>")
-            .addClass(genderI + " animName")
+            .addClass(`${genderI} animName`)
             .attr({
                 "data-folder": this.dlName,
                 "data-url": this.URL
@@ -64,47 +64,47 @@ function Anim(anim) {
             .append(nameDiv);
 
         //Link and name of animation
-        const midRow = $("<div>")
+        const middleRow = $("<div>")
             .addClass("text-center pt-1")
             .append(genderDiv);
 
         // insert weapon icons
-        const icons = $("<span>");
+        const icons = $("<span>")
+            .addClass("iconmt");
         if (this.category !== "SPL") {
-            icons.addClass("iconmt");
             for (let i = 0; i < this.weapons.length; i++) {
                 const icon = $("<img>")
+                    .addClass("imgIcon mt-0")
                     .attr({
                         src: "img/global/" + this.weapons[i].AnimWepIm.weapon + ".png",
                         "data-animate": this.weapons[i].gif,
                         "data-still": this.weapons[i].still,
                         "data-target": this.feClass.split(' ').join('') + this.id
-                    })
-                    .addClass("imgIcon mt-0");
+                    });
                 icons.append(icon);
             };
             icons.append("<br>");
         };
 
         //Author
-        const authDiv = $("<span>")
+        const authorDiv = $("<span>")
             .html(this.credit)
             .addClass("authorText text-center");
 
         // DIV ALIGNMENT //
 
-        const botRow = $("<div>")
-            .addClass("col-12 botRow")
-            .append(icons, authDiv);
+        const bottomRow = $("<div>")
+            .addClass("col-12 bottomRow")
+            .append(icons, authorDiv);
 
-        // Holds mid and botrow for uniform bg.
-        const textSect = $("<div>")
+        // Holds mid and bottomRow for uniform bg.
+        const textSection = $("<div>")
             .addClass("cardbg mx-auto")
-            .append(midRow, botRow);
+            .append(middleRow, bottomRow);
 
         // All together
         const cardParent = $("<div>")
-            .append(animImg, textSect);
+            .append(animImg, textSection);
 
         const colDiv = $("<div>")
             .addClass("col-xl-4 col-md-6 col-sm-12 my-2")
@@ -119,44 +119,7 @@ function Anim(anim) {
 /// FUNCTIONS ///
 
 //Initializes the div for holding all the anims and then makes a card for all relevant anims.
-function makeAnimRow(anim) {
-    //console.log(anim);
-
-    // reorders the anims by gender for the selected class.
-    anim.sort(function (a, b) {
-        const x = a.gender;
-        const y = b.gender;
-        if (x < y) { return -1; }
-        if (x > y) { return 1; }
-        if (a.name < b.name) { return -1; }
-        if (a.name > b.name) { return 1; }
-        return 0;
-    });
-
-    const classRow = (anim[0].feClass + "Row").split(' ').join('')
-
-    const parentDiv = $("<div>")
-        .addClass(classRow + " row my-2 sectMain text-center")
-
-    // Title div. Main function is displaying class name for selected group
-    const headerDiv = $("<div>")
-        .html(anim[0].feClass)
-        .addClass("col-12 text-center sectHead")
-        .attr({ "data-prof": "." + classRow });
-
-    // Init subrow that contains all the anim cards
-    for (let i = 0; i < anim.length; i++) {
-        let tempAnim = new Anim(anim[i]);
-        parentDiv.append(tempAnim.makeCard());
-    };
-
-    parentDiv.prepend(headerDiv);
-
-    //Send compiled data to html
-    $("#mainBody").prepend(parentDiv);
-};
-
-function makeAnimSearchRow(anim, searchName, searchCredit) {
+function makeAnimRow(anim, searchBool, searchName, searchCredit) {
     //console.log(anim);
 
     // reorders the anims by gender for the selected class.
@@ -170,16 +133,22 @@ function makeAnimSearchRow(anim, searchName, searchCredit) {
         return 0;
     });
 
-    const classRow = searchName.split(' ').join('') + searchCredit.split(' ').join('') + "Row";
+    let classRow = `${searchName}Row`.split(' ').join('');
 
-    const parentDiv = $("<div>")
-        .addClass(classRow + " searchRow row my-2 sectMain text-center");
+    let parentDiv = $("<div>")
+        .addClass(classRow + " row my-2 sectMain text-center");
 
     // Title div. Main function is displaying class name for selected group
     const headerDiv = $("<div>")
-        .html(searchName + " " + searchCredit)
+        .html(searchName)
         .addClass("col-12 text-center sectHead")
         .attr({ "data-prof": "." + classRow });
+
+    if (searchBool) {
+        classRow = searchName.split(' ').join('') + searchCredit.split(' ').join('') + "Row";
+        headerDiv.html(searchName + " " + searchCredit);
+        parentDiv.addClass("searchRow");
+    };
 
     // Init subrow that contains all the anim cards
     for (let i = 0; i < anim.length; i++) {
@@ -188,25 +157,39 @@ function makeAnimSearchRow(anim, searchName, searchCredit) {
     };
 
     if (!anim.length) {
-        const bodyDiv = $("<div>")
-            .addClass("col-12 text-center my-1")
-            .html("No results found. Please revise your search.");
-
-        const noResultsImg = ["img/global/elicry.jpg", "img/global/sharcry.png", "img/global/faeangry.jpg", "img/global/nergal.png"];
-        const src = noResultsImg[Math.floor(Math.random() * noResultsImg.length)]
-        const bodyImg = $("<img>")
-            .addClass("mx-auto mb-3 noResImg")
-            .attr({
-                src: src
-            });
-
-        parentDiv.append(bodyDiv, bodyImg);
-    }
+        parentDiv = noResults(parentDiv);
+    };
 
     parentDiv.prepend(headerDiv);
 
     //Send compiled data to html
     $("#mainBody").prepend(parentDiv);
+};
+
+// Creates the no results Div
+const noResults = parentDiv => {
+    const bodyDiv = $("<div>")
+        .addClass("col-12 text-center my-1")
+        .html("No results found. Please revise your search.");
+
+    const noResultsImg = ["img/global/elicry.jpg", "img/global/sharcry.png", "img/global/faeangry.jpg", "img/global/nergal.png"];
+    const src = noResultsImg[Math.floor(Math.random() * noResultsImg.length)];
+    const bodyImg = $("<img>")
+        .addClass("mx-auto mb-3 noResImg")
+        .attr({
+            src: src
+        });
+
+    parentDiv.append(bodyDiv, bodyImg);
+    return parentDiv;
+};
+
+// Scroll the screen to the row in question
+function scrollTo(row) {
+    const scrollPos = $(row).offset().top;
+    $('html, body').animate({
+        scrollTop: (scrollPos - 44)
+    }, 300);
 };
 
 // API Routing calls, can be expanded if future functionality desired.
@@ -221,7 +204,7 @@ const API = {
         return $.get("/api/unit/" + unit, {
             path: path,
             unit: unit
-        })
+        });
     },
     searchAnims: function (name, credit, category, tier, gender) {
         return $.get("/api/search/", {
@@ -234,25 +217,17 @@ const API = {
     }
 };
 
-function scrollTo(row) {
-    const scrollPos = $(row).offset().top
-    $('html, body').animate({
-        scrollTop: (scrollPos - 44)
-    }, 300);
-}
-
 /// END FUNCTIONS ///
 
 /// EVENT LISTENERS ///
 
 //Major listener for values populated by category selection
 $(document).on("click", ".classBtn", function () {
-    const row = "." + this.getAttribute("data-prof").split(' ').join('') + "Row"
+    const row = "." + this.getAttribute("data-prof").split(' ').join('') + "Row";
 
     if (this.getAttribute("data-filled") === 'false') {
         API.getAnims(this.getAttribute("data-prof")).then(function (animArr) {
-            makeAnimRow(animArr);
-
+            makeAnimRow(animArr, false, animArr[0].feClass);
             scrollTo(row);
         });
         this.setAttribute("data-filled", "true");
@@ -263,11 +238,11 @@ $(document).on("click", ".classBtn", function () {
         } else {
             $(row).toggle();
             scrollTo(row);
-        }
+        };
     };
 });
 
-// Search Listener
+// Listener for search clicks
 $(document).on("click", "#formSubmit", function () {
     event.preventDefault();
     document.getElementById("formSubmit").disabled = true;
@@ -281,12 +256,8 @@ $(document).on("click", "#formSubmit", function () {
     const row = ".searchRow";
     API.searchAnims(name, credit, category, tier, gender).then(function (animArr) {
         //console.log(animArr);
-        makeAnimSearchRow(animArr, $("#formName").val().trim(), $("#formAuthor").val().trim());
-
-        const scrollPos = $(row).offset().top
-        $('html, body').animate({
-            scrollTop: (scrollPos - 44)
-        }, 300);
+        makeAnimRow(animArr, true, $("#formName").val().trim(), $("#formAuthor").val().trim());
+        scrollTo(row);
     });
 });
 
