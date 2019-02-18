@@ -91,6 +91,12 @@ One can also search by both name and author to be even more precise.
 In the case of search terms without results, a random image out of several will display with a message.
 ![Imgur](https://i.imgur.com/EsIA4MV.png)
 
+### Full Download
+This application is synced with a Google Drive repo to enable full downloads of assets. The loading hub has a link to this full download.
+
+The best method of staying up to date on all assets involves adding the repo to your Google Drive folder. It's also possible to only take certain folders if all aren't desired.
+![Imgur](https://i.imgur.com/GXI7fYH.gifv)
+
 ## ToDo
 + **Convert to ES6/React**
 + ~~Add Search Bar~~ *done!*
