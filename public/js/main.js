@@ -148,7 +148,7 @@ const removePlaceholder = () => {
 }
 
 //Initializes the div for holding all the anims and then makes a card for all relevant anims.
-function makeAnimRow(anim, searchBool, searchName, searchCredit) {
+function makeAnimRow(anim, searchName) {
     //console.log(anim);
 
     // reorders the anims by gender for the selected class.
@@ -172,12 +172,6 @@ function makeAnimRow(anim, searchBool, searchName, searchCredit) {
         .html(searchName)
         .addClass("col-12 text-center sectHead")
         .attr({ "data-prof": "." + classRow });
-
-    if (searchBool) {
-        classRow = (searchName + searchCredit).split(' ').join('') + "Row";
-        headerDiv.html(searchName + " " + searchCredit);
-        parentDiv.addClass("searchRow");
-    };
 
     // Init subrow that contains all the anim cards
     for (let i = 0; i < anim.length; i++) {
@@ -259,23 +253,22 @@ const API = {
 
 //Major listener for values populated by category selection
 $(document).on("click", ".classBtn", function () {
-    const row = "." + this.getAttribute("data-prof").split(' ').join('') + "Row";
+    const className = this.getAttribute("data-prof");
+    const row = "." + className.split(' ').join('') + "Row";
+    makePlaceholder(className);
 
     if (this.getAttribute("data-filled") === 'false') {
-        API.getAnims(this.getAttribute("data-prof")).then(function (animArr) {
-            makePlaceholder(animArr[0].feClass);
-            makeAnimRow(animArr, false, animArr[0].feClass);
+        API.getAnims(className).then(function (animArr) {
+            makeAnimRow(animArr, className);
             scrollTo(row);
         });
         this.setAttribute("data-filled", "true");
     } else {
         //console.log(document.getElementsByClassName(this.getAttribute("data-prof").split(' ').join('') + "Row")[0])
-        if (document.getElementsByClassName(this.getAttribute("data-prof").split(' ').join('') + "Row")[0].style.display !== "none") {
-            scrollTo(row);
-        } else {
+        if (document.getElementsByClassName(row[0].style.display === "none")) {
             $(row).toggle();
-            scrollTo(row);
         };
+        scrollTo(row);
     };
 });
 
@@ -284,17 +277,19 @@ $(document).on("click", "#formSubmit", function () {
     event.preventDefault();
     document.getElementById("formSubmit").disabled = true;
 
-    const searchTerm = $("#formSearch").val().trim().split(' ');
-    let search = [];
+    const cleanSearch = $("#formSearch").val().trim();
+    makePlaceholder(cleanSearch);
+
+    const searchTerm = cleanSearch.split(' ');
+    const search = [];
     searchTerm.forEach(function (term) {
-        search.push({ 'dlName': { like: '%' + term + '%'}})
+        search.push({ 'dlName': { like: '%' + term + '%' } })
     });
 
     API.searchAnims(search).then(function (animArr) {
         const row = `.${searchTerm.join('')}Row`;
         // console.log(animArr);
-        makePlaceholder(`${$("#formSearch").val().trim()}`);
-        makeAnimRow(animArr, false, $("#formSearch").val().trim());
+        makeAnimRow(animArr, cleanSearch);
         scrollTo(row);
     });
 });
@@ -315,11 +310,12 @@ $(document).on("click", "#detailedFormSubmit", function () {
     const tier = 'T' + $("#formTier").val().trim();
     const gender = $("#formGender").val().trim();
 
+    const row = `${cleanName} ${cleanCredit} ${cleanFeClass} ${category} ${gender}`;
+    makePlaceholder(`${row}`);
+
     API.detailedSearchAnims(name, feClass, credit, category, tier, gender).then(function (animArr) {
-        const row = `${cleanName} ${cleanCredit} ${cleanFeClass} ${category} ${gender}`;
         // console.log(animArr);
-        makePlaceholder(`${$("#formName").val().trim()} ${$("#formAuthor").val().trim()}`);
-        makeAnimRow(animArr, false, row);
+        makeAnimRow(animArr, row);
         scrollTo(`.${row.split(' ').join('')}Row`);
     });
 });
@@ -383,9 +379,13 @@ Array.from(searchKey).forEach(function (element) {
     });
 });
 
-document.getElementById('formSearch').addEventListener("keyup", function() {
+// Listener to activate and deactivate the input field for the generic search method.
+document.getElementById('formSearch').addEventListener("keyup", function () {
     if (document.getElementById("formSearch").value.length > 2) {
         $("#formSubmit").removeAttr("disabled");
+        //comment next three lines during testing to spoof long loading time.
+    } else if (document.getElementById("formSearch").value.length < 2) {
+        document.getElementById("formSubmit").disabled = true;
     };
 });
 
