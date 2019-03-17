@@ -96,7 +96,8 @@ a {
 /* Body Styles */
 .gif {
     border-radius: 7px 7px 0 0;
-    width: 100%;
+    width: 22em;
+    height: 16.5em;
     box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.7);
     object-fit: cover;
     object-position: 0 0;
@@ -192,7 +193,7 @@ a {
 .cardbg {
     line-height: 1.5;
     background: radial-gradient(cadetblue 65%, darkslategray);
-    max-width: 100%;
+    width: 22em;
     /* margin-left: 11%; */
     /* max-width: 90%; */
     border-radius: 0 0 7px 7px;
@@ -214,9 +215,9 @@ a {
     border-radius: 5px 5px 0 0;
 }
 .content-placeholder {
-    width: 20rem;
+    width: 20em;
     border-radius: 7px;
-    height: 18rem;
+    height: 18em;
     box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.7);
     min-height: 80px;
     border: 1px solid white;
@@ -268,6 +269,27 @@ a {
     color: lightblue;
 }
 
+@media screen and (max-width: 1199px) {
+    .sectMain {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sectMain {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .midName {
+        font-size: 1em;
+    }
+
+    .sectMain {
+        font-size: 1.4em;
+    }
+}
 @media screen and (max-width: 750px) {
     .fullNav{
        display: none;
@@ -296,6 +318,12 @@ a {
 
 }
 
+@media screen and (max-width: 519px) {
+    .sectMain {
+        font-size: 1.3em;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .navSearchContainer {
         margin-top: 6px !important;
@@ -315,5 +343,39 @@ a {
 
     .sectMain {
         box-shadow: none;
+        font-size: 1em;
+    }
+
+    .gif {
+        width: 28em;
+        height: 21em;
+    }
+
+    .cardbg {
+        width: 28em;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .sectMain {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .sectMain {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .sectMain {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .sectMain {
+        font-size: .65em;
     }
 }
