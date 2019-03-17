@@ -72,17 +72,17 @@ function Anim(anim) {
         const icons = $("<span>")
             .addClass("iconmt");
         if (this.category !== "SPL") {
-            for (let i = 0; i < this.weapons.length; i++) {
+            this.weapons.forEach((weapon => {
                 const icon = $("<img>")
                     .addClass("imgIcon mt-0")
                     .attr({
-                        src: "img/global/" + this.weapons[i].AnimWepIm.weapon + ".png",
-                        "data-animate": this.weapons[i].gif,
-                        "data-still": this.weapons[i].still,
+                        src: "img/global/" + weapon.AnimWepIm.weapon + ".png",
+                        "data-animate": weapon.gif,
+                        "data-still": weapon.still,
                         "data-target": this.feClass.split(' ').join('') + this.id
                     });
                 icons.append(icon);
-            };
+            }));
             icons.append("<br>");
         };
 
@@ -94,7 +94,7 @@ function Anim(anim) {
         // DIV ALIGNMENT //
 
         const bottomRow = $("<div>")
-            .addClass("col-12 bottomRow")
+            .addClass("col-12 bottomRow px-0")
             .append(icons, authorDiv);
 
         // Holds mid and bottomRow for uniform bg.
@@ -174,7 +174,7 @@ function makeAnimRow(anim, searchBool, searchName, searchCredit) {
         .attr({ "data-prof": "." + classRow });
 
     if (searchBool) {
-        classRow = searchName.split(' ').join('') + searchCredit.split(' ').join('') + "Row";
+        classRow = (searchName + searchCredit).split(' ').join('') + "Row";
         headerDiv.html(searchName + " " + searchCredit);
         parentDiv.addClass("searchRow");
     };
@@ -236,9 +236,15 @@ const API = {
             unit: unit
         });
     },
-    searchAnims: function (name, credit, category, tier, gender) {
+    searchAnims: function (search) {
         return $.get("/api/search/", {
+            search: search
+        });
+    },
+    detailedSearchAnims: function (name, feClass, credit, category, tier, gender) {
+        return $.get("/api/detailedSearch/", {
             name: name,
+            feClass: feClass,
             credit: credit,
             category: category,
             tier: tier,
@@ -278,18 +284,43 @@ $(document).on("click", "#formSubmit", function () {
     event.preventDefault();
     document.getElementById("formSubmit").disabled = true;
 
-    const name = { like: '%' + $("#formName").val().trim() + '%' };
-    const credit = { like: '%' + $("#formAuthor").val().trim() + '%' };
+    const searchTerm = $("#formSearch").val().trim().split(' ');
+    let search = [];
+    searchTerm.forEach(function (term) {
+        search.push({ 'dlName': { like: '%' + term + '%'}})
+    });
+
+    API.searchAnims(search).then(function (animArr) {
+        const row = `.${searchTerm.join('')}Row`;
+        // console.log(animArr);
+        makePlaceholder(`${$("#formSearch").val().trim()}`);
+        makeAnimRow(animArr, false, $("#formSearch").val().trim());
+        scrollTo(row);
+    });
+});
+
+//Listener for clicks on the detailed search clicks
+$(document).on("click", "#detailedFormSubmit", function () {
+    event.preventDefault();
+    document.getElementById("detailedFormSubmit").disabled = true;
+
+    const cleanName = $("#formName").val().trim();
+    const cleanFeClass = $("#formClass").val().trim();
+    const cleanCredit = $("#formAuthor").val().trim();
+
+    const name = { like: '%' + cleanName + '%' };
+    const feClass = { like: '%' + cleanFeClass + '%' };
+    const credit = { like: '%' + cleanCredit + '%' };
     const category = $("#formCategory").val().trim();
     const tier = 'T' + $("#formTier").val().trim();
     const gender = $("#formGender").val().trim();
 
-    const row = ".searchRow";
-    API.searchAnims(name, credit, category, tier, gender).then(function (animArr) {
-        //console.log(animArr);
+    API.detailedSearchAnims(name, feClass, credit, category, tier, gender).then(function (animArr) {
+        const row = `${cleanName} ${cleanCredit} ${cleanFeClass} ${category} ${gender}`;
+        // console.log(animArr);
         makePlaceholder(`${$("#formName").val().trim()} ${$("#formAuthor").val().trim()}`);
-        makeAnimRow(animArr, true, $("#formName").val().trim(), $("#formAuthor").val().trim());
-        scrollTo(row);
+        makeAnimRow(animArr, false, row);
+        scrollTo(`.${row.split(' ').join('')}Row`);
     });
 });
 
@@ -345,11 +376,17 @@ const searchKey = document.getElementsByClassName("formKey");
 Array.from(searchKey).forEach(function (element) {
     element.addEventListener("keyup", function () {
         if (document.getElementById("formAuthor").value.length > 1 || document.getElementById("formName").value.length > 2) {
-            $("#formSubmit").removeAttr('disabled');
+            $("#detailedFormSubmit").removeAttr('disabled');
         } else if (document.getElementById("formAuthor").value.length < 2 && document.getElementById("formName").value.length < 3) {
-            document.getElementById("formSubmit").disabled = true;
+            document.getElementById("detailedFormSubmit").disabled = true;
         };
     });
+});
+
+document.getElementById('formSearch').addEventListener("keyup", function() {
+    if (document.getElementById("formSearch").value.length > 2) {
+        $("#formSubmit").removeAttr("disabled");
+    };
 });
 
 /// END EVENT LISTENERS ///

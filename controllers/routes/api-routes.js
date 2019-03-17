@@ -34,8 +34,25 @@ module.exports = function (app) {
 
   // Search API route takes search term as an object and searches the database using term info
   app.get("/api/search/", function (req, res, next) {
+
+    db.Anim.findAll({
+      where: req.query.search,
+      //include all weapons through the linking table
+      //along with attributes still and gif from the linking table
+      include: [{
+        model: db.Weapon,
+        through: {
+          attributes: ['weapon']
+        }
+      }]
+    }).then(function (response) {
+      //console.log(response);
+      res.json(response);
+    });
+  });
+
+  app.get("/api/detailedSearch/", function (req, res, next) {
     Object.keys(req.query).forEach((key) => (req.query[key] == '' || req.query[key] == 'T') && delete req.query[key]);
-    //console.log(req.query)
 
     db.Anim.findAll({
       where: req.query,

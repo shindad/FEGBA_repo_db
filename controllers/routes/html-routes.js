@@ -20,8 +20,15 @@ module.exports = function(app) {
   // index route loads view.html
   homePg(function(navItem) {
     app.get("/", function(req, res, next) {
+      let allClasses = [];
+      navItem.forEach(category => {
+        allClasses.push(...category['classes'])
+      });
+      allClasses.sort();
+      // console.log(allClasses);
       res.render("index", { 
         navItem: navItem,
+        allClasses: allClasses
       });
     });
   });
