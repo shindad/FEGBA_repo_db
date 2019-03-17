@@ -255,9 +255,9 @@ const API = {
 $(document).on("click", ".classBtn", function () {
     const className = this.getAttribute("data-prof");
     const row = "." + className.split(' ').join('') + "Row";
-    makePlaceholder(className);
 
     if (this.getAttribute("data-filled") === 'false') {
+        makePlaceholder(className);
         API.getAnims(className).then(function (animArr) {
             makeAnimRow(animArr, className);
             scrollTo(row);
@@ -265,7 +265,7 @@ $(document).on("click", ".classBtn", function () {
         this.setAttribute("data-filled", "true");
     } else {
         //console.log(document.getElementsByClassName(this.getAttribute("data-prof").split(' ').join('') + "Row")[0])
-        if (document.getElementsByClassName(row[0].style.display === "none")) {
+        if (document.getElementsByClassName(className.split(' ').join('')+'Row')[0].style.display === "none") {
             $(row).toggle();
         };
         scrollTo(row);
