@@ -58,7 +58,7 @@ navMaker("creature", "Creatures", "img/global/rev.gif", "false", "MONFill", [
     "Undead", "Demon", "Mauthe Doog", "Manakete", "Dragon", "Custom Monster"
 ], "right");
 navMaker("spell", "Spells", "img/global/tome.gif", "false", "SPLFill", [
-    "Water", "Earth", "Fire", "Wind", "Thunder", "Dark", "Light", "Physical", "Other"
+    "Anima", "Dark", "Light", "Other"
 ], "right");
 
 module.exports = navItem;
