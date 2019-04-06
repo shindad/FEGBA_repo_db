@@ -185,8 +185,8 @@ C0D                               #End of dodge animation. preceeded by 0x06
 C02                               #Start of dodge
 1 p- Staff_000.png
 C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
-3 p- Staff_007.png
-1 p- Staff_008.png
+3 p- Staff_027.png
+1 p- Staff_028.png
 C01                               #NOP
 3 p- Staff_007.png
 C0D                               #End of dodge animation. preceeded by 0x06
@@ -195,8 +195,8 @@ C0D                               #End of dodge animation. preceeded by 0x06
 C02                               #Start of dodge
 1 p- Staff_000.png
 C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
-3 p- Staff_007.png
-1 p- Staff_008.png
+3 p- Staff_027.png
+1 p- Staff_028.png
 C01                               #NOP
 3 p- Staff_007.png
 C0D                               #End of dodge animation. preceeded by 0x06
