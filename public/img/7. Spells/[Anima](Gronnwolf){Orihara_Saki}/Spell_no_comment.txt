@@ -59,6 +59,7 @@ B  p- Spell_b_012.png
 O  p- Spell_o_000.png
 B  p- Spell_b_013.png
 1
+C40
 O  p- Spell_o_000.png
 B  p- Spell_b_014.png
 1
