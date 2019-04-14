@@ -101,7 +101,7 @@ C0D                               #End of dodge animation. preceeded by 0x06
 3 p- Staff_000.png
 C01                               #NOP
 ~~~
-/// - Mode 10               #standing motions?
+/// - Mode 10               #Standing motions
 3 p- Staff_000.png
 C01                               #NOP
 ~~~

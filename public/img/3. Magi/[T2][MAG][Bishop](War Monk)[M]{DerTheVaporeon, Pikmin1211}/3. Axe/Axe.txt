@@ -208,7 +208,7 @@ C0D                               #End of dodge animation. preceeded by 0x06
 1 p- Axe_000.png
 C01                               #NOP
 ~~~
-/// - Mode 10               #standing motions?
+/// - Mode 10               #Standing motions
 1 p- Axe_000.png
 C01                               #NOP
 ~~~
@@ -236,20 +236,19 @@ C15                               #Slight vibration of screen
 3 p- Axe_012.png
 C42                               #Play long axe swinging SFE
 C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
-3 p- Axe_013.png
-C20                               #Play hit SFE (sounds like Knight Lord with Durandal's hit)
-3 p- Axe_014.png
+3 p- Axe_060.png
+3 p- Axe_061.png
 C1B                               #Play quick "heavy step" SFE
 C46                               #Play dropped axe crashing onto ground SFE
-4 p- Axe_015.png
-4 p- Axe_016.png
-8 p- Axe_017.png
-1 p- Axe_018.png
+4 p- Axe_062.png
+4 p- Axe_063.png
+8 p- Axe_064.png
+1 p- Axe_065.png
 C01                               #NOP
-6 p- Axe_019.png
-3 p- Axe_020.png
+6 p- Axe_066.png
+3 p- Axe_067.png
 C42                               #Play long axe swinging SFE
-3 p- Axe_021.png
+3 p- Axe_068.png
 3 p- Axe_022.png
 5 p- Axe_023.png
 7 p- Axe_024.png

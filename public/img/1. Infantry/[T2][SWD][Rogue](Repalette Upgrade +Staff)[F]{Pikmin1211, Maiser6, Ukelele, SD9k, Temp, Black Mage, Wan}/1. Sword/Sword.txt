@@ -197,7 +197,7 @@ C0D                               #End of dodge animation. preceeded by 0x06
 1 p- Sword_000.png
 C01                               #NOP
 ~~~
-/// - Mode 10               #standing motions?
+/// - Mode 10               #Standing motions
 1 p- Sword_000.png
 C01                               #NOP
 ~~~
