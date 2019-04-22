@@ -41,7 +41,7 @@ db.sequelize.sync({}).then(function () {
     console.log("App listening on PORT " + PORT);
 
     //Seeds to DB
-    //require("./szcripts/repoSeeder");
+    // require("./scripts/repoSeeder");
 
   });
 });
