@@ -1,16 +1,31 @@
 {
-  "name": "post-author-joins",
+  "name": "emblem-anims",
   "version": "1.0.0",
-  "description": "",
+  "description": "a site for viewing and downloading fire emblem gba assets",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "watch": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shindad/FEGBA_repo_db.git"
+  },
+  "keywords": ["fire", "emblem", "gba", "animations"],
+  "author": {
+    "name": "Brady Shinners",
+    "email": "brady.shinners@gmail.com",
+    "url": "https://bshin19.github.io"
+  },
+  "contributors": [
+    {
+      "name": "Brady Shinners",
+      "email": "brady.shinners@gmail.com",
+      "url": "https://bshin19.github.io"
+    }
+  ],
   "license": "ISC",
+  "homepage": "https://github.com/shindad/FEGBA_repo_db",
   "dependencies": {
     "archiver": "^3.0.0",
     "body-parser": "^1.15.2",
