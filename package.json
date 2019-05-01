@@ -1,6 +1,6 @@
 {
   "name": "emblem-anims",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a site for viewing and downloading fire emblem gba assets",
   "main": "server.js",
   "scripts": {
