@@ -17,7 +17,7 @@ function Anim(anim) {
     this.makeCard = function () {
 
         // weapon and icon sort
-        const order = ["Sword", "Lance", "Axe", "Handaxe", "Bow", "Magic", "Staff", "Refresh", "Monster", "Dragonstone", "Legendary", "Unarmed"];
+        const order = ["Sword", "Knife", "Lance", "Axe", "Handaxe", "Bow", "Magic", "Staff", "Refresh", "Monster", "Dragonstone", "Legendary", "Unarmed"];
         this.weapons.sort(function (a, b) {
             return order.indexOf(a.AnimWepIm.weapon) < order.indexOf(b.AnimWepIm.weapon) ? -1 : 1;
         });
