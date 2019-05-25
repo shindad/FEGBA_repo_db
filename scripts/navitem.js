@@ -55,7 +55,7 @@ navMaker("mage", "Magi", "img/global/mage.gif", "false", "MAGFill", [
     "Troubadour", "Mage Knight", "Valkyrie", "Dark Knight", "Custom Magi"
 ], "right");
 navMaker("creature", "Creatures", "img/global/rev.gif", "false", "MONFill", [
-    "Undead", "Demon", "Mauthe Doog", "Manakete", "Dragon", "Custom Monster"
+    "Undead", "Demon", "Mauthe Doog", "Manakete", "Dragon", "Shapeshifter", "Custom Monster"
 ], "right");
 navMaker("spell", "Spells", "img/global/tome.gif", "false", "SPLFill", [
     "Anima", "Dark", "Light", "Other"
