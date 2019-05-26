@@ -1,3 +1,5 @@
 node_modules/
 download/
 desktop.ini
+
+*.driveupload
