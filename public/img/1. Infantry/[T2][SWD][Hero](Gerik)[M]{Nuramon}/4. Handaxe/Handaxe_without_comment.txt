@@ -202,8 +202,8 @@ C0D
 C18
 1 p- Handaxe_000.png
 C0E
-2 p- Handaxe_032.png
-2 p- Handaxe_033.png
+1 p- Handaxe_032.png
+1 p- Handaxe_033.png
 2 p- Handaxe_034.png
 3 p- Handaxe_035.png
 C01
@@ -218,8 +218,8 @@ C0D
 C18
 1 p- Handaxe_000.png
 C0E
-2 p- Handaxe_032.png
-2 p- Handaxe_033.png
+1 p- Handaxe_032.png
+1 p- Handaxe_033.png
 2 p- Handaxe_034.png
 3 p- Handaxe_035.png
 C01

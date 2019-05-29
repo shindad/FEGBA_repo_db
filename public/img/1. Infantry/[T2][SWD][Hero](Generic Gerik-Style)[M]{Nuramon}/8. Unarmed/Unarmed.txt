@@ -23,8 +23,8 @@ C01                               #NOP
 C18                               #Use this instead of 02 to dodge toward the foreground instead of toward the background
 1 p- Unarmed_000.png
 C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
-2 p- Unarmed_001.png
-2 p- Unarmed_002.png
+1 p- Unarmed_001.png
+1 p- Unarmed_002.png
 2 p- Unarmed_003.png
 3 p- Unarmed_004.png
 C01                               #NOP
@@ -39,8 +39,8 @@ C0D                               #End of dodge animation. preceeded by 0x06
 C18                               #Use this instead of 02 to dodge toward the foreground instead of toward the background
 1 p- Unarmed_000.png
 C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
-2 p- Unarmed_001.png
-2 p- Unarmed_002.png
+1 p- Unarmed_001.png
+1 p- Unarmed_002.png
 2 p- Unarmed_003.png
 3 p- Unarmed_004.png
 C01                               #NOP

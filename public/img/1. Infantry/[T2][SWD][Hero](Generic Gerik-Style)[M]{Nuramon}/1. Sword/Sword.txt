@@ -152,60 +152,54 @@ C04                               #Prepare HP depletion routine; needed to anima
 C20                               #Play hit SFE (sounds like Knight Lord with Durandal's hit)
 C08                               #Critical hit
 2 p- Sword_118.png
-2 p- Sword_119.png
-2 p- Sword_120.png
-2 p- Sword_121.png
-2 p- Sword_122.png
+3 p- Sword_119.png
+3 p- Sword_120.png
+3 p- Sword_121.png
+3 p- Sword_122.png
+3 p- Sword_119.png
+3 p- Sword_120.png
+3 p- Sword_121.png
+3 p- Sword_122.png
+3 p- Sword_119.png
+3 p- Sword_120.png
+3 p- Sword_121.png
+3 p- Sword_122.png
+3 p- Sword_119.png
+3 p- Sword_120.png
+3 p- Sword_121.png
+3 p- Sword_122.png
 2 p- Sword_123.png
-2 p- Sword_124.png
-2 p- Sword_125.png
-2 p- Sword_118.png
-2 p- Sword_119.png
-2 p- Sword_120.png
-2 p- Sword_121.png
-2 p- Sword_122.png
-2 p- Sword_123.png
-2 p- Sword_124.png
-2 p- Sword_125.png
-2 p- Sword_119.png
-2 p- Sword_120.png
-2 p- Sword_121.png
-2 p- Sword_122.png
-2 p- Sword_123.png
+C34                               #Play heavy stepping SFE
 2 p- Sword_124.png
 2 p- Sword_125.png
 2 p- Sword_126.png
-C34                               #Play heavy stepping SFE
 2 p- Sword_127.png
 2 p- Sword_128.png
 2 p- Sword_129.png
 2 p- Sword_130.png
 2 p- Sword_131.png
 2 p- Sword_132.png
+C23                               #Play shorter sword swinging SFE
 2 p- Sword_133.png
+C43                               #Play weapon stance SFE (Clicking noise)
 2 p- Sword_134.png
 2 p- Sword_135.png
-C23                               #Play shorter sword swinging SFE
 2 p- Sword_136.png
-C43                               #Play weapon stance SFE (Clicking noise)
 2 p- Sword_137.png
 2 p- Sword_138.png
 2 p- Sword_139.png
 2 p- Sword_140.png
 2 p- Sword_141.png
+2 p- Sword_135.png
+2 p- Sword_136.png
+2 p- Sword_137.png
+2 p- Sword_025.png
 2 p- Sword_142.png
 2 p- Sword_143.png
 2 p- Sword_144.png
-2 p- Sword_138.png
-2 p- Sword_139.png
-2 p- Sword_140.png
-2 p- Sword_025.png
 2 p- Sword_145.png
 2 p- Sword_146.png
 2 p- Sword_147.png
-2 p- Sword_148.png
-2 p- Sword_149.png
-2 p- Sword_150.png
 2 p- Sword_029.png
 2 p- Sword_027.png
 2 p- Sword_025.png
@@ -277,21 +271,21 @@ C07                               #Start attack animation; should be preceeded b
 4 p- Sword_006.png
 4 p- Sword_007.png
 C36                               #Play sword unsheathing SFE
-2 p- Sword_151.png
-6 p- Sword_152.png
+2 p- Sword_148.png
+6 p- Sword_149.png
 C05                               #Call spell associated with equipped weapon
-4 p- Sword_153.png
+4 p- Sword_150.png
 C01                               #NOP
-6 p- Sword_152.png
-2 p- Sword_154.png
+6 p- Sword_149.png
+2 p- Sword_151.png
 C37                               #Play sword clicking SFE
+4 p- Sword_152.png
+4 p- Sword_153.png
+4 p- Sword_152.png
+4 p- Sword_154.png
 4 p- Sword_155.png
 4 p- Sword_156.png
-4 p- Sword_155.png
 4 p- Sword_157.png
-4 p- Sword_158.png
-4 p- Sword_159.png
-4 p- Sword_160.png
 3 p- Sword_000.png
 C06                               #Begin opponent's turn after hit.next code 0D.
 C0D                               #End of dodge animation. preceeded by 0x06
@@ -308,32 +302,32 @@ C07                               #Start attack animation; should be preceeded b
 4 p- Sword_006.png
 4 p- Sword_007.png
 C36                               #Play sword unsheathing SFE
-2 p- Sword_151.png
-6 p- Sword_152.png
+2 p- Sword_148.png
+6 p- Sword_149.png
 C28                               #Play electrical charging SFE
-4 p- Sword_153.png
-4 p- Sword_161.png
-4 p- Sword_153.png
-4 p- Sword_161.png
-4 p- Sword_153.png
-4 p- Sword_161.png
-4 p- Sword_153.png
-4 p- Sword_161.png
-4 p- Sword_153.png
-4 p- Sword_161.png
+4 p- Sword_150.png
+4 p- Sword_158.png
+4 p- Sword_150.png
+4 p- Sword_158.png
+4 p- Sword_150.png
+4 p- Sword_158.png
+4 p- Sword_150.png
+4 p- Sword_158.png
+4 p- Sword_150.png
+4 p- Sword_158.png
 C05                               #Call spell associated with equipped weapon
-4 p- Sword_153.png
+4 p- Sword_150.png
 C01                               #NOP
-6 p- Sword_152.png
-2 p- Sword_154.png
+6 p- Sword_149.png
+2 p- Sword_151.png
 C37                               #Play sword clicking SFE
+4 p- Sword_152.png
+4 p- Sword_153.png
+4 p- Sword_152.png
+4 p- Sword_154.png
 4 p- Sword_155.png
 4 p- Sword_156.png
-4 p- Sword_155.png
 4 p- Sword_157.png
-4 p- Sword_158.png
-4 p- Sword_159.png
-4 p- Sword_160.png
 3 p- Sword_000.png
 C06                               #Begin opponent's turn after hit.next code 0D.
 C0D                               #End of dodge animation. preceeded by 0x06
@@ -342,14 +336,14 @@ C0D                               #End of dodge animation. preceeded by 0x06
 C18                               #Use this instead of 02 to dodge toward the foreground instead of toward the background
 1 p- Sword_000.png
 C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
-2 p- Sword_162.png
-2 p- Sword_163.png
-2 p- Sword_164.png
-3 p- Sword_165.png
+1 p- Sword_159.png
+1 p- Sword_160.png
+2 p- Sword_161.png
+3 p- Sword_162.png
 C01                               #NOP
-2 p- Sword_164.png
+2 p- Sword_161.png
+3 p- Sword_160.png
 3 p- Sword_163.png
-3 p- Sword_166.png
 3 p- Sword_000.png
 C06                               #Begin opponent's turn after hit.next code 0D.
 C0D                               #End of dodge animation. preceeded by 0x06
@@ -358,14 +352,14 @@ C0D                               #End of dodge animation. preceeded by 0x06
 C18                               #Use this instead of 02 to dodge toward the foreground instead of toward the background
 1 p- Sword_000.png
 C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
-2 p- Sword_162.png
-2 p- Sword_163.png
-2 p- Sword_164.png
-3 p- Sword_165.png
+1 p- Sword_159.png
+1 p- Sword_160.png
+2 p- Sword_161.png
+3 p- Sword_162.png
 C01                               #NOP
-2 p- Sword_164.png
+2 p- Sword_161.png
+3 p- Sword_160.png
 3 p- Sword_163.png
-3 p- Sword_166.png
 3 p- Sword_000.png
 C06                               #Begin opponent's turn after hit.next code 0D.
 C0D                               #End of dodge animation. preceeded by 0x06
@@ -409,19 +403,19 @@ C36                               #Play sword unsheathing SFE
 C22                               #Play short sword swinging SFE
 2 p- Sword_020.png
 C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
+2 p- Sword_164.png
+2 p- Sword_165.png
+2 p- Sword_166.png
 2 p- Sword_167.png
 2 p- Sword_168.png
-2 p- Sword_169.png
-2 p- Sword_170.png
-2 p- Sword_171.png
 C01                               #NOP
+1 p- Sword_169.png
+1 p- Sword_170.png
+1 p- Sword_171.png
 1 p- Sword_172.png
 1 p- Sword_173.png
 1 p- Sword_174.png
-1 p- Sword_175.png
-1 p- Sword_176.png
-1 p- Sword_177.png
-4 p- Sword_178.png
+4 p- Sword_175.png
 C34                               #Play heavy stepping SFE
 C15                               #Slight vibration of screen
 2 p- Sword_033.png

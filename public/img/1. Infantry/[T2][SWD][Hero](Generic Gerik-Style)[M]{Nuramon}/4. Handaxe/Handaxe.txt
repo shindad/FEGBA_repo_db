@@ -207,8 +207,8 @@ C0D                               #End of dodge animation. preceeded by 0x06
 C18                               #Use this instead of 02 to dodge toward the foreground instead of toward the background
 1 p- Handaxe_000.png
 C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
-2 p- Handaxe_032.png
-2 p- Handaxe_033.png
+1 p- Handaxe_032.png
+1 p- Handaxe_033.png
 2 p- Handaxe_034.png
 3 p- Handaxe_035.png
 C01                               #NOP
@@ -223,8 +223,8 @@ C0D                               #End of dodge animation. preceeded by 0x06
 C18                               #Use this instead of 02 to dodge toward the foreground instead of toward the background
 1 p- Handaxe_000.png
 C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
-2 p- Handaxe_032.png
-2 p- Handaxe_033.png
+1 p- Handaxe_032.png
+1 p- Handaxe_033.png
 2 p- Handaxe_034.png
 3 p- Handaxe_035.png
 C01                               #NOP
