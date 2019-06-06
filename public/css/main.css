@@ -19,7 +19,7 @@ a {
     font-weight: 600;
     color: blue;
 }
-
+item: PropTypes.shape(NavigationItemPropTypes).isRequired,
 /* Navbar Styles */
 
 #sideBar {
@@ -112,6 +112,16 @@ a {
     box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.7);
     width: 22em;
     height: 5.5em;
+    object-fit: fill;
+    object-position: 0 0;
+    overflow: hidden;
+    border-radius: 7px 7px 0 0;
+}
+
+.skillGif {
+	box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.7);
+    width: 22em;
+    height: 20em;
     object-fit: fill;
     object-position: 0 0;
     overflow: hidden;

@@ -35,7 +35,9 @@ function Anim(anim) {
             });
         if (this.category === 'SPL') {
             animImg.addClass("spellGif");
-        };
+        } else if (this.category === 'SKL') {
+			animImg.addClass("skillGif");
+		};
 
         let genderI;
         switch (this.gender) {
@@ -71,7 +73,7 @@ function Anim(anim) {
         // insert weapon icons
         const icons = $("<span>")
             .addClass("iconmt");
-        if (this.category !== "SPL") {
+        if (this.category !== "SPL" && this.category!== "SKL") {
             this.weapons.forEach((weapon => {
                 const icon = $("<img>")
                     .addClass("imgIcon mt-0")

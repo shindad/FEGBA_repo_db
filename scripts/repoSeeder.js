@@ -121,13 +121,46 @@ const findAnims = () => {
                                 catCounter++;
                                 console.log("Category: " + category + " spellCount = " + spellCounter + "/" + spells.length + ". Categories = " + catCounter + "/" + catCeiling);
                                 if (catCounter === catCeiling) {
-                                    //console.log('here')
                                     completeArray();
                                     return;
                                 };
                             };
                         });
-                    });
+					});
+					
+				} else if (category === '8. Skills') {
+					fs.readdir(images + category + "/", (err, skills) => {
+                        console.log("Skills to count: " + skills.length);
+                        let skillCounter = 0;
+
+                        skills.forEach(skill => {
+
+                            skillCounter++;
+                            if (skill.toLowerCase().includes("png") || skill.toLowerCase().includes("gif") || skill.toLowerCase().includes("txt") || skill.toLowerCase().includes(".dat") || skill.toLowerCase().includes("desktop")) {
+                                console.log("not a skill");
+                            } else {
+                                const tempInfoArray = skill.match(/[^[\[\{\(\]\}\)]+/g)
+                                let anim = new Anim("", "SKL", "Skill", tempInfoArray[0], "", tempInfoArray[1], 'img/' + category + "/" + skill, skill, []);
+                                anim.weapons.push(
+                                    {
+                                        type: "Skill",
+                                        fullName: skill,
+                                        still: 'img/' + category + "/" + skill + "/" + "Skill_g000.png",
+                                        gif: 'img/' + category + "/" + skill + "/" + "Skill.gif"
+                                    });
+
+                                tempArray.push(anim);
+                            }
+                            if (skillCounter === skills.length) {
+                                catCounter++;
+                                console.log("Category: " + category + " skillCount = " + skillCounter + "/" + skills.length + ". Categories = " + catCounter + "/" + catCeiling);
+                                if (catCounter === catCeiling) {
+                                    completeArray();
+                                    return;
+                                };
+                            };
+                        });
+					});
 
                     // temporary limiter. To be expanded / removed w/ further testing
                 } else if (category !== 'global') {
