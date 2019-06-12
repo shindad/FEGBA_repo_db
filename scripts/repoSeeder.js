@@ -106,8 +106,14 @@ const findAnims = () => {
                                 console.log("not a spell");
                             } else {
                                 const tempInfoArray = spell.match(/[^[\[\{\(\]\}\)]+/g)
-                                let anim = new Anim("", "SPL", tempInfoArray[0], tempInfoArray[1], "", tempInfoArray[2], 'img/' + category + "/" + spell, spell, []);
-                                anim.weapons.push(
+								let anim;
+								
+								if (tempInfoArray.length === 3) {
+									anim = new Anim("", "SPL", tempInfoArray[0], tempInfoArray[1], "", tempInfoArray[2], 'img/' + category + "/" + spell, spell, []);
+								} else if (tempInfoArray.length === 4) {
+									anim = new Anim(tempInfoArray[1], "SPL", tempInfoArray[0], tempInfoArray[2], "", tempInfoArray[3], 'img/' + category + "/" + spell, spell, []);
+								};
+								anim.weapons.push(
                                     {
                                         type: "Spell",
                                         fullName: spell,
