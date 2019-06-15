@@ -1,112 +1,122 @@
 <div class="AboutRow row my-2 sectMain" data-disp="true">
-    <div class="col-12 text-center sectHead" data-prof=".AboutRow">
-        Welcome!
-    </div>
-    <div class="col-12 col-md-6 ml-3 mb-3">
-        <p>
-            This site provides a method to view and download nearly all animations created for the Fire Emblem GBA
-            games.
-        </p>
-        <ul>
-            <li>Select animations to view by category.</li>
-            <li>Clicking on an image causes it to animate.</li>
-            <li>Clicking a weapon icon will swap to that weapon for viewing.</li>
-            <li>Clicking an anim name will download the package with all usable animations.</li>
-        </ul>
-    </div>
-    <div class="col-12 col-md-5 ml-3">
-        <p>
-            Please note that class names are a guideline, and are not meant to be completely rigid.
-            Custom one-off classes have been placed in the closest applicable class section.
-        </p>
-        <p>
-            To download the entire repo used by this site, <a class="fullDL"
-                href="https://drive.google.com/open?id=1jiiTpNXgAlr4lZBh8d-nJFdO-Jus5VXV">Click
-                here</a>.
-        </p>
-        <p>Please remember to credit the animation creators when using or modifying their works.</p>
-    </div>
+	<div class="col-12 text-center sectHead aboutTitle" data-prof=".AboutRow">
+		<div class="row">
+			<span class="col-4 offset-4">Welcome!</span>
+			<span class="col-4 col-xl-1 offset-xl-3 col-md-2 offset-md-2">
+				<button id="dateSearch" class="btn btn-warning px-2" data-filled="false">New <i
+								class="fa fa-search"></i></button>
+			</span>
+			
+		</div>
 
-    <div class="col-12">
-        {{!-- search terms:: Gender (dropdown select-optional), Name (form-requiredalt), credit (form-requiredalt),
+	</div>
+	<div class="col-12 col-md-6 ml-3 mb-3">
+		<p>
+			This site provides a method to view and download nearly all animations created for the Fire Emblem GBA
+			games.
+		</p>
+		<ul>
+			<li>Select animations to view by category.</li>
+			<li>Clicking on an image causes it to animate.</li>
+			<li>Clicking a weapon icon will swap to that weapon for viewing.</li>
+			<li>Clicking an anim name will download the package with all usable animations.</li>
+		</ul>
+	</div>
+	<div class="col-12 col-md-5 ml-3">
+		<p>
+			Please note that class names are a guideline, and are not meant to be completely rigid.
+			Custom one-off classes have been placed in the closest applicable class section.
+		</p>
+		<p>
+			To download the entire repo used by this site, <a class="fullDL"
+				href="https://drive.google.com/open?id=1jiiTpNXgAlr4lZBh8d-nJFdO-Jus5VXV">Click
+				here</a>.
+		</p>
+		<p>Please remember to credit the animation creators when using or modifying their works.</p>
+	</div>
+
+	<div class="col-12">
+
+	</div>
+
+	<div class="col-12">
+		{{!-- search terms:: Gender (dropdown select-optional), Name (form-requiredalt), credit (form-requiredalt),
         category (dropdown select optional), tier (dropdown select-optional) --}}
 
 
-        <div class="col-12 text-center sectSubHead mx-0">
-            Detailed Search
-        </div>
-        <div class="col-12 searchBody">
+		<div class="col-12 text-center sectSubHead mx-0">
+			Detailed Search
+		</div>
+		<div class="col-12 searchBody">
 
-            <form role="form">
-                <div class="form-row" id="detailedSearch">
-                    <div class="form-group col-4 col-xl-auto my-1">
-                        <label for="formClass">Class</label>
-                        <select class="form-control" id="formClass">
-                            <option></option>
-                            {{#each allClasses}}
-                            <option>{{this}}</option>
-                            {{/each}}
-                        </select>
-                    </div>
+			<form role="form">
+				<div class="form-row" id="detailedSearch">
+					<div class="form-group col-4 col-xl-auto my-1">
+						<label for="formClass">Class</label>
+						<select class="form-control" id="formClass">
+							<option></option>
+							{{#each allClasses}}
+							<option>{{this}}</option>
+							{{/each}}
+						</select>
+					</div>
 
-                    <div class="form-group col-4 col-xl-auto my-1">
-                        <label for="formName">Description</label>
-                        <input type="text" minlength="3" class="form-control formKey" data-alt="formAuthor"
-                            id="formName">
-                    </div>
+					<div class="form-group col-4 col-xl-auto my-1">
+						<label for="formName">Description</label>
+						<input type="text" minlength="3" class="form-control formKey" data-alt="formAuthor"
+							id="formName">
+					</div>
 
-                    <div class="form-group col-4 col-xl-auto my-1">
-                        <label for="formAuthor">Author</label>
-                        <input type="text" class="form-control formKey" data-alt="formName" id="formAuthor">
-                    </div>
+					<div class="form-group col-4 col-xl-auto my-1">
+						<label for="formAuthor">Author</label>
+						<input type="text" class="form-control formKey" data-alt="formName" id="formAuthor">
+					</div>
 
-                    <div class="form-group col-4 col-xl-auto my-1">
-                        <label for="formCategory">Category</label>
-                        <select class="form-control" id="formCategory">
-                            <option></option>
-                            <option>SWD</option>
-                            <option>LNC</option>
-                            <option>AXE</option>
-                            <option>BOW</option>
-                            <option>MAG</option>
-                            <option>CAV</option>
-                            <option>ARM</option>
-                            <option>FLY</option>
-                            <option>LRD</option>
-                            <option>MISC</option>
-                        </select>
-                    </div>
+					<div class="form-group col-4 col-xl-auto my-1">
+						<label for="formCategory">Category</label>
+						<select class="form-control" id="formCategory">
+							<option></option>
+							<option>SWD</option>
+							<option>LNC</option>
+							<option>AXE</option>
+							<option>BOW</option>
+							<option>MAG</option>
+							<option>CAV</option>
+							<option>ARM</option>
+							<option>FLY</option>
+							<option>LRD</option>
+							<option>MISC</option>
+						</select>
+					</div>
 
-                    <div class="form-group col-4 col-xl-auto my-1">
-                        <label for="formTier">Tier</label>
-                        <select class="form-control" id="formTier">
-                            <option></option>
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
-                    </div>
+					<div class="form-group col-4 col-xl-auto my-1">
+						<label for="formTier">Tier</label>
+						<select class="form-control" id="formTier">
+							<option></option>
+							<option>0</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+					</div>
 
-                    <div class="form-group col-2 col-xl-auto my-1">
-                        <label for="formGender">Gender</label>
-                        <select class="form-control" id="formGender">
-                            <option></option>
-                            <option>M</option>
-                            <option>F</option>
-                            <option>U</option>
-                        </select>
-                    </div>
+					<div class="form-group col-2 col-xl-auto my-1">
+						<label for="formGender">Gender</label>
+						<select class="form-control" id="formGender">
+							<option></option>
+							<option>M</option>
+							<option>F</option>
+							<option>U</option>
+						</select>
+					</div>
 
-                    <div class="form-group col-2 col-xl-auto my-1">
-                        <label for="detailedFormSubmit">&nbsp;</label>
-                        <button disabled class="btn btn-primary form-control" id="detailedFormSubmit"
-                            type="submit"><i class="fa fa-search"></i></button>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-
-    </div>
+					<div class="form-group col-2 col-xl-auto my-1">
+						<label for="detailedFormSubmit">&nbsp;</label>
+						<button disabled class="btn btn-primary form-control" id="detailedFormSubmit" type="submit"><i
+								class="fa fa-search"></i></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 </div>

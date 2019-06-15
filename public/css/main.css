@@ -58,8 +58,21 @@ item: PropTypes.shape(NavigationItemPropTypes).isRequired,
     display: none;
 }
 
+.aboutTitle {
+	padding: 5px 0px;
+}
+
 #detailedSearch {
     font-size: .8rem;
+}
+
+#dateSearch {
+	padding: 0px 2px;
+	border: 1px solid darkslateblue;
+	color: darkslateblue;
+	height: inherit;
+	font-size: .9em;
+	font-weight: 400;
 }
 
 .dropdown-toggle::after {

@@ -3,6 +3,7 @@
 const db = require("../../models");
 const fs = require('fs');
 const archiver = require('archiver');
+const moment = require('moment');
 
 /// END DEPENDENCIES ///
 
@@ -10,108 +11,131 @@ const archiver = require('archiver');
 
 module.exports = function (app) {
 
-  // Gathers animations based on the selected class category
-  app.get("/api/anims/:class", function (req, res, next) {
-    //console.log(req.params);
-    // Search for all anims of the class selected
-    db.Anim.findAll({
-      where: {
-        feClass: req.params.class
-      },
-      //include all weapons through the linking table
-      //along with attributes still and gif from the linking table
-      include: [{
-        model: db.Weapon,
-        through: {
-          attributes: ['weapon']
-        }
-      }]
-    }).then(function (response) {
-      // console.log(response);
-      res.json(response);
-    });
-  });
+	// Gathers animations based on the selected class category
+	app.get("/api/anims/:class", function (req, res, next) {
+		//console.log(req.params);
+		// Search for all anims of the class selected
+		db.Anim.findAll({
+			where: {
+				feClass: req.params.class
+			},
+			//include all weapons through the linking table
+			//along with attributes still and gif from the linking table
+			include: [{
+				model: db.Weapon,
+				through: {
+					attributes: ['weapon']
+				}
+			}]
+		}).then(function (response) {
+			// console.log(response);
+			res.json(response);
+		});
+	});
 
-  // Search API route takes search term as an object and searches the database using term info
-  app.get("/api/search/", function (req, res, next) {
+	// Search API route takes search term as an object and searches the database using term info
+	app.get("/api/search/", function (req, res, next) {
 
-    db.Anim.findAll({
-      where: req.query.search,
-      //include all weapons through the linking table
-      //along with attributes still and gif from the linking table
-      include: [{
-        model: db.Weapon,
-        through: {
-          attributes: ['weapon']
-        }
-      }]
-    }).then(function (response) {
-      //console.log(response);
-      res.json(response);
-    });
-  });
+		db.Anim.findAll({
+			where: req.query.search,
+			//include all weapons through the linking table
+			//along with attributes still and gif from the linking table
+			include: [{
+				model: db.Weapon,
+				through: {
+					attributes: ['weapon']
+				}
+			}]
+		}).then(function (response) {
+			//console.log(response);
+			res.json(response);
+		});
+	});
 
-  app.get("/api/detailedSearch/", function (req, res, next) {
-    Object.keys(req.query).forEach((key) => (req.query[key] == '' || req.query[key] == 'T') && delete req.query[key]);
+	app.get("/api/detailedSearch/", function (req, res, next) {
+		Object.keys(req.query).forEach((key) => (req.query[key] == '' || req.query[key] == 'T') && delete req.query[key]);
 
-    db.Anim.findAll({
-      where: req.query,
-      //include all weapons through the linking table
-      //along with attributes still and gif from the linking table
-      include: [{
-        model: db.Weapon,
-        through: {
-          attributes: ['weapon']
-        }
-      }]
-    }).then(function (response) {
-      //console.log(response);
-      res.json(response);
-    });
-  });
+		db.Anim.findAll({
+			where: req.query,
+			//include all weapons through the linking table
+			//along with attributes still and gif from the linking table
+			include: [{
+				model: db.Weapon,
+				through: {
+					attributes: ['weapon']
+				}
+			}]
+		}).then(function (response) {
+			//console.log(response);
+			res.json(response);
+		});
+	});
 
-  // Download path zips the item selected and outputs it
-  app.get("/api/unit/:path", function (req, res, next) {
-    const out = process.cwd() + "/public/" + req.params.path + ".zip";
-    const source = "./public/" + req.query.path;
-    const archive = archiver('zip', { zlib: { level: 9 } });
+	app.get("/api/dateSearch/", function (req, res, next) {
+		db.Anim.findAll({
+			where: {
+				createdAt: {
+					[db.Sequelize.Op.gte]: moment().subtract(1, 'week')
+				}
+			},
+			include: [{
+				model: db.Weapon,
+				through: {
+					attributes: ['weapon']
+				}
+			}]
+		}).then(function (response) {
+			// console.log(response);
+			res.json(response);
+		});
+	});
 
-    const promise = new Promise(function (resolve, reject) {
-      
-      var stream = fs.createWriteStream(out)
-      archive
-        .directory(source, false)
-        .on('error', err => {
-          console.log(err);
-          reject(err)
-        })
-        .on('warning', function (err) {
-          if (err.code === 'ENOENT') {
-            // log warning
-          } else {
-            // throw error
-            throw err;
-          }
-        })
-        .pipe(stream)
+	// Download path zips the item selected and outputs it
+	app.get("/api/unit/:path", function (req, res, next) {
+		const out = process.cwd() + "/public/" + req.params.path + ".zip";
+		const source = "./public/" + req.query.path;
+		const archive = archiver('zip', {
+			zlib: {
+				level: 9
+			}
+		});
 
-      stream.on('close', () => {
-        console.log("success ", archive.pointer());
-        resolve()
-      });
-      stream.on('error', err => {
-        console.log(err);
-      });
+		const promise = new Promise(function (resolve, reject) {
 
-      archive.finalize();
+			var stream = fs.createWriteStream(out)
+			archive
+				.directory(source, false)
+				.on('error', err => {
+					console.log(err);
+					reject(err)
+				})
+				.on('warning', function (err) {
+					if (err.code === 'ENOENT') {
+						// log warning
+					} else {
+						// throw error
+						throw err;
+					}
+				})
+				.pipe(stream)
 
-    });
-    promise.then(
-      out => {
-        res.json("./" + req.params.path + ".zip")
-      },
-      error => console.log(error));
-  });
+			stream.on('close', () => {
+				console.log("success ", archive.pointer());
+				resolve()
+			});
+			stream.on('error', err => {
+				console.log(err);
+			});
+
+			archive.finalize();
+
+		});
+		promise.then(
+			out => {
+				res.json("./" + req.params.path + ".zip")
+			},
+			error => console.log(error));
+	});
 };
 
 /// END ROUTES ///
