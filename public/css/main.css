@@ -124,7 +124,7 @@ item: PropTypes.shape(NavigationItemPropTypes).isRequired,
 .spellGif {
     box-shadow: 0px 0px 21px 0px rgba(0,0,0,0.7);
     width: 22em;
-    height: 5.5em;
+    height: 14.7em;
     object-fit: fill;
     object-position: 0 0;
     overflow: hidden;

@@ -1,104 +1,130 @@
-#######################################################
-#
-#When importing to FEditorAdv delete # and after each line.
-#######################################################
-/// - Start Animation
-C00                               #NOP
-C00                               #NOP
-C00                               #NOP
-C00                               #NOP
-C00                               #NOP
-C40                               #Scrolls the screen from being centered on the attacker to being centered on the defender
-C100029                               #Background brightness and opacity XX
-C02C348                               #Sound 707 SE:Aura strike
-O  p- Spell_o_000.png
-B  p- Spell_b_001.png
+C000000
+C000000
+C000000
+C000000
+C000000
+C000040
+C100029
+C02C348
+C000153
+O Spell_o_000.png
+B Spell_b_001.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_002.png
+
+O Spell_o_000.png
+B Spell_b_002.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_003.png
+
+O Spell_o_000.png
+B Spell_b_003.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_004.png
+
+O Spell_o_000.png
+B Spell_b_004.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_005.png
+
+O Spell_o_000.png
+B Spell_b_005.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_006.png
+
+O Spell_o_000.png
+B Spell_b_006.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_007.png
+
+O Spell_o_000.png
+B Spell_b_007.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_008.png
+
+O Spell_o_000.png
+B Spell_b_008.png
 2
-C1A                               #Required before 1F or miss termination branch
-C1F                               #Play a hit tone (requires 1A just before)
-O  p- Spell_o_000.png
-B  p- Spell_b_009.png
+
+C00001A
+C00001F
+O Spell_o_000.png
+B Spell_b_009.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_010.png
+
+O Spell_o_000.png
+B Spell_b_010.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_011.png
+
+O Spell_o_000.png
+B Spell_b_011.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_010.png
+
+O Spell_o_000.png
+B Spell_b_010.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_009.png
+
+O Spell_o_000.png
+B Spell_b_009.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_010.png
+
+O Spell_o_000.png
+B Spell_b_010.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_011.png
+
+O Spell_o_000.png
+B Spell_b_011.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_010.png
+
+O Spell_o_000.png
+B Spell_b_010.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_009.png
+
+O Spell_o_000.png
+B Spell_b_009.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_010.png
+
+O Spell_o_000.png
+B Spell_b_010.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_011.png
+
+O Spell_o_000.png
+B Spell_b_011.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_010.png
+
+O Spell_o_000.png
+B Spell_b_010.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_009.png
+
+O Spell_o_000.png
+B Spell_b_009.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_010.png
+
+O Spell_o_000.png
+B Spell_b_010.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_011.png
+
+O Spell_o_000.png
+B Spell_b_011.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_010.png
+
+O Spell_o_000.png
+B Spell_b_010.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_009.png
+
+O Spell_o_000.png
+B Spell_b_009.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_010.png
+
+O Spell_o_000.png
+B Spell_b_010.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_011.png
+
+O Spell_o_000.png
+B Spell_b_011.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_012.png
+
+O Spell_o_000.png
+B Spell_b_012.png
 2
-O  p- Spell_o_000.png
-B  p- Spell_b_013.png
+
+O Spell_o_000.png
+B Spell_b_013.png
 2
-~                               #miss terminator
+
+~
+C000053
 /// - End of animation
