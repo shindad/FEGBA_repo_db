@@ -10,11 +10,12 @@ function Anim(anim) {
 	this.name = anim.name; // identifier
 	this.dlName = anim.dlName; // dlname
 	this.credit = anim.credit; // creators
+	this.tier = anim.tier;
 	this.id = anim.id; // unique id
 	this.weapons = anim.Weapons; //array containing all weapons, stills, and gifs
 
 	// Custom card design
-	this.makeCard = function () {
+	this.makeCard = function (isSearch) {
 
 		// weapon and icon sort
 		const order = ["Sword", "Knife", "Lance", "Axe", "Handaxe", "Bow", "Magic", "Staff", "Refresh", "Monster", "Dragonstone", "Legendary", "Unarmed"];
@@ -65,10 +66,14 @@ function Anim(anim) {
 			})
 			.append(nameDiv);
 
+		const classDiv = $("<p>")
+			.addClass('animClass')
+			.html(`${this.feClass} ${this.tier && `- ${this.tier}`}`);
+
 		//Link and name of animation
 		const middleRow = $("<div>")
 			.addClass("text-center pt-1")
-			.append(genderDiv);
+			.append(isSearch && classDiv, genderDiv);
 
 		// insert weapon icons
 		const icons = $("<span>")
@@ -150,7 +155,7 @@ const removePlaceholder = () => {
 }
 
 //Initializes the div for holding all the anims and then makes a card for all relevant anims.
-function makeAnimRow(anim, searchName) {
+function makeAnimRow(anim, searchName, isSearch) {
 	//console.log(anim);
 
 	// reorders the anims by gender for the selected class.
@@ -188,7 +193,7 @@ function makeAnimRow(anim, searchName) {
 	// Init subrow that contains all the anim cards
 	for (let i = 0; i < anim.length; i++) {
 		const tempAnim = new Anim(anim[i]);
-		parentDiv.append(tempAnim.makeCard());
+		parentDiv.append(tempAnim.makeCard(isSearch));
 	};
 
 	if (!anim.length) {
@@ -308,7 +313,7 @@ $(document).on("click", "#formSubmit", function () {
 	API.searchAnims(search).then(function (animArr) {
 		const row = `.${searchTerm.join('')}Row`;
 		// console.log(animArr);
-		makeAnimRow(animArr, cleanSearch);
+		makeAnimRow(animArr, cleanSearch, true);
 		scrollTo(row);
 	});
 });
@@ -323,7 +328,7 @@ $(document).on("click", "#dateSearch", function (event) {
 		this.setAttribute('data-filled', true);
 		makePlaceholder(row);
 		API.searchByDate().then(function (animArr) {
-			makeAnimRow(animArr, row);
+			makeAnimRow(animArr, row, true);
 		});
 	} else {
 		console.log(document.getElementsByClassName(htmlRow)[0]);
@@ -362,7 +367,7 @@ $(document).on("click", "#detailedFormSubmit", function () {
 
 	API.detailedSearchAnims(name, feClass, credit, category, tier, gender).then(function (animArr) {
 		// console.log(animArr);
-		makeAnimRow(animArr, row);
+		makeAnimRow(animArr, row, true);
 		scrollTo(`.${row.split(' ').join('')}Row`);
 	});
 });
