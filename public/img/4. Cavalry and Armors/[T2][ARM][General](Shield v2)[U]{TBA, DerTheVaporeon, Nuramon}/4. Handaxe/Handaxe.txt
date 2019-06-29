@@ -1,7 +1,7 @@
 #######################################################
-#01 lorm_sp1 Lord Lance
 #
-#When importing to FEditorAdv delete # and after each line.
+#
+#When importing to FEEditorAdv delete # and after each line.
 #######################################################
 /// - Mode 1               #Melee Animation
 C03                               #Start attack animation; should be followed by 0x07
@@ -16,10 +16,10 @@ C24                               #Play sword slashing air SFE
 C05                               #Call spell associated with equipped weapon
 2 p- Handaxe_004.png
 5 p- Handaxe_005.png
-5 p- Handaxe_005.png
-C13                               #ranged attack - hand axe for Hector
+5 p- Handaxe_005a.png
+C13				  #ranged attack - hand axe for Hector
 5 p- Handaxe_006.png
-5 p- Handaxe_006.png
+5 p- Handaxe_006a.png
 C01                               #NOP
 4 p- Handaxe_007.png
 4 p- Handaxe_008.png
@@ -67,10 +67,10 @@ C24                               #Play sword slashing air SFE
 C05                               #Call spell associated with equipped weapon
 2 p- Handaxe_004.png
 5 p- Handaxe_005.png
-5 p- Handaxe_005.png
-C13                               #ranged attack - hand axe for Hector
+5 p- Handaxe_005a.png
+C13				  #ranged attack - hand axe for Hector
 5 p- Handaxe_006.png
-5 p- Handaxe_006.png
+5 p- Handaxe_006a.png
 C01                               #NOP
 4 p- Handaxe_007.png
 4 p- Handaxe_008.png
@@ -97,10 +97,10 @@ C24                               #Play sword slashing air SFE
 C05                               #Call spell associated with equipped weapon
 2 p- Handaxe_004.png
 5 p- Handaxe_005.png
-5 p- Handaxe_005.png
-C13                               #ranged attack - hand axe for Hector
+5 p- Handaxe_005a.png
+C13				  #ranged attack - hand axe for Hector
 5 p- Handaxe_006.png
-5 p- Handaxe_006.png
+5 p- Handaxe_006a.png
 C01                               #NOP
 4 p- Handaxe_007.png
 4 p- Handaxe_008.png
@@ -148,10 +148,10 @@ C24                               #Play sword slashing air SFE
 C05                               #Call spell associated with equipped weapon
 2 p- Handaxe_004.png
 5 p- Handaxe_005.png
-5 p- Handaxe_005.png
-C13                               #ranged attack - hand axe for Hector
+5 p- Handaxe_005a.png
+C13				  #ranged attack - hand axe for Hector
 5 p- Handaxe_006.png
-5 p- Handaxe_006.png
+5 p- Handaxe_006a.png
 C01                               #NOP
 4 p- Handaxe_007.png
 4 p- Handaxe_008.png
@@ -214,10 +214,10 @@ C24                               #Play sword slashing air SFE
 C05                               #Call spell associated with equipped weapon
 2 p- Handaxe_004.png
 5 p- Handaxe_005.png
-5 p- Handaxe_005.png
-C13                               #ranged attack - hand axe for Hector
+5 p- Handaxe_005a.png
+C13				  #ranged attack - hand axe for Hector
 5 p- Handaxe_006.png
-5 p- Handaxe_006.png
+5 p- Handaxe_006a.png
 C01                               #NOP
 4 p- Handaxe_007.png
 4 p- Handaxe_008.png

@@ -1,7 +1,7 @@
 #######################################################
-#01 lorm_sp1 Lord Lance
 #
-#When importing to FEditorAdv delete # and after each line.
+#
+#When importing to FEEditorAdv delete # and after each line.
 #######################################################
 /// - Mode 1               #Melee Animation
 C03                               #Start attack animation; should be followed by 0x07
@@ -19,7 +19,7 @@ C2B                               #Play armored unit "leaping" SFE
 30 p- Lance_007.png
 8 p- Lance_008.png
 C24                               #Play sword slashing air SFE
-C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
 3 p- Lance_009.png
 4 p- Lance_010.png
 C15                               #Slight vibration of screen
@@ -99,41 +99,41 @@ C24                               #Play sword slashing air SFE
 1 p- Lance_036.png
 1 p- Lance_031.png
 1 p- Lance_032.png
-2 p- Lance_037.png
+2 p- Lance_036a.png
 C1B                               #Play quick "heavy step" SFE
-2 p- Lance_038.png
+2 p- Lance_036b.png
 C38                               #Play heavy spear spinning SFE
-2 p- Lance_039.png
+2 p- Lance_037.png
+1 p- Lance_038.png
+1 p- Lance_039.png
 1 p- Lance_040.png
 1 p- Lance_041.png
 1 p- Lance_042.png
 1 p- Lance_043.png
 1 p- Lance_044.png
 1 p- Lance_045.png
-1 p- Lance_046.png
-1 p- Lance_047.png
-1 p- Lance_042.png
-1 p- Lance_043.png
+1 p- Lance_040.png
+1 p- Lance_041.png
 C24                               #Play sword slashing air SFE
-1 p- Lance_044.png
-1 p- Lance_045.png
-1 p- Lance_046.png
-1 p- Lance_047.png
 1 p- Lance_042.png
 1 p- Lance_043.png
 1 p- Lance_044.png
+1 p- Lance_045.png
+1 p- Lance_040.png
+1 p- Lance_041.png
+1 p- Lance_042.png
 C24                               #Play sword slashing air SFE
+1 p- Lance_043.png
+1 p- Lance_044.png
 1 p- Lance_045.png
-1 p- Lance_046.png
-1 p- Lance_047.png
+1 p- Lance_040.png
+1 p- Lance_041.png
 1 p- Lance_042.png
 1 p- Lance_043.png
 1 p- Lance_044.png
 1 p- Lance_045.png
-1 p- Lance_046.png
-1 p- Lance_047.png
 8 p- Lance_008.png
-C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
 C22                               #Play short sword swinging SFE
 3 p- Lance_009.png
 4 p- Lance_010.png
@@ -186,14 +186,14 @@ C07                               #Start attack animation; should be preceeded b
 C2B                               #Play armored unit "leaping" SFE
 12 p- Lance_002.png
 C24                               #Play sword slashing air SFE
-1 p- Lance_048.png
+1 p- Lance_046.png
 C05                               #Call spell associated with equipped weapon
-2 p- Lance_048.png
-1 p- Lance_049.png
+2 p- Lance_046.png
+1 p- Lance_047.png
 C01                               #NOP
+4 p- Lance_048.png
+4 p- Lance_049.png
 4 p- Lance_050.png
-4 p- Lance_051.png
-4 p- Lance_052.png
 C1B                               #Play quick "heavy step" SFE
 C15                               #Slight vibration of screen
 10 p- Lance_027.png
@@ -210,37 +210,37 @@ C07                               #Start attack animation; should be preceeded b
 4 p- Lance_001.png
 4 p- Lance_002.png
 C2B                               #Play armored unit "leaping" SFE
-4 p- Lance_053.png
-2 p- Lance_054.png
-1 p- Lance_055.png
-1 p- Lance_056.png
-1 p- Lance_057.png
-1 p- Lance_058.png
-1 p- Lance_053.png
-C22                               #Play short sword swinging SFE
-1 p- Lance_054.png
-1 p- Lance_055.png
-1 p- Lance_056.png
-1 p- Lance_057.png
-1 p- Lance_058.png
-C22                               #Play short sword swinging SFE
+4 p- Lance_051.png
+2 p- Lance_052.png
 1 p- Lance_053.png
 1 p- Lance_054.png
 1 p- Lance_055.png
 1 p- Lance_056.png
-1 p- Lance_057.png
-2 p- Lance_058.png
+1 p- Lance_051.png
+C22                               #Play short sword swinging SFE
+1 p- Lance_052.png
+1 p- Lance_053.png
+1 p- Lance_054.png
+1 p- Lance_055.png
+1 p- Lance_056.png
+C22                               #Play short sword swinging SFE
+1 p- Lance_051.png
+1 p- Lance_052.png
+1 p- Lance_053.png
+1 p- Lance_054.png
+1 p- Lance_055.png
+2 p- Lance_056.png
 C2B                               #Play armored unit "leaping" SFE
 16 p- Lance_002.png
 C24                               #Play sword slashing air SFE
-1 p- Lance_048.png
+1 p- Lance_046.png
 C05                               #Call spell associated with equipped weapon
-2 p- Lance_048.png
-1 p- Lance_049.png
+2 p- Lance_046.png
+1 p- Lance_047.png
 C01                               #NOP
+4 p- Lance_048.png
+4 p- Lance_049.png
 4 p- Lance_050.png
-4 p- Lance_051.png
-4 p- Lance_052.png
 C1B                               #Play quick "heavy step" SFE
 C15                               #Slight vibration of screen
 10 p- Lance_027.png
@@ -254,11 +254,11 @@ C0D                               #End of dodge animation. preceeded by 0x06
 C02                               #Start of dodge
 1 p- Lance_000.png
 C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
-3 p- Lance_059.png
+3 p- Lance_057.png
 C2B                               #Play armored unit "leaping" SFE
-1 p- Lance_060.png
+1 p- Lance_058.png
 C01                               #NOP
-3 p- Lance_059.png
+3 p- Lance_057.png
 C2B                               #Play armored unit "leaping" SFE
 C0D                               #End of dodge animation. preceeded by 0x06
 ~~~
@@ -266,11 +266,11 @@ C0D                               #End of dodge animation. preceeded by 0x06
 C02                               #Start of dodge
 1 p- Lance_000.png
 C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
-3 p- Lance_059.png
+3 p- Lance_057.png
 C2B                               #Play armored unit "leaping" SFE
-1 p- Lance_060.png
+1 p- Lance_058.png
 C01                               #NOP
-3 p- Lance_059.png
+3 p- Lance_057.png
 C2B                               #Play armored unit "leaping" SFE
 C0D                               #End of dodge animation. preceeded by 0x06
 ~~~
@@ -302,15 +302,15 @@ C2B                               #Play armored unit "leaping" SFE
 16 p- Lance_007.png
 6 p- Lance_008.png
 C24                               #Play sword slashing air SFE
-C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
+C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit
 3 p- Lance_009.png
-4 p- Lance_061.png
-8 p- Lance_062.png
+4 p- Lance_059.png
+8 p- Lance_060.png
 C01                               #NOP
-3 p- Lance_063.png
-2 p- Lance_064.png
-1 p- Lance_065.png
-6 p- Lance_066.png
+3 p- Lance_061.png
+2 p- Lance_062.png
+1 p- Lance_063.png
+6 p- Lance_064.png
 4 p- Lance_023.png
 C1B                               #Play quick "heavy step" SFE
 C15                               #Slight vibration of screen
