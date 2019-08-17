@@ -1,43 +1,39 @@
-#######################################################
-#FE lorm_sp1 
-#
-#When importing to FEditorAdv delete # and after each line.
-#######################################################
-/// - Mode 1               #Melee Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 1
+C03
+C07
 10 p- Handaxe_000.png
 4 p- Handaxe_001.png
 2 p- Handaxe_002.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 2 p- Handaxe_003.png
 2 p- Handaxe_004.png
 2 p- Handaxe_005.png
 2 p- Handaxe_006.png
 3 p- Handaxe_007.png
-C41                               #EMPTY
+C41
 4 p- Handaxe_008.png
 4 p- Handaxe_009.png
 4 p- Handaxe_010.png
 2 p- Handaxe_011.png
 2 p- Handaxe_012.png
-C1B                               #Play quick "heavy step" SFE
-C41                               #EMPTY
+C1B
+C41
 2 p- Handaxe_013.png
-C05                               #Call spell associated with equipped weapon
-4 p- Handaxe_014.png
-4 p- Handaxe_015.png
-3 p- Handaxe_016.png
-C41                               #EMPTY
+C05
+5 p- Handaxe_014.png
+5 p- Handaxe_015.png
+5 p- Handaxe_016.png
+C41
 2 p- Handaxe_017.png
-C43                               #Play weapon stance SFE (Clicking noise)
-2 p- Handaxe_018.png
+4 p- Handaxe_018.png
 4 p- Handaxe_019.png
+C43
+C13
 4 p- Handaxe_020.png
 4 p- Handaxe_021.png
 4 p- Handaxe_022.png
 4 p- Handaxe_023.png
-C01                               #NOP
+C01
 4 p- Handaxe_024.png
 2 p- Handaxe_025.png
 2 p- Handaxe_026.png
@@ -49,30 +45,30 @@ C01                               #NOP
 5 p- Handaxe_032.png
 5 p- Handaxe_033.png
 5 p- Handaxe_034.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 5 p- Handaxe_035.png
 5 p- Handaxe_036.png
 5 p- Handaxe_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 3               #Melee Critical Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 3
+C03
+C07
 10 p- Handaxe_000.png
 5 p- Handaxe_037.png
 5 p- Handaxe_038.png
 5 p- Handaxe_039.png
-C41                               #EMPTY
+C41
 2 p- Handaxe_040.png
 4 p- Handaxe_041.png
-C38                               #Play heavy spear spinning SFE
+C38
 2 p- Handaxe_042.png
 2 p- Handaxe_043.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 2 p- Handaxe_044.png
 2 p- Handaxe_045.png
-C38                               #Play heavy spear spinning SFE
+C38
 2 p- Handaxe_046.png
 2 p- Handaxe_047.png
 2 p- Handaxe_048.png
@@ -81,30 +77,31 @@ C38                               #Play heavy spear spinning SFE
 2 p- Handaxe_051.png
 2 p- Handaxe_052.png
 2 p- Handaxe_053.png
-C43                               #Play weapon stance SFE (Clicking noise)
+C43
 2 p- Handaxe_054.png
 2 p- Handaxe_055.png
 4 p- Handaxe_009.png
 4 p- Handaxe_010.png
 2 p- Handaxe_011.png
 2 p- Handaxe_012.png
-C1B                               #Play quick "heavy step" SFE
-C41                               #EMPTY
+C1B
+C41
 2 p- Handaxe_013.png
-C05                               #Call spell associated with equipped weapon
+C05
 4 p- Handaxe_014.png
 4 p- Handaxe_015.png
 3 p- Handaxe_016.png
-C41                               #EMPTY
+C41
 2 p- Handaxe_017.png
-C43                               #Play weapon stance SFE (Clicking noise)
-2 p- Handaxe_018.png
+4 p- Handaxe_018.png
 4 p- Handaxe_019.png
+C43
+C13
 4 p- Handaxe_020.png
 4 p- Handaxe_021.png
 4 p- Handaxe_022.png
 4 p- Handaxe_023.png
-C01                               #NOP
+C01
 4 p- Handaxe_024.png
 2 p- Handaxe_025.png
 2 p- Handaxe_026.png
@@ -116,48 +113,49 @@ C01                               #NOP
 5 p- Handaxe_032.png
 5 p- Handaxe_033.png
 5 p- Handaxe_034.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 5 p- Handaxe_035.png
 5 p- Handaxe_036.png
 5 p- Handaxe_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 5               #Ranged Animation 
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 5
+C03
+C07
 10 p- Handaxe_000.png
 4 p- Handaxe_001.png
 2 p- Handaxe_002.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 2 p- Handaxe_003.png
 2 p- Handaxe_004.png
 2 p- Handaxe_005.png
 2 p- Handaxe_006.png
 3 p- Handaxe_007.png
-C41                               #EMPTY
+C41
 4 p- Handaxe_008.png
 4 p- Handaxe_009.png
 4 p- Handaxe_010.png
 2 p- Handaxe_011.png
 2 p- Handaxe_012.png
-C1B                               #Play quick "heavy step" SFE
-C41                               #EMPTY
+C1B
+C41
 2 p- Handaxe_013.png
-C05                               #Call spell associated with equipped weapon
-4 p- Handaxe_014.png
-4 p- Handaxe_015.png
-3 p- Handaxe_016.png
-C41                               #EMPTY
+C05
+5 p- Handaxe_014.png
+5 p- Handaxe_015.png
+5 p- Handaxe_016.png
+C41
 2 p- Handaxe_017.png
-C43                               #Play weapon stance SFE (Clicking noise)
-2 p- Handaxe_018.png
+4 p- Handaxe_018.png
 4 p- Handaxe_019.png
+C43
+C13
 4 p- Handaxe_020.png
 4 p- Handaxe_021.png
 4 p- Handaxe_022.png
 4 p- Handaxe_023.png
-C01                               #NOP
+C01
 4 p- Handaxe_024.png
 2 p- Handaxe_025.png
 2 p- Handaxe_026.png
@@ -169,30 +167,30 @@ C01                               #NOP
 5 p- Handaxe_032.png
 5 p- Handaxe_033.png
 5 p- Handaxe_034.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 5 p- Handaxe_035.png
 5 p- Handaxe_036.png
 5 p- Handaxe_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 6               #Ranged Critical Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 6
+C03
+C07
 10 p- Handaxe_000.png
 5 p- Handaxe_037.png
 5 p- Handaxe_038.png
 5 p- Handaxe_039.png
-C41                               #EMPTY
+C41
 2 p- Handaxe_040.png
 4 p- Handaxe_041.png
-C38                               #Play heavy spear spinning SFE
+C38
 2 p- Handaxe_042.png
 2 p- Handaxe_043.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 2 p- Handaxe_044.png
 2 p- Handaxe_045.png
-C38                               #Play heavy spear spinning SFE
+C38
 2 p- Handaxe_046.png
 2 p- Handaxe_047.png
 2 p- Handaxe_048.png
@@ -201,30 +199,31 @@ C38                               #Play heavy spear spinning SFE
 2 p- Handaxe_051.png
 2 p- Handaxe_052.png
 2 p- Handaxe_053.png
-C43                               #Play weapon stance SFE (Clicking noise)
+C43
 2 p- Handaxe_054.png
 2 p- Handaxe_055.png
 4 p- Handaxe_009.png
 4 p- Handaxe_010.png
 2 p- Handaxe_011.png
 2 p- Handaxe_012.png
-C1B                               #Play quick "heavy step" SFE
-C41                               #EMPTY
+C1B
+C41
 2 p- Handaxe_013.png
-C05                               #Call spell associated with equipped weapon
+C05
 4 p- Handaxe_014.png
 4 p- Handaxe_015.png
 3 p- Handaxe_016.png
-C41                               #EMPTY
+C41
 2 p- Handaxe_017.png
-C43                               #Play weapon stance SFE (Clicking noise)
-2 p- Handaxe_018.png
+4 p- Handaxe_018.png
 4 p- Handaxe_019.png
+C43
+C13
 4 p- Handaxe_020.png
 4 p- Handaxe_021.png
 4 p- Handaxe_022.png
 4 p- Handaxe_023.png
-C01                               #NOP
+C01
 4 p- Handaxe_024.png
 2 p- Handaxe_025.png
 2 p- Handaxe_026.png
@@ -236,102 +235,103 @@ C01                               #NOP
 5 p- Handaxe_032.png
 5 p- Handaxe_033.png
 5 p- Handaxe_034.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 5 p- Handaxe_035.png
 5 p- Handaxe_036.png
 5 p- Handaxe_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 7               #Dodge Melee Attack
+/// - Mode 7
 5 p- Handaxe_000.png
-C02                               #Start of dodge
+C02
 3 p- Handaxe_056.png
 2 p- Handaxe_057.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 3 p- Handaxe_058.png
 3 p- Handaxe_059.png
 3 p- Handaxe_060.png
 5 p- Handaxe_058.png
-C01                               #NOP
-C1B                               #Play quick "heavy step" SFE
+C01
+C1B
 3 p- Handaxe_057.png
 5 p- Handaxe_061.png
 5 p- Handaxe_062.png
 5 p- Handaxe_035.png
 5 p- Handaxe_036.png
 5 p- Handaxe_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 8               #Dodge Ranged Attack
+/// - Mode 8
 5 p- Handaxe_000.png
-C02                               #Start of dodge
+C02
 3 p- Handaxe_056.png
 2 p- Handaxe_057.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 3 p- Handaxe_058.png
 3 p- Handaxe_059.png
 3 p- Handaxe_060.png
 5 p- Handaxe_058.png
-C01                               #NOP
-C1B                               #Play quick "heavy step" SFE
+C01
+C1B
 3 p- Handaxe_057.png
 5 p- Handaxe_061.png
 5 p- Handaxe_062.png
 5 p- Handaxe_035.png
 5 p- Handaxe_036.png
 5 p- Handaxe_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 9               #Equiped with Melee Weapon
+/// - Mode 9
 2 p- Handaxe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 10               #standing motions?
+/// - Mode 10
 2 p- Handaxe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 11               #Equiped with Ranged weapon
+/// - Mode 11
 2 p- Handaxe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 12               #Attack Missed Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 12
+C03
+C07
 10 p- Handaxe_000.png
 4 p- Handaxe_001.png
 2 p- Handaxe_002.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 2 p- Handaxe_003.png
 2 p- Handaxe_004.png
 2 p- Handaxe_005.png
 2 p- Handaxe_006.png
 3 p- Handaxe_007.png
-C41                               #EMPTY
+C41
 4 p- Handaxe_008.png
 4 p- Handaxe_009.png
 4 p- Handaxe_010.png
 2 p- Handaxe_011.png
 2 p- Handaxe_012.png
-C1B                               #Play quick "heavy step" SFE
-C41                               #EMPTY
+C1B
+C41
 2 p- Handaxe_013.png
-C05                               #Call spell associated with equipped weapon
-4 p- Handaxe_014.png
-4 p- Handaxe_015.png
-3 p- Handaxe_016.png
-C41                               #EMPTY
+C05
+5 p- Handaxe_014.png
+5 p- Handaxe_015.png
+5 p- Handaxe_016.png
+C41
 2 p- Handaxe_017.png
-C43                               #Play weapon stance SFE (Clicking noise)
-2 p- Handaxe_018.png
+4 p- Handaxe_018.png
 4 p- Handaxe_019.png
+C43
+C13
 4 p- Handaxe_020.png
 4 p- Handaxe_021.png
 4 p- Handaxe_022.png
 4 p- Handaxe_023.png
-C01                               #NOP
+C01
 4 p- Handaxe_024.png
 2 p- Handaxe_025.png
 2 p- Handaxe_026.png
@@ -343,11 +343,11 @@ C01                               #NOP
 5 p- Handaxe_032.png
 5 p- Handaxe_033.png
 5 p- Handaxe_034.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 5 p- Handaxe_035.png
 5 p- Handaxe_036.png
 5 p- Handaxe_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
 /// - End of animation

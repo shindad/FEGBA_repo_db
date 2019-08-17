@@ -1,5 +1,5 @@
 #######################################################
-#0124 lorm_sp1 
+#
 #
 #When importing to FEditorAdv delete # and after each line.
 #######################################################
@@ -87,7 +87,7 @@ C2B                               #Play armored unit "leaping" SFE
 C14                               #Heavy vibration of screen
 2 p- Axe_011.png
 C1F                               #Play hit SFE (sounds like Eliwood with sword's hit)
-C1A                               #Normal hit
+C08                               #Critical hit
 C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
 3 p- Axe_012.png
 3 p- Axe_013.png
@@ -157,7 +157,7 @@ C0D                               #End of dodge animation. preceeded by 0x06
 2 p- Axe_000.png
 C01                               #NOP
 ~~~
-/// - Mode 10               #standing motions?
+/// - Mode 10               #Standing motions
 2 p- Axe_000.png
 C01                               #NOP
 ~~~

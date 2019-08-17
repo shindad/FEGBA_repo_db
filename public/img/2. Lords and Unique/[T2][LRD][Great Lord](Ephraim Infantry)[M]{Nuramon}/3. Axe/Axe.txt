@@ -1,25 +1,19 @@
-#######################################################
-#FD lorm_sp1 
-#
-#When importing to FEditorAdv delete # and after each line.
-#######################################################
-/// - Mode 1               #Melee Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 1
+C03
+C07
 10 p- Axe_000.png
 7 p- Axe_001.png
 7 p- Axe_002.png
 6 p- Axe_003.png
 6 p- Axe_004.png
 3 p- Axe_005.png
-C42                               #Play long axe swinging SFE
+C42
 3 p- Axe_006.png
 3 p- Axe_007.png
 2 p- Axe_008.png
 1 p- Axe_009.png
-C2B                               #Play armored unit "leaping" SFE
 1 p- Axe_010.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 4 p- Axe_011.png
 2 p- Axe_012.png
 2 p- Axe_013.png
@@ -27,16 +21,17 @@ C1B                               #Play quick "heavy step" SFE
 2 p- Axe_013.png
 4 p- Axe_015.png
 12 p- Axe_016.png
-C1B                               #Play quick "heavy step" SFE
-C42                               #Play long axe swinging SFE
+C1B
+C42
 4 p- Axe_017.png
 1 p- Axe_018.png
-C14                               #Heavy vibration of screen
-C20                               #Play hit SFE (sounds like Knight Lord with Durandal's hit)
+C14
+C20
+C46
 1 p- Axe_019.png
 2 p- Axe_020.png
-C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
-C1A                               #Normal hit
+C04
+C1A
 4 p- Axe_021.png
 4 p- Axe_022.png
 4 p- Axe_023.png
@@ -47,32 +42,32 @@ C1A                               #Normal hit
 4 p- Axe_028.png
 4 p- Axe_029.png
 4 p- Axe_030.png
-C01                               #NOP
+C01
 7 p- Axe_031.png
 7 p- Axe_032.png
 3 p- Axe_033.png
 4 p- Axe_034.png
-C41                               #EMPTY
+C41
 2 p- Axe_035.png
 4 p- Axe_036.png
 4 p- Axe_037.png
 4 p- Axe_038.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 4 p- Axe_039.png
 4 p- Axe_040.png
 6 p- Axe_041.png
-C46                               #Play dropped axe crashing onto ground SFE
-C15                               #Slight vibration of screen
+C46
+C15
 6 p- Axe_042.png
 6 p- Axe_043.png
 6 p- Axe_044.png
 5 p- Axe_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 3               #Melee Critical Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 3
+C03
+C07
 10 p- Axe_000.png
 7 p- Axe_001.png
 7 p- Axe_002.png
@@ -82,7 +77,7 @@ C07                               #Start attack animation; should be preceeded b
 6 p- Axe_046.png
 2 p- Axe_047.png
 2 p- Axe_048.png
-C43                               #Play weapon stance SFE (Clicking noise)
+C43
 4 p- Axe_049.png
 6 p- Axe_050.png
 7 p- Axe_051.png
@@ -91,7 +86,7 @@ C43                               #Play weapon stance SFE (Clicking noise)
 4 p- Axe_054.png
 4 p- Axe_055.png
 2 p- Axe_056.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 2 p- Axe_057.png
 4 p- Axe_058.png
 2 p- Axe_059.png
@@ -103,14 +98,14 @@ C1B                               #Play quick "heavy step" SFE
 4 p- Axe_065.png
 2 p- Axe_066.png
 2 p- Axe_067.png
-C42                               #Play long axe swinging SFE
-C1B                               #Play quick "heavy step" SFE
+C42
+C1B
 3 p- Axe_068.png
-C14                               #Heavy vibration of screen
-C20                               #Play hit SFE (sounds like Knight Lord with Durandal's hit)
+C14
+C20
 3 p- Axe_069.png
-C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
-C1A                               #Normal hit
+C04
+C08
 3 p- Axe_070.png
 3 p- Axe_071.png
 2 p- Axe_072.png
@@ -124,18 +119,18 @@ C1A                               #Normal hit
 2 p- Axe_080.png
 2 p- Axe_081.png
 2 p- Axe_082.png
-C01                               #NOP
+C01
 4 p- Axe_083.png
 4 p- Axe_084.png
 3 p- Axe_085.png
 2 p- Axe_086.png
 2 p- Axe_087.png
-C42                               #Play long axe swinging SFE
-C43                               #Play weapon stance SFE (Clicking noise)
+C42
+C43
 2 p- Axe_088.png
 4 p- Axe_089.png
 3 p- Axe_090.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 3 p- Axe_091.png
 4 p- Axe_092.png
 4 p- Axe_093.png
@@ -146,98 +141,97 @@ C1B                               #Play quick "heavy step" SFE
 4 p- Axe_098.png
 4 p- Axe_099.png
 6 p- Axe_100.png
-C46                               #Play dropped axe crashing onto ground SFE
-C15                               #Slight vibration of screen
+C46
+C15
 6 p- Axe_101.png
 6 p- Axe_102.png
 6 p- Axe_102.png
 6 p- Axe_103.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 4 p- Axe_104.png
 4 p- Axe_105.png
 6 p- Axe_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 5               #Ranged Animation 
+/// - Mode 5
 1 p- Axe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 6               #Ranged Critical Animation
+/// - Mode 6
 1 p- Axe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 7               #Dodge Melee Attack
+/// - Mode 7
 5 p- Axe_000.png
-C02                               #Start of dodge
+C02
 3 p- Axe_106.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 3 p- Axe_107.png
 3 p- Axe_108.png
 3 p- Axe_109.png
 3 p- Axe_110.png
 5 p- Axe_108.png
-C01                               #NOP
-C1B                               #Play quick "heavy step" SFE
+C01
+C1B
 3 p- Axe_111.png
 5 p- Axe_112.png
 5 p- Axe_113.png
 5 p- Axe_114.png
 5 p- Axe_115.png
 5 p- Axe_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 8               #Dodge Ranged Attack
+/// - Mode 8
 5 p- Axe_000.png
-C02                               #Start of dodge
+C02
 3 p- Axe_106.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 3 p- Axe_107.png
 3 p- Axe_108.png
 3 p- Axe_109.png
 3 p- Axe_110.png
 5 p- Axe_108.png
-C01                               #NOP
-C1B                               #Play quick "heavy step" SFE
+C01
+C1B
 3 p- Axe_111.png
 5 p- Axe_112.png
 5 p- Axe_113.png
 5 p- Axe_114.png
 5 p- Axe_115.png
 5 p- Axe_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 9               #Equiped with Melee Weapon
+/// - Mode 9
 2 p- Axe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 10               #standing motions?
+/// - Mode 10
 2 p- Axe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 11               #Equiped with Ranged weapon
+/// - Mode 11
 2 p- Axe_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 12               #Attack Missed Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 12
+C03
+C07
 10 p- Axe_000.png
 7 p- Axe_001.png
 7 p- Axe_002.png
 6 p- Axe_003.png
 6 p- Axe_004.png
 3 p- Axe_005.png
-C42                               #Play long axe swinging SFE
+C42
 3 p- Axe_006.png
 3 p- Axe_007.png
 2 p- Axe_008.png
 1 p- Axe_009.png
-C2B                               #Play armored unit "leaping" SFE
 1 p- Axe_010.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 4 p- Axe_011.png
 2 p- Axe_012.png
 2 p- Axe_013.png
@@ -245,14 +239,15 @@ C1B                               #Play quick "heavy step" SFE
 2 p- Axe_013.png
 4 p- Axe_015.png
 12 p- Axe_016.png
-C1B                               #Play quick "heavy step" SFE
-C42                               #Play long axe swinging SFE
+C1B
+C42
 4 p- Axe_017.png
 1 p- Axe_018.png
-C14                               #Heavy vibration of screen
-C46                               #Play dropped axe crashing onto ground SFE
+C14
+C46
 1 p- Axe_019.png
 2 p- Axe_020.png
+C04
 4 p- Axe_021.png
 4 p- Axe_022.png
 4 p- Axe_023.png
@@ -263,27 +258,27 @@ C46                               #Play dropped axe crashing onto ground SFE
 4 p- Axe_028.png
 4 p- Axe_029.png
 4 p- Axe_030.png
-C01                               #NOP
+C01
 7 p- Axe_031.png
 7 p- Axe_032.png
 3 p- Axe_033.png
 4 p- Axe_034.png
-C41                               #EMPTY
+C41
 2 p- Axe_035.png
 4 p- Axe_036.png
 4 p- Axe_037.png
 4 p- Axe_038.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 4 p- Axe_039.png
 4 p- Axe_040.png
 6 p- Axe_041.png
-C46                               #Play dropped axe crashing onto ground SFE
-C15                               #Slight vibration of screen
+C46
+C15
 6 p- Axe_042.png
 6 p- Axe_043.png
 6 p- Axe_044.png
 5 p- Axe_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
 /// - End of animation

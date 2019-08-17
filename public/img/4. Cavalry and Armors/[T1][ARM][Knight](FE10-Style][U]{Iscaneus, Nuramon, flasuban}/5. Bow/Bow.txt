@@ -1,5 +1,5 @@
 #######################################################
-#0126 lorm_sp1 
+#
 #
 #When importing to FEditorAdv delete # and after each line.
 #######################################################
@@ -104,14 +104,13 @@ C0D                               #End of dodge animation. preceeded by 0x06
 /// - Mode 7               #Dodge Melee Attack
 C02                               #Start of dodge
 5 p- Bow_000.png
+C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
 2 p- Bow_026.png
-C1B                               #Play quick "heavy step" SFE
-C15                               #Slight vibration of screen
-2 p- Bow_027.png
+C2B                               #Play armored unit "leaping" SFE
+3 p- Bow_027.png
 C01                               #NOP
-2 p- Bow_026.png
-C1B                               #Play quick "heavy step" SFE
-C15                               #Slight vibration of screen
+3 p- Bow_026.png
+C2B                               #Play armored unit "leaping" SFE
 5 p- Bow_000.png
 C06                               #Begin opponent's turn after hit.next code 0D.
 C0D                               #End of dodge animation. preceeded by 0x06
@@ -119,14 +118,13 @@ C0D                               #End of dodge animation. preceeded by 0x06
 /// - Mode 8               #Dodge Ranged Attack
 C02                               #Start of dodge
 5 p- Bow_000.png
+C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
 2 p- Bow_026.png
-C1B                               #Play quick "heavy step" SFE
-C15                               #Slight vibration of screen
-2 p- Bow_027.png
+C2B                               #Play armored unit "leaping" SFE
+3 p- Bow_027.png
 C01                               #NOP
-2 p- Bow_026.png
-C1B                               #Play quick "heavy step" SFE
-C15                               #Slight vibration of screen
+3 p- Bow_026.png
+C2B                               #Play armored unit "leaping" SFE
 5 p- Bow_000.png
 C06                               #Begin opponent's turn after hit.next code 0D.
 C0D                               #End of dodge animation. preceeded by 0x06
@@ -135,7 +133,7 @@ C0D                               #End of dodge animation. preceeded by 0x06
 1 p- Bow_000.png
 C01                               #NOP
 ~~~
-/// - Mode 10               #standing motions?
+/// - Mode 10               #Standing motions
 1 p- Bow_000.png
 C01                               #NOP
 ~~~

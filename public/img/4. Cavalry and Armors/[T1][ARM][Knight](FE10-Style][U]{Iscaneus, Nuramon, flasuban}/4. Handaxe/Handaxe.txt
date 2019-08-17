@@ -1,5 +1,5 @@
 #######################################################
-#0125 lorm_sp1 
+#
 #
 #When importing to FEditorAdv delete # and after each line.
 #######################################################
@@ -28,9 +28,10 @@ C41                               #EMPTY
 C05                               #Call spell associated with equipped weapon
 3 p- Handaxe_012.png
 3 p- Handaxe_013.png
-16 p- Handaxe_014.png
+3 p- Handaxe_014.png
 C41                               #EMPTY
 C43                               #Play weapon stance SFE (Clicking noise)
+C13                               #ranged attack - hand axe for Hector
 6 p- Handaxe_015.png
 6 p- Handaxe_016.png
 6 p- Handaxe_017.png
@@ -78,9 +79,10 @@ C41                               #EMPTY
 C05                               #Call spell associated with equipped weapon
 3 p- Handaxe_012.png
 3 p- Handaxe_013.png
-16 p- Handaxe_014.png
+3 p- Handaxe_014.png
 C41                               #EMPTY
 C43                               #Play weapon stance SFE (Clicking noise)
+C13                               #ranged attack - hand axe for Hector
 6 p- Handaxe_015.png
 6 p- Handaxe_016.png
 6 p- Handaxe_017.png
@@ -121,9 +123,10 @@ C41                               #EMPTY
 C05                               #Call spell associated with equipped weapon
 3 p- Handaxe_012.png
 3 p- Handaxe_013.png
-16 p- Handaxe_014.png
+3 p- Handaxe_014.png
 C41                               #EMPTY
 C43                               #Play weapon stance SFE (Clicking noise)
+C13                               #ranged attack - hand axe for Hector
 6 p- Handaxe_015.png
 6 p- Handaxe_016.png
 6 p- Handaxe_017.png
@@ -171,9 +174,10 @@ C41                               #EMPTY
 C05                               #Call spell associated with equipped weapon
 3 p- Handaxe_012.png
 3 p- Handaxe_013.png
-16 p- Handaxe_014.png
+3 p- Handaxe_014.png
 C41                               #EMPTY
 C43                               #Play weapon stance SFE (Clicking noise)
+C13                               #ranged attack - hand axe for Hector
 6 p- Handaxe_015.png
 6 p- Handaxe_016.png
 6 p- Handaxe_017.png
@@ -223,7 +227,7 @@ C0D                               #End of dodge animation. preceeded by 0x06
 2 p- Handaxe_000.png
 C01                               #NOP
 ~~~
-/// - Mode 10               #standing motions?
+/// - Mode 10               #Standing motions
 2 p- Handaxe_000.png
 C01                               #NOP
 ~~~
@@ -256,9 +260,10 @@ C41                               #EMPTY
 C05                               #Call spell associated with equipped weapon
 3 p- Handaxe_012.png
 3 p- Handaxe_013.png
-16 p- Handaxe_014.png
+3 p- Handaxe_014.png
 C41                               #EMPTY
 C43                               #Play weapon stance SFE (Clicking noise)
+C13                               #ranged attack - hand axe for Hector
 6 p- Handaxe_015.png
 6 p- Handaxe_016.png
 6 p- Handaxe_017.png

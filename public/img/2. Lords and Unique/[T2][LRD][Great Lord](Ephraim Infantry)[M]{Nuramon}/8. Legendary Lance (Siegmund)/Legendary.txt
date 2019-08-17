@@ -1,21 +1,16 @@
-#######################################################
-#FC lorm_sp1 
-#
-#When importing to FEditorAdv delete # and after each line.
-#######################################################
-/// - Mode 1               #Melee Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 1
+C03
+C07
 10 p- Legendary_000.png
 6 p- Legendary_001.png
 2 p- Legendary_002.png
-C38                               #Play heavy spear spinning SFE
+C38
 2 p- Legendary_003.png
 2 p- Legendary_004.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 2 p- Legendary_005.png
 2 p- Legendary_006.png
-C43                               #Play weapon stance SFE (Clicking noise)
+C43
 2 p- Legendary_007.png
 4 p- Legendary_008.png
 4 p- Legendary_009.png
@@ -24,14 +19,14 @@ C43                               #Play weapon stance SFE (Clicking noise)
 4 p- Legendary_012.png
 4 p- Legendary_013.png
 2 p- Legendary_014.png
-C22                               #Play short sword swinging SFE
-C14                               #Heavy vibration of screen
-C1F                               #Play hit SFE (sounds like Eliwood with sword's hit)
+C22
+C14
+C1F
 2 p- Legendary_015.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 2 p- Legendary_016.png
-C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
-C1A                               #Normal hit
+C04
+C1A
 4 p- Legendary_017.png
 4 p- Legendary_018.png
 4 p- Legendary_019.png
@@ -43,35 +38,35 @@ C1A                               #Normal hit
 4 p- Legendary_025.png
 4 p- Legendary_026.png
 6 p- Legendary_027.png
-C01                               #NOP
+C01
 6 p- Legendary_028.png
 4 p- Legendary_029.png
 4 p- Legendary_030.png
-C23                               #Play shorter sword swinging SFE
+C23
 3 p- Legendary_031.png
 3 p- Legendary_032.png
 3 p- Legendary_033.png
 3 p- Legendary_034.png
 3 p- Legendary_035.png
 4 p- Legendary_036.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 4 p- Legendary_037.png
 5 p- Legendary_038.png
 6 p- Legendary_039.png
 5 p- Legendary_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 3               #Melee Critical Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 3
+C03
+C07
 10 p- Legendary_000.png
 6 p- Legendary_001.png
 2 p- Legendary_002.png
-C38                               #Play heavy spear spinning SFE
+C38
 2 p- Legendary_003.png
 2 p- Legendary_004.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 2 p- Legendary_005.png
 4 p- Legendary_040.png
 2 p- Legendary_041.png
@@ -82,11 +77,11 @@ C1B                               #Play quick "heavy step" SFE
 5 p- Legendary_046.png
 6 p- Legendary_047.png
 4 p- Legendary_048.png
-C23                               #Play shorter sword swinging SFE
+C23
 3 p- Legendary_049.png
-C20                               #Play hit SFE (sounds like Knight Lord with Durandal's hit)
-C51                               #Show brief white flash animation
-C14                               #Heavy vibration of screen
+C20
+C51
+C14
 3 p- Legendary_050.png
 3 p- Legendary_051.png
 3 p- Legendary_052.png
@@ -100,14 +95,14 @@ C14                               #Heavy vibration of screen
 2 p- Legendary_060.png
 2 p- Legendary_061.png
 2 p- Legendary_062.png
-C23                               #Play shorter sword swinging SFE
-C1B                               #Play quick "heavy step" SFE
-C14                               #Heavy vibration of screen
-C1F                               #Play hit SFE (sounds like Eliwood with sword's hit)
+C23
+C1B
+C14
+C1F
 2 p- Legendary_063.png
 4 p- Legendary_064.png
-C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
-C1A                               #Normal hit
+C04
+C08
 4 p- Legendary_065.png
 4 p- Legendary_066.png
 4 p- Legendary_067.png
@@ -118,101 +113,200 @@ C1A                               #Normal hit
 4 p- Legendary_072.png
 4 p- Legendary_073.png
 6 p- Legendary_074.png
-C01                               #NOP
+C01
 5 p- Legendary_075.png
 5 p- Legendary_076.png
 5 p- Legendary_077.png
 3 p- Legendary_078.png
-C23                               #Play shorter sword swinging SFE
+C23
 3 p- Legendary_031.png
 3 p- Legendary_032.png
 3 p- Legendary_033.png
 3 p- Legendary_034.png
 3 p- Legendary_035.png
 4 p- Legendary_036.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 4 p- Legendary_037.png
 5 p- Legendary_038.png
 6 p- Legendary_039.png
 5 p- Legendary_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 5               #Ranged Animation 
-2 p- Legendary_000.png
-C01                               #NOP
-~~~
-/// - Mode 6               #Ranged Critical Animation
-2 p- Legendary_000.png
-C01                               #NOP
-~~~
-/// - Mode 7               #Dodge Melee Attack
-5 p- Legendary_000.png
-C02                               #Start of dodge
-3 p- Legendary_079.png
+/// - Mode 5
+C03
+C07
+10 p- Legendary_000.png
+4 p- Legendary_001.png
+2 p- Legendary_079.png
 2 p- Legendary_080.png
-C1B                               #Play quick "heavy step" SFE
-3 p- Legendary_081.png
-3 p- Legendary_082.png
-3 p- Legendary_083.png
-5 p- Legendary_081.png
-C01                               #NOP
-3 p- Legendary_080.png
-C1B                               #Play quick "heavy step" SFE
-5 p- Legendary_084.png
+C1B
+2 p- Legendary_081.png
+2 p- Legendary_082.png
+1 p- Legendary_083.png
+C23
+3 p- Legendary_084.png
 5 p- Legendary_085.png
-5 p- Legendary_086.png
-5 p- Legendary_087.png
+6 p- Legendary_086.png
+7 p- Legendary_087.png
+C23
+2 p- Legendary_088.png
+2 p- Legendary_089.png
+C1B
+2 p- Legendary_090.png
+C05
+4 p- Legendary_091.png
+4 p- Legendary_092.png
+4 p- Legendary_093.png
+4 p- Legendary_094.png
+4 p- Legendary_095.png
+4 p- Legendary_096.png
+5 p- Legendary_097.png
+5 p- Legendary_098.png
+5 p- Legendary_099.png
+6 p- Legendary_100.png
+C01
+5 p- Legendary_101.png
+5 p- Legendary_102.png
+4 p- Legendary_103.png
+5 p- Legendary_104.png
+5 p- Legendary_105.png
+5 p- Legendary_106.png
+C1B
+5 p- Legendary_107.png
+5 p- Legendary_108.png
+10 p- Legendary_000.png
+C06
+C0D
+~~~
+/// - Mode 6
+C03
+C07
+10 p- Legendary_000.png
+4 p- Legendary_001.png
+2 p- Legendary_002.png
+C38
+2 p- Legendary_003.png
+2 p- Legendary_109.png
+2 p- Legendary_110.png
+2 p- Legendary_111.png
+C38
+2 p- Legendary_112.png
+2 p- Legendary_113.png
+2 p- Legendary_114.png
+2 p- Legendary_115.png
+C23
+1 p- Legendary_116.png
+1 p- Legendary_117.png
+2 p- Legendary_118.png
+C38
+2 p- Legendary_119.png
+2 p- Legendary_120.png
+2 p- Legendary_121.png
+2 p- Legendary_122.png
+C38
+2 p- Legendary_123.png
+2 p- Legendary_124.png
+2 p- Legendary_125.png
+7 p- Legendary_126.png
+C43
+2 p- Legendary_088.png
+2 p- Legendary_089.png
+C23
+C1B
+2 p- Legendary_090.png
+C05
+4 p- Legendary_091.png
+4 p- Legendary_092.png
+4 p- Legendary_093.png
+4 p- Legendary_094.png
+4 p- Legendary_095.png
+4 p- Legendary_096.png
+5 p- Legendary_097.png
+5 p- Legendary_098.png
+5 p- Legendary_099.png
+6 p- Legendary_100.png
+C01
+5 p- Legendary_101.png
+5 p- Legendary_102.png
+4 p- Legendary_103.png
+5 p- Legendary_104.png
+5 p- Legendary_105.png
+5 p- Legendary_106.png
+C1B
+5 p- Legendary_107.png
+5 p- Legendary_108.png
+10 p- Legendary_000.png
+C06
+C0D
+~~~
+/// - Mode 7
 5 p- Legendary_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
-~~~
-/// - Mode 8               #Dodge Ranged Attack
+C02
+3 p- Legendary_127.png
+2 p- Legendary_128.png
+C1B
+3 p- Legendary_129.png
+3 p- Legendary_130.png
+3 p- Legendary_131.png
+5 p- Legendary_129.png
+C01
+3 p- Legendary_128.png
+C1B
+5 p- Legendary_132.png
+5 p- Legendary_133.png
+5 p- Legendary_134.png
+5 p- Legendary_135.png
 5 p- Legendary_000.png
-C02                               #Start of dodge
-3 p- Legendary_079.png
-2 p- Legendary_080.png
-C1B                               #Play quick "heavy step" SFE
-3 p- Legendary_081.png
-3 p- Legendary_082.png
-3 p- Legendary_083.png
-5 p- Legendary_081.png
-C01                               #NOP
-3 p- Legendary_080.png
-C1B                               #Play quick "heavy step" SFE
-5 p- Legendary_084.png
-5 p- Legendary_085.png
-5 p- Legendary_086.png
-5 p- Legendary_087.png
+C06
+C0D
+~~~
+/// - Mode 8
 5 p- Legendary_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C02
+3 p- Legendary_127.png
+2 p- Legendary_128.png
+C1B
+3 p- Legendary_129.png
+3 p- Legendary_130.png
+3 p- Legendary_131.png
+5 p- Legendary_129.png
+C01
+3 p- Legendary_128.png
+C1B
+5 p- Legendary_132.png
+5 p- Legendary_133.png
+5 p- Legendary_134.png
+5 p- Legendary_135.png
+5 p- Legendary_000.png
+C06
+C0D
 ~~~
-/// - Mode 9               #Equiped with Melee Weapon
+/// - Mode 9
 2 p- Legendary_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 10               #standing motions?
+/// - Mode 10
 2 p- Legendary_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 11               #Equiped with Ranged weapon
+/// - Mode 11
 2 p- Legendary_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 12               #Attack Missed Animation
-C03                               #Start attack animation; should be followed by 0x07
-C07                               #Start attack animation; should be preceeded by 0x03
+/// - Mode 12
+C03
+C07
 10 p- Legendary_000.png
 6 p- Legendary_001.png
 2 p- Legendary_002.png
-C38                               #Play heavy spear spinning SFE
+C38
 2 p- Legendary_003.png
 2 p- Legendary_004.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 2 p- Legendary_005.png
 2 p- Legendary_006.png
-C43                               #Play weapon stance SFE (Clicking noise)
+C43
 2 p- Legendary_007.png
 4 p- Legendary_008.png
 4 p- Legendary_009.png
@@ -220,40 +314,40 @@ C43                               #Play weapon stance SFE (Clicking noise)
 4 p- Legendary_011.png
 4 p- Legendary_012.png
 4 p- Legendary_013.png
-2 p- Legendary_014.png
-C22                               #Play short sword swinging SFE
-2 p- Legendary_015.png
-C1B                               #Play quick "heavy step" SFE
-2 p- Legendary_088.png
-C04                               #Prepare HP depletion routine; needed to animate return to standing frame after hit; Magic only.
-4 p- Legendary_089.png
-4 p- Legendary_090.png
-4 p- Legendary_091.png
-4 p- Legendary_092.png
-4 p- Legendary_093.png
-4 p- Legendary_094.png
-4 p- Legendary_095.png
-4 p- Legendary_096.png
-4 p- Legendary_097.png
-4 p- Legendary_098.png
-6 p- Legendary_099.png
-C01                               #NOP
-6 p- Legendary_100.png
-4 p- Legendary_101.png
-4 p- Legendary_102.png
-C23                               #Play shorter sword swinging SFE
+2 p- Legendary_136.png
+C22
+2 p- Legendary_137.png
+C1B
+2 p- Legendary_138.png
+C04
+4 p- Legendary_139.png
+4 p- Legendary_140.png
+4 p- Legendary_141.png
+4 p- Legendary_142.png
+4 p- Legendary_143.png
+4 p- Legendary_144.png
+4 p- Legendary_145.png
+4 p- Legendary_146.png
+4 p- Legendary_147.png
+4 p- Legendary_148.png
+6 p- Legendary_149.png
+C01
+6 p- Legendary_150.png
+4 p- Legendary_151.png
+4 p- Legendary_152.png
+C23
 3 p- Legendary_031.png
 3 p- Legendary_032.png
 3 p- Legendary_033.png
 3 p- Legendary_034.png
 3 p- Legendary_035.png
 4 p- Legendary_036.png
-C1B                               #Play quick "heavy step" SFE
+C1B
 4 p- Legendary_037.png
 5 p- Legendary_038.png
 6 p- Legendary_039.png
 5 p- Legendary_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
 /// - End of animation

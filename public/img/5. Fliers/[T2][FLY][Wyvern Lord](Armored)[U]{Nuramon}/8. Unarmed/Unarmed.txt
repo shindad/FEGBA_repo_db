@@ -1,62 +1,57 @@
-#######################################################
-#EE lorm_sp1 
-#
-#When importing to FEditorAdv delete # and after each line.
-#######################################################
-/// - Mode 1               #Melee Animation
+/// - Mode 1
 1 p- Unarmed_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 3               #Melee Critical Animation
+/// - Mode 3
 1 p- Unarmed_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 5               #Ranged Animation 
+/// - Mode 5
 1 p- Unarmed_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 6               #Ranged Critical Animation
+/// - Mode 6
 1 p- Unarmed_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 7               #Dodge Melee Attack
-C02                               #Start of dodge
+/// - Mode 7
+C02
 1 p- Unarmed_000.png
-C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+C0E
 3 p- Unarmed_001.png
 1 p- Unarmed_002.png
-C01                               #NOP
+C01
 3 p- Unarmed_001.png
 1 p- Unarmed_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 8               #Dodge Ranged Attack
-C02                               #Start of dodge
+/// - Mode 8
+C02
 1 p- Unarmed_000.png
-C0E                               #Start of dodging frames (should go after standing frame and before dodging animation)
+C0E
 3 p- Unarmed_001.png
 1 p- Unarmed_002.png
-C01                               #NOP
+C01
 3 p- Unarmed_001.png
 1 p- Unarmed_000.png
-C06                               #Begin opponent's turn after hit.next code 0D.
-C0D                               #End of dodge animation. preceeded by 0x06
+C06
+C0D
 ~~~
-/// - Mode 9               #Equiped with Melee Weapon
+/// - Mode 9
 1 p- Unarmed_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 10               #standing motions?
+/// - Mode 10
 1 p- Unarmed_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 11               #Equiped with Ranged weapon
+/// - Mode 11
 1 p- Unarmed_000.png
-C01                               #NOP
+C01
 ~~~
-/// - Mode 12               #Attack Missed Animation
+/// - Mode 12
 1 p- Unarmed_000.png
-C01                               #NOP
+C01
 ~~~
 /// - End of animation
