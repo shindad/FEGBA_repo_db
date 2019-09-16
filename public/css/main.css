@@ -19,7 +19,7 @@ a {
     font-weight: 600;
     color: blue;
 }
-item: PropTypes.shape(NavigationItemPropTypes).isRequired,
+
 /* Navbar Styles */
 
 #sideBar {
