@@ -1,1 +1,0 @@
-Insert the Sound Effect (Init.wav) or change the script/sound effect to use.
