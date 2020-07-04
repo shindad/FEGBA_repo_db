@@ -2,9 +2,6 @@
 
 const bodyParser = require("body-parser");
 
-// Requiring the models folder for access to mysql methods via db.Method calls
-const db = require("./models");
-
 // EXPRESS APP REQUIREMENTS
 const express = require("express");
 const app = express();
@@ -30,20 +27,10 @@ app.use(express.static("public"));
 
 // Server routes
 require("./controllers/routes/html-routes.js")(app);
-require("./controllers/routes/api-routes.js")(app);
 
 /// END DEPENDENCIES ///
 
-// Sync sequelize models and then start the Express app
-// db.sequelize.sync({ force: true }).then(function () { //add force true for restarting db
-db.sequelize.sync({}).then(function () {
-  app.listen(PORT, function () {
-    console.log("App listening on PORT " + PORT);
-
-    //Seeds to DB
-    // require("./scripts/repoSeeder");
-
-  });
-});
-
-/// END ///
+// start the Express app
+app.listen(PORT, () => {
+	console.log("App listening on PORT " + PORT);
+})
