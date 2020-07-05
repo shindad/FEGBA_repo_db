@@ -31,14 +31,14 @@ function Anim(anim) {
 
 		//All Image data
 		const rootImagePath = 'https://drive.google.com/uc?export=view&id='
-		const stillImage = this.weapons[0].static ? rootImagePath + this.weapons[0].static : "img/404.png"
-		const activeImage = this.weapons[0].active ? rootImagePath + this.weapons[0].active : "img/404.png"
+		const stillImage = this.weapons && this.weapons[0] && this.weapons[0].static ? rootImagePath + this.weapons[0].static : "img/404.png"
+		const activeImage = this.weapons && this.weapons[0] && this.weapons[0].active ? rootImagePath + this.weapons[0].active : "img/404.png"
 		const animImg = $("<img>")
 			.addClass("gif")
 			.attr({
 				id: this.dlName.split(' ').join(''), //needed for targeting with img icons
 				src: stillImage,
-				"data-weapon": this.weapons[0].type, //holds current weapon displayed
+				"data-weapon": this.weapons && this.weapons[0] && this.weapons[0].type || '', //holds current weapon displayed
 				"data-state": "still",
 				"data-animate": activeImage,
 				"data-still": stillImage
@@ -170,23 +170,49 @@ function makeAnimRow(anim, searchName, isSearch) {
 	//console.log(anim);
 
 	// reorders the anims by gender for the selected class.
-	anim.sort(function (a, b) {
-		const x = a.category;
-		const y = b.category;
-		if (x < y) {
-			return -1;
-		}
-		if (x > y) {
-			return 1;
-		}
-		if (a.gender < b.gender) {
-			return -1;
-		}
-		if (a.gender > b.gender) {
-			return 1;
-		}
-		return 0;
-	});
+	if (searchName === 'Anima' || searchName === 'Light' || searchName === 'Dark' || searchName === 'Other') {
+		anim.sort((a,b) => {
+			const x = a.name
+			const y = b.name
+			if (x < y) {
+				return -1;
+			}
+			if (x > y) {
+				return 1;
+			}
+			return 0;
+		})
+	} else if (searchName === 'Skill') {
+		anim.sort((a,b) => {
+			const x = a.name
+			const y = b.name
+			if (x < y) {
+				return -1;
+			}
+			if (x > y) {
+				return 1;
+			}
+			return 0;
+		})	
+	} else {
+		anim.sort((a, b) => {
+			const x = a.category;
+			const y = b.category;
+			if (x < y) {
+				return -1;
+			}
+			if (x > y) {
+				return 1;
+			}
+			if (a.gender < b.gender) {
+				return -1;
+			}
+			if (a.gender > b.gender) {
+				return 1;
+			}
+			return 0;
+		});	
+	}
 
 	let classRow = `${searchName}Row`.split(' ').join('');
 
@@ -249,16 +275,24 @@ function scrollTo(row) {
 /// EVENT LISTENERS ///
 
 //Major listener for values populated by category selection
-$(document).on("click", ".classBtn", function () {
-	const className = this.getAttribute("data-prof");
-	const row = "." + className.split(' ').join('') + "Row";
+$(document).on("click", ".classBtn", ((event) => {
+	const className = event.target.getAttribute('data-prof')
+	const filled = event.target.getAttribute('data-filled')
+	const row = `.${className.split(' ').join('')}Row`
 
-	if (this.getAttribute("data-filled") === 'false') {
+	if (filled === 'false') {
 		makePlaceholder(className);
-		const animsOfClass = animationsJson.filter((animation) => animation.feClass === className)
-		makeAnimRow(animsOfClass, className)
+		let filteredAnims
+		if (className === 'Anima' || className === 'Light' || className === 'Dark' || className === 'Other') {
+			filteredAnims = animationsJson.filter((animation) => animation.school === className)
+		} else if (className === 'Skill') {
+			filteredAnims = animationsJson.filter((animation) => animation.category === 'SKL')
+		} else {
+			filteredAnims = animationsJson.filter((animation) => animation.feClass === className)
+		}
+		makeAnimRow(filteredAnims, className)
 		scrollTo(row);
-		this.setAttribute("data-filled", "true");
+		event.target.setAttribute("data-filled", "true");
 	} else {
 		//console.log(document.getElementsByClassName(this.getAttribute("data-prof").split(' ').join('') + "Row")[0])
 		if (document.getElementsByClassName(className.split(' ').join('') + 'Row')[0].style.display === "none") {
@@ -266,7 +300,7 @@ $(document).on("click", ".classBtn", function () {
 		};
 		scrollTo(row);
 	};
-});
+}));
 
 // Listener for search clicks
 $(document).on("click", "#formSubmit", function () {
