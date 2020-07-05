@@ -15,18 +15,25 @@
 			<li>Clicking a weapon icon will swap to that weapon for viewing.</li>
 			<li>Clicking an anim name will download the package with all usable animations.</li>
 		</ul>
+		<p>
+			To download the entire repo used by this site, <a class="fullDL"
+				href="https://drive.google.com/open?id=1jiiTpNXgAlr4lZBh8d-nJFdO-Jus5VXV">Click
+				here</a>.
+		</p>
 	</div>
 	<div class="col-12 col-md-5 ml-3">
 		<p>
 			Please note that class names are a guideline, and are not meant to be completely rigid.
 			Custom one-off classes have been placed in the closest applicable class section.
 		</p>
-		<p>
-			To download the entire repo used by this site, <a class="fullDL"
-				href="https://drive.google.com/open?id=1jiiTpNXgAlr4lZBh8d-nJFdO-Jus5VXV">Click
-				here</a>.
-		</p>
 		<p>Please remember to credit the animation creators when using or modifying their works.</p>
+		Themes:
+		<form>
+			<input type='radio' id='theme-independence' name='themes' checked value='independence'/>
+			<label for='theme-independence'>Independence Day</label>
+			<input type='radio' id='theme-default' name='themes' value=''/>
+			<label for='theme-default'>Default</label>
+		</form>
 	</div>
 
 	<div class="col-12">
@@ -49,7 +56,7 @@
 						<label for="formClass">Class</label>
 						<select class="form-control" id="formClass">
 							<option></option>
-							{{#each allClasses}}
+							{{#each allFeClasses}}
 							<option>{{this}}</option>
 							{{/each}}
 						</select>
@@ -57,8 +64,7 @@
 
 					<div class="form-group col-4 col-xl-auto my-1">
 						<label for="formName">Description</label>
-						<input type="text" minlength="3" class="form-control formKey" data-alt="formAuthor"
-							id="formName">
+						<input type="text" minlength="3" class="form-control formKey" data-alt="formAuthor" id="formName">
 					</div>
 
 					<div class="form-group col-4 col-xl-auto my-1">

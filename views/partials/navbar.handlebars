@@ -1,56 +1,54 @@
 <nav class="navbar sticky-top navbar-dark bg-dark px-2" id="sideBar">
-    <div class="container-fluid px-0">
-        <ul class="my-0">
-            <button type="button" class="classBtn btn btn-secondary navtext p-1" data-disp="false" data-prof="About"
-                id="About">
-                <span class="fullNav">Home</span>
-                <span class="smallNav">
-                    <img class="navimg" src="img/scroll.gif">
-                </span>
-            </button>
-        </ul>
-        {{#each navItem}}
-        <ul class="dropdown my-0">
-            <button type="button" class="nav-link btn btn-secondary dropdown-toggle navtext mx-auto p-1"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-disp="{{disp}}" id={{dispTitle}}>
-                <span class="fullNav">{{dispTitle}}</span>
-                <span class="smallNav">
-                    <img class="navimg" src={{short}}>
-                </span>
-            </button>
+	<div class="container-fluid px-0">
+		<ul class="my-0">
+			<button type="button" class="classBtn btn btn-secondary navtext p-1" data-disp="false" data-prof="About"
+				id="About">
+				<span class="fullNav">Home</span>
+				<span class="smallNav">
+					<img class="navimg" src="img/scroll.gif">
+				</span>
+			</button>
+		</ul>
+		{{#each navigationItems}}
+		<ul class="dropdown my-0">
+			<button type="button" class="nav-link btn btn-secondary dropdown-toggle navtext mx-auto p-1"
+				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-disp="{{isOpen}}" id={{displayText}}>
+				<span class="fullNav">{{displayText}}</span>
+				<span class="smallNav">
+					<img class="navimg" src={{icon}}>
+				</span>
+			</button>
 
-            {{#if dropdown}}
-            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                {{#each classes}}
-                <button class="dropdown-item classBtn navtext" data-toggle="button" data-prof="{{this}}"
-                    data-filled="false" aria-pressed="false">
-                    {{this}}
-                </button>
-                {{/each}}
-            </ul>
-            {{else}}
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                {{#each classes}}
-                <button class="dropdown-item classBtn navtext" data-toggle="button" data-prof="{{this}}"
-                    data-filled="false" aria-pressed="false">
-                    {{this}}
-                </button>
-                {{/each}}
-            </ul>
-            {{/if}}
+			{{#if dropdownDirection}}
+			<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+				{{#each classes}}
+				<button class="dropdown-item classBtn navtext" data-toggle="button" data-prof="{{this}}" data-filled="false"
+					aria-pressed="false">
+					{{this}}
+				</button>
+				{{/each}}
+			</ul>
+			{{else}}
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				{{#each feClasses}}
+				<button class="dropdown-item classBtn navtext" data-toggle="button" data-prof="{{this}}" data-filled="false"
+					aria-pressed="false">
+					{{this}}
+				</button>
+				{{/each}}
+			</ul>
+			{{/if}}
+		</ul>
 
-        </ul>
-
-        {{/each}}
-        <ul class="my-0 navSearchContainer">
-            <form role="form">
-                <div class="form-row">
-                        <input type="text" minlength="3" class="navSearch form-control my-auto" id="formSearch"
-                            placeholder="Search">
-                        <button disabled class="btn btn-primary navtext mx-auto form-control" id="formSubmit"
-                            type="submit"><i class="fa fa-search"></i></button>
-                </div>
-            </form>
-        </ul>
-    </div>
+		{{/each}}
+		<ul class="my-0 navSearchContainer">
+			<form role="form">
+				<div class="form-row">
+					<input type="text" minlength="3" class="navSearch form-control my-auto" id="formSearch" placeholder="Search">
+					<button disabled class="btn btn-primary navtext mx-auto form-control" id="formSubmit" type="submit"><i
+							class="fa fa-search"></i></button>
+				</div>
+			</form>
+		</ul>
+	</div>
 </nav>

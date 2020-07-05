@@ -1,5 +1,9 @@
 import animationsJson from './animations.js'
 
+// normally set to ''
+let theme = $('input[name="themes"]:checked').val()
+document.body.className = theme
+
 /// CONSTRUCTORS ///
 
 // Creates an object of the class animation to be placed on the page
@@ -89,7 +93,7 @@ function Anim(anim) {
 				const weaponActiveImage = weapon.active ? rootImagePath + weapon.active : "img/404.png"
 				const icon = $("<img>")
 					.addClass("imgIcon mt-0")
-					.attr({	
+					.attr({
 						src: "img/" + weapon.type + ".png",
 						"data-animate": weaponActiveImage,
 						"data-still": weaponStillImage,
@@ -318,12 +322,24 @@ $(document).on("click", "#detailedFormSubmit", function () {
 	makePlaceholder(`${row}`);
 
 	const detailedSearch = {
-		...(name && { name }),
-		...(feClass && { feClass }),
-		...(credit && { credit }),
-		...(category && { category }),
-		...(tier && { tier: `T${tier}` }),
-		...(gender && { gender })
+		...(name && {
+			name
+		}),
+		...(feClass && {
+			feClass
+		}),
+		...(credit && {
+			credit
+		}),
+		...(category && {
+			category
+		}),
+		...(tier && {
+			tier: `T${tier}`
+		}),
+		...(gender && {
+			gender
+		})
 	}
 
 	const searchMatches = animationsJson.filter((animation) => Object.keys(detailedSearch).every((term) => {
@@ -333,8 +349,7 @@ $(document).on("click", "#detailedFormSubmit", function () {
 		} else if (term === 'credit') {
 			return animation[term].filter((author) => author.toUpperCase().includes(detailedSearch[term].toUpperCase()))
 		}
-	})
-	)
+	}))
 	makeAnimRow(searchMatches, row, true);
 	scrollTo(`.${row.split(' ').join('')}Row`);
 });
@@ -395,6 +410,11 @@ document.getElementById('formSearch').addEventListener("keyup", function () {
 		document.getElementById("formSubmit").disabled = true;
 	};
 });
+
+$('input[name="themes"]').on('change', ((event) => {
+	theme = event.target.value
+	document.body.className = theme
+}))
 
 /// END EVENT LISTENERS ///
 

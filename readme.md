@@ -2,8 +2,8 @@
 Emblem Anims was created to provide an easy to use resource for comparing animations, downloading them, and providing accurate credit to the Fire Emblem modding community.
 It utilizes:
 + Node.js
-+ Sequel
-+ Sequelize
++ ~~Sequel~~ Removed 7/4/20
++ ~~Sequelize~~ Removed 7/4/20
 + jQuery
 + Bootstrap
 + HTML, CSS, Javascript
@@ -11,19 +11,20 @@ It utilizes:
 # Table of Contents
 - [Emblem Anims](#emblem-anims)
 - [Table of Contents](#table-of-contents)
-  - [Project Overview](#project-overview)
-    - [Getting Started](#getting-started)
-    - [Classes](#classes)
-    - [Anims](#anims)
-      - [Main Image](#main-image)
-      - [Identifier](#identifier)
-      - [Weapon Row](#weapon-row)
-      - [Credit](#credit)
-    - [Searching](#searching)
-      - [Search Text Submission](#search-text-submission)
-      - [Search Filters](#search-filters)
-      - [No Results](#no-results)
-  - [ToDo](#todo)
+	- [Project Overview](#project-overview)
+		- [Getting Started](#getting-started)
+		- [Classes](#classes)
+		- [Anims](#anims)
+			- [Main Image](#main-image)
+			- [Identifier](#identifier)
+			- [Weapon Row](#weapon-row)
+			- [Credit](#credit)
+		- [Searching](#searching)
+			- [Search Text Submission](#search-text-submission)
+			- [Search Filters](#search-filters)
+			- [No Results](#no-results)
+		- [Full Download](#full-download)
+	- [ToDo](#todo)
 
 ## Project Overview
 ![Landing page](https://imgur.com/nduuiBt.png)
