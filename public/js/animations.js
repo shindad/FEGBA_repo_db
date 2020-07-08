@@ -222,6 +222,254 @@ export default [
     ]
   },
   {
+    "tier": "T2",
+    "category": "LNC",
+    "feClass": "Halberdier",
+    "name": "2.0",
+    "gender": "M",
+    "credit": [
+      "TBA",
+      "Spud"
+    ],
+    "download": "https://drive.google.com/drive/folders/1qKr5OMDdkNHGiJujmeJWD7bdASrYmr79",
+    "dlName": "[T2][LNC][Halberdier](2.0)[M]{TBA, Spud}",
+    "weapons": [
+      {
+        "type": "Handaxe",
+        "active": "1cnIjxAtwX4MOZ_zemVFWHo4318T0UCzC",
+        "static": "1LT-0Eots4gG76rebYBbD0GreoJgtARJy"
+      },
+      {
+        "type": "Axe",
+        "active": "1Uyws8_rRZ2FmMjw--1bnFqJ1jdVn_C99",
+        "static": "17g2C-aqTvkJtjE4ZZmgIovfRvM6lDSXX"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1ZXvUXaSO4aByRmPONkJYdT1nTLtgAlNU",
+        "static": "1O3wL69g1kVttd1Ytiecwc8GYvvW6pG86"
+      },
+      {
+        "type": "Lance",
+        "active": "1TLDrnwWM9y9uXqgJaRYuMgkxJwH03KBt",
+        "static": "1uOmGvtaF6RaYEmjeJZhz0t1m8q3kLYOx"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "BOW",
+    "feClass": "Archer",
+    "name": "Improved - Repalette",
+    "gender": "F",
+    "credit": [
+      "Flasuban",
+      "DerTheVaporeon"
+    ],
+    "download": "https://drive.google.com/drive/folders/12Q_NQMyJDLeV8VMmNYYeQsZwrmQ5g7qE",
+    "dlName": "[T1][BOW][Archer](Improved - Repalette)[F]{Flasuban, DerTheVaporeon}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1C8U965WYi43x9SOTpR7UG2Sf1dO4JikY",
+        "static": "1rB9b1oJ9arAquA-rO35oSpzeek1X7w5B"
+      },
+      {
+        "type": "Bow",
+        "active": "1GPBCOwCDCHSKNDkogWX4y04rzTFHJ3OU",
+        "static": "1ReVM0nxlhR4xzRf-IV1gcRff8wCrzmkw"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "LNC",
+    "feClass": "Soldier",
+    "name": "FE10-Style",
+    "gender": "F",
+    "credit": [
+      "Flasuban"
+    ],
+    "download": "https://drive.google.com/drive/folders/1LibItkfltadKh2lI0LUraVejX0U8Adlm",
+    "dlName": "[T1][LNC][Soldier](FE10-Style)[F]{Flasuban}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1AV84bXb9yXkICpIC33_M4tXVwBXbSPHQ",
+        "static": "1iQpqQM6wABYI2wXtMMPk50KyVCeAsr0E"
+      },
+      {
+        "type": "Lance",
+        "active": "1cOQIq_aQ5gbzyKTnx8fznYmuRH2e59NY",
+        "static": "1ZegwM-_RPlEzmW-jCWFfx1RbJ8VHz5Xq"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "AXE",
+    "feClass": "Fighter",
+    "name": "Improved Armorless",
+    "gender": "M",
+    "credit": [
+      "Waleed",
+      "Flasuban"
+    ],
+    "download": "https://drive.google.com/drive/folders/17z_FiPpa5gvt7vDHkfBGKdZNU3fa8xvs",
+    "dlName": "[T1][AXE][Fighter](Improved Armorless)[M]{Waleed, Flasuban}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1hCVtHNXKqKFXQcKNCS-r6ryn6nH-ajW2",
+        "static": "1Map2_iR3cOZXPu14TFMJAzCOZ2k3_8Fd"
+      },
+      {
+        "type": "Axe",
+        "active": "1-JowGB5SOCdOgwDKFg9KV1mZv9KPcZ9o",
+        "static": "1qncv1Oy2_g4LcaRAB0jAIWnYkqEEM0c1"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1M2WPF40nppbzk8ho7NH90eQUnUCtQyil",
+        "static": "1DTHyuGm_WtBJgqHOM4aeoFdQv7R5UqPJ"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "BOW",
+    "feClass": "Archer",
+    "name": "Improved",
+    "gender": "F",
+    "credit": [
+      "Flasuban",
+      "DerTheVaporeon"
+    ],
+    "download": "https://drive.google.com/drive/folders/1ck1vmfOcaIa9q2atu3CDZZyjcN0R6PeW",
+    "dlName": "[T1][BOW][Archer](Improved)[F]{Flasuban, DerTheVaporeon}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "static": "1qprKh_kSvRwxhghtCfor7_WPopHUW8Ly",
+        "active": "1z7QeLqGHUSZxdO0FEdSk7PJ9OO_0B9T8"
+      },
+      {
+        "type": "Bow",
+        "static": "10h0fv09hJWovOqHO-us51EQ5d03BfADD",
+        "active": "1jkOxR0i3Txfwh6aeb-y8oFglXhaW4EEQ"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "BOW",
+    "feClass": "Archer",
+    "name": "Improved - Repalette",
+    "gender": "M",
+    "credit": [
+      "Flasuban",
+      "DerTheVaporeon"
+    ],
+    "download": "https://drive.google.com/drive/folders/1bcn6riTcg9RIx8xRwYfcBwMbMRFQQHF0",
+    "dlName": "[T1][BOW][Archer](Improved - Repalette)[M]{Flasuban, DerTheVaporeon}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1hKnzVXG_g9asGUXLP00jsEH2vQVqEGVO",
+        "static": "1mRpiPx5MSMDP8Mfj6GW01dkoIojREeFV"
+      },
+      {
+        "type": "Bow",
+        "active": "1vQK-itUyGmbvugyaNAi2N2inRQkf1DTw",
+        "static": "1XeL9HL37gN0uN_o2n1Pz9LEbuASt2lys"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "BOW",
+    "feClass": "Archer",
+    "name": "Improved",
+    "gender": "M",
+    "credit": [
+      "Flasuban",
+      "DerTheVaporeon"
+    ],
+    "download": "https://drive.google.com/drive/folders/1mR3uAWIoxQUl2LREcJtvbneZTOIJAvUE",
+    "dlName": "[T1][BOW][Archer](Improved)[M]{Flasuban, DerTheVaporeon}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "static": "1ogr1d2WZpIkxPHJgCiwR3HqKRcw2B_oZ",
+        "active": "1ll4Rfcr7B_to_nFkhFegSlbEkpG4Hn2l"
+      },
+      {
+        "type": "Bow",
+        "static": "1-rTWMT_PHTm0h6qIICNGWJ8zq9USO8vU",
+        "active": "1ylUw3lm8r8cefhsl2sP1gfRJgXf9Qz53"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "SWD",
+    "feClass": "Hero",
+    "name": "Armored +Short Hair",
+    "gender": "F",
+    "credit": [
+      "Flasuban",
+      "Nuramon"
+    ],
+    "download": "https://drive.google.com/drive/folders/15s0NPDAQrkszlWT0p2wKo2JSdPpzbC_X",
+    "dlName": "[T2][SWD][Hero](Armored +Short Hair)[F]{Flasuban, Nuramon}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1pjglfpo0yNs_OAyngomokl1L5hgwRXB-",
+        "static": "1wX_AXuWBMPm91NZ4rQ3FxBWwieqkRmDS"
+      },
+      {
+        "type": "Axe",
+        "active": "1MxmkJFDBHfNGMBI92mmg_4jNDjuVCPTT",
+        "static": "1tlAEWOkhCLBa0qbr32Kv4hZcB1LDev9O"
+      },
+      {
+        "type": "Sword",
+        "active": "1golJaTAn6daBfplOemxd2UaOIEQKUEeR",
+        "static": "1p1sennz9sJ_WzCn22v33fJIaHIDi_NJ9"
+      },
+      {
+        "type": "Handaxe",
+        "active": "11Tf1ymcXZb2Pp28M3XmGJcCTV4eRFLCm",
+        "static": "1lJEOepvv49HqLXNsoSjdkwhSQe3FWhnb"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "LNC",
+    "feClass": "Soldier",
+    "name": "FE10-Style",
+    "gender": "M",
+    "credit": [
+      "Flasuban"
+    ],
+    "download": "https://drive.google.com/drive/folders/1yfJ8Yrac_XgblecW2PZrFevepe9PicZa",
+    "dlName": "[T1][LNC][Soldier](FE10-Style)[M]{Flasuban}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1jCH3fT98_MQmP3f7VvJWw5q5-7tnv3bM",
+        "static": "1pYtRKSQN7WWHLLKNrg1DcbHihu4npHFF"
+      },
+      {
+        "type": "Lance",
+        "active": "1iP96lUZOart-lap7fVnt38-uwzG8AZvI",
+        "static": "17Ge7XoTftV7r-IWOJONn9cPjB39uoYZT"
+      }
+    ]
+  },
+  {
     "tier": "T1",
     "category": "AXE",
     "feClass": "Fighter",
@@ -229,12 +477,17 @@ export default [
     "gender": "M",
     "credit": [
       "Waleed",
-      "flasuban",
+      "Flasuban",
       "Jj09"
     ],
     "download": "https://drive.google.com/drive/folders/1eYkm5wjLWyRGhaHS9JWHE05oZwSXjhn3",
-    "dlName": "[T1][AXE][Fighter](Improved Armored)[M]{Waleed, flasuban, Jj09}",
+    "dlName": "[T1][AXE][Fighter](Improved Armored)[M]{Waleed, Flasuban, Jj09}",
     "weapons": [
+      {
+        "type": "Axe",
+        "active": "1u_aprcNAJ7vxICzNqKwgk4Qftjy54qTw",
+        "static": "1747NVMYqM8wgF5db3HQ_bGWO6RAUQVNj"
+      },
       {
         "type": "Unarmed",
         "active": "1Dll03uhW1VX77Kpz9ZSrrJxgpqEi8aAY",
@@ -253,28 +506,291 @@ export default [
     ]
   },
   {
-    "tier": "",
-    "category": "",
-    "feClass": "",
-    "name": "",
-    "gender": "",
-    "credit": [],
-    "download": "https://drive.google.com/drive/folders/19qIT6ulLobB2BdMHvcT3Fv9z3WQVWjMY",
-    "dlName": "[T1][Axe] Gladiator {Waleed}",
-    "weapons": []
+    "tier": "T2",
+    "category": "SWD",
+    "feClass": "Swordmaster",
+    "name": "Karel",
+    "gender": "M",
+    "credit": [
+      "Greentea",
+      "RobertFPY",
+      "ltranc"
+    ],
+    "download": "https://drive.google.com/drive/folders/1eYlloduYCqR6IvEIZIjZnxTZeLux579c",
+    "dlName": "[T2][SWD][Swordmaster](Karel)[M](Greentea, RobertFPY, ltranc)",
+    "weapons": [
+      {
+        "type": "Sword",
+        "active": "1fNPq2ns7Db1nZ75PHbnf7WUfQZHnV7KT"
+      },
+      {
+        "type": "Unarmed",
+        "active": "18eegagVnEhgz-G8XqBgR23omIZePXezG",
+        "static": "1y5tn-NptYEzIE6e-YAadeHFxGR3aqbVx"
+      }
+    ]
+  },
+  {
+    "tier": "T3",
+    "category": "BOW",
+    "feClass": "Sniper",
+    "name": "Marksman",
+    "gender": "F",
+    "credit": [
+      "Nuramon"
+    ],
+    "download": "https://drive.google.com/drive/folders/1dPKOdQUTWGCVIDxihM3YbLm9iXDXXSR5",
+    "dlName": "[T3][BOW][Sniper](Marksman)[F]{Nuramon}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1HPeBas3adQNm9cRSRZ4Opz4PNJwGBGt8",
+        "static": "1NWG8XDwP1ifsp8uOB0Oc8SzrEVApKtgf"
+      },
+      {
+        "type": "Bow",
+        "static": "1llwLAObZlu86i2ZKwLYfK5Y8Cd0qPk-R",
+        "active": "1FNnJ_oV1YBy4eFwlGC9V0q5bk9Cjb4do"
+      }
+    ]
+  },
+  {
+    "tier": "T3",
+    "category": "BOW",
+    "feClass": "Sniper",
+    "name": "Marksman",
+    "gender": "M",
+    "credit": [
+      "Nuramon"
+    ],
+    "download": "https://drive.google.com/drive/folders/1dMZUtpB_UofBYJzNF2illZbdBvBe0uaR",
+    "dlName": "[T3][BOW][Sniper](Marksman)[M]{Nuramon}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1PssyM3lYQOHxwpCvBpQztMeHP9xNNIHd",
+        "static": "1q5U2TowIxdmliyPCLXkc6sQGfxnRYcSH"
+      },
+      {
+        "type": "Bow",
+        "active": "1cG9xWClU_pnJx6gahcj4qHdGr0xFw-LI",
+        "static": "1Gwgx1rVNcs_V_8Aw_kXWUzc3uT-RFQ47"
+      }
+    ]
   },
   {
     "tier": "T0",
     "category": "AXE",
-    "feClass": "Journeywoman",
+    "feClass": "Journeyman",
     "name": "",
     "gender": "F",
     "credit": [
       "Gavvv333"
     ],
     "download": "https://drive.google.com/drive/folders/1KVAScKgp8RgMCfcvS03y1QloZ1UI3gjX",
-    "dlName": "[T0][AXE][Journeywoman][F]{Gavvv333}",
-    "weapons": []
+    "dlName": "[T0][AXE][Journeyman][F]{Gavvv333}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1xJaKHZx5VfO5yPsa8cI7f78mQKVWNYWw",
+        "static": "1iyLNcjk3PY05Lu2SjfjT8lPcJIYagCrI"
+      },
+      {
+        "type": "Handaxe",
+        "active": "101W8sUfrnpwxHhE4QQzbtfI8kJtfD6vI",
+        "static": "1Tssl2Yeza5X6ptqRhgHwv-AW7dEIJdqd"
+      },
+      {
+        "type": "Axe",
+        "active": "19VWQAmXjuwt2MNH3h3Pj5yqNNSlAYu8C",
+        "static": "1oA4MHUT2BYErw0VhGuSBLkcnyLh61U9o"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "AXE",
+    "feClass": "Brigand",
+    "name": "Fe13",
+    "gender": "M",
+    "credit": [
+      "Leo_Link",
+      "Iscaneus"
+    ],
+    "download": "https://drive.google.com/drive/folders/1iBrDsxtH7WafBkIUMNU0yAhpszqGLmdZ",
+    "dlName": "[T1][AXE][Brigand](Fe13)[M]{Leo_Link, Iscaneus}",
+    "weapons": [
+      {
+        "type": "Handaxe",
+        "active": "13pLf7DxDol2TPvg13U3h_NS5JxCEEOJ4",
+        "static": "1p3FxmCPs9sbs64iV10W2PKx8Jk77lr60"
+      },
+      {
+        "type": "Unarmed",
+        "static": "1tLUl9xglvQrw01hFtNU2Yr1MsZCTLupl",
+        "active": "1SdUTclxJkwFQDho5bW0eHuVmbnbfVgYD"
+      },
+      {
+        "type": "Axe",
+        "active": "1BY8BMnC8fleZCBknH4GhFWDt8f_MiPul",
+        "static": "1hZgRYWc_0N5HHsp3u3ZCjZGBPPMaZslo"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "Axe",
+    "feClass": "Fighter",
+    "name": "Gladiator",
+    "gender": " ",
+    "credit": [
+      "Waleed"
+    ],
+    "download": "https://drive.google.com/drive/folders/19qIT6ulLobB2BdMHvcT3Fv9z3WQVWjMY",
+    "dlName": "[T1][Axe][Fighter](Gladiator) {Waleed}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "static": "1-kVuo1AZ_p72wot4s4W5ULyWKtJrYyz1",
+        "active": "1DG8TnDTXVM7by9BX5AASiAp0a-mGeG3X"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1RYP5_cCvVmC-voukuyQUAOKL4N0c62WB",
+        "static": "1FNjHE-A1zOu2VXScIPw0lh96V-fgtZX8"
+      },
+      {
+        "type": "Axe",
+        "active": "1NQn12Y_3lE_23dCbiW1RbxMBzjgvRxwZ",
+        "static": "1Vd7USLWXWAPUHUwrYO6jfLJ-5myAS6th"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "LNC",
+    "feClass": "Soldier",
+    "name": "Lancer",
+    "gender": "M",
+    "credit": [
+      "Jj09,TBA"
+    ],
+    "download": "https://drive.google.com/drive/folders/1Lv2jM7KCXQoYCEKGsqpXTIAMIF2QdekI",
+    "dlName": "[T1][LNC][Soldier](Lancer)[M]{Jj09,TBA}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "static": "1jmeVL2MD7NvOg6Gjm2z98VZHVNzdcBM3",
+        "active": "1trxyIorBb599B7SImhFqlto1tVZlUbIK"
+      },
+      {
+        "type": "Lance",
+        "static": "1eU7YTIlZkiBO4MdFTqqNTDGu-dRAXIw7",
+        "active": "1MAOvWD8lk32ZuTvXNb0oZKdLR9jHiE7d"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "SWD",
+    "feClass": "Hero",
+    "name": "Linus Alt",
+    "gender": "M",
+    "credit": [
+      "SHYUTERz",
+      "Dis",
+      "Greentea"
+    ],
+    "download": "https://drive.google.com/drive/folders/1fm1OOCfqiTlC-PVN_FvhiWUVFbKi-Sy6",
+    "dlName": "[T2][SWD][Hero](Linus Alt)[M]{SHYUTERz, Dis, Greentea}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "static": "1fnRNIolREavyCThcJwMhDgSQmzfXmksr",
+        "active": "10TMFEWsX5rlG6CDBAscUWJ-YGlrhh017"
+      },
+      {
+        "type": "Axe",
+        "active": "1Jk0ZTvozI3yNDFyMEgXtj05qTOAh4hWX",
+        "static": "13hl7U7EV__6SkALrPX5_O2Es3G6bBswM"
+      },
+      {
+        "type": "Sword",
+        "static": "16sUE8nTqNRaLwAq8oq0eKZY-dyehMy5e",
+        "active": "1FHMZKW8ufHu8enrkvyTWtP7CAaWyn52q"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1IR3QrAF1TQcUone5gPSg2jo1oykJ5JWO",
+        "static": "1WbmUgvBgGyV9TO96we8BAOhhyHx3r0WT"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "SWD",
+    "feClass": "Mercenary",
+    "name": "SALVAGED",
+    "gender": "M",
+    "credit": [
+      "Team SALVAGED"
+    ],
+    "download": "https://drive.google.com/drive/folders/1Q_DdNHe0HZP6MmnDaDsoKgtDGJ-6u8qk",
+    "dlName": "[T1][SWD][Mercenary](SALVAGED)(M){Team SALVAGED}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1njJEjIEnW1y5U5TqD2gIhAFVkP_X6Lrp",
+        "static": "1qiXOcPxLg64D44LuxB0k5XHHBE-SVdyL"
+      },
+      {
+        "type": "Handaxe",
+        "active": "15hYGNhKGJBHN75dx1esp5e94EiMb-nYg",
+        "static": "12l48r7OAKjO2Hi_QNpFhYuBTS2kHgNOd"
+      },
+      {
+        "type": "Sword",
+        "active": "1w9vxvQ5jCYTgJQYTcC060IHjgNJckXfH",
+        "static": "1feWQXlk1TJ8bnrw2ecV0A6MtvtbA06_3"
+      },
+      {
+        "type": "Axe",
+        "active": "1ELSXTY2XUO6BchJo_BzFgO7KU2Yx4f9y",
+        "static": "1USWiCKiGzrctZdMuu92U-EqOE9hZTa3T"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "SWD",
+    "feClass": "Assassin",
+    "name": "Hoodless +Bow +Sword Fix",
+    "gender": "M",
+    "credit": [
+      "Keks_Krebs",
+      "Peerless",
+      "SD9K",
+      "The_Big_Dededester"
+    ],
+    "download": "https://drive.google.com/drive/folders/1Ed6pEo9A9w5kPJqfWE93ReimbMoe5PMl",
+    "dlName": "[T2][SWD][Assassin](Hoodless +Bow +Sword Fix)[M]{Keks_Krebs, Peerless, SD9K, The_Big_Dededester}",
+    "weapons": [
+      {
+        "type": "Sword",
+        "active": "1m8Zf5cEObVIMeRba3ypPawz-4BYW5tI2",
+        "static": "1yubge-788b6jxjaSy64K4-apPU42X-gs"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1CLVa-1kDEKtJXXsFRnULw4BDR2O4sc80",
+        "static": "1UWCBGw_iJUauudBv5RU6Q4wdNKiEZmX0"
+      },
+      {
+        "type": "Bow",
+        "active": "1Nj_lJlSTnGjqt_aIOKUi9CAI40aCanaQ",
+        "static": "1ZmqvP5HDkblX8xOPJDa8s9ckWgYdYqrB"
+      }
+    ]
   },
   {
     "tier": "",
@@ -287,42 +803,22 @@ export default [
     "dlName": "[T2][AXE][Warrior] (Repalette)[M](IS, Pushwall)",
     "weapons": [
       {
-        "type": "Unarmed"
+        "type": "Unarmed",
+        "active": "1I4XealktNHijZ92ynpIihI2n80Em30Xt",
+        "static": "1158-f_GldwZN9YjOXl96nIzuAN_Z7MmH"
       },
       {
         "type": "Hand"
       },
       {
-        "type": "Bow"
+        "type": "Bow",
+        "active": "128mzHSoyegWSxbVNBzLw24LmwRLY1Z9n",
+        "static": "10_5lQ3ASgVtU3-4xSB9FSO6qexwFhbh6"
       },
       {
-        "type": "Axe"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "SWD",
-    "feClass": "Swordmaster",
-    "name": "Karel",
-    "gender": "M",
-    "credit": [
-      "Greentea",
-      "RobertFPY",
-      "Itranc"
-    ],
-    "download": "https://drive.google.com/drive/folders/1QsU2qB33Ty1DJyPze_pTNiT61ZCoX3fV",
-    "dlName": "[T2][SWD][Swordmaster](Karel)[M]{Greentea, RobertFPY, Itranc}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "static": "13FznVPHSXVDncyjVSMtsBOwX9ienl4Wf",
-        "active": "1fZpod6aYmgygrzNOuQ_oiasuDPhh98jN"
-      },
-      {
-        "type": "Sword",
-        "static": "17_sbX8OryKZ2OexSLv1oe2fPbsWSSBWU",
-        "active": "1omoAAZEdgK_zAPxrHvGQ--q8GKmMDXRE"
+        "type": "Axe",
+        "static": "1fVQTnhtRcS2P3tfEpV6ju7l5DBSbteTM",
+        "active": "1P4ntDZazEsPdTGTLSgdwgiOE50RfyKUy"
       }
     ]
   },
@@ -373,13 +869,19 @@ export default [
     "dlName": "[T1][AXE][Pirate][F]{Nuramon, MarioKirby, Wan}",
     "weapons": [
       {
-        "type": "Unarmed"
+        "type": "Unarmed",
+        "static": "16ZBG0X0PZgGbRqmgThu1QC2TEMF6H42C",
+        "active": "1Uil1ONsqxNMUON8rXA3l2m1e4OnCzF4W"
       },
       {
-        "type": "Axe"
+        "type": "Axe",
+        "active": "189MC-vF5XWZElcyk_ea63H_hXBvnBkWq",
+        "static": "1IxN6-OPmfP6aiwv9iMfE0WJCLTkf6GLG"
       },
       {
-        "type": "Handaxe"
+        "type": "Handaxe",
+        "active": "1c5kHR7971NXHUHXCqDhiu8IpBqYuTQru",
+        "static": "1I5UE6E6eEKO8CxuKjbLSXYeXHFjAVcmf"
       }
     ]
   },
@@ -454,66 +956,19 @@ export default [
     "dlName": "[T1][AXE](Brigand)(Lizard)Wildling{Lenh}",
     "weapons": [
       {
-        "type": "Unarmed"
+        "type": "Unarmed",
+        "static": "12bnYFQTgF8hIJAtWR_cZLDKmO6pANhJV",
+        "active": "1mPF47sADBz0PclbWGLCJmTz1who2RdV4"
       },
       {
-        "type": "Handaxe"
+        "type": "Handaxe",
+        "static": "1jyoGG0ZT2-kSyTI04OdVorVzj72nYT0Y",
+        "active": "1z8QSJvl2jHbTL82d5MCAQWoZxx1RNjDR"
       },
       {
-        "type": "Axe"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "LNC",
-    "feClass": "Lancer",
-    "name": "",
-    "gender": "M",
-    "credit": [
-      "Jj09,TBA"
-    ],
-    "download": "https://drive.google.com/drive/folders/1Lv2jM7KCXQoYCEKGsqpXTIAMIF2QdekI",
-    "dlName": "[T1][LNC]Lancer[M]{Jj09,TBA}",
-    "weapons": []
-  },
-  {
-    "tier": "T3",
-    "category": "BOW",
-    "feClass": "Marksman",
-    "name": "",
-    "gender": "F",
-    "credit": [
-      "Nuramon"
-    ],
-    "download": "https://drive.google.com/drive/folders/1dPKOdQUTWGCVIDxihM3YbLm9iXDXXSR5",
-    "dlName": "[T3][BOW](Marksman)[F]{Nuramon}",
-    "weapons": [
-      {
-        "type": "Unarmed"
-      },
-      {
-        "type": "Bow"
-      }
-    ]
-  },
-  {
-    "tier": "T3",
-    "category": "BOW",
-    "feClass": "Marksman",
-    "name": "",
-    "gender": "M",
-    "credit": [
-      "Nuramon"
-    ],
-    "download": "https://drive.google.com/drive/folders/1dMZUtpB_UofBYJzNF2illZbdBvBe0uaR",
-    "dlName": "[T3][BOW](Marksman)[M]{Nuramon}",
-    "weapons": [
-      {
-        "type": "Unarmed"
-      },
-      {
-        "type": "Bow"
+        "type": "Axe",
+        "active": "1vJFZ8u3vxJgHwkMmMQXu_m59o2a_V2We",
+        "static": "1_e4obQmhI8PX0UINOuwQtLd31Kms-OtV"
       }
     ]
   },
@@ -1377,30 +1832,6 @@ export default [
   },
   {
     "tier": "T1",
-    "category": "LNC",
-    "feClass": "Soldier",
-    "name": "FE10-Style",
-    "gender": "M",
-    "credit": [
-      "flasuban"
-    ],
-    "download": "https://drive.google.com/drive/folders/1yfJ8Yrac_XgblecW2PZrFevepe9PicZa",
-    "dlName": "[T1][LNC][Soldier](FE10-Style)[M]{flasuban}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1jCH3fT98_MQmP3f7VvJWw5q5-7tnv3bM",
-        "static": "1pYtRKSQN7WWHLLKNrg1DcbHihu4npHFF"
-      },
-      {
-        "type": "Lance",
-        "active": "1iP96lUZOart-lap7fVnt38-uwzG8AZvI",
-        "static": "17Ge7XoTftV7r-IWOJONn9cPjB39uoYZT"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
     "category": "SWD",
     "feClass": "Thief",
     "name": "Matthew Knife Throw",
@@ -1416,41 +1847,6 @@ export default [
         "type": "Sword",
         "active": "1tF-KRjvN-fknfcVwnS_XWR_HQ10FWJXn",
         "static": "1Q3aGnHenw8Z6z8Rq6uUX0lTq4fy0qeUK"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "SWD",
-    "feClass": "Hero",
-    "name": "Armored +Short Hair",
-    "gender": "F",
-    "credit": [
-      "flasuban",
-      "Nuramon"
-    ],
-    "download": "https://drive.google.com/drive/folders/15s0NPDAQrkszlWT0p2wKo2JSdPpzbC_X",
-    "dlName": "[T2][SWD][Hero](Armored +Short Hair)[F]{flasuban, Nuramon}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1pjglfpo0yNs_OAyngomokl1L5hgwRXB-",
-        "static": "1wX_AXuWBMPm91NZ4rQ3FxBWwieqkRmDS"
-      },
-      {
-        "type": "Axe",
-        "active": "1MxmkJFDBHfNGMBI92mmg_4jNDjuVCPTT",
-        "static": "1tlAEWOkhCLBa0qbr32Kv4hZcB1LDev9O"
-      },
-      {
-        "type": "Sword",
-        "active": "1golJaTAn6daBfplOemxd2UaOIEQKUEeR",
-        "static": "1p1sennz9sJ_WzCn22v33fJIaHIDi_NJ9"
-      },
-      {
-        "type": "Handaxe",
-        "active": "11Tf1ymcXZb2Pp28M3XmGJcCTV4eRFLCm",
-        "static": "1lJEOepvv49HqLXNsoSjdkwhSQe3FWhnb"
       }
     ]
   },
@@ -1752,11 +2148,13 @@ export default [
     "weapons": [
       {
         "type": "Unarmed",
-        "active": "1BBZjxtYSoW5-TVbStlPC6oJ8fVIp1hze",
-        "static": "1IwhKhcKuUTWDAD5-Dj_IIzZIJ7rLgoWW"
+        "active": "112yUEIQ08uTL9KbAM-6kIuAag4qvx3QZ",
+        "static": "13yLxMXPAMwjpSgosykSW8akGit7bfJXP"
       },
       {
-        "type": "Unarmed"
+        "type": "Unarmed",
+        "active": "1BBZjxtYSoW5-TVbStlPC6oJ8fVIp1hze",
+        "static": "1IwhKhcKuUTWDAD5-Dj_IIzZIJ7rLgoWW"
       },
       {
         "type": "Bow",
@@ -1784,56 +2182,6 @@ export default [
     "download": "https://drive.google.com/drive/folders/1OG-GWgeA0oGlIgaDrhsMJufIpfgw3YAZ",
     "dlName": "[T1][AXE][Fighter](Tellius)[F]{Pikmin1211, Maiser6, MK404}",
     "weapons": []
-  },
-  {
-    "tier": "T1",
-    "category": "BOW",
-    "feClass": "Archer",
-    "name": "Improved",
-    "gender": "M",
-    "credit": [
-      "flasuban",
-      "DerTheVaporeon"
-    ],
-    "download": "https://drive.google.com/drive/folders/1mR3uAWIoxQUl2LREcJtvbneZTOIJAvUE",
-    "dlName": "[T1][BOW][Archer](Improved)[M]{flasuban, DerTheVaporeon}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "static": "1ogr1d2WZpIkxPHJgCiwR3HqKRcw2B_oZ",
-        "active": "1ll4Rfcr7B_to_nFkhFegSlbEkpG4Hn2l"
-      },
-      {
-        "type": "Bow",
-        "static": "1-rTWMT_PHTm0h6qIICNGWJ8zq9USO8vU",
-        "active": "1ylUw3lm8r8cefhsl2sP1gfRJgXf9Qz53"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "BOW",
-    "feClass": "Archer",
-    "name": "Improved - Repalette",
-    "gender": "M",
-    "credit": [
-      "flasuban",
-      "DerTheVaporeon"
-    ],
-    "download": "https://drive.google.com/drive/folders/1bcn6riTcg9RIx8xRwYfcBwMbMRFQQHF0",
-    "dlName": "[T1][BOW][Archer](Improved - Repalette)[M]{flasuban, DerTheVaporeon}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1hKnzVXG_g9asGUXLP00jsEH2vQVqEGVO",
-        "static": "1mRpiPx5MSMDP8Mfj6GW01dkoIojREeFV"
-      },
-      {
-        "type": "Bow",
-        "active": "1vQK-itUyGmbvugyaNAi2N2inRQkf1DTw",
-        "static": "1XeL9HL37gN0uN_o2n1Pz9LEbuASt2lys"
-      }
-    ]
   },
   {
     "tier": "T1",
@@ -2345,30 +2693,6 @@ export default [
   },
   {
     "tier": "T2",
-    "category": "LNC",
-    "feClass": "Halberdier",
-    "name": "2.0",
-    "gender": "M",
-    "credit": [
-      "TBA"
-    ],
-    "download": "https://drive.google.com/drive/folders/1qKr5OMDdkNHGiJujmeJWD7bdASrYmr79",
-    "dlName": "[T2][LNC][Halberdier](2.0)[M]{TBA}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1ZXvUXaSO4aByRmPONkJYdT1nTLtgAlNU",
-        "static": "1O3wL69g1kVttd1Ytiecwc8GYvvW6pG86"
-      },
-      {
-        "type": "Lance",
-        "active": "1TLDrnwWM9y9uXqgJaRYuMgkxJwH03KBt",
-        "static": "1uOmGvtaF6RaYEmjeJZhz0t1m8q3kLYOx"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
     "category": "SWD",
     "feClass": "Assassin",
     "name": "Leila",
@@ -2389,31 +2713,6 @@ export default [
         "type": "Sword",
         "active": "11exdtkUDlqaHzdj-U1xDJTWW41mF8UZB",
         "static": "1vfgH9_Lz_QbKnQ6MACr-T25Q2NK4mgLA"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "BOW",
-    "feClass": "Archer",
-    "name": "Improved",
-    "gender": "F",
-    "credit": [
-      "flasuban",
-      "DerTheVaporeon"
-    ],
-    "download": "https://drive.google.com/drive/folders/1ck1vmfOcaIa9q2atu3CDZZyjcN0R6PeW",
-    "dlName": "[T1][BOW][Archer](Improved)[F]{flasuban, DerTheVaporeon}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "static": "1qprKh_kSvRwxhghtCfor7_WPopHUW8Ly",
-        "active": "1z7QeLqGHUSZxdO0FEdSk7PJ9OO_0B9T8"
-      },
-      {
-        "type": "Bow",
-        "static": "10h0fv09hJWovOqHO-us51EQ5d03BfADD",
-        "active": "1jkOxR0i3Txfwh6aeb-y8oFglXhaW4EEQ"
       }
     ]
   },
@@ -3564,40 +3863,6 @@ export default [
     ]
   },
   {
-    "tier": "T1",
-    "category": "SWD",
-    "feClass": "Mercenary",
-    "name": "SALVAGED",
-    "gender": "M",
-    "credit": [
-      "Team SALVAGED"
-    ],
-    "download": "https://drive.google.com/drive/folders/1CdYDQUJWmjFirJdZI2Lz986oAG8Redfl",
-    "dlName": "[T1][SWD][Mercenary](SALVAGED)(M){Team SALVAGED}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "13A4uJdYtZZ8oUmGzRBXx-rNJmKS9lzEt",
-        "static": "1r5MDQyViLgjpD0pPykbTDbwzbnA_6-yu"
-      },
-      {
-        "type": "Axe",
-        "static": "1IVyW9UHKktTSu_TsfKiYOzHNMkRY0EK8",
-        "active": "1yU7-ByXvuobibhQAgGFSd_dLTDzboWLp"
-      },
-      {
-        "type": "Sword",
-        "active": "1dml6BU8H7J9ojFFYlzj3UeB9nErd__zS",
-        "static": "1GiZviE9E3WseWX_CpMmoA4GKu4-P14Kn"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1e4rUPCLCEIbhBAG2w0SaTeIJY4gelmy0",
-        "static": "1g-WjzaZPNBSrrUm2lezD8srnZgJ0HJ91"
-      }
-    ]
-  },
-  {
     "tier": "T2",
     "category": "SWD",
     "feClass": "Hero",
@@ -4118,36 +4383,6 @@ export default [
     ]
   },
   {
-    "tier": "T1",
-    "category": "AXE",
-    "feClass": "Fighter",
-    "name": "Improved Armorless",
-    "gender": "M",
-    "credit": [
-      "Waleed",
-      "flasuban"
-    ],
-    "download": "https://drive.google.com/drive/folders/17z_FiPpa5gvt7vDHkfBGKdZNU3fa8xvs",
-    "dlName": "[T1][AXE][Fighter](Improved Armorless)[M]{Waleed, flasuban}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1hCVtHNXKqKFXQcKNCS-r6ryn6nH-ajW2",
-        "static": "1Map2_iR3cOZXPu14TFMJAzCOZ2k3_8Fd"
-      },
-      {
-        "type": "Axe",
-        "active": "1-JowGB5SOCdOgwDKFg9KV1mZv9KPcZ9o",
-        "static": "1qncv1Oy2_g4LcaRAB0jAIWnYkqEEM0c1"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1M2WPF40nppbzk8ho7NH90eQUnUCtQyil",
-        "static": "1DTHyuGm_WtBJgqHOM4aeoFdQv7R5UqPJ"
-      }
-    ]
-  },
-  {
     "tier": "T2",
     "category": "SWD",
     "feClass": "Assassin",
@@ -4208,30 +4443,6 @@ export default [
         "type": "Sword",
         "active": "1JDz08__-FqYwwzc6J6Wk06nHpiDTMgt5",
         "static": "1cr-IspN4txaZn3yCWsCg-FIc0wd8sH3V"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "LNC",
-    "feClass": "Soldier",
-    "name": "FE10-Style",
-    "gender": "F",
-    "credit": [
-      "flasuban"
-    ],
-    "download": "https://drive.google.com/drive/folders/1LibItkfltadKh2lI0LUraVejX0U8Adlm",
-    "dlName": "[T1][LNC][Soldier](FE10-Style)[F]{flasuban}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1AV84bXb9yXkICpIC33_M4tXVwBXbSPHQ",
-        "static": "1iQpqQM6wABYI2wXtMMPk50KyVCeAsr0E"
-      },
-      {
-        "type": "Lance",
-        "active": "1cOQIq_aQ5gbzyKTnx8fznYmuRH2e59NY",
-        "static": "1ZegwM-_RPlEzmW-jCWFfx1RbJ8VHz5Xq"
       }
     ]
   },
@@ -5114,31 +5325,6 @@ export default [
     ]
   },
   {
-    "tier": "T1",
-    "category": "BOW",
-    "feClass": "Archer",
-    "name": "Improved - Repalette",
-    "gender": "F",
-    "credit": [
-      "flasuban",
-      "DerTheVaporeon"
-    ],
-    "download": "https://drive.google.com/drive/folders/12Q_NQMyJDLeV8VMmNYYeQsZwrmQ5g7qE",
-    "dlName": "[T1][BOW][Archer](Improved - Repalette)[F]{flasuban, DerTheVaporeon}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1C8U965WYi43x9SOTpR7UG2Sf1dO4JikY",
-        "static": "1rB9b1oJ9arAquA-rO35oSpzeek1X7w5B"
-      },
-      {
-        "type": "Bow",
-        "active": "1GPBCOwCDCHSKNDkogWX4y04rzTFHJ3OU",
-        "static": "1ReVM0nxlhR4xzRf-IV1gcRff8wCrzmkw"
-      }
-    ]
-  },
-  {
     "tier": "T2",
     "category": "SWD",
     "feClass": "Swordmaster",
@@ -5714,7 +5900,9 @@ export default [
     "dlName": "[T2][SWD][Rogue](Ponytail)[F]{Temp, Black Mage, Wan}",
     "weapons": [
       {
-        "type": "Unarmed"
+        "type": "Unarmed",
+        "static": "1UHMdH3q2k9jKo-96tVZQthS6jYduz5Th",
+        "active": "1rGZwVy-wENTXE3yUw1kR1E_bOvCSfxPs"
       },
       {
         "type": "Sword",
@@ -6352,37 +6540,6 @@ export default [
   {
     "tier": "T2",
     "category": "SWD",
-    "feClass": "Assassin",
-    "name": "Hoodless +Bow",
-    "gender": "M",
-    "credit": [
-      "Keks_Krebs",
-      "Peerless",
-      "SD9K"
-    ],
-    "download": "https://drive.google.com/drive/folders/12i3ERj8WGLq_Kfw4e5ZEXspIgIc66dgZ",
-    "dlName": "[T2][SWD][Assassin](Hoodless +Bow)[M]{Keks_Krebs, Peerless, SD9K}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1HtYMu2MDcI91B0NPgTrNmhT-5JF0CKFc",
-        "static": "1sjUw1wpM0cIDCqrJkpMwO91Hq28Ne6Ex"
-      },
-      {
-        "type": "Sword",
-        "active": "1cRXhtYd4YzPDwnfowsjn8GvPVqJc0mMU",
-        "static": "1vJZlG9sqMkVPLsVih1s5i3OxFiZsg_68"
-      },
-      {
-        "type": "Bow",
-        "active": "1hp_0L8natNAMxiv5IY-lnbEoTlwxgHz6",
-        "static": "1qPwUTz1tSF4_JpRohe-Yu9QwwpHF_dJG"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "SWD",
     "feClass": "Swordmaster",
     "name": "Lloyd Alt",
     "gender": "M",
@@ -6465,42 +6622,6 @@ export default [
         "type": "Sword",
         "active": "1jEstE_Woz1q2tE-SvTs3wR9bjpC1fFmI",
         "static": "17JDcJfYfOT7i7Kubo0bdk7XrCCKkqix0"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "SWD",
-    "feClass": "Hero",
-    "name": "Linus Alt",
-    "gender": "M",
-    "credit": [
-      "SHYUTER",
-      "Dis",
-      "Greentea"
-    ],
-    "download": "https://drive.google.com/drive/folders/1fm1OOCfqiTlC-PVN_FvhiWUVFbKi-Sy6",
-    "dlName": "[T2][SWD][Hero](Linus Alt)[M]{SHYUTER, Dis, Greentea}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "static": "1fnRNIolREavyCThcJwMhDgSQmzfXmksr",
-        "active": "10TMFEWsX5rlG6CDBAscUWJ-YGlrhh017"
-      },
-      {
-        "type": "Axe",
-        "active": "1Jk0ZTvozI3yNDFyMEgXtj05qTOAh4hWX",
-        "static": "13hl7U7EV__6SkALrPX5_O2Es3G6bBswM"
-      },
-      {
-        "type": "Sword",
-        "static": "16sUE8nTqNRaLwAq8oq0eKZY-dyehMy5e",
-        "active": "1FHMZKW8ufHu8enrkvyTWtP7CAaWyn52q"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1IR3QrAF1TQcUone5gPSg2jo1oykJ5JWO",
-        "static": "1WbmUgvBgGyV9TO96we8BAOhhyHx3r0WT"
       }
     ]
   },
@@ -7349,6 +7470,172 @@ export default [
   },
   {
     "tier": "T1",
+    "category": "LRD",
+    "feClass": "Lord",
+    "name": "Eirika Repalette +Weapons",
+    "gender": "F",
+    "credit": [
+      "Teraspark",
+      "Sme",
+      "Lisandra_Brave",
+      "Flasuban",
+      "FaerieFruit"
+    ],
+    "download": "https://drive.google.com/drive/folders/1haZsNejZl03-WeWyJsQWbLeQTi-kMVLG",
+    "dlName": "[T1][LRD][Lord](Eirika Repalette +Weapons)[F]{Teraspark, Sme, Lisandra_Brave, Flasuban, FaerieFruit}",
+    "weapons": [
+      {
+        "type": "Lance",
+        "active": "1q16Gzqa50huY9jTPSI9Opvna8L10qTjI",
+        "static": "18O8YQR5dOZKIeJzB5WNCPYIYsm8aEZhv"
+      },
+      {
+        "type": "Magic",
+        "active": "1vAffwF_NsW4RuJBKGEPepr9HTK-UAZcw",
+        "static": "1rfmE_w5_Y04VXkISdd14xVwfCDA6X4_e"
+      },
+      {
+        "type": "Magic",
+        "active": "1iCkbnJKJy_McI_IIICW_NycvT9SMhpKO",
+        "static": "1bXcGwthHHjc-MZXpvDo37dnOoBskJXIO"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1Etj7XCHOP92Z3SbnJytkwXOmlU1T-AX7",
+        "static": "1j1uXLICLRwzLjVg3_04C5BmC6wviLuQu"
+      },
+      {
+        "type": "Sword",
+        "active": "1ylmF4_tGLZu7WFEqOpq09Pb55stMZZip",
+        "static": "1797jVrrvCHo3Ls7UPgVoD_xbATn5oRPF"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "LRD",
+    "feClass": "Great Lord",
+    "name": "Hector Vanguard",
+    "gender": "M",
+    "credit": [
+      "Flasuban",
+      "Temp"
+    ],
+    "download": "https://drive.google.com/drive/folders/1lR3zj1s-yNffzlR3fhGuir7ZyZgykNG7",
+    "dlName": "[T2][LRD][Great Lord](Hector Vanguard)[M]{Flasuban, Temp}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1Biyfq9se_cA9Vb-zY9tZBxynpUFVoBFN",
+        "static": "1H7Mqcx8IecRqhQLFdP36Qh6SlfIre12Z"
+      },
+      {
+        "type": "Axe",
+        "active": "1IG2N9ON6jYcPPc7gRqx-FezA2gtXGfwM",
+        "static": "1o5MryMRokNG61aN9MRkWWi9xCEVFewZq"
+      },
+      {
+        "type": "Sword",
+        "active": "1nwjPg4dHloQd7hCM7ZAulUkjZQahMuc4",
+        "static": "1sRaOded3gpW7fxgiGI9L8j9bgDWHIw8a"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1eL4t-iuBcxXfWvvtPHJCM0r2m1-Oq68i",
+        "static": "18g-U6FvDttd0I5nkqUq66BJYwX7hfiby"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "MISC",
+    "feClass": "Refresh",
+    "name": "Dancer Larum +FE7-8, Staff",
+    "gender": "F",
+    "credit": [
+      "IS",
+      "Eldritch Abomination",
+      "Vilkalizer",
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1w0zaBPPOY061NEg_tq1sbp1LZxZkSAqj",
+    "dlName": "[T1][MISC][Refresh](Dancer Larum +FE7-8, Staff)[F]{IS, Eldritch Abomination, Vilkalizer, SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Refresh",
+        "static": "1FXBnAuCHeEVmJGGMNtALTLMcalBo8KFY",
+        "active": "1HRUfnURBhtlKwCqRitfVVp3SvhOMIcLK"
+      },
+      {
+        "type": "Refresh",
+        "active": "1-y_GH1VpShj8SlRloWtF1oCf9bpbfyzz",
+        "static": "12YCgNIGWiuRw6juEeyw8YHmPJniC_P5X"
+      },
+      {
+        "type": "Staff",
+        "active": "1ZLuwrfibpe6b78ktsnzwiUPu8R-mCBQH",
+        "static": "1bfYscjwUDw4x0tIVhzxAn67E7Lh15Pzp"
+      },
+      {
+        "type": "Refresh",
+        "active": "17x6jqBW9ByIf5_Ecz5W86Iuq_Qe7GUdm",
+        "static": "16s_817HJqOfjAdbXSoYbD0ct4AnrhXc9"
+      }
+    ]
+  },
+  {
+    "tier": "",
+    "category": "",
+    "feClass": "",
+    "name": "",
+    "gender": "",
+    "credit": [],
+    "download": "https://drive.google.com/drive/folders/1wlrYwyWlm02q-8ybTBDCRTuMLGfJxKdW",
+    "dlName": "[T2][MISC][Refresh] Sonneteer [M] {Marlon_Louis}",
+    "weapons": [
+      {
+        "type": "Refresh",
+        "active": "1zi5gNPhiFha0R3zqZLg0iiQBdoB2u17g",
+        "static": "1FnNx-Yj5MLWulbNMrIgMAS6IrDcTyjs-"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "MISC",
+    "feClass": " Tiki wings ",
+    "name": "Swords, Magic",
+    "gender": "F",
+    "credit": [
+      "Tykky.ryu"
+    ],
+    "download": "https://drive.google.com/drive/folders/1FOLz1WFDJIogy2I3iju4VnpUQmzZqca5",
+    "dlName": "[T1][MISC] Tiki wings (Swords, Magic)[F]{Tykky.ryu}",
+    "weapons": [
+      {
+        "type": "Sword",
+        "active": "1U5-8qRVpOFTqVvnJ4A9yJ56UbHxKjpgw",
+        "static": "1is4aP_3lyPnbuLKItQ4KlLXXJU0PLxMg"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1XnYdFPqhV6n1pgdPijHS6GWhCB-d_soX",
+        "static": "1FPvOkKIn9RqrjEQrAsxNU8awbM6NCc-Y"
+      },
+      {
+        "type": "Magic",
+        "active": "17F278kTQlgXItEJEP2VQEBcio7euXMgG",
+        "static": "1afVgsYtJ2BOpuTIIwXwEqe7DL0ViW0AC"
+      },
+      {
+        "type": "Sword",
+        "active": "1LkNeFqEioKS0UA9SLJat2TcDNcwcNuHs",
+        "static": "1CxW8QlosXjQ5GaT6_A3iU2fC3jFJmybC"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
     "category": "MISC",
     "feClass": "Refresh",
     "name": "Bard Elffin +FE7-8, Magic",
@@ -7365,7 +7652,9 @@ export default [
     "dlName": "[T1][MISC][Refresh](Bard Elffin +FE7-8, Magic)[M]{IS, Black Mage, Temp, Wan, Eldritch Abomination, Orihara_Saki}",
     "weapons": [
       {
-        "type": "Refresh"
+        "type": "Refresh",
+        "static": "10FsZyeCtMyuBKZGCTwKUCpTkJePui2bj",
+        "active": "1lX8w89ONUJc0E8WRdcdSonpc47nJGjPl"
       },
       {
         "type": "Refresh",
@@ -7381,47 +7670,6 @@ export default [
         "type": "Refresh",
         "active": "1az41fhZIBMkuDDDPNUXcneylG-ai-9wS",
         "static": "1WXreQ1Gcp_-BLMGiFXPZuXh70DzFwkj9"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "MISC",
-    "feClass": " Tiki wings ",
-    "name": "Swords, Magic",
-    "gender": "F",
-    "credit": [
-      "Tykky.ryu"
-    ],
-    "download": "https://drive.google.com/drive/folders/1rUlHq57dJybyNW4NRLA_SgXKgcrsJdSp",
-    "dlName": "[T1][MISC] Tiki wings (Swords, Magic)[F]{Tykky.ryu}",
-    "weapons": [
-      {
-        "type": "Unarmed"
-      },
-      {
-        "type": "Sword"
-      },
-      {
-        "type": "Sword"
-      },
-      {
-        "type": "Magic"
-      }
-    ]
-  },
-  {
-    "tier": "",
-    "category": "",
-    "feClass": "",
-    "name": "",
-    "gender": "",
-    "credit": [],
-    "download": "https://drive.google.com/drive/folders/1Di3jUN_-wKNQ0bwzGgPdSApcSxgmqFRc",
-    "dlName": "[T2][MISC][Refresh] Sonneteer [M] {Marlon&Louis}",
-    "weapons": [
-      {
-        "type": "Refresh"
       }
     ]
   },
@@ -7981,43 +8229,6 @@ export default [
     ]
   },
   {
-    "tier": "T1",
-    "category": "MISC",
-    "feClass": "Refresh",
-    "name": "Dancer Larum +FE7-8, Staff",
-    "gender": "F",
-    "credit": [
-      "IS",
-      "Eldritch Abomination",
-      "Vilkalizer",
-      "SHYUTER"
-    ],
-    "download": "https://drive.google.com/drive/folders/1w0zaBPPOY061NEg_tq1sbp1LZxZkSAqj",
-    "dlName": "[T1][MISC][Refresh](Dancer Larum +FE7-8, Staff)[F]{IS, Eldritch Abomination, Vilkalizer, SHYUTER}",
-    "weapons": [
-      {
-        "type": "Refresh",
-        "static": "1FXBnAuCHeEVmJGGMNtALTLMcalBo8KFY",
-        "active": "1HRUfnURBhtlKwCqRitfVVp3SvhOMIcLK"
-      },
-      {
-        "type": "Refresh",
-        "active": "1-y_GH1VpShj8SlRloWtF1oCf9bpbfyzz",
-        "static": "12YCgNIGWiuRw6juEeyw8YHmPJniC_P5X"
-      },
-      {
-        "type": "Staff",
-        "active": "1ZLuwrfibpe6b78ktsnzwiUPu8R-mCBQH",
-        "static": "1bfYscjwUDw4x0tIVhzxAn67E7Lh15Pzp"
-      },
-      {
-        "type": "Refresh",
-        "active": "17x6jqBW9ByIf5_Ecz5W86Iuq_Qe7GUdm",
-        "static": "16s_817HJqOfjAdbXSoYbD0ct4AnrhXc9"
-      }
-    ]
-  },
-  {
     "tier": "T2",
     "category": "LRD",
     "feClass": "Great Lord",
@@ -8082,41 +8293,6 @@ export default [
         "type": "Sword",
         "active": "12YDtdXEBkc2cSXPQsVIDJzsnXSnTQwu0",
         "static": "15BxVemlHqseXQY3OGfjfDJhR4LvRdhOV"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "LRD",
-    "feClass": "Great Lord",
-    "name": "Hector Vanguard",
-    "gender": "M",
-    "credit": [
-      "flasuban",
-      "Temp"
-    ],
-    "download": "https://drive.google.com/drive/folders/1lR3zj1s-yNffzlR3fhGuir7ZyZgykNG7",
-    "dlName": "[T2][LRD][Great Lord](Hector Vanguard)[M]{flasuban, Temp}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1Biyfq9se_cA9Vb-zY9tZBxynpUFVoBFN",
-        "static": "1H7Mqcx8IecRqhQLFdP36Qh6SlfIre12Z"
-      },
-      {
-        "type": "Axe",
-        "active": "1IG2N9ON6jYcPPc7gRqx-FezA2gtXGfwM",
-        "static": "1o5MryMRokNG61aN9MRkWWi9xCEVFewZq"
-      },
-      {
-        "type": "Sword",
-        "active": "1nwjPg4dHloQd7hCM7ZAulUkjZQahMuc4",
-        "static": "1sRaOded3gpW7fxgiGI9L8j9bgDWHIw8a"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1eL4t-iuBcxXfWvvtPHJCM0r2m1-Oq68i",
-        "static": "18g-U6FvDttd0I5nkqUq66BJYwX7hfiby"
       }
     ]
   },
@@ -8769,49 +8945,6 @@ export default [
         "type": "Handaxe",
         "active": "1aYH3yizseGKnts4jyEPJroLO2SAJht9C",
         "static": "17j3ZmQwbFEzZQKtO1F_RAQ7nRlq88Iag"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "LRD",
-    "feClass": "Lord",
-    "name": "Eirika Repalette +Weapons",
-    "gender": "F",
-    "credit": [
-      "Teraspark",
-      "Sme",
-      "Lisandra_Brave",
-      "flasuban",
-      "FaerieFruit"
-    ],
-    "download": "https://drive.google.com/drive/folders/1haZsNejZl03-WeWyJsQWbLeQTi-kMVLG",
-    "dlName": "[T1][LRD][Lord](Eirika Repalette +Weapons)[F]{Teraspark, Sme, Lisandra_Brave, flasuban, FaerieFruit}",
-    "weapons": [
-      {
-        "type": "Magic",
-        "active": "1vAffwF_NsW4RuJBKGEPepr9HTK-UAZcw",
-        "static": "1rfmE_w5_Y04VXkISdd14xVwfCDA6X4_e"
-      },
-      {
-        "type": "Magic",
-        "active": "1iCkbnJKJy_McI_IIICW_NycvT9SMhpKO",
-        "static": "1bXcGwthHHjc-MZXpvDo37dnOoBskJXIO"
-      },
-      {
-        "type": "Lance",
-        "active": "1q16Gzqa50huY9jTPSI9Opvna8L10qTjI",
-        "static": "18O8YQR5dOZKIeJzB5WNCPYIYsm8aEZhv"
-      },
-      {
-        "type": "Unarmed",
-        "active": "1Etj7XCHOP92Z3SbnJytkwXOmlU1T-AX7",
-        "static": "1j1uXLICLRwzLjVg3_04C5BmC6wviLuQu"
-      },
-      {
-        "type": "Sword",
-        "active": "1ylmF4_tGLZu7WFEqOpq09Pb55stMZZip",
-        "static": "1797jVrrvCHo3Ls7UPgVoD_xbATn5oRPF"
       }
     ]
   },
@@ -9929,6 +10062,485 @@ export default [
   {
     "tier": "T2",
     "category": "MAG",
+    "feClass": "Custom Magi",
+    "name": "Witch Repalette",
+    "gender": "F",
+    "credit": [
+      "Aruka",
+      "Kenpuhu",
+      "Orihara_Saki",
+      "Venno"
+    ],
+    "download": "https://drive.google.com/drive/folders/1XP8GROoJl4HG_8SpHXBTM48Cq6cmSR0S",
+    "dlName": "[T2][MAG][Custom Magi](Witch Repalette)[F]{Aruka, Kenpuhu, Orihara_Saki, Venno}",
+    "weapons": [
+      {
+        "type": "Staff",
+        "active": "1GnoYE8Run4gJVjSMM7FHRAt5blAe3ZAO",
+        "static": "1oQhcYMVIevRJN_LYFj7T19tY7wTnbUcp"
+      },
+      {
+        "type": "Magic",
+        "static": "1xe3gQFXtQgiodIrHRKxFp1n_wWudAV33",
+        "active": "1hwkdVs2AdBgN09vsmDRgjo3GTOUgoEBe"
+      }
+    ]
+  },
+  {
+    "tier": "T3",
+    "category": "MAG",
+    "feClass": "Necromancer",
+    "name": "Brammimond",
+    "gender": "U",
+    "credit": [
+      "SHYUTERz",
+      "Dinar"
+    ],
+    "download": "https://drive.google.com/drive/folders/11HvpEkfkdWBDmeAyk-2hPyExDfjXJiof",
+    "dlName": "[T3][MAG][Necromancer](Brammimond)[U]{SHYUTERz, Dinar}",
+    "weapons": [
+      {
+        "type": "Magic",
+        "active": "1LFHizZEEw_0kjWTJnlkBQgkI3CpN6Hl4",
+        "static": "1vP04eBkN2IP3uBzR1dt_AmyYekPsfkt9"
+      },
+      {
+        "type": "Staff",
+        "active": "1TqOL0JzcL35K6remEe5e-hpsffM9GxO0",
+        "static": "1IvApzZBT9M4iBPNXDTxStUiT8eIOeHIo"
+      }
+    ]
+  },
+  {
+    "tier": "T3",
+    "category": "MAG",
+    "feClass": "Necromancer",
+    "name": "Dark Druid Nergal +Staff",
+    "gender": "M",
+    "credit": [
+      "IS",
+      "Orihara_Saki",
+      "Blademaster",
+      "Shin19",
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1uisTzKHFNduM-ftpUAMeOjEX5ohyL7Ec",
+    "dlName": "[T3][MAG][Necromancer](Dark Druid Nergal +Staff)[M]{IS, Orihara_Saki, Blademaster, Shin19, SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Magic",
+        "static": "1fgVNcniMGwATU1Iw3sx5v90FDF46nA-R",
+        "active": "1fhKhxiNbMixi9V0HKs5UnFgwiYBbUpKr"
+      },
+      {
+        "type": "Magic",
+        "active": "1S-utdFRI6u5cw4YAM1bBM1MDzbVgVxQU",
+        "static": "1XGzkrcOdWkaxKumsDzywxeN-D5UZ97fe"
+      },
+      {
+        "type": "Magic",
+        "active": "1uqiaOe7x_j0Y-k18CKnDgnS7_NOVbaIt",
+        "static": "1PLLLQfnjBtjlmFfM5oFV75Y5hOf2jcoL"
+      },
+      {
+        "type": "Magic",
+        "active": "1wDh244f1meO20wEmkTDp1ZM4w48Mrnlq",
+        "static": "1-JJCK1D0nFXVqEo4jzh1NuloY25imrbG"
+      },
+      {
+        "type": "Magic",
+        "static": "1-LloJlcZxBuCjI2G-ed3d2NA4aHR83wK",
+        "active": "1tNSuFk1lC9TFugd-dtmB717BhjE2suSY"
+      },
+      {
+        "type": "Magic",
+        "active": "1ZVz93p98_NjzG9vKuhpViwbZhdazccYz",
+        "static": "1GNSj0qPlvph4B43Jn2_nJrqZ-bOJtL1E"
+      },
+      {
+        "type": "Magic",
+        "static": "1KutRdWd7HLptAocbB3I144rl3D1ixWIY",
+        "active": "135ZAvvi3HtWKP0C4U7UO_KUrpappO6Nt"
+      },
+      {
+        "type": "Magic",
+        "active": "1rwbTkfe4vG58-AzXFuzFrq4B9XZ34j2A",
+        "static": "12Qm-dG5uz5iuMsxS5S-p69jfiHrDVCTE"
+      },
+      {
+        "type": "Staff",
+        "active": "1zhOrtf614q6ZxfLMJAKNl8zS7l_Ob-CN",
+        "static": "12PAKhmiiVPwgEy3rsmQe3uhy-Rsxz99A"
+      },
+      {
+        "type": "Staff",
+        "active": "1lVIAshJ-GAekzi4bjowOEKKzUk5MTMEc",
+        "static": "1lv6maD-CvETXhpfW9vTjbI_he5Yujh7W"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "MAG",
+    "feClass": "Clergy",
+    "name": "Priest Improved Repalette",
+    "gender": "M",
+    "credit": [
+      "Flasuban",
+      "Eldritch Abomination"
+    ],
+    "download": "https://drive.google.com/drive/folders/1Xt_j77KWLHTbSzE6YvidLN9qee5vqoz9",
+    "dlName": "[T1][MAG][Clergy](Priest Improved Repalette)[M]{Flasuban, Eldritch Abomination}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1dMyoC3ou8TKDYqq2HNbwJwFxExwYn56G",
+        "static": "1htIvQgHUFA5l8xiKRo1dql5phJzBfabG"
+      },
+      {
+        "type": "Staff",
+        "active": "1HII_3EpLvQO-pSmP4zEJXkhrjdtDfkig",
+        "static": "1ugA0ssRPlr5ypybbezOT5v0tw0yhky--"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "MAG",
+    "feClass": "Valkyrie",
+    "name": "Generic Ursula-Style",
+    "gender": "F",
+    "credit": [
+      "Flasuban",
+      "Greentea",
+      "RobertFPY"
+    ],
+    "download": "https://drive.google.com/drive/folders/1OYMo6oDtumIdDt_etwxBfLGBwpVt1U7S",
+    "dlName": "[T2][MAG][Valkyrie](Generic Ursula-Style)[F]{Flasuban, Greentea, RobertFPY}",
+    "weapons": [
+      {
+        "type": "Staff",
+        "active": "1ydUIPL3HqOsF-hVK8849ka9vl5whfuIF",
+        "static": "1SGZGxyPNzhYf5pWnS2tUB6CGmdkkUJnu"
+      },
+      {
+        "type": "Magic",
+        "active": "1Xn4GxDe6kevfEStS-RlcRC70k3qJGzFa",
+        "static": "1l7ZbHv8NFWvCvqDFzyyp8P564CyBWXUp"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "MAG",
+    "feClass": "Clergy",
+    "name": "Cleric Improved Repalette",
+    "gender": "F",
+    "credit": [
+      "Flasuban",
+      "Eldritch Abomination"
+    ],
+    "download": "https://drive.google.com/drive/folders/19U0SEc0eM51jNGxM--WEpFBRtfwWqEdB",
+    "dlName": "[T1][MAG][Clergy](Cleric Improved Repalette)[F]{Flasuban, Eldritch Abomination}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1w4ESV1ccLz5pgh8efCxT_QRyQip4t5Fc",
+        "static": "1VY7HG7l7rddIjE6z3npXSQO2x_3QqswI"
+      },
+      {
+        "type": "Staff",
+        "active": "15k5XxeQWN5ljxlUdJMSHxv-m9MC8GFtn",
+        "static": "1_kA4a_ZIjRkdW0M-wM6kYjTe-v1LH1kg"
+      }
+    ]
+  },
+  {
+    "tier": "",
+    "category": "",
+    "feClass": "",
+    "name": "",
+    "gender": "",
+    "credit": [],
+    "download": "https://drive.google.com/drive/folders/1aY2D7SihDPPhkSwrbwIsVFPy-opOYj9A",
+    "dlName": "[T2][MAG][Bishop](Vanilla FE7, FE8 +Sword)[M] {IS, Beansy}",
+    "weapons": [
+      {
+        "type": "Sword",
+        "active": "19UZAkZKJDmea52vMAd28VDfMo5BYtgBP",
+        "static": "1qV9N1Sov4CI1oqpSZqbzQbHYfAdTh4KA"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1WGFC2zC-wmYCB2ZQbQd9BWtrjnpPN5pe",
+        "static": "1nwclSIwN2GRnQKRSJatceMZCZQzxQlpE"
+      },
+      {
+        "type": "Magic",
+        "active": "1Ic-3TYv8VrR1pYsvvJWNiZ8cVQk0IUA5",
+        "static": "1pzAD9Kt42jBMuX3u_8-c25BdeB1IlxeN"
+      },
+      {
+        "type": "Staff",
+        "active": "1M5GkZKl9GQLGom_K8vFVtOf7dHDfOE-R",
+        "static": "1exWKcwqVvX1tyD6ms8LjbuT4FAIJxY91"
+      }
+    ]
+  },
+  {
+    "tier": "T3",
+    "category": "MAG",
+    "feClass": "Archsage",
+    "name": "Athos",
+    "gender": "M",
+    "credit": [
+      "IS",
+      "Blademaster",
+      "Shin19",
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/12Ka-lxsVm3NhXrcKWl8c5iKVPUmPA5Z7",
+    "dlName": "[T3][MAG][Archsage](Athos)[M]{IS, Blademaster, Shin19, SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Magic",
+        "static": "16JSXMDQcYYI-1iojv481yZpwjC9mwewX",
+        "active": "1lBvRrzL5klDnOez6gh-jyvWECdSB9aiI"
+      },
+      {
+        "type": "Magic",
+        "active": "14IGe1GaOBtsuQ_jhjtaTrgvNwJtmCzHl",
+        "static": "18-BYli6LYZRIFpbQ6EuYB_DmQFqjfe--"
+      },
+      {
+        "type": "Magic",
+        "static": "1FujjO5qv7JgAXb9NJGqysiOC11Gv9oIF",
+        "active": "1ppsDbIvCfGg7RPAIB40QGCPUYTwlqZCw"
+      },
+      {
+        "type": "Staff",
+        "static": "1tIOFv8EbrW_sJ9ggtOyKIHHBH2POhc8d",
+        "active": "13BVGdiOPhBo6pmFlQasIfni2oc86xr_-"
+      },
+      {
+        "type": "Magic",
+        "active": "1V_ooBTM9NHj1x3JZlkrwBLwzCfH7tV97",
+        "static": "1w6WACD5OjCU1Fc0Vv5jQhbtZPPWEVL3P"
+      },
+      {
+        "type": "Magic",
+        "active": "1WFi2gPS8eU7_uQpMpDlQsHe4HTHz9c5H",
+        "static": "1EnyfBQpgE2fmXwIE0zVv3CApDdZmy5wT"
+      },
+      {
+        "type": "Staff",
+        "active": "1AABNfnoqmEjVQURsKc39HHiI54FKXY1B",
+        "static": "11iRfsS6jMjpfUFWnvvhte8b2XjIgOnwn"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "MAG",
+    "feClass": "Sage",
+    "name": "FE6 Lilina",
+    "gender": "F",
+    "credit": [
+      "IS",
+      "Shin19",
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1LLLUwWMC3Wu7RtpO5xjIEQbo-KecTyLH",
+    "dlName": "[T2][MAG][Sage](FE6 Lilina)[F]{IS, Shin19, SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Magic",
+        "static": "11_3F6fdzxgni0NwXGei7CIYEdciWH8Dw",
+        "active": "1bDb5HSWUsUYj58_D6IBQMvdAIomZx-sR"
+      },
+      {
+        "type": "Magic",
+        "active": "1S_w4ykyo7ERt6S668ZyiwvTTznAlN8UU",
+        "static": "1S430fLbjQVhp_RQ03UwmI7TVBgNkrU5V"
+      },
+      {
+        "type": "Magic",
+        "active": "19LUbxyhHxE9_55N2RBNIxPyWxfcgGwW9",
+        "static": "1zoeG4ihVz4RhJkcdO90E-dHIK3jSMG1g"
+      },
+      {
+        "type": "Staff",
+        "active": "1b149IP3q5VzuBir_wX-Ui572p53le07h",
+        "static": "1cDt2KgJat4eDPJ-BDBGg1CLKC7bNtdky"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "MAG",
+    "feClass": "Mage",
+    "name": "FE6 Lilina +Staff",
+    "gender": "F",
+    "credit": [
+      "IS",
+      "Shin19",
+      "SHYUTERz",
+      "Jeorge_Reds"
+    ],
+    "download": "https://drive.google.com/drive/folders/1W0IWCdDh2k0MW1xwBAvPFcYZ_mCWGOTQ",
+    "dlName": "[T1][MAG][Mage](FE6 Lilina +Staff)[F]{IS, Shin19, SHYUTERz, Jeorge_Reds}",
+    "weapons": [
+      {
+        "type": "Magic",
+        "static": "1Bv6svnKgtNagWQUNQfzLh318QoaNO3t3",
+        "active": "1uxHgwQayKPxB7bGHOTZpt2IKmEuz1eHm"
+      },
+      {
+        "type": "Magic",
+        "active": "1Xu4_4_o1XomEcrkzG36nAERJBncFbUuG",
+        "static": "1ZaLGuKDE3LYfpbaJuWXBbDSX1q_5SK6B"
+      },
+      {
+        "type": "Staff",
+        "static": "18M8KB--NKuGvzvhMpMTbdQTL_6rAoRHJ",
+        "active": "1nPxcDnrfeAOwOhBHgTSzLK2XkVlK3gta"
+      }
+    ]
+  },
+  {
+    "tier": "T3",
+    "category": "MAG",
+    "feClass": "Custom Magi",
+    "name": "Bramimond",
+    "gender": "M",
+    "credit": [
+      "SHYUTERz",
+      "Dinar"
+    ],
+    "download": "https://drive.google.com/drive/folders/1ZRmsi0kuIM6nuitmuvNZUktkk5_uYm3-",
+    "dlName": "[T3][MAG][Custom Magi](Bramimond)[M]{SHYUTERz, Dinar}",
+    "weapons": [
+      {
+        "type": "Staff",
+        "active": "1AlXaC3OFdWfm1GtSxpHSX8IkVrlupQfe",
+        "static": "1nzxi_PHMR1jr6s6ZA9DLKS4axZ5hJgli"
+      },
+      {
+        "type": "Magic",
+        "active": "17bVeM5fkrYr_TeJT16nHhFLNFSJWOuRZ",
+        "static": "13-AhpPHVKluT2hDl4OJAJ97wlAsIgaGn"
+      }
+    ]
+  },
+  {
+    "tier": "T3",
+    "category": "MAG",
+    "feClass": "Necromancer",
+    "name": "Dark Druid Nergal Repalette",
+    "gender": "M",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1q0hLz4nlZ9DHIn0x17waYNy9Amvc-eeh",
+    "dlName": "[T3][MAG][Necromancer](Dark Druid Nergal Repalette)[M]{SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Magic",
+        "active": "1fKfQpQCWOrpeDhY8jo_GXgvfLDSV6J_b",
+        "static": "1RwoWoeYLIL_973b-4Ae0cWCEOXkRIyOd"
+      }
+    ]
+  },
+  {
+    "tier": "T3",
+    "category": "MAG",
+    "feClass": "Necromancer",
+    "name": "Dark Druid +Staff",
+    "gender": "F",
+    "credit": [
+      "IS",
+      "SHYUTERz",
+      "CamusZekeSirius"
+    ],
+    "download": "https://drive.google.com/drive/folders/1dyrdeouMEXrQr4iOT91HYSC2oAZjhYXk",
+    "dlName": "[T3][MAG][Necromancer](Dark Druid +Staff)[F]{IS, SHYUTERz, CamusZekeSirius}",
+    "weapons": [
+      {
+        "type": "Magic",
+        "active": "1ZXQQX8HSr-qVnqzwlPcq_BVqeItBhkPf",
+        "static": "1Uk6vo6dncoGp5v6Y8rN51fEAkfA2Nxo-"
+      },
+      {
+        "type": "Magic",
+        "active": "1a7WQdnLJhT4XdGw7XsXrJLQWmlH-9zy_",
+        "static": "1LsJZ0L8Qvki2sYMlGKSR_rdPefAU4oTj"
+      },
+      {
+        "type": "Staff",
+        "active": "1AuYK72m7k4xOTeBS7UI-g4QgtY922o-9",
+        "static": "1K65o2erc39UTozwXzKXGqW1v-eef2U2V"
+      },
+      {
+        "type": "Staff",
+        "active": "1NrctItZiyTLlHertnKZ-e84Oj7fsifAV",
+        "static": "1UlQgryX9prx9ezCpBcfjkUfEqvTJcehV"
+      },
+      {
+        "type": "Staff",
+        "active": "1fXKAuipqcqK8EhKoIYdLCbKDroleNe0a",
+        "static": "1qzBXY1oZu4PO6iQdzBkk4NSD06kkGNBZ"
+      },
+      {
+        "type": "Staff",
+        "active": "1oGBVzbUU2qkin3deOkehq4o8KjE714XH",
+        "static": "1rBvN3_OUWK9xoNcfLCGdkkTiiQRqsswJ"
+      },
+      {
+        "type": "Magic",
+        "active": "1HbRux9aIf0b0thyZvHNv8r1qlL3mRnxZ",
+        "static": "1uPfbjfzySQ_a4BojW1vX2VWxy_c705Zb"
+      },
+      {
+        "type": "Magic",
+        "active": "19OJyUvNBCl3OQhSeRiB5T1Czs6JQ3clE",
+        "static": "1PYqEOTXUJiv7DZxOOrH5vlw-B-uTsh2r"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "MAG",
+    "feClass": "Sage",
+    "name": "Battle Sage +Sword +Staff",
+    "gender": "M",
+    "credit": [
+      "St jack",
+      "The_Big_Dededester",
+      "Dolkar"
+    ],
+    "download": "https://drive.google.com/drive/folders/1kYTXMFeOTG9NU-3MzN4XVhA56FuU8-rz",
+    "dlName": "[T2][MAG][Sage](Battle Sage +Sword +Staff)[M]{St jack, The_Big_Dededester, Dolkar}",
+    "weapons": [
+      {
+        "type": "Sword",
+        "active": "1VBT5MAR9H9ReHJJt_xnJHAL_XIHA6LTZ",
+        "static": "1MOrDDF1jYtsujhCUdbJS8U5F1438n_Oj"
+      },
+      {
+        "type": "Magic",
+        "static": "1Qgwr4sdqvLWxjPPAsAEsIUmSHc0UO5t7",
+        "active": "1ydbIdpozk8319aU7sgpyPE3wd2mp5-Yd"
+      },
+      {
+        "type": "Staff",
+        "active": "14mC_L4A4r-C9K26PEWhwD94I72s2xAim",
+        "static": "13SGlvynnmFr0IzJwENdYeaFzFyRPptzd"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "MAG",
     "feClass": "Sage",
     "name": "Better, Repalette",
     "gender": "F",
@@ -9965,7 +10577,13 @@ export default [
     ],
     "download": "https://drive.google.com/drive/folders/1k16pD0nlkWrlbfQ7K0Nan95BOpaAXpDX",
     "dlName": "[T1][MAG][Custom Magi](Oracle)[M]{GabrielKnight, Flasuban, Jj09}",
-    "weapons": []
+    "weapons": [
+      {
+        "type": "Magic",
+        "active": "1NrfaylizXIoA_yXK-MaupGUbo0VBC7qz",
+        "static": "12iZFxTx7mlGu61Clox_AoVa9r5XsbiIb"
+      }
+    ]
   },
   {
     "tier": "T1",
@@ -10021,7 +10639,13 @@ export default [
     "credit": [],
     "download": "https://drive.google.com/drive/folders/1bEbv5mssjquy6QI8NW7eSD2iASCqODvC",
     "dlName": "[T2][MAG][Sage] (Snes Sage) [M] {Blademaster}",
-    "weapons": []
+    "weapons": [
+      {
+        "type": "Magic",
+        "active": "1Cnb5xFNFr3PRU26K6VTjB9g8vBKPOGzN",
+        "static": "1haRxrTWu-7YaTHQkGpWJ48oM9XZVPuv6"
+      }
+    ]
   },
   {
     "tier": "T1",
@@ -10054,7 +10678,9 @@ export default [
     "dlName": "[T1][MAG][Mage] Hat [F] {Retrogamer, 7743}",
     "weapons": [
       {
-        "type": "Magic"
+        "type": "Magic",
+        "active": "1ZHC-Z6HOy_xW93QyWNTovEiq0jqD7RS8",
+        "static": "1b-PdqGrGceSvFtlvViLrS1iulHAjnJSC"
       }
     ]
   },
@@ -10647,27 +11273,6 @@ export default [
   {
     "tier": "T2",
     "category": "MAG",
-    "feClass": "Custom Magi",
-    "name": "Witch Repalette",
-    "gender": "F",
-    "credit": [
-      "Aruka",
-      "Kenpuhu",
-      "Orihara_Saki"
-    ],
-    "download": "https://drive.google.com/drive/folders/1XP8GROoJl4HG_8SpHXBTM48Cq6cmSR0S",
-    "dlName": "[T2][MAG][Custom Magi](Witch Repalette)[F]{Aruka, Kenpuhu, Orihara_Saki}",
-    "weapons": [
-      {
-        "type": "Magic",
-        "static": "1xe3gQFXtQgiodIrHRKxFp1n_wWudAV33",
-        "active": "1hwkdVs2AdBgN09vsmDRgjo3GTOUgoEBe"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "MAG",
     "feClass": "Druid",
     "name": "Wizard FE4 Loptyr-Style",
     "gender": "U",
@@ -10686,25 +11291,6 @@ export default [
         "type": "Staff",
         "active": "1m1Bh1Z5TL2gKlWrbYU0d5aJcNdsdZzrn",
         "static": "1M_jmumaVmcgmfid1OjgmrU7StFnJ8DKY"
-      }
-    ]
-  },
-  {
-    "tier": "T3",
-    "category": "MAG",
-    "feClass": "Necromancer",
-    "name": "Dark Druid Nergal Repalette",
-    "gender": "M",
-    "credit": [
-      "SHYUTER"
-    ],
-    "download": "https://drive.google.com/drive/folders/1q0hLz4nlZ9DHIn0x17waYNy9Amvc-eeh",
-    "dlName": "[T3][MAG][Necromancer](Dark Druid Nergal Repalette)[M]{SHYUTER}",
-    "weapons": [
-      {
-        "type": "Magic",
-        "active": "1fKfQpQCWOrpeDhY8jo_GXgvfLDSV6J_b",
-        "static": "1RwoWoeYLIL_973b-4Ae0cWCEOXkRIyOd"
       }
     ]
   },
@@ -10927,56 +11513,6 @@ export default [
         "type": "Magic",
         "active": "1IEDzyzFvXAcJPnWt3YdL6Ksro5W-2cPH",
         "static": "1xVnHE5sqVlBo8RnkcVZhHzjv_RuQbF8E"
-      }
-    ]
-  },
-  {
-    "tier": "T3",
-    "category": "MAG",
-    "feClass": "Necromancer",
-    "name": "Dark Druid Nergal +Staff",
-    "gender": "M",
-    "credit": [
-      "IS",
-      "Orihara_Saki",
-      "Blademaster",
-      "Shin19"
-    ],
-    "download": "https://drive.google.com/drive/folders/1uisTzKHFNduM-ftpUAMeOjEX5ohyL7Ec",
-    "dlName": "[T3][MAG][Necromancer](Dark Druid Nergal +Staff)[M]{IS, Orihara_Saki, Blademaster, Shin19}",
-    "weapons": [
-      {
-        "type": "Magic"
-      },
-      {
-        "type": "Magic",
-        "active": "1ZVz93p98_NjzG9vKuhpViwbZhdazccYz",
-        "static": "1GNSj0qPlvph4B43Jn2_nJrqZ-bOJtL1E"
-      },
-      {
-        "type": "Magic",
-        "static": "1KutRdWd7HLptAocbB3I144rl3D1ixWIY",
-        "active": "135ZAvvi3HtWKP0C4U7UO_KUrpappO6Nt"
-      },
-      {
-        "type": "Magic",
-        "active": "1rwbTkfe4vG58-AzXFuzFrq4B9XZ34j2A",
-        "static": "12Qm-dG5uz5iuMsxS5S-p69jfiHrDVCTE"
-      },
-      {
-        "type": "Magic",
-        "active": "1wDh244f1meO20wEmkTDp1ZM4w48Mrnlq",
-        "static": "1-JJCK1D0nFXVqEo4jzh1NuloY25imrbG"
-      },
-      {
-        "type": "Staff",
-        "active": "1zhOrtf614q6ZxfLMJAKNl8zS7l_Ob-CN",
-        "static": "12PAKhmiiVPwgEy3rsmQe3uhy-Rsxz99A"
-      },
-      {
-        "type": "Staff",
-        "active": "1lVIAshJ-GAekzi4bjowOEKKzUk5MTMEc",
-        "static": "1lv6maD-CvETXhpfW9vTjbI_he5Yujh7W"
       }
     ]
   },
@@ -11353,31 +11889,6 @@ export default [
         "type": "Sword",
         "active": "1lsRPnCtSKnD7zP42vmCVJ42V3rH_7P9Y",
         "static": "1gwdg8RWLRxsxyMXQu-GzdZQqS-XWbFCd"
-      }
-    ]
-  },
-  {
-    "tier": "T3",
-    "category": "MAG",
-    "feClass": "Custom Magi",
-    "name": "Bramimond",
-    "gender": "M",
-    "credit": [
-      "SHYUTER",
-      "Dinar"
-    ],
-    "download": "https://drive.google.com/drive/folders/1ZRmsi0kuIM6nuitmuvNZUktkk5_uYm3-",
-    "dlName": "[T3][MAG][Custom Magi](Bramimond)[M]{SHYUTER, Dinar}",
-    "weapons": [
-      {
-        "type": "Staff",
-        "active": "1AlXaC3OFdWfm1GtSxpHSX8IkVrlupQfe",
-        "static": "1nzxi_PHMR1jr6s6ZA9DLKS4axZ5hJgli"
-      },
-      {
-        "type": "Magic",
-        "active": "17bVeM5fkrYr_TeJT16nHhFLNFSJWOuRZ",
-        "static": "13-AhpPHVKluT2hDl4OJAJ97wlAsIgaGn"
       }
     ]
   },
@@ -12289,38 +12800,6 @@ export default [
     ]
   },
   {
-    "tier": "T1",
-    "category": "MAG",
-    "feClass": "Mage",
-    "name": "FE6 Lilina +Staff",
-    "gender": "F",
-    "credit": [
-      "IS",
-      "Shin19",
-      "SHYUTER",
-      "Jeorge_Reds"
-    ],
-    "download": "https://drive.google.com/drive/folders/1W0IWCdDh2k0MW1xwBAvPFcYZ_mCWGOTQ",
-    "dlName": "[T1][MAG][Mage](FE6 Lilina +Staff)[F]{IS, Shin19, SHYUTER, Jeorge_Reds}",
-    "weapons": [
-      {
-        "type": "Magic",
-        "active": "1Xu4_4_o1XomEcrkzG36nAERJBncFbUuG",
-        "static": "1ZaLGuKDE3LYfpbaJuWXBbDSX1q_5SK6B"
-      },
-      {
-        "type": "Magic",
-        "static": "1Bv6svnKgtNagWQUNQfzLh318QoaNO3t3",
-        "active": "1uxHgwQayKPxB7bGHOTZpt2IKmEuz1eHm"
-      },
-      {
-        "type": "Staff",
-        "static": "18M8KB--NKuGvzvhMpMTbdQTL_6rAoRHJ",
-        "active": "1nPxcDnrfeAOwOhBHgTSzLK2XkVlK3gta"
-      }
-    ]
-  },
-  {
     "tier": "T0",
     "category": "MAG",
     "feClass": "Pupil",
@@ -12857,9 +13336,7 @@ export default [
         "static": "1LyfDJtq1mrB0I2S3sxps3XhwCyFo9Qve"
       },
       {
-        "type": "Legendary",
-        "active": "1NdZQhVg816Lt-UD7BjSo2h-_8dlKZIaQ",
-        "static": "146qmKIOcOgBInu_5y8EiexSbH9lV8ue7"
+        "type": "Legendary"
       },
       {
         "type": "Sword",
@@ -13058,42 +13535,6 @@ export default [
   {
     "tier": "T2",
     "category": "MAG",
-    "feClass": "Sage",
-    "name": "FE6 Lilina",
-    "gender": "F",
-    "credit": [
-      "IS",
-      "Shin19",
-      "SHYUTER"
-    ],
-    "download": "https://drive.google.com/drive/folders/1LLLUwWMC3Wu7RtpO5xjIEQbo-KecTyLH",
-    "dlName": "[T2][MAG][Sage](FE6 Lilina)[F]{IS, Shin19, SHYUTER}",
-    "weapons": [
-      {
-        "type": "Magic",
-        "static": "11_3F6fdzxgni0NwXGei7CIYEdciWH8Dw",
-        "active": "1bDb5HSWUsUYj58_D6IBQMvdAIomZx-sR"
-      },
-      {
-        "type": "Magic",
-        "active": "1S_w4ykyo7ERt6S668ZyiwvTTznAlN8UU",
-        "static": "1S430fLbjQVhp_RQ03UwmI7TVBgNkrU5V"
-      },
-      {
-        "type": "Magic",
-        "active": "19LUbxyhHxE9_55N2RBNIxPyWxfcgGwW9",
-        "static": "1zoeG4ihVz4RhJkcdO90E-dHIK3jSMG1g"
-      },
-      {
-        "type": "Staff",
-        "active": "1b149IP3q5VzuBir_wX-Ui572p53le07h",
-        "static": "1cDt2KgJat4eDPJ-BDBGg1CLKC7bNtdky"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "MAG",
     "feClass": "Dark Knight",
     "name": "3DS-Style",
     "gender": "U",
@@ -13169,31 +13610,6 @@ export default [
         "type": "Magic",
         "active": "1ZSqtavZPJCKd3917I_jJ5pyhTohGGKZx",
         "static": "1eqDmq-gGAT2vUCUsY7p7KRnPpyAfXJLD"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "MAG",
-    "feClass": "Clergy",
-    "name": "Cleric Improved Repalette",
-    "gender": "F",
-    "credit": [
-      "flasuban",
-      "Eldritch Abomination"
-    ],
-    "download": "https://drive.google.com/drive/folders/19U0SEc0eM51jNGxM--WEpFBRtfwWqEdB",
-    "dlName": "[T1][MAG][Clergy](Cleric Improved Repalette)[F]{flasuban, Eldritch Abomination}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1w4ESV1ccLz5pgh8efCxT_QRyQip4t5Fc",
-        "static": "1VY7HG7l7rddIjE6z3npXSQO2x_3QqswI"
-      },
-      {
-        "type": "Staff",
-        "active": "15k5XxeQWN5ljxlUdJMSHxv-m9MC8GFtn",
-        "static": "1_kA4a_ZIjRkdW0M-wM6kYjTe-v1LH1kg"
       }
     ]
   },
@@ -13449,35 +13865,6 @@ export default [
     ]
   },
   {
-    "tier": "T2",
-    "category": "MAG",
-    "feClass": "Bishop",
-    "name": "Vanilla FE7, FE8",
-    "gender": "M",
-    "credit": [
-      "IS"
-    ],
-    "download": "https://drive.google.com/drive/folders/1aY2D7SihDPPhkSwrbwIsVFPy-opOYj9A",
-    "dlName": "[T2][MAG][Bishop](Vanilla FE7, FE8)[M]{IS}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1WGFC2zC-wmYCB2ZQbQd9BWtrjnpPN5pe",
-        "static": "1nwclSIwN2GRnQKRSJatceMZCZQzxQlpE"
-      },
-      {
-        "type": "Magic",
-        "active": "1Ic-3TYv8VrR1pYsvvJWNiZ8cVQk0IUA5",
-        "static": "1pzAD9Kt42jBMuX3u_8-c25BdeB1IlxeN"
-      },
-      {
-        "type": "Staff",
-        "active": "1M5GkZKl9GQLGom_K8vFVtOf7dHDfOE-R",
-        "static": "1exWKcwqVvX1tyD6ms8LjbuT4FAIJxY91"
-      }
-    ]
-  },
-  {
     "tier": "T1",
     "category": "MAG",
     "feClass": "Custom Magi",
@@ -13610,32 +13997,6 @@ export default [
   {
     "tier": "T2",
     "category": "MAG",
-    "feClass": "Valkyrie",
-    "name": "Generic Ursula-Style",
-    "gender": "F",
-    "credit": [
-      "flasuban",
-      "Greentea",
-      "RobertFPY"
-    ],
-    "download": "https://drive.google.com/drive/folders/1OYMo6oDtumIdDt_etwxBfLGBwpVt1U7S",
-    "dlName": "[T2][MAG][Valkyrie](Generic Ursula-Style)[F]{flasuban, Greentea, RobertFPY}",
-    "weapons": [
-      {
-        "type": "Staff",
-        "active": "1ydUIPL3HqOsF-hVK8849ka9vl5whfuIF",
-        "static": "1SGZGxyPNzhYf5pWnS2tUB6CGmdkkUJnu"
-      },
-      {
-        "type": "Magic",
-        "active": "1Xn4GxDe6kevfEStS-RlcRC70k3qJGzFa",
-        "static": "1l7ZbHv8NFWvCvqDFzyyp8P564CyBWXUp"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "MAG",
     "feClass": "Summoner",
     "name": "Vanilla +Weapons, Fix",
     "gender": "M",
@@ -13712,30 +14073,6 @@ export default [
         "type": "Magic",
         "active": "1G5_eXt80k7u-Z7EMU_zv6JIcWxkE_oHB",
         "static": "16FbRNLQUyWpicHxQKsxLWY6Xvzv5t2sT"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "MAG",
-    "feClass": "Sage",
-    "name": "Battle Sage +Sword -Staff",
-    "gender": "M",
-    "credit": [
-      "St jack"
-    ],
-    "download": "https://drive.google.com/drive/folders/1b76SA5XGuykU1QGr6VkQQOT1-_6PMrK_",
-    "dlName": "[T2][MAG][Sage](Battle Sage +Sword -Staff)[M]{St jack}",
-    "weapons": [
-      {
-        "type": "Magic",
-        "active": "1x8B1JnVE6sewJ8oddwhy2iWIf6a2wPcA",
-        "static": "1R-pLEIs_CNllpxAHFEy5--l-mnHv-ZGi"
-      },
-      {
-        "type": "Sword",
-        "active": "1aqslAQOMmG_j2zn6x1dXmM6XxXZ5tKOs",
-        "static": "1d_OZ-4P8wfrlXlePIsVXIOxOdOnAJg8Z"
       }
     ]
   },
@@ -13830,31 +14167,6 @@ export default [
     ]
   },
   {
-    "tier": "T1",
-    "category": "MAG",
-    "feClass": "Clergy",
-    "name": "Priest Improved Repalette",
-    "gender": "M",
-    "credit": [
-      "flasuban",
-      "Eldritch Abomination"
-    ],
-    "download": "https://drive.google.com/drive/folders/1Xt_j77KWLHTbSzE6YvidLN9qee5vqoz9",
-    "dlName": "[T1][MAG][Clergy](Priest Improved Repalette)[M]{flasuban, Eldritch Abomination}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1dMyoC3ou8TKDYqq2HNbwJwFxExwYn56G",
-        "static": "1htIvQgHUFA5l8xiKRo1dql5phJzBfabG"
-      },
-      {
-        "type": "Staff",
-        "active": "1HII_3EpLvQO-pSmP4zEJXkhrjdtDfkig",
-        "static": "1ugA0ssRPlr5ypybbezOT5v0tw0yhky--"
-      }
-    ]
-  },
-  {
     "tier": "T2",
     "category": "MAG",
     "feClass": "Druid",
@@ -13875,58 +14187,6 @@ export default [
         "type": "Magic",
         "active": "1GGMZ9318DBfmfalg9hh4jjhAl64us40h",
         "static": "1TCbHu4WFASlWRw8Xrs7FcnGwvv11qmkL"
-      }
-    ]
-  },
-  {
-    "tier": "T3",
-    "category": "MAG",
-    "feClass": "Archsage",
-    "name": "Athos",
-    "gender": "M",
-    "credit": [
-      "IS",
-      "Blademaster",
-      "Shin19",
-      "SHYUTER"
-    ],
-    "download": "https://drive.google.com/drive/folders/12Ka-lxsVm3NhXrcKWl8c5iKVPUmPA5Z7",
-    "dlName": "[T3][MAG][Archsage](Athos)[M]{IS, Blademaster, Shin19, SHYUTER}",
-    "weapons": [
-      {
-        "type": "Magic",
-        "static": "1FujjO5qv7JgAXb9NJGqysiOC11Gv9oIF",
-        "active": "1ppsDbIvCfGg7RPAIB40QGCPUYTwlqZCw"
-      },
-      {
-        "type": "Staff",
-        "static": "1tIOFv8EbrW_sJ9ggtOyKIHHBH2POhc8d",
-        "active": "13BVGdiOPhBo6pmFlQasIfni2oc86xr_-"
-      },
-      {
-        "type": "Magic",
-        "active": "14IGe1GaOBtsuQ_jhjtaTrgvNwJtmCzHl",
-        "static": "18-BYli6LYZRIFpbQ6EuYB_DmQFqjfe--"
-      },
-      {
-        "type": "Magic",
-        "active": "1V_ooBTM9NHj1x3JZlkrwBLwzCfH7tV97",
-        "static": "1w6WACD5OjCU1Fc0Vv5jQhbtZPPWEVL3P"
-      },
-      {
-        "type": "Magic",
-        "active": "1WFi2gPS8eU7_uQpMpDlQsHe4HTHz9c5H",
-        "static": "1EnyfBQpgE2fmXwIE0zVv3CApDdZmy5wT"
-      },
-      {
-        "type": "Staff",
-        "active": "1AABNfnoqmEjVQURsKc39HHiI54FKXY1B",
-        "static": "11iRfsS6jMjpfUFWnvvhte8b2XjIgOnwn"
-      },
-      {
-        "type": "Magic",
-        "static": "16JSXMDQcYYI-1iojv481yZpwjC9mwewX",
-        "active": "1lBvRrzL5klDnOez6gh-jyvWECdSB9aiI"
       }
     ]
   },
@@ -13958,32 +14218,53 @@ export default [
     "category": "SPL",
     "school": "Anima",
     "element": "",
-    "name": "Black Lightning",
+    "name": "Sagittae - Melee",
     "credit": [
-      "Thunder_Mage"
+      "HyperGammaSpaces"
     ],
-    "download": "https://drive.google.com/drive/folders/1vR31cSdpBuYM3LqCSUxo_fwy_Vb-P2dr",
-    "dlName": "[Anima](Black Lightning){Thunder_Mage}",
+    "download": "https://drive.google.com/drive/folders/1SqGO_kZ-JqA6vj1pFCJsqZa91LklGADh",
+    "dlName": "[Anima][Sagittae - Melee]{HyperGammaSpaces}",
     "weapons": [
       {
         "type": "Spell",
-        "static": "1Xf7p8TfLj-HztqFrQyPWXQpbI-egDv2B"
+        "active": "1wgdEGFEfBwiUQhqxaRah-r1FGepTapi6",
+        "static": "188V_KEL9VS6Vo0_5xFT4WWfz7EZ3dtAy"
       }
     ]
   },
   {
     "category": "SPL",
-    "school": "Dark",
+    "school": "Anima",
     "element": "",
-    "name": "Svartrblade",
+    "name": "Black Lightning - Melee",
     "credit": [
-      "Orihara_Saki"
+      "Thunder_Mage"
     ],
-    "download": "https://drive.google.com/drive/folders/1SHFbb-Z_xzT2q3vHOULgllarvnzwI19G",
-    "dlName": "[Dark](Svartrblade){Orihara_Saki}",
+    "download": "https://drive.google.com/drive/folders/11k6XpgpapN4nmTAh6iwChYvD1_TXhzHt",
+    "dlName": "[Anima](Black Lightning - Melee){Thunder_Mage}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "active": "1Uju137Fz4hAlf26AE8X4Rv-Mjh-PGJjB",
+        "static": "1UhTr5v7B8smh7UBO1rad22qd5TcLagpl"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Black Lightning - Ranged",
+    "credit": [
+      "Thunder_Mage"
+    ],
+    "download": "https://drive.google.com/drive/folders/1OFUUKcwHUjDw71y8wLQwhukV1uOc7H1_",
+    "dlName": "[Anima](Black Lightning - Ranged){Thunder_Mage}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1kwUuvIfhpj08bE3F1uBJsm2ezlEIPyq7",
+        "active": "1ZvosSvXf7AkZNKEQTwRQytxj2WUAQWb7"
       }
     ]
   },
@@ -13991,15 +14272,197 @@ export default [
     "category": "SPL",
     "school": "Light",
     "element": "",
-    "name": "Hvitrblade",
+    "name": "Valaura",
     "credit": [
-      "Orihara_Saki"
+      "SHYUTERz"
     ],
-    "download": "https://drive.google.com/drive/folders/1Y8uB5Dxv-DQModgLPuCxl5_Bbq5JSgn6",
-    "dlName": "[Light](Hvitrblade){Orihara_Saki}",
+    "download": "https://drive.google.com/drive/folders/13N80d4wNnpgsNVCRguEF1Sdy7UH8W3hq",
+    "dlName": "[Light](Valaura){SHYUTERz}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "static": "1FpM1VEQPLYgFKyPlwexInyi9OoltZGUC",
+        "active": "1YuoXSwR2LBvia3tIrQlUSwrftMaabgIz"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Dark",
+    "element": "",
+    "name": "Gespenst",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1wL7DGBsLvk8FT5PJspJzTI2nRDe2vQtz",
+    "dlName": "[Dark](Gespenst){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1yTqRQFPdfdoLJ9jsw6loefuWdpCk3NgP",
+        "static": "1MZ1G7WrmmQgtwyp3ZLjSdjtN386n6Ohn"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Dark",
+    "element": "",
+    "name": "Apocalypse",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1-8GOiVoKnAoLtnJd9e1ekvmzbjmBkZ01",
+    "dlName": "[Dark](Apocalypse){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1SbPBX_Y2QQLvwlRyrKAhlJibGFsrjz6Z",
+        "static": "1GdQ5uGgQzVaGExaE_DRWuQ37GwNQjE6E"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "",
+    "element": "Fire",
+    "name": "Forblaze - FE6",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1TkadZEqpRQ7pjgd8QnDiGI_253i8LDxo",
+    "dlName": "[Anima][Fire](Forblaze - FE6){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1zZjfjsFFsxbpBTqlP6DxHJ38csodkDEs",
+        "static": "10C88YVOG10NEySpx-An1xtDpUD3Fay0M"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Light",
+    "element": "",
+    "name": "Aureola",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1OzBg5GkmOL9x9Hbpp0BZfgJscZxmRunS",
+    "dlName": "[Light](Aureola){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "18m0pQDpXKbAupuF9Nm4qfAlUIc0cimE4",
+        "static": "1M_CPgVFZX53zMPhfhOE6-HwMTliddC08"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Forblaze Kai - FE6-Style",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1OLxhCcLJLdrvjzLoBMMfy0ROCT_o43h3",
+    "dlName": "[Anima](Forblaze Kai - FE6-Style){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1MvabTpi3zNsc2h0rBZgVY2KwKF2EvJSd",
+        "static": "1lokv8JuU97uzOGxJwf-LsFU1fCtV-nRp"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Other",
+    "element": "",
+    "name": "Dark Breath",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1zrFc93-sW5diNtu_tnb4pkCLFGiFF-nl",
+    "dlName": "[Other](Dark Breath){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1XFRcArKOEsSBRCcQLd1UVHtk--EB-Jdl",
+        "static": "1-FKz3rlEzwS8ujObaf_xgjZRST48R9Qw"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "",
+    "element": "Fire",
+    "name": "Forblaze - FE7",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1Kf_1DAY9yNsBhAJTPmuWvQbtKMILIHx7",
+    "dlName": "[Anima][Fire](Forblaze - FE7){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1Vo2llDd4DmjATdkuRdX4w98tbR52gQao",
+        "static": "1jqj8eraDQaIbdlQuk3m7I_Zz9Pw8MCTs"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Dark",
+    "element": "",
+    "name": "Revenge of the Devil",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1B6bVX_QlUe9_rOykiCKeT6QNbgsLhRWy",
+    "dlName": "[Dark](Revenge of the Devil){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1L3NFeRHgewSsAxqFcwD76ADfvNUOZdmQ",
+        "static": "17FKhLAbQ_IUuWDA_-v8t-c4GRbSthJg6"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Parthia",
+    "credit": [
+      "7743"
+    ],
+    "download": "https://drive.google.com/drive/folders/1NghO_guUnU-PEASgZ2ikDelypax-6jBj",
+    "dlName": "[Anima](Parthia){7743}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1LdPxKU-TgR-XaIP4TIEnEVQQKMpwa4PY",
+        "static": "1cuhPdWWB8XJ97rnSw9ZlvlD0GGabeClJ"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Thundaga",
+    "credit": [
+      "7743"
+    ],
+    "download": "https://drive.google.com/drive/folders/1RxmDoO-KKNWQ62P2kP8ZAzNFR9fHbwJK",
+    "dlName": "[Anima](Thundaga){7743}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1ss8XW2PWgmIwYOuIbgA-oYLANOQFWJ5p",
+        "static": "1KdtW30votTNhyXtARatO1iogLgyS9Dj7"
       }
     ]
   },
@@ -14011,75 +14474,67 @@ export default [
     "credit": [
       "PurpleMage"
     ],
-    "download": "https://drive.google.com/drive/folders/1vPAUoAZpY80VSj3NZT-aF1fPjulM-cz_",
+    "download": "https://drive.google.com/drive/folders/1H6v6Y33Ou8j5LIV3U7gg5R2ew3iK_CKK",
     "dlName": "[Other][SteakShot]{PurpleMage}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "static": "1KxTx7sSPJQUbPAetMdr8vs1TzVjLQ3wK",
+        "active": "1J2wDfF6O2_gKFbrjvdfedoUd_jRZkzwc"
       }
     ]
   },
   {
     "category": "SPL",
-    "school": "Anima",
+    "school": "Other",
     "element": "",
-    "name": "Rauðrblade",
+    "name": "Divine Breath",
     "credit": [
-      "Orihara_Saki"
+      "SHYUTERz"
     ],
-    "download": "https://drive.google.com/drive/folders/1HUxC-83DxH83bq68DTpwnflpJmo_LQsW",
-    "dlName": "[Anima](Rauðrblade){Orihara_Saki}",
+    "download": "https://drive.google.com/drive/folders/1gSYkVFBH8nC6El3BKtmKriP9REusKy40",
+    "dlName": "[Other][Divine Breath]{SHYUTERz}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "static": "1QrtYQbDuDjXkzhp-T57qupK0SC5a4iHt",
+        "active": "1aw5afw7oyro0QJr8VJKq72wowpVKQbkV"
       }
     ]
   },
   {
     "category": "SPL",
-    "school": "Anima",
+    "school": "Other",
     "element": "",
-    "name": "Gronnblade",
+    "name": "Sakura",
     "credit": [
-      "Orihara_Saki"
+      "7743"
     ],
-    "download": "https://drive.google.com/drive/folders/1ZGnRwTZnfXr6rdbKxrE7yYquAUmWTE31",
-    "dlName": "[Anima](Gronnblade){Orihara_Saki}",
+    "download": "https://drive.google.com/drive/folders/1Ck21_rej8xP3TNDAUkilbUOjgR5YKP8q",
+    "dlName": "[Other](Sakura){7743}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "static": "1jiOqySD5TA-pcLY609dyJfJKOKC12Hqk",
+        "active": "1Qv3BZ64QIIJeJYGZERJbRtnh9Fuy9phN"
       }
     ]
   },
   {
     "category": "SPL",
-    "school": "Anima",
+    "school": "Other",
     "element": "",
-    "name": "Blárblade",
+    "name": "Dragon Breath",
     "credit": [
-      "Orihara_Saki"
+      "SHYUTERz"
     ],
-    "download": "https://drive.google.com/drive/folders/1lGwZlSJ2Gj29dlSx2bCKLQEcyh8B1Z_2",
-    "dlName": "[Anima](Blárblade){Orihara_Saki}",
+    "download": "https://drive.google.com/drive/folders/1lsGKCHdYXchATFe00BoM_LwYp_DHcgnr",
+    "dlName": "[Other](Dragon Breath){SHYUTERz}",
     "weapons": [
       {
-        "type": "Spell"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Light",
-    "element": "",
-    "name": "Smite",
-    "credit": [
-      "Beansy"
-    ],
-    "download": "https://drive.google.com/drive/folders/1xgEwzdNKOmreA8CARu8ONX30C59SS-a9",
-    "dlName": "[Light](Smite){Beansy}",
-    "weapons": [
-      {
-        "type": "Spell"
+        "type": "Spell",
+        "active": "1j4QakVmpOUxxPOONKX5xOU6R-AyHdTWv",
+        "static": "1JVAeM2j64KB-UklZFR13s9RAQPHRtKFe"
       }
     ]
   },
@@ -14096,7 +14551,9 @@ export default [
     "dlName": "[Other](Poison Breath){SHYUTERz, HIROTO}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "active": "1p-f7aBRNF7m8_ZeOyaFpql9dTudkjH4c",
+        "static": "1l1Y-Wa-X5IToyloDOY1-n518PsaGhhjs"
       }
     ]
   },
@@ -14113,7 +14570,9 @@ export default [
     "dlName": "[Other](Breath of God){SHYUTERz, HIROTO}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "static": "1DHf6mNz3CEMc2YZghnd-t8FiWtijxOwt",
+        "active": "1LPDPdNFWUiekJXTwu_PXuADS0PV6_KeH"
       }
     ]
   },
@@ -14130,7 +14589,63 @@ export default [
     "dlName": "[Other](Alien Blast){SHYUTERz, HIROTO}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "active": "11X2B4T195wsPdqbJICVll2FNl38tozMW",
+        "static": "1sxuPEmCVxZFeMJXdUHIkIvpYnRIllNCx"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Sagittae - Ranged",
+    "credit": [
+      "HyperGammaSpaces"
+    ],
+    "download": "https://drive.google.com/drive/folders/1C-6Z0DkNVIYOJu2CwVkCxTGujpkXpSyU",
+    "dlName": "[Anima][Sagittae - Ranged]{HyperGammaSpaces}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "18Q0kDbysz5gGzx7In8l0szWMMKe0_uiw",
+        "static": "1NrhWL_gIcrydKgVekv11sGe_OshqlTsh"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Light",
+    "element": "",
+    "name": "Eyes of God",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1FUrnCxyT38KxLebHdrqBqADjnQi8n3wh",
+    "dlName": "[Light](Eyes of God){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1UYR7TW1-Ryxnt0F0v5aiKNGhtfF672HZ",
+        "static": "1IcpjJPHK6RpdHjyvinicTRB35ChC3o5d"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Super Thunderstorm",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1_O-fBWeHbj0mn9kBNU9wKx3YeU-qLGxU",
+    "dlName": "[Anima](Super Thunderstorm){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1i9lwjTA4gyxIdaL2mshuqO8EahC8SwBS",
+        "static": "1dnqRoahUfYMK_Muqr66dJDWqpZPUyg2C"
       }
     ]
   },
@@ -14147,7 +14662,27 @@ export default [
     "dlName": "[Anima](Super Excalibur){SHYUTERz, HIROTO}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "active": "1bG0QzoPcQhz_ZSiGmSoMeboaUGSU8Fpg",
+        "static": "1g_LpUTug0JKzvCFiqx9IKl9KOPGplMk5"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Exaccus FE8",
+    "credit": [
+      "Dolkar"
+    ],
+    "download": "https://drive.google.com/drive/folders/1cwr_RT45G0eQsTVv0KHW2Utv8-ampLAR",
+    "dlName": "[Anima](Exaccus FE8){Dolkar}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "14NbSvaJS4UT88kE94WJXOJ2GX3znDfS7",
+        "static": "1362hIlQ53WzbQ8ytN89G_VB8hJjbCeBE"
       }
     ]
   },
@@ -14164,120 +14699,9 @@ export default [
     "dlName": "[Anima](Ex. Ice){SHYUTERz, HIROTO}",
     "weapons": [
       {
-        "type": "Spell"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Light",
-    "element": "",
-    "name": "Dulam",
-    "credit": [
-      "Arch",
-      "Comaythanki"
-    ],
-    "download": "https://drive.google.com/drive/folders/1YzUZRzyBmLjtcyQMXYFPTnm1OsFfv2u_",
-    "dlName": "[Light](Dulam){Arch, Comaythanki}",
-    "weapons": [
-      {
-        "type": "Spell"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Light",
-    "element": "",
-    "name": "Eyes of God",
-    "credit": [
-      "SHYUTERz"
-    ],
-    "download": "https://drive.google.com/drive/folders/1FUrnCxyT38KxLebHdrqBqADjnQi8n3wh",
-    "dlName": "[Light](Eyes of God){SHYUTERz}",
-    "weapons": [
-      {
-        "type": "Spell"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Anima",
-    "element": "",
-    "name": "Sagittae",
-    "credit": [
-      "HyperGammaSpaces"
-    ],
-    "download": "https://drive.google.com/drive/folders/13_lyiRgaDopuu0dXRmINtf_jdK0jfCKq",
-    "dlName": "[Anima][Sagittae]{HyperGammaSpaces}",
-    "weapons": [
-      {
-        "type": "Spell"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Other",
-    "element": "",
-    "name": "Divine Breath",
-    "credit": [
-      "SHYUTERz"
-    ],
-    "download": "https://drive.google.com/drive/folders/1gSYkVFBH8nC6El3BKtmKriP9REusKy40",
-    "dlName": "[Other][Divine Breath]{SHYUTERz}",
-    "weapons": [
-      {
-        "type": "Spell"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Other",
-    "element": "",
-    "name": "Dragon Breath",
-    "credit": [
-      "SHYUTERz"
-    ],
-    "download": "https://drive.google.com/drive/folders/1lsGKCHdYXchATFe00BoM_LwYp_DHcgnr",
-    "dlName": "[Other](Dragon Breath){SHYUTERz}",
-    "weapons": [
-      {
-        "type": "Spell"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Other",
-    "element": "",
-    "name": "Sakura",
-    "credit": [
-      "7743"
-    ],
-    "download": "https://drive.google.com/drive/folders/1Ck21_rej8xP3TNDAUkilbUOjgR5YKP8q",
-    "dlName": "[Other](Sakura){7743}",
-    "weapons": [
-      {
-        "type": "Spell"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Anima",
-    "element": "",
-    "name": "Exaccus FE8",
-    "credit": [
-      "Dolkar"
-    ],
-    "download": "https://drive.google.com/drive/folders/1cwr_RT45G0eQsTVv0KHW2Utv8-ampLAR",
-    "dlName": "[Anima](Exaccus FE8){Dolkar}",
-    "weapons": [
-      {
-        "type": "Spell"
+        "type": "Spell",
+        "active": "1gGLrWXgTaAqia6EHXr2rTnjNUKd05TBu",
+        "static": "18JMyvEUni3HovowR_tVskPiPBAZy2cQy"
       }
     ]
   },
@@ -14293,7 +14717,9 @@ export default [
     "dlName": "[Anima](Dark Thunder Plus){SHYUTERz}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "static": "13G04K0gsg-6HojdZdcHs4m6oYdcWESI9",
+        "active": "1PLO4KF575WYYF1-vT3dvOlOoT78j00oR"
       }
     ]
   },
@@ -14301,15 +14727,17 @@ export default [
     "category": "SPL",
     "school": "Anima",
     "element": "",
-    "name": "Super Thunderstorm",
+    "name": "Blárblade - Ranged",
     "credit": [
-      "SHYUTERz"
+      "Orihara_Saki"
     ],
-    "download": "https://drive.google.com/drive/folders/1_O-fBWeHbj0mn9kBNU9wKx3YeU-qLGxU",
-    "dlName": "[Anima](Super Thunderstorm){SHYUTERz}",
+    "download": "https://drive.google.com/drive/folders/1eRy56a0Dzdh0o0CCvMNsppdf5Yc5bZ7X",
+    "dlName": "[Anima](Blárblade - Ranged){Orihara_Saki}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "static": "1zhJTsEXCqTTCPcP2fXhP-Ti6vg9hH8C1",
+        "active": "1msUmeL4JzV9G0hEg0TYFzbhvfiZYZvT3"
       }
     ]
   },
@@ -14317,15 +14745,17 @@ export default [
     "category": "SPL",
     "school": "Anima",
     "element": "",
-    "name": "FiragaFF5",
+    "name": "Blárblade - Melee",
     "credit": [
-      "7743"
+      "Orihara_Saki"
     ],
-    "download": "https://drive.google.com/drive/folders/1UK309kS2Cmqz6kydswf7EIs1qBM4VdAJ",
-    "dlName": "[Anima](FiragaFF5){7743}",
+    "download": "https://drive.google.com/drive/folders/1B1Esijsxeero3ObezDcNlFjLeDnHUQOD",
+    "dlName": "[Anima](Blárblade - Melee){Orihara_Saki}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "static": "1cGYmDyxGfrJ-cR3Vj3eXAWFBtZ6IBVmG",
+        "active": "1VS4n4qQ-j472MgapLVFrgwFO8T6_qxds"
       }
     ]
   },
@@ -14333,15 +14763,53 @@ export default [
     "category": "SPL",
     "school": "Anima",
     "element": "",
-    "name": "Thundaga",
+    "name": "Gronnblade - Ranged",
     "credit": [
-      "7743"
+      "Orihara_Saki"
     ],
-    "download": "https://drive.google.com/drive/folders/1RxmDoO-KKNWQ62P2kP8ZAzNFR9fHbwJK",
-    "dlName": "[Anima](Thundaga){7743}",
+    "download": "https://drive.google.com/drive/folders/1hBEn49Tb6gPEbxcxfqqNWTeXZnm-rC4O",
+    "dlName": "[Anima](Gronnblade - Ranged){Orihara_Saki}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "static": "1Y_tZs3hJVLxgZNmietbW3mE2HpcNtD4Q",
+        "active": "1YNOLlMEEqw-yFb0yYJUIz5dQTX841bGA"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Gronnblade - Melee",
+    "credit": [
+      "Orihara_Saki"
+    ],
+    "download": "https://drive.google.com/drive/folders/1nA_sZD0m-L52R0eSzqO7frLpZvRgwwdG",
+    "dlName": "[Anima](Gronnblade - Melee){Orihara_Saki}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "129pdh1TGKH27prCYs3kqxzLaYeX3WRKq",
+        "active": "1XCsytV5d88XR_HFs5HXoINdGsgZEBtVY"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Rauðrblade - Ranged",
+    "credit": [
+      "Orihara_Saki"
+    ],
+    "download": "https://drive.google.com/drive/folders/19D4y9mRWKuKPy0xJ8glg4_gEQcyJdzIV",
+    "dlName": "[Anima](Rauðrblade - Ranged){Orihara_Saki}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1AiiAT3GXBP4A-z7VzCI_I1Ht5inU6t3U",
+        "active": "1Dq0fKgT3GCkk_4ZFppIcXKZwDLtl4zBX"
       }
     ]
   },
@@ -14357,7 +14825,27 @@ export default [
     "dlName": "[Anima](Blizzag){7743}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "static": "1NdkqETX6YnTStY5GG7h_O9vQI0wYo_CQ",
+        "active": "1r_NniGd5hyeXI_7TOkWF0UvkXTo-AT43"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "FiragaFF5",
+    "credit": [
+      "7743"
+    ],
+    "download": "https://drive.google.com/drive/folders/1UK309kS2Cmqz6kydswf7EIs1qBM4VdAJ",
+    "dlName": "[Anima](FiragaFF5){7743}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1Jy6vtNZdus1AiXpST77hLKENl3oel4UY",
+        "active": "1amREJSikO21myPQ-pkGCeGwNEIPRW0QM"
       }
     ]
   },
@@ -14373,7 +14861,9 @@ export default [
     "dlName": "[Anima](Firaga){7743}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "static": "17kfOG3RifylBfxaKJDD1OvVsSH2GfcJ2",
+        "active": "1Can0yC-3HN3V_WbIyaZV0F07gdQkwG-i"
       }
     ]
   },
@@ -14381,15 +14871,127 @@ export default [
     "category": "SPL",
     "school": "Anima",
     "element": "",
-    "name": "Parthia",
+    "name": "Rauðrblade - Melee",
     "credit": [
-      "7743"
+      "Orihara_Saki"
     ],
-    "download": "https://drive.google.com/drive/folders/1NghO_guUnU-PEASgZ2ikDelypax-6jBj",
-    "dlName": "[Anima](Parthia){7743}",
+    "download": "https://drive.google.com/drive/folders/1pzrSVsXMOnN9m78PMJa18sxcliR0MTHy",
+    "dlName": "[Anima](Rauðrblade - Melee){Orihara_Saki}",
     "weapons": [
       {
-        "type": "Spell"
+        "type": "Spell",
+        "static": "1ArGWKoF3XwE6XBMDe1l1Xo1rPrBU-ATr",
+        "active": "1RNCha5AJxx6GIG646scVm9MwaJZrJ2xG"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Light",
+    "element": "",
+    "name": "Dulam - Melee",
+    "credit": [
+      "Arch",
+      "Comaythanki"
+    ],
+    "download": "https://drive.google.com/drive/folders/1pF5JAu4pzJUQ87Rr3TG5gJaDj-wkwMNB",
+    "dlName": "[Light](Dulam - Melee){Arch, Comaythanki}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1jYkv1yw1QqK4Zn-_OE9o84ZXBeGAMSA3",
+        "active": "1Ez5zXzq3Fh2JsR1Gp5WoBysStQguC0Ep"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Light",
+    "element": "",
+    "name": "Dulam - Ranged",
+    "credit": [
+      "Arch",
+      "Comaythanki"
+    ],
+    "download": "https://drive.google.com/drive/folders/1lLIQDPcKpLvAetHthzV1s6KyETFtEq56",
+    "dlName": "[Light](Dulam - Ranged){Arch, Comaythanki}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1ZHOK4XuNN3BkOHuAbRvOnzO2eMoQauT3",
+        "static": "1jUuHe-Xw2Oi576ZUyIVSs00N2agQxlTb"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Dark",
+    "element": "",
+    "name": "Svartrblade - Melee",
+    "credit": [
+      "Orihara_Saki"
+    ],
+    "download": "https://drive.google.com/drive/folders/1q7ocHKhty9PKRRvB2lJ20Ih2EsKZreBx",
+    "dlName": "[Dark](Svartrblade - Melee){Orihara_Saki}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1t0rs1cAMiOL5R-0heIImqscxwIyFq5OZ",
+        "active": "1nqLCpiFP5xn99oUPIefGQXlhrRNALyUD"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Light",
+    "element": "",
+    "name": "Smite - Melee",
+    "credit": [
+      "Beansy"
+    ],
+    "download": "https://drive.google.com/drive/folders/1UMCzvwgYg5REb1HHBa73CfdPllffrb9M",
+    "dlName": "[Light](Smite - Melee){Beansy}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1xdmuSIJr3IrPO16RUaN8lUFhhNNxeEsM",
+        "active": "1A6Rlksl_8I10iZWn_sOD5fwAeCNJI1_7"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Light",
+    "element": "",
+    "name": "Smite - Ranged",
+    "credit": [
+      "Beansy"
+    ],
+    "download": "https://drive.google.com/drive/folders/13X0kR02YZTgUWmf42vNMipBDODv2mQGJ",
+    "dlName": "[Light](Smite - Ranged){Beansy}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1HlT_AjemLH6aOViCSM9yQWQJlIPKrvo2",
+        "active": "1cMlpiB93wBX_RJz6kuDU7tY7FpVUA83N"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Dark",
+    "element": "",
+    "name": "Svartrblade - Ranged",
+    "credit": [
+      "Orihara_Saki"
+    ],
+    "download": "https://drive.google.com/drive/folders/1KnQCRaqXT0KvQiNdeThGkWwne1niaj4I",
+    "dlName": "[Dark](Svartrblade - Ranged){Orihara_Saki}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "15Ey1OxNkwu40fcgSw3cO84MSU39U1AwM",
+        "active": "1-W1JWQTI7d76cNE8jLT_H_MQtoM3lBTi"
       }
     ]
   },
@@ -14764,24 +15366,6 @@ export default [
   },
   {
     "category": "SPL",
-    "school": "",
-    "element": "Fire",
-    "name": "Forblaze - FE7",
-    "credit": [
-      "Shyuter"
-    ],
-    "download": "https://drive.google.com/drive/folders/1Kf_1DAY9yNsBhAJTPmuWvQbtKMILIHx7",
-    "dlName": "[Anima][Fire](Forblaze - FE7){Shyuter}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "active": "1Vo2llDd4DmjATdkuRdX4w98tbR52gQao",
-        "static": "1jqj8eraDQaIbdlQuk3m7I_Zz9Pw8MCTs"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
     "school": "Light",
     "element": "",
     "name": "Hvitrserpent Ranged",
@@ -14832,24 +15416,6 @@ export default [
         "type": "Spell",
         "active": "1Wimw6ov_8MSc6Y5vU37I5suRhO_76F4X",
         "static": "1YFPyY_bNPdgnHMuT8KesYpO0das_e2tT"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Other",
-    "element": "",
-    "name": "Dark Breath",
-    "credit": [
-      "SHYUTER"
-    ],
-    "download": "https://drive.google.com/drive/folders/1zrFc93-sW5diNtu_tnb4pkCLFGiFF-nl",
-    "dlName": "[Other](Dark Breath){SHYUTER}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "active": "1XFRcArKOEsSBRCcQLd1UVHtk--EB-Jdl",
-        "static": "1-FKz3rlEzwS8ujObaf_xgjZRST48R9Qw"
       }
     ]
   },
@@ -14961,24 +15527,6 @@ export default [
         "type": "Spell",
         "static": "1X6beLWgRB4GpXOP-CdYyCaZGDJFKItlS",
         "active": "1jky7iDICQG8x6eG92avGQvtkhHD7GoGX"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Anima",
-    "element": "",
-    "name": "Forblaze Kai - FE6-Style",
-    "credit": [
-      "SHYUTER"
-    ],
-    "download": "https://drive.google.com/drive/folders/1OLxhCcLJLdrvjzLoBMMfy0ROCT_o43h3",
-    "dlName": "[Anima](Forblaze Kai - FE6-Style){SHYUTER}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "active": "1MvabTpi3zNsc2h0rBZgVY2KwKF2EvJSd",
-        "static": "1lokv8JuU97uzOGxJwf-LsFU1fCtV-nRp"
       }
     ]
   },
@@ -15198,24 +15746,6 @@ export default [
         "type": "Spell",
         "static": "1xOngCkQUPeq5m2cTp0Eo_UR5Ph4QO9qD",
         "active": "13KzzFO7TIs0PWa_4fX2LwhwZR56USIdj"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Light",
-    "element": "",
-    "name": "Aureola",
-    "credit": [
-      "Shyuter"
-    ],
-    "download": "https://drive.google.com/drive/folders/1OzBg5GkmOL9x9Hbpp0BZfgJscZxmRunS",
-    "dlName": "[Light](Aureola){Shyuter}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "active": "18m0pQDpXKbAupuF9Nm4qfAlUIc0cimE4",
-        "static": "1M_CPgVFZX53zMPhfhOE6-HwMTliddC08"
       }
     ]
   },
@@ -15767,42 +16297,6 @@ export default [
   },
   {
     "category": "SPL",
-    "school": "",
-    "element": "Fire",
-    "name": "Forblaze - FE6",
-    "credit": [
-      "Shyuter"
-    ],
-    "download": "https://drive.google.com/drive/folders/1TkadZEqpRQ7pjgd8QnDiGI_253i8LDxo",
-    "dlName": "[Anima][Fire](Forblaze - FE6){Shyuter}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "active": "1zZjfjsFFsxbpBTqlP6DxHJ38csodkDEs",
-        "static": "10C88YVOG10NEySpx-An1xtDpUD3Fay0M"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Dark",
-    "element": "",
-    "name": "Apocalypse",
-    "credit": [
-      "Shyuter"
-    ],
-    "download": "https://drive.google.com/drive/folders/1-8GOiVoKnAoLtnJd9e1ekvmzbjmBkZ01",
-    "dlName": "[Dark](Apocalypse){Shyuter}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "active": "1SbPBX_Y2QQLvwlRyrKAhlJibGFsrjz6Z",
-        "static": "1GdQ5uGgQzVaGExaE_DRWuQ37GwNQjE6E"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
     "school": "Dark",
     "element": "",
     "name": "Dulam",
@@ -16241,24 +16735,6 @@ export default [
   },
   {
     "category": "SPL",
-    "school": "Dark",
-    "element": "",
-    "name": "Gespenst",
-    "credit": [
-      "Shyuter"
-    ],
-    "download": "https://drive.google.com/drive/folders/1wL7DGBsLvk8FT5PJspJzTI2nRDe2vQtz",
-    "dlName": "[Dark](Gespenst){Shyuter}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "active": "1yTqRQFPdfdoLJ9jsw6loefuWdpCk3NgP",
-        "static": "1MZ1G7WrmmQgtwyp3ZLjSdjtN386n6Ohn"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
     "school": "Anima",
     "element": "",
     "name": "Wind - SNES",
@@ -16368,6 +16844,210 @@ export default [
     ]
   },
   {
+    "tier": "T1",
+    "category": "ARM",
+    "feClass": "Knight",
+    "name": "FE10-Style",
+    "gender": "U",
+    "credit": [
+      "Iscaneus",
+      "Nuramon",
+      "Flasuban"
+    ],
+    "download": "https://drive.google.com/drive/folders/1RydiWF34wdm6WPtUIybevBosLemtJ4K4",
+    "dlName": "[T1][ARM][Knight](FE10-Style][U]{Iscaneus, Nuramon, Flasuban}",
+    "weapons": [
+      {
+        "type": "Magic",
+        "active": "1gLJFwPdgiIPuFOKVXWiAtQ2PUSQyJ2-B",
+        "static": "1olnK2v1DbceSz8O4BCDSdptFJbjIndMi"
+      },
+      {
+        "type": "Axe",
+        "active": "1LUVw_4byi5-YvkjO52CKshgmBLB9SAfR",
+        "static": "13vt8pm6ANarfxHah8U7vvX267b31GE1F"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1AG3t9pv6nDy1lZjxZFD_fGWs7OFT97kK",
+        "static": "1FfWWq9R_Mol8niMS1-HjA4oZguDzG5gQ"
+      },
+      {
+        "type": "Lance",
+        "active": "19BcrlPxXpzsEPa-vqchcMRd_VYXe1wMZ",
+        "static": "1mUA5MRtUt2sS_OLv_8-h09AMti90Lx1e"
+      },
+      {
+        "type": "Sword",
+        "active": "10BubTlkr1pe5U6TS2T6_UrLwCdLLp717",
+        "static": "1S42FIZnQwjRyv52PkP8gOY7w4gKj2Nb2"
+      },
+      {
+        "type": "Bow",
+        "active": "1CDCt28rtluHvvPvmcI27JiAg9G0mr5oT",
+        "static": "1-DA4ZQ3tIH-pYR501crh_oc8GbIvjsn-"
+      },
+      {
+        "type": "Sword",
+        "active": "1_PD7re6Zht3FcT97zCsWL8Y5o-iahubZ",
+        "static": "1etDZRwWZ7GzlWqMTfDtmO_T3m1_s9TDw"
+      },
+      {
+        "type": "Bow",
+        "active": "12LoNo0c7TjI1Ykrcjkex1P94j75XiFOB",
+        "static": "18c1UE6YGcOkQl1LG4F1p2_74p1fa94hq"
+      },
+      {
+        "type": "Bow",
+        "active": "1S42EIW7kgvgzzxVqamUMv316GqjIiH6f",
+        "static": "1rl58mDsuXTUOm1dwOu3PfjAfrFAuzjH_"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1outYYqAxT6TuEFNM7tlnzyrvugoNT2Jg",
+        "static": "1_YiZ-4ji5CqSIHHuWCw_UWVoBb9MqIPM"
+      }
+    ]
+  },
+  {
+    "tier": "T3",
+    "category": "ARM",
+    "feClass": "Marshall",
+    "name": "Baron +Weapons",
+    "gender": "U",
+    "credit": [
+      "TBA",
+      "St jack",
+      "Flasuban"
+    ],
+    "download": "https://drive.google.com/drive/folders/14eZ07ZnBJeNV-_hXPTau2nRKA3PXbDxr",
+    "dlName": "[T3][ARM][Marshall](Baron +Weapons)[U]{TBA, St jack, Flasuban}",
+    "weapons": [
+      {
+        "type": "Staff",
+        "active": "1X1eu5Kx872igqO6aXlIXbB59KVp7VX-L",
+        "static": "1dmyqtp1Zuc6ImXmBsYpcOELdPgziqkpY"
+      },
+      {
+        "type": "Axe",
+        "active": "1khRZwTLTYSDqpUWLxQ-QsF0OdeqZHZfs",
+        "static": "1C1Zfpnu4p5bVTDXg3WAROXCFdIj0-0xi"
+      },
+      {
+        "type": "Lance",
+        "active": "1esf7M_ci09HdOoEXfU8gzacM46t1qrCv",
+        "static": "13QSWW_1FpKZiy3ym3Lty1BJ3sHvdAqNS"
+      },
+      {
+        "type": "Magic",
+        "active": "19O25TUcLeKtXz2of3GdD-8VDIw81FRnc",
+        "static": "1ViSxPDH3NAJ3TRfEoTOyOhbslubEDaR2"
+      },
+      {
+        "type": "Staff",
+        "active": "1Xi1UF1_HvOGpJZT74Xtjpmi4ZyS0HrfY",
+        "static": "1GGaHkTBs1KF4IuKK-Yx9gF3-pGrJQSqU"
+      },
+      {
+        "type": "Bow",
+        "active": "1UtKS_dy_B44VAYgVHlLpcDC6ZqzjyV9W",
+        "static": "1aEiSHewsUEuR9JOGHrGXXvft_jUG3lfS"
+      },
+      {
+        "type": "Sword",
+        "active": "1OdnFSbl3fw_w-28z6XmWs6K5EFS_oL62",
+        "static": "1GRkKAQudOfdRaYOWqUZzIPm257ENeGld"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1JrrMGaYu5sgwNwgAlvP9AyHdg3XlovKV",
+        "static": "1JOVzCyuVrrOMiGbJXk69LLd95Te6V_Zk"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "CAV",
+    "feClass": "Cavalier",
+    "name": "SALVAGED Edit",
+    "gender": "F",
+    "credit": [
+      "Flasuban",
+      "Team SALVAGED"
+    ],
+    "download": "https://drive.google.com/drive/folders/1xL_qx3q3GomiC8EN4DQDcl3PsniZ3U39",
+    "dlName": "[T1][CAV][Cavalier](SALVAGED Edit)[F]{Flasuban, Team SALVAGED}",
+    "weapons": [
+      {
+        "type": "Lance",
+        "active": "11tRVwudDqb7DpAGS8VNYVONa_1HRL-SQ",
+        "static": "1L1ZQRao7Dtn_ktkRYOSnDQRxMhxHKmxy"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1rQiLdjysMJwUptMbD-VKWelCbnBQsExS",
+        "static": "1IDryl7f6TZCQj61yykbcWlBJBqhYriJ_"
+      },
+      {
+        "type": "Axe",
+        "active": "1whO4ZcKHd570qtK89JATVVNKnBHh6AV0",
+        "static": "1i2LE-T38DdcFyuxUdzE8FgSb78ssFkYv"
+      },
+      {
+        "type": "Sword",
+        "active": "1l1Wqz_sYPa7MVCQ0OAutmw_MfmPOhfrL",
+        "static": "1J_tB7GL4qFifrfEDZqr5FV6dSzD6IU9v"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1WZrIUUGcdi-Y8C47L17PGNBS2g2fXA1K",
+        "static": "16SauKBPk4pZF3L4Nq5ysIWIwhcmdTyqf"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "CAV",
+    "feClass": "Paladin",
+    "name": "SALVAGED Alt F",
+    "gender": "F",
+    "credit": [
+      "SALVAGED",
+      "Leo_link",
+      "Flasuban",
+      "The_Big_Dededester"
+    ],
+    "download": "https://drive.google.com/drive/folders/16fI_8p9XydQLGUYY7HZ3qWTfPg0KRDuJ",
+    "dlName": "[T2][CAV][Paladin](SALVAGED Alt F)[F]{SALVAGED, Leo_link, Flasuban, The_Big_Dededester}",
+    "weapons": [
+      {
+        "type": "Axe",
+        "active": "1uedU6M7VYiX1bv-xe8lNsLnaf1O2YMeO",
+        "static": "1-kBGv1uN0QCqZ1DKAEIVDrukz6G_B0pq"
+      },
+      {
+        "type": "Sword",
+        "active": "1AHlCGfczt9buSR8eJ9yYzEPPqt0N5rf7",
+        "static": "1QVacOJ_py8-2uYv4t5t8Uo3HISr3Mdui"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1PIjtQl_TM7Y4SKNJlAzWadq_KHQ1aCK8",
+        "static": "1KcC3KCqaSjATgykl1lbOmA51rzvXldOQ"
+      },
+      {
+        "type": "Lance",
+        "active": "1NEVc2G-dtHDeg5ZQ3VJ97sSo95HAwql5",
+        "static": "1_aweSc_cNA7gy-NdIBhG0tvUPDivp437"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1LE444PAFqeD5DXoaVpcyxqYIMksLICmg",
+        "static": "1hOvwdRlf8pCfaPBkyrshA0uTjhD1pMNd"
+      }
+    ]
+  },
+  {
     "tier": "T3",
     "category": "CAV",
     "feClass": "Master Knight",
@@ -16398,47 +17078,6 @@ export default [
         "type": "Lance",
         "static": "1oJW4O3tCtxI_gp1cWPbYbgoeieuYsDqM",
         "active": "1wqG0I3gF2VU4SJrmrV-182jfpqgKa6Jf"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "CAV",
-    "feClass": "Paladin",
-    "name": "SALVAGED Alt F",
-    "gender": "F",
-    "credit": [
-      "team SALVAGED",
-      "Leo_link",
-      "flasuban"
-    ],
-    "download": "https://drive.google.com/drive/folders/1PH8nf-JkPBW2q9U4oV_enbIx2HizZxMZ",
-    "dlName": "[T2][CAV][Paladin](SALVAGED Alt F)[F]{team SALVAGED, Leo_link, flasuban}",
-    "weapons": [
-      {
-        "type": "Axe",
-        "static": "1coNUiK-fIc0QGyOs8eXVFX-5zXPqFmFY",
-        "active": "1CCptJXKEaNZbgSIUCykUqPTteInvGZrO"
-      },
-      {
-        "type": "Unarmed",
-        "active": "1Vb6qfIz3aOOnMlRokQc3Fw509hMnyd8O",
-        "static": "1XjFU_f-7O9ZbMKcruzWpoJlYNx85Cui3"
-      },
-      {
-        "type": "Lance",
-        "static": "10UuI1yOKdwXM3JNE6tO-UxORtl8Nepp3",
-        "active": "1Hwv-O0g3xJs3_01yiKpg_iw71qzaxkEw"
-      },
-      {
-        "type": "Sword",
-        "static": "1BLdBRa6eaPufkBUrgY9jmMKN6AN1A1ma",
-        "active": "1I6fwNiHN9DnY_cC3kaxkkSOFVKZVSta6"
-      },
-      {
-        "type": "Handaxe",
-        "static": "1AXBpnsUqnehN3-de9NEZC3t8ZaljiNS4",
-        "active": "1diDCiVBgk_AlbSj8i_Dhk6Etpon2jChu"
       }
     ]
   },
@@ -16503,46 +17142,6 @@ export default [
         "type": "Bow",
         "static": "1zZXwr92xtRR3_OT3Y_1HoIlG4Uc83LV-",
         "active": "1GngLH3oMhc1vqjE_n8bvc0Z4GHBhilkO"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "CAV",
-    "feClass": "Cavalier",
-    "name": "SALVAGED Edit",
-    "gender": "F",
-    "credit": [
-      "flasuban",
-      "Team SALVAGED"
-    ],
-    "download": "https://drive.google.com/drive/folders/1xL_qx3q3GomiC8EN4DQDcl3PsniZ3U39",
-    "dlName": "[T1][CAV][Cavalier](SALVAGED Edit)[F]{flasuban, Team SALVAGED}",
-    "weapons": [
-      {
-        "type": "Lance",
-        "active": "11tRVwudDqb7DpAGS8VNYVONa_1HRL-SQ",
-        "static": "1L1ZQRao7Dtn_ktkRYOSnDQRxMhxHKmxy"
-      },
-      {
-        "type": "Unarmed",
-        "active": "1rQiLdjysMJwUptMbD-VKWelCbnBQsExS",
-        "static": "1IDryl7f6TZCQj61yykbcWlBJBqhYriJ_"
-      },
-      {
-        "type": "Axe",
-        "active": "1whO4ZcKHd570qtK89JATVVNKnBHh6AV0",
-        "static": "1i2LE-T38DdcFyuxUdzE8FgSb78ssFkYv"
-      },
-      {
-        "type": "Sword",
-        "active": "1l1Wqz_sYPa7MVCQ0OAutmw_MfmPOhfrL",
-        "static": "1J_tB7GL4qFifrfEDZqr5FV6dSzD6IU9v"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1WZrIUUGcdi-Y8C47L17PGNBS2g2fXA1K",
-        "static": "16SauKBPk4pZF3L4Nq5ysIWIwhcmdTyqf"
       }
     ]
   },
@@ -18320,62 +18919,6 @@ export default [
     ]
   },
   {
-    "tier": "T3",
-    "category": "ARM",
-    "feClass": "Marshall",
-    "name": "Baron +Weapons",
-    "gender": "U",
-    "credit": [
-      "TBA",
-      "St jack",
-      "flasuban"
-    ],
-    "download": "https://drive.google.com/drive/folders/14eZ07ZnBJeNV-_hXPTau2nRKA3PXbDxr",
-    "dlName": "[T3][ARM][Marshall](Baron +Weapons)[U]{TBA, St jack, flasuban}",
-    "weapons": [
-      {
-        "type": "Axe",
-        "active": "1khRZwTLTYSDqpUWLxQ-QsF0OdeqZHZfs",
-        "static": "1C1Zfpnu4p5bVTDXg3WAROXCFdIj0-0xi"
-      },
-      {
-        "type": "Staff",
-        "active": "1X1eu5Kx872igqO6aXlIXbB59KVp7VX-L",
-        "static": "1dmyqtp1Zuc6ImXmBsYpcOELdPgziqkpY"
-      },
-      {
-        "type": "Lance",
-        "active": "1esf7M_ci09HdOoEXfU8gzacM46t1qrCv",
-        "static": "13QSWW_1FpKZiy3ym3Lty1BJ3sHvdAqNS"
-      },
-      {
-        "type": "Magic",
-        "active": "19O25TUcLeKtXz2of3GdD-8VDIw81FRnc",
-        "static": "1ViSxPDH3NAJ3TRfEoTOyOhbslubEDaR2"
-      },
-      {
-        "type": "Staff",
-        "active": "1Xi1UF1_HvOGpJZT74Xtjpmi4ZyS0HrfY",
-        "static": "1GGaHkTBs1KF4IuKK-Yx9gF3-pGrJQSqU"
-      },
-      {
-        "type": "Bow",
-        "active": "1UtKS_dy_B44VAYgVHlLpcDC6ZqzjyV9W",
-        "static": "1aEiSHewsUEuR9JOGHrGXXvft_jUG3lfS"
-      },
-      {
-        "type": "Sword",
-        "active": "1OdnFSbl3fw_w-28z6XmWs6K5EFS_oL62",
-        "static": "1GRkKAQudOfdRaYOWqUZzIPm257ENeGld"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1JrrMGaYu5sgwNwgAlvP9AyHdg3XlovKV",
-        "static": "1JOVzCyuVrrOMiGbJXk69LLd95Te6V_Zk"
-      }
-    ]
-  },
-  {
     "tier": "T2",
     "category": "BOW",
     "feClass": "Ranger",
@@ -18675,72 +19218,6 @@ export default [
     ]
   },
   {
-    "tier": "T1",
-    "category": "ARM",
-    "feClass": "Knight",
-    "name": "FE10-Style",
-    "gender": "U",
-    "credit": [
-      "Iscaneus",
-      "Nuramon",
-      "flasuban"
-    ],
-    "download": "https://drive.google.com/drive/folders/1RydiWF34wdm6WPtUIybevBosLemtJ4K4",
-    "dlName": "[T1][ARM][Knight](FE10-Style][U]{Iscaneus, Nuramon, flasuban}",
-    "weapons": [
-      {
-        "type": "Axe",
-        "active": "1LUVw_4byi5-YvkjO52CKshgmBLB9SAfR",
-        "static": "13vt8pm6ANarfxHah8U7vvX267b31GE1F"
-      },
-      {
-        "type": "Unarmed",
-        "active": "1AG3t9pv6nDy1lZjxZFD_fGWs7OFT97kK",
-        "static": "1FfWWq9R_Mol8niMS1-HjA4oZguDzG5gQ"
-      },
-      {
-        "type": "Lance",
-        "active": "19BcrlPxXpzsEPa-vqchcMRd_VYXe1wMZ",
-        "static": "1mUA5MRtUt2sS_OLv_8-h09AMti90Lx1e"
-      },
-      {
-        "type": "Sword",
-        "active": "10BubTlkr1pe5U6TS2T6_UrLwCdLLp717",
-        "static": "1S42FIZnQwjRyv52PkP8gOY7w4gKj2Nb2"
-      },
-      {
-        "type": "Bow",
-        "active": "1CDCt28rtluHvvPvmcI27JiAg9G0mr5oT",
-        "static": "1-DA4ZQ3tIH-pYR501crh_oc8GbIvjsn-"
-      },
-      {
-        "type": "Sword",
-        "active": "1_PD7re6Zht3FcT97zCsWL8Y5o-iahubZ",
-        "static": "1etDZRwWZ7GzlWqMTfDtmO_T3m1_s9TDw"
-      },
-      {
-        "type": "Bow",
-        "active": "12LoNo0c7TjI1Ykrcjkex1P94j75XiFOB",
-        "static": "18c1UE6YGcOkQl1LG4F1p2_74p1fa94hq"
-      },
-      {
-        "type": "Bow",
-        "active": "1S42EIW7kgvgzzxVqamUMv316GqjIiH6f",
-        "static": "1rl58mDsuXTUOm1dwOu3PfjAfrFAuzjH_"
-      },
-      {
-        "type": "Magic",
-        "active": "1gLJFwPdgiIPuFOKVXWiAtQ2PUSQyJ2-B",
-        "static": "1olnK2v1DbceSz8O4BCDSdptFJbjIndMi"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1outYYqAxT6TuEFNM7tlnzyrvugoNT2Jg",
-        "static": "1_YiZ-4ji5CqSIHHuWCw_UWVoBb9MqIPM"
-      }
-    ]
-  },
-  {
     "tier": "T2",
     "category": "BOW",
     "feClass": "Ranger",
@@ -18900,6 +19377,227 @@ export default [
     ]
   },
   {
+    "tier": "T3",
+    "category": "MON",
+    "feClass": "Dragon",
+    "name": "Ice - Elibian Nights + Transforming",
+    "gender": "U",
+    "credit": [
+      "SqRtOfPi",
+      "shadowofchaos",
+      "Marlon0024"
+    ],
+    "download": "https://drive.google.com/drive/folders/1hMJdn-tzliyVduShZoTx9P8Q8GTUTgEh",
+    "dlName": "[T3][MON][Dragon](Ice - Elibian Nights + Transforming)[U]{SqRtOfPi, shadowofchaos, Marlon0024}",
+    "weapons": [
+      {
+        "type": "Dragonstone",
+        "active": "1wn7yFC5gLftFOy8X9XBYP9ncee8rpdQo",
+        "static": "18qg7v5rceQRX25AVNnsd1OusQbY0LR3Y"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "MON",
+    "feClass": "Manakete",
+    "name": "FE6 Fire Dragon +FE7",
+    "gender": "M",
+    "credit": [
+      "IS",
+      "Marlon0024",
+      "Eldritch Abomination",
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1Pv3716eQB-DMHYzpjg_hvhqS8j8t-uqh",
+    "dlName": "[T1][MON][Manakete](FE6 Fire Dragon +FE7)[M]{IS, Marlon0024, Eldritch Abomination, SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Dragonstone",
+        "active": "1K_g9fMSji0l3F7wpNSpgQ3RqlNiXr8xi",
+        "static": "1HNPmwdL25f6rtNErXPoi4-Y_YsjXhmea"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1RPVF9-jNWgBbKsgfH4rCVPLZr4t9e0X2",
+        "static": "1xjti9JBpLiqATFNBZYS9WfgEcPlwC12H"
+      },
+      {
+        "type": "Dragonstone",
+        "active": "1smMpsxm0wEpZ-5J0ZTqH0kFncUOaMv5O",
+        "static": "1R0EmAK5VXgtrF3fEJBPwsoSadS51QzHR"
+      },
+      {
+        "type": "Dragonstone",
+        "active": "16DwWLxxQsECw7fsU-1lupl-lVnieUGk9",
+        "static": "1V0wmTC4vgA93nIi5rmX1Mcbx8XJOWDJZ"
+      },
+      {
+        "type": "Dragonstone",
+        "active": "1t3-3B6G6Mb24ALlGiBngq9Bu4uYwSjnV",
+        "static": "1B5dg0_vmdtZxOvPFm-86CiZ6VoScjLCB"
+      },
+      {
+        "type": "Dragonstone",
+        "active": "1FaRLdSZzgnNUcaADG9ayld8mlERaib93",
+        "static": "1m__OW7kPqsOojUxABeWYqjVFcteLfZ9P"
+      }
+    ]
+  },
+  {
+    "tier": "T3",
+    "category": "MON",
+    "feClass": "Dragon",
+    "name": "FE6 Idunn +FE7-8",
+    "gender": "U",
+    "credit": [
+      "IS",
+      "Marlon0024",
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1yBgETcUVEuG9sq--uzbXFiB4L-ODGFeE",
+    "dlName": "[T3][MON][Dragon](FE6 Idunn +FE7-8)[U]{IS, Marlon0024, SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Dragonstone",
+        "active": "167A1fKPduB_r_SWy27Ba8lURRmKYzmUi",
+        "static": "1OEapDl5QlYU5hlRPWkzAmiou2hAWgLSx"
+      },
+      {
+        "type": "Dragonstone",
+        "active": "1UVZkmaYpmeCGU_a5cmtMjqHD63TxF2a9",
+        "static": "1WnhqpaMr-m2xLhXuFoyATWOvHjhxbk35"
+      },
+      {
+        "type": "Staff",
+        "active": "1pMuOnSYJNg2rJckb_rzo1Sg_UhPA1bTH",
+        "static": "1MLAGk4rAk70wDMeC8Dm-KdHiVfU9gwbZ"
+      },
+      {
+        "type": "Magic",
+        "active": "1W5q5gux9lWTmcNL4DJNEztjKIRbc2OI-",
+        "static": "12d2el4xYsHyKJC9kf1q-VMPYLxojKOCN"
+      },
+      {
+        "type": "Dragonstone",
+        "active": "13cdB-AAVgJJQQtF7MTSud2VTzaeZdgOu",
+        "static": "1WCuMBgbc8tn-vy5Xbe9j3V9_X0vnrzGT"
+      },
+      {
+        "type": "Dragonstone",
+        "active": "1NGF9GLtCBIPc5Cd7svf-S8Z8PWkRI338",
+        "static": "1NquezKRZwFKPQaU0JIlgm-PCKNhthVxA"
+      }
+    ]
+  },
+  {
+    "tier": "T3",
+    "category": "MON",
+    "feClass": "Dragon",
+    "name": "FE7 Fire Dragon +FE8",
+    "gender": "U",
+    "credit": [
+      "IS",
+      "Marlon0024",
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1zeLte_Im4hFwlHhDoo-mp6X0wP98m4fm",
+    "dlName": "[T3][MON][Dragon](FE7 Fire Dragon +FE8)[U]{IS, Marlon0024, SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Dragonstone",
+        "static": "1bYwHiEcIY-dVmxM2xIMKR2KA2pEDhg8s",
+        "active": "1nUHJt6c25RTbjpTcb5qxIltfFGLscGEi"
+      },
+      {
+        "type": "Dragonstone",
+        "static": "1lcqNq_gfap3Sg5m1dYRYK6qyjJRqG-bC",
+        "active": "1Kki9e6vJRDZ1ticj0wmjWatxWtiZW0yz"
+      },
+      {
+        "type": "Dragonstone",
+        "active": "1bQ-ynXWpmhX8-jVvjticfRejtSSf5VMA",
+        "static": "1pJyNeLiHaqficDmN-JG-laC-L_EW6CsH"
+      },
+      {
+        "type": "Dragonstone",
+        "static": "1jd0m-01UYVesQ0R1ivQ8FGDCcL1LwZdx",
+        "active": "1g0X0czjBcSG0xcDKPzramL8jFMLma--P"
+      }
+    ]
+  },
+  {
+    "tier": "T3",
+    "category": "MON",
+    "feClass": "Demon",
+    "name": "Demon King +FE6-7",
+    "gender": "U",
+    "credit": [
+      "IS",
+      "Marlon0024",
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1QwO3FmxysBQK-M7j1j4x9qlQIC30zTIc",
+    "dlName": "[T3][MON][Demon](Demon King +FE6-7)[U]{IS, Marlon0024, SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Monster",
+        "static": "1YDrH_cCFmJtGst1r8HPuEly1-S_QVSil",
+        "active": "152UEZxzxJW78j4dSqY0OhIUL5yjz2KNB"
+      },
+      {
+        "type": "Unarmed"
+      },
+      {
+        "type": "Magic",
+        "static": "1ndo8-jgR6_HPHQ8I2RUk5fmOaqkU0dxS",
+        "active": "1H3bAfsbu8Rndksb_31z6ad6nnOb4kB06"
+      },
+      {
+        "type": "Monster",
+        "active": "1bWATuvYpLA3HAnsgOjwMizqRi30pyPDL",
+        "static": "1L2RgcajlhsxpzjW4xBoEXzZbjfm4g-Gf"
+      },
+      {
+        "type": "Monster",
+        "active": "1G9XHl02xv4m8NR_xk7m7-SQI_FCRg8xp",
+        "static": "1YQ7gB-9i0prJuQADeugb7Y8-GOd9CA94"
+      },
+      {
+        "type": "Monster",
+        "static": "1CQXqbDByq01ZvF2HMMhKYqi0kpU0tM_t",
+        "active": "1KyDdPIRmMtHdvgJ0tqy1JJT4UsxUo08H"
+      },
+      {
+        "type": "Monster",
+        "static": "11Vgv2IYl2ebvEds48aXr3prT2n1sGdie",
+        "active": "1aLSyBuIUTNnow61PV5Oi3hjgXS-D1fUm"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "MON",
+    "feClass": "Revenant",
+    "name": "",
+    "gender": "Beta",
+    "credit": [
+      "IS"
+    ],
+    "download": "https://drive.google.com/drive/folders/1z-uwxEfMo4V1CsepMd19-T1y2P1RzVu3",
+    "dlName": "[T1][MON](Revenant)(Beta){IS}",
+    "weapons": [
+      {
+        "type": "Monster",
+        "active": "1K7RqT06BTJDYbFiodkmPq4zh2F7Nke0w",
+        "static": "1N3O0iUMsACFOh201YcDgvtFMeKcbQOnT"
+      },
+      {
+        "type": "Unarmed"
+      }
+    ]
+  },
+  {
     "tier": "T1",
     "category": "MON",
     "feClass": "Evergrim",
@@ -18927,7 +19625,9 @@ export default [
     "dlName": "[T2][MON][Shapeshifter](Ninetails Gwyllgi)[F]{ZoramineFae, Clendo}",
     "weapons": [
       {
-        "type": "Monster"
+        "type": "Monster",
+        "static": "1YhFQGvY_7JRP8VOjJtIbaAjvW-N9AhCK",
+        "active": "1mju992Xmk42fd01g7TEBDKCncpl-8rjp"
       }
     ]
   },
@@ -18945,7 +19645,9 @@ export default [
     "dlName": "[T1][MON][Shapeshifter](Kitsune Doog)[F]{ ZoramineFae, Clendo}",
     "weapons": [
       {
-        "type": "Monster"
+        "type": "Monster",
+        "active": "1XOm133CIKy9l2TrVI_M0FQOkG-uWFJ15",
+        "static": "1GMS-EQ8tk-GfQ7IdoGDsG9taodiD4Kxz"
       }
     ]
   },
@@ -18974,7 +19676,9 @@ export default [
         "static": "1G4VnPSYNvUtXfwKaD6Vt1_3zmyFR7eDi"
       },
       {
-        "type": "Bow"
+        "type": "Bow",
+        "active": "1UhGfdQy_cjrVt-wGS9dKqZxE0S5m6Fni",
+        "static": "11cuKF7A8p40CF9EbB-3gIjWbljfOcIt-"
       },
       {
         "type": "Handaxe",
@@ -19024,26 +19728,6 @@ export default [
   {
     "tier": "T1",
     "category": "MON",
-    "feClass": "Revenant",
-    "name": "",
-    "gender": "Bta",
-    "credit": [
-      "IS"
-    ],
-    "download": "https://drive.google.com/drive/folders/1z-uwxEfMo4V1CsepMd19-T1y2P1RzVu3",
-    "dlName": "[T1][MON](Revenant)(Bta){IS}",
-    "weapons": [
-      {
-        "type": "Unarmed"
-      },
-      {
-        "type": "Attack"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "MON",
     "feClass": "Bonewalker",
     "name": "",
     "gender": "Beta",
@@ -19054,10 +19738,14 @@ export default [
     "dlName": "[T1][MON](Bonewalker)(Beta){IS}",
     "weapons": [
       {
-        "type": "Unarmed"
+        "type": "Unarmed",
+        "active": "1TkBuAiPvHK0CIdU4sDOOfXvnzJhWwp3h",
+        "static": "1dkBuHP-rvIWGeyBKcxY47wu8KvTnIPSc"
       },
       {
-        "type": "Sword"
+        "type": "Sword",
+        "active": "1yAbd5BboNABZCC_JRs40WvvyZM_0oXWD",
+        "static": "1JcnrYev-1gd4s4Jf1HQPfS4Tze9b870C"
       }
     ]
   },
@@ -19156,6 +19844,11 @@ export default [
     "weapons": [
       {
         "type": "Dragonstone",
+        "active": "1Fr-cexq3vyYi-ZrM1C7NYJbEJTaQuDiW",
+        "static": "1nt0Vk5aFYHOHf5bshx8vHBZdZs98n_g2"
+      },
+      {
+        "type": "Dragonstone",
         "active": "1yUPn_pTpZTyRLlYAiMFSmNZoaY8as3y5",
         "static": "1eYXCO-ZJ-itj34IN2B1UcDmuppXtzImm"
       },
@@ -19163,11 +19856,6 @@ export default [
         "type": "Dragonstone",
         "active": "1nTr0F2PhYiRVN_5lGXnIuthDvV2EiBcB",
         "static": "1ROyre6qvXCT35OcNTjHo6ptjlo-LezDu"
-      },
-      {
-        "type": "Dragonstone",
-        "active": "1Fr-cexq3vyYi-ZrM1C7NYJbEJTaQuDiW",
-        "static": "1nt0Vk5aFYHOHf5bshx8vHBZdZs98n_g2"
       }
     ]
   },
@@ -19206,26 +19894,6 @@ export default [
         "type": "Magic",
         "active": "1BMgozam5APpGzPBQFVqwmzHzimVEkb5R",
         "static": "1mSI5kjIsap7U4g7OPwRaWD_0v_nxst3W"
-      }
-    ]
-  },
-  {
-    "tier": "T3",
-    "category": "MON",
-    "feClass": "Dragon",
-    "name": "Ice - Elibian Nights",
-    "gender": "U",
-    "credit": [
-      "SqRtOfPi",
-      "shadowofchoas"
-    ],
-    "download": "https://drive.google.com/drive/folders/1hMJdn-tzliyVduShZoTx9P8Q8GTUTgEh",
-    "dlName": "[T3][MON][Dragon](Ice - Elibian Nights)[U]{SqRtOfPi, shadowofchoas}",
-    "weapons": [
-      {
-        "type": "Dragonstone",
-        "active": "1wn7yFC5gLftFOy8X9XBYP9ncee8rpdQo",
-        "static": "18qg7v5rceQRX25AVNnsd1OusQbY0LR3Y"
       }
     ]
   },
@@ -19329,55 +19997,6 @@ export default [
         "type": "Monster",
         "static": "1Isz35kohTt1rivUjM8STq0BPrsgmYYfH",
         "active": "1QXtQLWnjfeqXP5sw26ptKfNMym31cDzf"
-      }
-    ]
-  },
-  {
-    "tier": "T3",
-    "category": "MON",
-    "feClass": "Demon",
-    "name": "Demon King +FE6-7",
-    "gender": "U",
-    "credit": [
-      "IS",
-      "Marlon0024",
-      "SHYUTER"
-    ],
-    "download": "https://drive.google.com/drive/folders/1QwO3FmxysBQK-M7j1j4x9qlQIC30zTIc",
-    "dlName": "[T3][MON][Demon](Demon King +FE6-7)[U]{IS, Marlon0024, SHYUTER}",
-    "weapons": [
-      {
-        "type": "Monster",
-        "active": "1bWATuvYpLA3HAnsgOjwMizqRi30pyPDL",
-        "static": "1L2RgcajlhsxpzjW4xBoEXzZbjfm4g-Gf"
-      },
-      {
-        "type": "Monster",
-        "active": "1G9XHl02xv4m8NR_xk7m7-SQI_FCRg8xp",
-        "static": "1YQ7gB-9i0prJuQADeugb7Y8-GOd9CA94"
-      },
-      {
-        "type": "Monster",
-        "static": "1CQXqbDByq01ZvF2HMMhKYqi0kpU0tM_t",
-        "active": "1KyDdPIRmMtHdvgJ0tqy1JJT4UsxUo08H"
-      },
-      {
-        "type": "Magic",
-        "static": "1ndo8-jgR6_HPHQ8I2RUk5fmOaqkU0dxS",
-        "active": "1H3bAfsbu8Rndksb_31z6ad6nnOb4kB06"
-      },
-      {
-        "type": "Unarmed"
-      },
-      {
-        "type": "Monster",
-        "static": "1YDrH_cCFmJtGst1r8HPuEly1-S_QVSil",
-        "active": "152UEZxzxJW78j4dSqY0OhIUL5yjz2KNB"
-      },
-      {
-        "type": "Monster",
-        "static": "11Vgv2IYl2ebvEds48aXr3prT2n1sGdie",
-        "active": "1aLSyBuIUTNnow61PV5Oi3hjgXS-D1fUm"
       }
     ]
   },
@@ -19571,37 +20190,6 @@ export default [
     ]
   },
   {
-    "tier": "T3",
-    "category": "MON",
-    "feClass": "Dragon",
-    "name": "FE7 Fire Dragon +FE8",
-    "gender": "U",
-    "credit": [
-      "IS",
-      "Marlon0024",
-      "SHYUTER"
-    ],
-    "download": "https://drive.google.com/drive/folders/1zeLte_Im4hFwlHhDoo-mp6X0wP98m4fm",
-    "dlName": "[T3][MON][Dragon](FE7 Fire Dragon +FE8)[U]{IS, Marlon0024, SHYUTER}",
-    "weapons": [
-      {
-        "type": "Dragonstone",
-        "active": "1bQ-ynXWpmhX8-jVvjticfRejtSSf5VMA",
-        "static": "1pJyNeLiHaqficDmN-JG-laC-L_EW6CsH"
-      },
-      {
-        "type": "Dragonstone",
-        "static": "1jd0m-01UYVesQ0R1ivQ8FGDCcL1LwZdx",
-        "active": "1g0X0czjBcSG0xcDKPzramL8jFMLma--P"
-      },
-      {
-        "type": "Dragonstone",
-        "active": "1r-7XEBfRSRy2DGUJ7pWmJWxUtTU_wx41",
-        "static": "1lx_dshlf-KuMFoSmiT6gRBf78baZBTiV"
-      }
-    ]
-  },
-  {
     "tier": "T1",
     "category": "MON",
     "feClass": "Shapeshifter",
@@ -19617,37 +20205,6 @@ export default [
         "type": "Monster",
         "active": "1DIjprkxzG4r_okicttC0u0nNV1S0HGu-",
         "static": "1ZYL_YGS0SApps5SZReOMeoQTAupfVs7Q"
-      }
-    ]
-  },
-  {
-    "tier": "T3",
-    "category": "MON",
-    "feClass": "Dragon",
-    "name": "FE6 Idunn +FE7-8",
-    "gender": "U",
-    "credit": [
-      "IS",
-      "Marlon0024",
-      "SHYUTER"
-    ],
-    "download": "https://drive.google.com/drive/folders/1yBgETcUVEuG9sq--uzbXFiB4L-ODGFeE",
-    "dlName": "[T3][MON][Dragon](FE6 Idunn +FE7-8)[U]{IS, Marlon0024, SHYUTER}",
-    "weapons": [
-      {
-        "type": "Dragonstone",
-        "active": "13cdB-AAVgJJQQtF7MTSud2VTzaeZdgOu",
-        "static": "1WCuMBgbc8tn-vy5Xbe9j3V9_X0vnrzGT"
-      },
-      {
-        "type": "Dragonstone",
-        "active": "1NGF9GLtCBIPc5Cd7svf-S8Z8PWkRI338",
-        "static": "1NquezKRZwFKPQaU0JIlgm-PCKNhthVxA"
-      },
-      {
-        "type": "Dragonstone",
-        "active": "1UVZkmaYpmeCGU_a5cmtMjqHD63TxF2a9",
-        "static": "1WnhqpaMr-m2xLhXuFoyATWOvHjhxbk35"
       }
     ]
   },
@@ -20155,53 +20712,6 @@ export default [
     ]
   },
   {
-    "tier": "T1",
-    "category": "MON",
-    "feClass": "Manakete",
-    "name": "FE6 Fire Dragon +FE7",
-    "gender": "M",
-    "credit": [
-      "IS",
-      "Marlon0024",
-      "Eldritch Abomination",
-      "SHYUTER"
-    ],
-    "download": "https://drive.google.com/drive/folders/1Pv3716eQB-DMHYzpjg_hvhqS8j8t-uqh",
-    "dlName": "[T1][MON][Manakete](FE6 Fire Dragon +FE7)[M]{IS, Marlon0024, Eldritch Abomination, SHYUTER}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1RPVF9-jNWgBbKsgfH4rCVPLZr4t9e0X2",
-        "static": "1xjti9JBpLiqATFNBZYS9WfgEcPlwC12H"
-      },
-      {
-        "type": "Dragonstone",
-        "active": "1smMpsxm0wEpZ-5J0ZTqH0kFncUOaMv5O",
-        "static": "1R0EmAK5VXgtrF3fEJBPwsoSadS51QzHR"
-      },
-      {
-        "type": "Dragonstone",
-        "active": "16DwWLxxQsECw7fsU-1lupl-lVnieUGk9",
-        "static": "1V0wmTC4vgA93nIi5rmX1Mcbx8XJOWDJZ"
-      },
-      {
-        "type": "Dragonstone",
-        "active": "1K_g9fMSji0l3F7wpNSpgQ3RqlNiXr8xi",
-        "static": "1HNPmwdL25f6rtNErXPoi4-Y_YsjXhmea"
-      },
-      {
-        "type": "Dragonstone",
-        "active": "1t3-3B6G6Mb24ALlGiBngq9Bu4uYwSjnV",
-        "static": "1B5dg0_vmdtZxOvPFm-86CiZ6VoScjLCB"
-      },
-      {
-        "type": "Dragonstone",
-        "active": "1FaRLdSZzgnNUcaADG9ayld8mlERaib93",
-        "static": "1m__OW7kPqsOojUxABeWYqjVFcteLfZ9P"
-      }
-    ]
-  },
-  {
     "tier": "T2",
     "category": "MON",
     "feClass": "Demon",
@@ -20453,13 +20963,271 @@ export default [
     "gender": "",
     "credit": [],
     "download": "https://drive.google.com/drive/folders/1bssyE1hs3Tm47lhAQ6TzZPdN09pooass",
-    "dlName": "[T2][FLY][Custom Flier] Tethys (Harrier)[F]{Ayr, Marlon&Louis}",
+    "dlName": "[T2][FLY][Custom Flier] Tethys (Harrier)[F]{Ayr, Marlon0024}",
     "weapons": [
       {
-        "type": "sword"
+        "type": "Magic",
+        "active": "1ZgMy_Wzb7QwpgweH5WWNFziIFcGo2-x3",
+        "static": "1yPdhJY4c3hwn00doL1WN0_CColQTVF2D"
       },
       {
-        "type": "magic"
+        "type": "Sword",
+        "active": "1hUWJ_JGuLqk2ITzXkOLNEIfCK-8r6uSv",
+        "static": "1kEAQuzUIC1Uf9Do66bTkBbEVyHgIOO37"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "FLY",
+    "feClass": "Wyvern Rider",
+    "name": "Helmetless",
+    "gender": "M",
+    "credit": [
+      "Flasuban",
+      "eCut"
+    ],
+    "download": "https://drive.google.com/drive/folders/1Owlzb-mZlXPZ2aEJB2KPASJgqRxwIoOM",
+    "dlName": "[T1][FLY][Wyvern Rider](Helmetless)M]Flasuban, eCut}",
+    "weapons": [
+      {
+        "type": "Axe",
+        "active": "1Ouh8JZumBqa_m_OrzZewwPdkSC6QC7-m",
+        "static": "1IlaDSQl2XLfeb2leByQAeZDd8zp1pja8"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1t4FbsO4jLZ3bJLt_-DIsXnTojJsNU6cF",
+        "static": "1Sy_c9a0qgWq5sPm1c27CplyiEXTlkgNN"
+      },
+      {
+        "type": "Lance",
+        "active": "10eriCYoSUas3J4ViW1M4ZLWWbjt4g1jG",
+        "static": "1FUctOAmV3UK4h7lR1UAQbAljf2k0plV9"
+      },
+      {
+        "type": "Handaxe",
+        "active": "18l378GxUruaLtyWhzs45YC61dBtLuXib",
+        "static": "1mUYeDdSgRO1buFQ7BthThMeOhcDat10X"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "FLY",
+    "feClass": "Wyvern Lord",
+    "name": "Helmetless +Axe",
+    "gender": "M",
+    "credit": [
+      "Flasuban",
+      "TBA"
+    ],
+    "download": "https://drive.google.com/drive/folders/1L0p5g4qS6gL81Slzhce0Lj7MmBb0F8f1",
+    "dlName": "[T2][FLY][Wyvern Lord](Helmetless +Axe)[M]{Flasuban, TBA}",
+    "weapons": [
+      {
+        "type": "Axe",
+        "active": "1-XyE4nvE2wVOhjlMYJGN8aQe9hyakQnV",
+        "static": "1d4dNuvukwyO_WwupkB7oKMI8lcSaxvSO"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1BL7nDUipshavrnUBRBV9ywvZhW8hmcVO",
+        "static": "1VfyUDKnLCWOPacGjrxgyVFpiygkp__bU"
+      },
+      {
+        "type": "Lance",
+        "active": "1qGhT9cQqHcaSKzPCTrU9ixqGJXmH03JL",
+        "static": "1ABfbAtIO1b41Usgq56fQ3OUBiP2hsnnj"
+      },
+      {
+        "type": "Sword",
+        "active": "14L42q5OQ-wIsC5A4xTo6cur9AQ5lQ7OR",
+        "static": "1uR30C05B4oht7VYv0ZhWgO3bJlG5o9rV"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1PV6fr4aCR2Ssohp4K_BS7dJY0kjYlqze",
+        "static": "1621GXUEomdXLoFwW3mqyWoyTyJORB8Xw"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "FLY",
+    "feClass": "Pegasus Knight",
+    "name": "Improved",
+    "gender": "F",
+    "credit": [
+      "Flasuban"
+    ],
+    "download": "https://drive.google.com/drive/folders/19EB4OCky_JDuw9Q6UGeyx2YXYLxMYwl_",
+    "dlName": "[T1][FLY][Pegasus Knight](Improved)[F]{Flasuban}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1lZmJvUNhOqME2iRuGQ8Z5wudhsczGBtw",
+        "static": "11MgWgyKaRpYVuTkQft4LBsMu8zQ9ksOx"
+      },
+      {
+        "type": "Lance",
+        "active": "1_oMgtJpDj_eKQANUggW1E5rcVrr_cBRM",
+        "static": "1HKqSrL5MbGSLdZHKrocRdbkmvGbKvJ1o"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "FLY",
+    "feClass": "Wyvern Lord",
+    "name": "Generic Heath-Style",
+    "gender": "M",
+    "credit": [
+      "Flasuban",
+      "Greentea",
+      "RobertFPY"
+    ],
+    "download": "https://drive.google.com/drive/folders/1_DmEfCp_tdgkkthB2Kjal5mQ5plrLWMI",
+    "dlName": "[T2][FLY][Wyvern Lord](Generic Heath-Style)[M]{Flasuban, Greentea, RobertFPY}",
+    "weapons": [
+      {
+        "type": "Axe",
+        "active": "1_9mXxLlnnGMm0Kzingo6eYXikrkAgU_v",
+        "static": "15cYvZIoqDSQG4SxwVj7f-25-trwXENCN"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1hb3Zh6LeyNrj2mV5_EW3CbA37EDSdIZ8",
+        "static": "1dR6PkQz8JHohjKlcnBFui8j5g946ROuJ"
+      },
+      {
+        "type": "Lance",
+        "active": "1Q4bERyzQICiBMAAN5WaMnv3GRvL1G3Df",
+        "static": "19c-fx9JzKhDt3TDdt1POuhRXM5lCUWXV"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1ZOy50zm4VzaOdfpSy88sS89FMeBk6A7Q",
+        "static": "16dlapDpj3zVbJJZecwpRAbgrvxaiSoH2"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "FLY",
+    "feClass": "Wyvern Rider",
+    "name": "Helmetless",
+    "gender": "F",
+    "credit": [
+      "Flasuban",
+      "eCut"
+    ],
+    "download": "https://drive.google.com/drive/folders/1zZttBMQbjON5PnSqZHd2AY8ZRRao2_J-",
+    "dlName": "[T1][FLY][Wyvern Rider](Helmetless)]F]{Flasuban, eCut}",
+    "weapons": [
+      {
+        "type": "Axe",
+        "active": "1w-iwjevSGVEejql4l7a3nVqhikR5HSus",
+        "static": "1ZXeruqCYgOds5l0uLUMb-Bqw1WP9jtqz"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1vke_cEWvFmFlSVqGGQkTfblkaL1cWa1U",
+        "static": "18NZdHLSzbydFA28HTXC7946U_1kYu-hd"
+      },
+      {
+        "type": "Lance",
+        "active": "1vZWJYhUG8GYscaBHc7iEJ6CAqn--Ij5Y",
+        "static": "1oCvlUM5mlV_-DjwEwc2YDu2YI6K9vDps"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1zTRiTdQ332hXJI5G7Kio8k9Cz5ACwSK8",
+        "static": "1psC8ATwC8agJVsxNoFGO5YFEIDw0bP03"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "FLY",
+    "feClass": "Falcoknight",
+    "name": "Improved +Weapons",
+    "gender": "F",
+    "credit": [
+      "Flasuban"
+    ],
+    "download": "https://drive.google.com/drive/folders/1EEwsyo7ih1_W6LKOyk72meAEANDMvFX9",
+    "dlName": "[T2][FLY][Falcoknight](Improved +Weapons)[F]{Flasuban}",
+    "weapons": [
+      {
+        "type": "Lance",
+        "active": "18OrRKmKhfrr5NJx9nwovFieBRug_x4IN",
+        "static": "1Llbt2-h_Gk9s-Xm5DDfnHrAvk41EewEX"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1stAaWwm0tEBar_hemLXaJy0-GfQm7bNw",
+        "static": "1Z-0xJMAa_UZYtI7ecMLRcPAq-PYsT-3w"
+      },
+      {
+        "type": "Axe",
+        "active": "1uO2n2Y9hPZhZWaluwZ34FkhMDjFPxxRc",
+        "static": "1SBmuiA_2XbF7MAIwdOeA3kpHuYpEuX_j"
+      },
+      {
+        "type": "Staff",
+        "active": "1d64M1qQ0YwHVsXtjstmwKNLgloCHCYZP",
+        "static": "1r1y4FjHxZh6IDMeX2eUdFSLkYfge_L1c"
+      },
+      {
+        "type": "Sword",
+        "active": "1BZ7W0WIcylPfKIzovfllUWVINl68t_RS",
+        "static": "100sKvT5FEEhk26xaROiyPpkQLrWrN0U1"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1opQ7H4gv7eqb_lRiBlCSOSabKAvW0BHo",
+        "static": "1uqL23VXheSeN-SKoY7SEdGcigW5qJITg"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "FLY",
+    "feClass": "Wyvern Knight",
+    "name": "Repalette +Axe",
+    "gender": "U",
+    "credit": [
+      "Feaw",
+      "St jack,Itranc"
+    ],
+    "download": "https://drive.google.com/drive/folders/1GHN6Fz3e0WJKCtECJFvizlHQH8XBl5Yw",
+    "dlName": "[T2][FLY][Wyvern Knight](Repalette +Axe)[U]{Feaw, St jack,Itranc}",
+    "weapons": [
+      {
+        "type": "Bow",
+        "static": "1JGbjWENDQbDbYbX43XdNthKRoCW8VPKi",
+        "active": "1hw_-WElFEkx1zaGP1s3qM0aMOS5GeEUx"
+      },
+      {
+        "type": "Axe",
+        "active": "1SG16lGFyJj0MR4MC2d5GnD_tnZ1rsorM",
+        "static": "1Gij6k_kvB_N3hQ4AIve7drU5mbuMKMJ2"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1sxVpk1_vc8ePQJGZpjLMfj8--d0moDEy",
+        "static": "1ejH2HZMI2qy_W2Gw4Qv8tRyJG-uU2rRV"
+      },
+      {
+        "type": "Lance",
+        "active": "1C0JXf58_l1m5vRiC2ywr8Pb82K5UFIjc",
+        "static": "1wlm9AOHGBa90t2f-HxcDaPF_5kVB4_T4"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1KcIFSK-_q8DX9sQcWZYvFrAzVNlbmu41",
+        "static": "1FEIQNEUa0QZ8w1E5jaXzHV_U-4qetLR4"
       }
     ]
   },
@@ -20562,85 +21330,6 @@ export default [
   {
     "tier": "T2",
     "category": "FLY",
-    "feClass": "Falcoknight",
-    "name": "Improved +Weapons",
-    "gender": "F",
-    "credit": [
-      "flasuban"
-    ],
-    "download": "https://drive.google.com/drive/folders/1EEwsyo7ih1_W6LKOyk72meAEANDMvFX9",
-    "dlName": "[T2][FLY][Falcoknight](Improved +Weapons)[F]{flasuban}",
-    "weapons": [
-      {
-        "type": "Lance",
-        "active": "18OrRKmKhfrr5NJx9nwovFieBRug_x4IN",
-        "static": "1Llbt2-h_Gk9s-Xm5DDfnHrAvk41EewEX"
-      },
-      {
-        "type": "Unarmed",
-        "active": "1stAaWwm0tEBar_hemLXaJy0-GfQm7bNw",
-        "static": "1Z-0xJMAa_UZYtI7ecMLRcPAq-PYsT-3w"
-      },
-      {
-        "type": "Axe",
-        "active": "1uO2n2Y9hPZhZWaluwZ34FkhMDjFPxxRc",
-        "static": "1SBmuiA_2XbF7MAIwdOeA3kpHuYpEuX_j"
-      },
-      {
-        "type": "Staff",
-        "active": "1d64M1qQ0YwHVsXtjstmwKNLgloCHCYZP",
-        "static": "1r1y4FjHxZh6IDMeX2eUdFSLkYfge_L1c"
-      },
-      {
-        "type": "Sword",
-        "active": "1BZ7W0WIcylPfKIzovfllUWVINl68t_RS",
-        "static": "100sKvT5FEEhk26xaROiyPpkQLrWrN0U1"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1opQ7H4gv7eqb_lRiBlCSOSabKAvW0BHo",
-        "static": "1uqL23VXheSeN-SKoY7SEdGcigW5qJITg"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "FLY",
-    "feClass": "Wyvern Rider",
-    "name": "Helmetless",
-    "gender": "F",
-    "credit": [
-      "flasuban",
-      "eCut"
-    ],
-    "download": "https://drive.google.com/drive/folders/1zZttBMQbjON5PnSqZHd2AY8ZRRao2_J-",
-    "dlName": "[T1][FLY][Wyvern Rider](Helmetless)]F]{flasuban, eCut}",
-    "weapons": [
-      {
-        "type": "Axe",
-        "active": "1w-iwjevSGVEejql4l7a3nVqhikR5HSus",
-        "static": "1ZXeruqCYgOds5l0uLUMb-Bqw1WP9jtqz"
-      },
-      {
-        "type": "Unarmed",
-        "active": "1vke_cEWvFmFlSVqGGQkTfblkaL1cWa1U",
-        "static": "18NZdHLSzbydFA28HTXC7946U_1kYu-hd"
-      },
-      {
-        "type": "Lance",
-        "active": "1vZWJYhUG8GYscaBHc7iEJ6CAqn--Ij5Y",
-        "static": "1oCvlUM5mlV_-DjwEwc2YDu2YI6K9vDps"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1zTRiTdQ332hXJI5G7Kio8k9Cz5ACwSK8",
-        "static": "1psC8ATwC8agJVsxNoFGO5YFEIDw0bP03"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "FLY",
     "feClass": "Custom Flier",
     "name": "Harrier",
     "gender": "F",
@@ -20735,41 +21424,6 @@ export default [
   {
     "tier": "T2",
     "category": "FLY",
-    "feClass": "Wyvern Knight",
-    "name": "Repalette +Axe",
-    "gender": "U",
-    "credit": [
-      "Feaw",
-      "St jack"
-    ],
-    "download": "https://drive.google.com/drive/folders/1GHN6Fz3e0WJKCtECJFvizlHQH8XBl5Yw",
-    "dlName": "[T2][FLY][Wyvern Knight](Repalette +Axe)[U]{Feaw, St jack}",
-    "weapons": [
-      {
-        "type": "Axe",
-        "active": "1SG16lGFyJj0MR4MC2d5GnD_tnZ1rsorM",
-        "static": "1Gij6k_kvB_N3hQ4AIve7drU5mbuMKMJ2"
-      },
-      {
-        "type": "Unarmed",
-        "active": "1sxVpk1_vc8ePQJGZpjLMfj8--d0moDEy",
-        "static": "1ejH2HZMI2qy_W2Gw4Qv8tRyJG-uU2rRV"
-      },
-      {
-        "type": "Lance",
-        "active": "1C0JXf58_l1m5vRiC2ywr8Pb82K5UFIjc",
-        "static": "1wlm9AOHGBa90t2f-HxcDaPF_5kVB4_T4"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1KcIFSK-_q8DX9sQcWZYvFrAzVNlbmu41",
-        "static": "1FEIQNEUa0QZ8w1E5jaXzHV_U-4qetLR4"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "FLY",
     "feClass": "Custom Flier",
     "name": "Malig Knight",
     "gender": "M",
@@ -20794,66 +21448,6 @@ export default [
         "type": "Handaxe",
         "active": "1qHyQi40vU4m8zSi8nxqeF73rtnxuO3Mv",
         "static": "16T43yG51rprzPkGcnJQzjMwRH4ZPEoYx"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "FLY",
-    "feClass": "Wyvern Lord",
-    "name": "Generic Heath-Style",
-    "gender": "M",
-    "credit": [
-      "flasuban",
-      "Greentea",
-      "RobertFPY"
-    ],
-    "download": "https://drive.google.com/drive/folders/1_DmEfCp_tdgkkthB2Kjal5mQ5plrLWMI",
-    "dlName": "[T2][FLY][Wyvern Lord](Generic Heath-Style)[M]{flasuban, Greentea, RobertFPY}",
-    "weapons": [
-      {
-        "type": "Axe",
-        "active": "1_9mXxLlnnGMm0Kzingo6eYXikrkAgU_v",
-        "static": "15cYvZIoqDSQG4SxwVj7f-25-trwXENCN"
-      },
-      {
-        "type": "Unarmed",
-        "active": "1hb3Zh6LeyNrj2mV5_EW3CbA37EDSdIZ8",
-        "static": "1dR6PkQz8JHohjKlcnBFui8j5g946ROuJ"
-      },
-      {
-        "type": "Lance",
-        "active": "1Q4bERyzQICiBMAAN5WaMnv3GRvL1G3Df",
-        "static": "19c-fx9JzKhDt3TDdt1POuhRXM5lCUWXV"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1ZOy50zm4VzaOdfpSy88sS89FMeBk6A7Q",
-        "static": "16dlapDpj3zVbJJZecwpRAbgrvxaiSoH2"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "FLY",
-    "feClass": "Pegasus Knight",
-    "name": "Improved",
-    "gender": "F",
-    "credit": [
-      "flasuban"
-    ],
-    "download": "https://drive.google.com/drive/folders/19EB4OCky_JDuw9Q6UGeyx2YXYLxMYwl_",
-    "dlName": "[T1][FLY][Pegasus Knight](Improved)[F]{flasuban}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1lZmJvUNhOqME2iRuGQ8Z5wudhsczGBtw",
-        "static": "11MgWgyKaRpYVuTkQft4LBsMu8zQ9ksOx"
-      },
-      {
-        "type": "Lance",
-        "active": "1_oMgtJpDj_eKQANUggW1E5rcVrr_cBRM",
-        "static": "1HKqSrL5MbGSLdZHKrocRdbkmvGbKvJ1o"
       }
     ]
   },
@@ -21095,46 +21689,6 @@ export default [
         "type": "Sword",
         "active": "1QcSX8XFkJW8fCctwhRc2VBNkdhQ8C5vU",
         "static": "1Cjkl-3--GiC5ZyZo6NvUnBIS2GQjT1bQ"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "FLY",
-    "feClass": "Wyvern Lord",
-    "name": "Helmetless +Axe",
-    "gender": "M",
-    "credit": [
-      "flasuban",
-      "TBA"
-    ],
-    "download": "https://drive.google.com/drive/folders/1L0p5g4qS6gL81Slzhce0Lj7MmBb0F8f1",
-    "dlName": "[T2][FLY][Wyvern Lord](Helmetless +Axe)[M]{flasuban, TBA}",
-    "weapons": [
-      {
-        "type": "Axe",
-        "active": "1-XyE4nvE2wVOhjlMYJGN8aQe9hyakQnV",
-        "static": "1d4dNuvukwyO_WwupkB7oKMI8lcSaxvSO"
-      },
-      {
-        "type": "Unarmed",
-        "active": "1BL7nDUipshavrnUBRBV9ywvZhW8hmcVO",
-        "static": "1VfyUDKnLCWOPacGjrxgyVFpiygkp__bU"
-      },
-      {
-        "type": "Lance",
-        "active": "1qGhT9cQqHcaSKzPCTrU9ixqGJXmH03JL",
-        "static": "1ABfbAtIO1b41Usgq56fQ3OUBiP2hsnnj"
-      },
-      {
-        "type": "Sword",
-        "active": "14L42q5OQ-wIsC5A4xTo6cur9AQ5lQ7OR",
-        "static": "1uR30C05B4oht7VYv0ZhWgO3bJlG5o9rV"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1PV6fr4aCR2Ssohp4K_BS7dJY0kjYlqze",
-        "static": "1621GXUEomdXLoFwW3mqyWoyTyJORB8Xw"
       }
     ]
   },
@@ -21399,41 +21953,6 @@ export default [
         "type": "Lance",
         "active": "12MEqO9O6TlcaXk7fJT6P9age_0h0VZ9z",
         "static": "1ykh4otyn1L-AuyxiBIuceHfOUe7UlsEk"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "FLY",
-    "feClass": "Wyvern Rider",
-    "name": "Helmetless",
-    "gender": "M",
-    "credit": [
-      "flasuban",
-      "eCut"
-    ],
-    "download": "https://drive.google.com/drive/folders/1Owlzb-mZlXPZ2aEJB2KPASJgqRxwIoOM",
-    "dlName": "[T1][FLY][Wyvern Rider](Helmetless)M]flasuban, eCut}",
-    "weapons": [
-      {
-        "type": "Axe",
-        "active": "1Ouh8JZumBqa_m_OrzZewwPdkSC6QC7-m",
-        "static": "1IlaDSQl2XLfeb2leByQAeZDd8zp1pja8"
-      },
-      {
-        "type": "Unarmed",
-        "active": "1t4FbsO4jLZ3bJLt_-DIsXnTojJsNU6cF",
-        "static": "1Sy_c9a0qgWq5sPm1c27CplyiEXTlkgNN"
-      },
-      {
-        "type": "Lance",
-        "active": "10eriCYoSUas3J4ViW1M4ZLWWbjt4g1jG",
-        "static": "1FUctOAmV3UK4h7lR1UAQbAljf2k0plV9"
-      },
-      {
-        "type": "Handaxe",
-        "active": "18l378GxUruaLtyWhzs45YC61dBtLuXib",
-        "static": "1mUYeDdSgRO1buFQ7BthThMeOhcDat10X"
       }
     ]
   },
