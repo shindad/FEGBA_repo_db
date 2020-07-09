@@ -9,7 +9,9 @@ export default [
     "dlName": "(Dragon Fang){GratedShtick}",
     "weapons": [
       {
-        "type": "Skill"
+        "type": "Skill",
+        "active": "1RiQ-OyN28LYxDCC9GgmHLKz5XPGWxruo",
+        "static": "1C6pcKSIBR9qduqK7SlMvA58lSLsoXUv9"
       }
     ]
   },
@@ -521,7 +523,8 @@ export default [
     "weapons": [
       {
         "type": "Sword",
-        "active": "1fNPq2ns7Db1nZ75PHbnf7WUfQZHnV7KT"
+        "active": "1cbz9XjtQ8-TrNphmLKYLOO-jwrcx-aOo",
+        "static": "1zUgAxWcuezSXQnAsJoKmAcPJzfHg-Zw_"
       },
       {
         "type": "Unarmed",
@@ -803,12 +806,14 @@ export default [
     "dlName": "[T2][AXE][Warrior] (Repalette)[M](IS, Pushwall)",
     "weapons": [
       {
-        "type": "Unarmed",
-        "active": "1I4XealktNHijZ92ynpIihI2n80Em30Xt",
-        "static": "1158-f_GldwZN9YjOXl96nIzuAN_Z7MmH"
+        "type": "Handaxe",
+        "static": "1GU8OkGLrvgTm8pmGTrTdOHyi8O_YY5en",
+        "active": "1OrWzDk639A3M0wYWXE_Pfchsj8TGAhzd"
       },
       {
-        "type": "Hand"
+        "type": "Unarmed",
+        "active": "1XHlSCQhI9plIgXN86xKbM3HiRYjHPwY6",
+        "static": "1Ks4MuXHruEn47BL9VrNtucqTrTrvlJCe"
       },
       {
         "type": "Bow",
@@ -899,6 +904,11 @@ export default [
     "dlName": "[T2][SWD][Swordmaster](Bald +staves)[M]{L95, Devisio}",
     "weapons": [
       {
+        "type": "Sword",
+        "active": "1NCs5UapbSErYFgrMywDA5LogWEBXmrSm",
+        "static": "1f9cMFXU2HPR1b_IJbbcfhl6IoVoiTB-5"
+      },
+      {
         "type": "Unarmed",
         "active": "1hts71x6agHG6CMETr4TwIjE0Hi9FOita",
         "static": "1FfgiowFBfQf-gAdZ-nu736aezw18FRkm"
@@ -907,10 +917,6 @@ export default [
         "type": "Staff",
         "active": "1-n0dvnIRzsHgu_1i1p0Lvbxu85VYmvxG",
         "static": "1YKSK3avEVRMWIMKM9uefyWNschUPXrP1"
-      },
-      {
-        "type": "Sword",
-        "static": "1vWcUAVd7m2MsmNYtGUZh4P5lQu3FQVF1"
       }
     ]
   },
@@ -1001,13 +1007,14 @@ export default [
     "dlName": "[T2][SWD][Swordmaster](Short Hair)[M]{Shtick}",
     "weapons": [
       {
+        "type": "Unarmed",
+        "active": "15DUH-O7UIoohu9hJYDANYLZORrcbiPIz",
+        "static": "1NyekuLaYq4MDh4bBYz3UeU_Rq06m2Be5"
+      },
+      {
         "type": "Sword",
         "active": "1MnjZaRpfePRUqVnu4sYGR8QYzi0hLLqw",
         "static": "1SnMypITB1D7t8kAPTTepFlH8Z0x4reIg"
-      },
-      {
-        "type": "Unarmed",
-        "static": "18860OTFBOCNbUhThmQ952yFBr4PQutW5"
       }
     ]
   },
@@ -10062,6 +10069,83 @@ export default [
   {
     "tier": "T2",
     "category": "MAG",
+    "feClass": "Mage Knight",
+    "name": "Pony Tail",
+    "gender": "F",
+    "credit": [
+      "Venno"
+    ],
+    "download": "https://drive.google.com/drive/folders/125ZzNOqZv8CdKZ17gobzz6jX_2hFFAfY",
+    "dlName": "[T2][MAG][Mage Knight](Pony Tail)[F]{Venno}",
+    "weapons": [
+      {
+        "type": "Magic",
+        "static": "11Hd4eKnXKEzU32M4zI55RVNPrIeaqgt0",
+        "active": "1y8HP5m24f3k60_zhKRhf2MQSXV_iXRXy"
+      },
+      {
+        "type": "Staff",
+        "static": "14TaA6twBnl1Od8gkx0hxBd0uDbhBWuVT",
+        "active": "10h1DWf5DVF_pPN1fnLPWEIIbWgIy0JuZ"
+      },
+      {
+        "type": "Magic",
+        "active": "1J4FgogHgl1IK_UH6dNBhq2vxCGSn5f-T",
+        "static": "1YC5B13nq1EDbj5vbW8k-Dxyn9buk7QfI"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "MAG",
+    "feClass": "Clergy",
+    "name": "Cleric Awakening-Style",
+    "gender": "F",
+    "credit": [
+      "BatimaTheBat"
+    ],
+    "download": "https://drive.google.com/drive/folders/1mBG-ly1gzJefag4z_xXSevT99R9ANY9r",
+    "dlName": "[T1][MAG][Clergy](Cleric Awakening-Style)[F]{BatimaTheBat}",
+    "weapons": [
+      {
+        "type": "Staff",
+        "static": "1aRUJaxpC3TYKWLprFtb4ivXLhcXiR-n7",
+        "active": "1-hmd2nylcfPU1Kq0-fTo_JTWdkaWqkr9"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1wJbW2qomSamITs1tkaYskWY2pV3_JMhG",
+        "static": "1a8iOCRMDHxpuRTiOwiy6nwcG52DSAABZ"
+      }
+    ]
+  },
+  {
+    "tier": "T1",
+    "category": "MAG",
+    "feClass": "Clergy",
+    "name": "Cleric Awakening Lissa",
+    "gender": "F",
+    "credit": [
+      "BatimaTheBat"
+    ],
+    "download": "https://drive.google.com/drive/folders/1fPmN-bYP_1x0l73mWok6t0lznCvpYGGg",
+    "dlName": "[T1][MAG][Clergy](Cleric Awakening Lissa)[F]{BatimaTheBat}",
+    "weapons": [
+      {
+        "type": "Staff",
+        "static": "1EpXF0p1AyK9m-0pA77j93fQxXZB-H5Mw",
+        "active": "1wZbVpQgMG4UeiNuSVtPndBx9yNKN6lD1"
+      },
+      {
+        "type": "Unarmed",
+        "static": "1DG9nLy4xfu_cVrtljQ20eR8NbFNOGxDS",
+        "active": "1GBM54HAecOEfiSEUkWCg3BuBE2jXoIkm"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "MAG",
     "feClass": "Custom Magi",
     "name": "Witch Repalette",
     "gender": "F",
@@ -10687,28 +10771,6 @@ export default [
   {
     "tier": "T2",
     "category": "MAG",
-    "feClass": "Mage Knight",
-    "name": "Pony Tail",
-    "gender": "F",
-    "credit": [
-      "Venno"
-    ],
-    "download": "https://drive.google.com/drive/folders/125ZzNOqZv8CdKZ17gobzz6jX_2hFFAfY",
-    "dlName": "[T2][MAG][Mage Knight](Pony Tail)[F]{Venno}",
-    "weapons": [
-      {
-        "type": "Magic",
-        "static": "11Hd4eKnXKEzU32M4zI55RVNPrIeaqgt0"
-      },
-      {
-        "type": "Staff",
-        "static": "14TaA6twBnl1Od8gkx0hxBd0uDbhBWuVT"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "MAG",
     "feClass": "Bishop",
     "name": "Lucius",
     "gender": "M",
@@ -11007,29 +11069,6 @@ export default [
         "type": "Staff",
         "active": "1H3mxab_yAeUV_z05RRYlde9VhNGQ6VQ6",
         "static": "1MzTgJUiCP_oHe31y8JmRZgjR7AisFNLz"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "MAG",
-    "feClass": "Clergy",
-    "name": "Cleric Awakening Lissa",
-    "gender": "F",
-    "credit": [
-      "BatimaTheBat"
-    ],
-    "download": "https://drive.google.com/drive/folders/1fPmN-bYP_1x0l73mWok6t0lznCvpYGGg",
-    "dlName": "[T1][MAG][Clergy](Cleric Awakening Lissa)[F]{BatimaTheBat}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1GBM54HAecOEfiSEUkWCg3BuBE2jXoIkm",
-        "static": "1DG9nLy4xfu_cVrtljQ20eR8NbFNOGxDS"
-      },
-      {
-        "type": "Staff",
-        "static": "1EpXF0p1AyK9m-0pA77j93fQxXZB-H5Mw"
       }
     ]
   },
@@ -13316,6 +13355,11 @@ export default [
     "dlName": "[T3][MAG][Archsage](Lilina)[F]{Red Bean, Shin19}",
     "weapons": [
       {
+        "type": "Legendary",
+        "active": "1LIn6nDdRs9W2b0KxgHu16LcBQLX-jWd8",
+        "static": "1vaXlsSZsb-LEqAJcgQ98pl6ZTunKfoXw"
+      },
+      {
         "type": "Axe",
         "active": "10bccP0HzXZijlHbqcso2hzYRSzcsKzED",
         "static": "1KW0ibwmwX5KKRRT8hiCAzRsaZtkHhcd-"
@@ -13334,9 +13378,6 @@ export default [
         "type": "Staff",
         "active": "13i7qabPe91MxsD7xzLEHPqAx9NDKhvaQ",
         "static": "1LyfDJtq1mrB0I2S3sxps3XhwCyFo9Qve"
-      },
-      {
-        "type": "Legendary"
       },
       {
         "type": "Sword",
@@ -13968,29 +14009,6 @@ export default [
         "type": "Unarmed",
         "active": "1gxiGLynpHUzMeAevGc19WXcu5NcQqZPq",
         "static": "1GqTaDNP-1eBoccEuKn8NlfeNSo69rhm1"
-      }
-    ]
-  },
-  {
-    "tier": "T1",
-    "category": "MAG",
-    "feClass": "Clergy",
-    "name": "Cleric Awakening-Style",
-    "gender": "F",
-    "credit": [
-      "BatimaTheBat"
-    ],
-    "download": "https://drive.google.com/drive/folders/1mBG-ly1gzJefag4z_xXSevT99R9ANY9r",
-    "dlName": "[T1][MAG][Clergy](Cleric Awakening-Style)[F]{BatimaTheBat}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1wJbW2qomSamITs1tkaYskWY2pV3_JMhG",
-        "static": "1a8iOCRMDHxpuRTiOwiy6nwcG52DSAABZ"
-      },
-      {
-        "type": "Staff",
-        "static": "1aRUJaxpC3TYKWLprFtb4ivXLhcXiR-n7"
       }
     ]
   },
@@ -19546,9 +19564,6 @@ export default [
         "active": "152UEZxzxJW78j4dSqY0OhIUL5yjz2KNB"
       },
       {
-        "type": "Unarmed"
-      },
-      {
         "type": "Magic",
         "static": "1ndo8-jgR6_HPHQ8I2RUk5fmOaqkU0dxS",
         "active": "1H3bAfsbu8Rndksb_31z6ad6nnOb4kB06"
@@ -19593,7 +19608,9 @@ export default [
         "static": "1N3O0iUMsACFOh201YcDgvtFMeKcbQOnT"
       },
       {
-        "type": "Unarmed"
+        "type": "Unarmed",
+        "active": "1Yb74JkzFZaMWcEtTwsge7TVzkYNu0MFl",
+        "static": "1Yr3DSs3wsE2U_139dsnEjQPBtC2Fot-T"
       }
     ]
   },
