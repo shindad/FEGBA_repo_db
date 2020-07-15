@@ -1,6 +1,150 @@
 export default [
   {
     "category": "SKL",
+    "name": "Dark Druid Effect + Sage Effect",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1v50G5oJm38JvEN58Qm2RFJUQhekoKfJU",
+    "dlName": "(Dark Druid Effect + Sage Effect){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Skill",
+        "active": "1NlhzNwzV-25om-Zxpx0b6WRcY5F6RIe2",
+        "static": "1xVihkuycndeWtE_L3PEsu7og95yQ8IRV"
+      }
+    ]
+  },
+  {
+    "category": "SKL",
+    "name": "Dark Druid Effect + Sage Effect Red",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/13M-c1sVFel03_b4YN9q2DZRz99834uo6",
+    "dlName": "(Dark Druid Effect + Sage Effect Red){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Skill",
+        "active": "1DxpLn-szmdG4NjftBNhSmsBqlyT4hUcT",
+        "static": "1aguD5BH_Emu1uKMwHOI4U383b10y5OQU"
+      }
+    ]
+  },
+  {
+    "category": "SKL",
+    "name": "Vengance Alt",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1xB1EBdTT1ASassOWJkH5v7bXo_rq8xVX",
+    "dlName": "(Vengance Alt){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Skill",
+        "active": "1uEEQw37ui_WxJty_1sXCNt9QTcmpmSy8",
+        "static": "14Xg5IvzfkRdgI9JhKxOmt6ysPu-1Vi1B"
+      }
+    ]
+  },
+  {
+    "category": "SKL",
+    "name": "Sun Skill",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1Ge4k17DT5H6QAhi1MypxlGqW9PUC2oHF",
+    "dlName": "(Sun Skill){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Skill",
+        "static": "1pC5GPo9KXUln9KZWLUbtpCPuwtcsjUs2",
+        "active": "1LXFphuKJQvxiHcWCx2IJ81u-J5PNFTrw"
+      }
+    ]
+  },
+  {
+    "category": "SKL",
+    "name": "Any Skill",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1T0OU29LXjWlQRAyNAFigOIyvLPxeCANV",
+    "dlName": "(Any Skill){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Skill",
+        "active": "1co2rFzKv6yM_MsCmI5Hkov8-CNrEJEvd",
+        "static": "1TiinAAplgn_Sin1k-w2o46l8ZkmXSRwT"
+      }
+    ]
+  },
+  {
+    "category": "SKL",
+    "name": "Sky Skill",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1Gi5WRcXO0zsdfkvJ8C222Q0VlA6A6_HS",
+    "dlName": "(Sky Skill){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Skill",
+        "active": "1uLvq0yCCILnwBPt6oy0NXCpIGs3u-0qK",
+        "static": "1Bqfbdx1UDhrv1d2cFbNaQJqqvnQt1nES"
+      }
+    ]
+  },
+  {
+    "category": "SKL",
+    "name": "Dark Druid Effect Blue",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1l6LTvHqGvifeEcRRki4gexJwG94nRWLC",
+    "dlName": "(Dark Druid Effect Blue){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Skill",
+        "active": "1qrK2P8TO5vnGPdKRjYiaucgRRfYW1lpj",
+        "static": "1km7W6pe6g2EzlqJWygG5-xYnnSgt9JqD"
+      }
+    ]
+  },
+  {
+    "category": "SKL",
+    "name": "Dark Druid Effect",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1kxes8Q6-nRNub2fPcCc6UFHFqoin72Sd",
+    "dlName": "(Dark Druid Effect){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Skill",
+        "static": "1YRmvNVtJIiuUy9w2EN0gzo6mVPXQzBSY",
+        "active": "1JK-14HN6avplKTWWDM6Qj_iY328gxTYi"
+      }
+    ]
+  },
+  {
+    "category": "SKL",
+    "name": "Falling Star",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1KX9fBlbyM-reI9nkXc-5QdY_QaN_rirf",
+    "dlName": "(Falling Star){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Skill",
+        "static": "1tRL9T4x7Mn3mtHaNXEIz8aTEzjYrDXwA",
+        "active": "1gnke3YHB6GEmFcVrkgu7YusP_OtTcg0e"
+      }
+    ]
+  },
+  {
+    "category": "SKL",
     "name": "Dragon Fang",
     "credit": [
       "GratedShtick"
@@ -231,20 +375,26 @@ export default [
     "gender": "M",
     "credit": [
       "TBA",
-      "Spud"
+      "Spud",
+      "MeatofJustice"
     ],
     "download": "https://drive.google.com/drive/folders/1qKr5OMDdkNHGiJujmeJWD7bdASrYmr79",
-    "dlName": "[T2][LNC][Halberdier](2.0)[M]{TBA, Spud}",
+    "dlName": "[T2][LNC][Halberdier](2.0)[M]{TBA, Spud, MeatofJustice}",
     "weapons": [
       {
-        "type": "Handaxe",
-        "active": "1cnIjxAtwX4MOZ_zemVFWHo4318T0UCzC",
-        "static": "1LT-0Eots4gG76rebYBbD0GreoJgtARJy"
+        "type": "Axe",
+        "active": "1SWLHDW1PGewasECYqHXLZMG4cYow_NnF",
+        "static": "1P1RHh0MNEfps7jP17rXU7Ua1E1O_qqOS"
       },
       {
         "type": "Axe",
         "active": "1Uyws8_rRZ2FmMjw--1bnFqJ1jdVn_C99",
         "static": "17g2C-aqTvkJtjE4ZZmgIovfRvM6lDSXX"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1cnIjxAtwX4MOZ_zemVFWHo4318T0UCzC",
+        "static": "1LT-0Eots4gG76rebYBbD0GreoJgtARJy"
       },
       {
         "type": "Unarmed",
@@ -255,6 +405,91 @@ export default [
         "type": "Lance",
         "active": "1TLDrnwWM9y9uXqgJaRYuMgkxJwH03KBt",
         "static": "1uOmGvtaF6RaYEmjeJZhz0t1m8q3kLYOx"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "AXE",
+    "feClass": "Berserker",
+    "name": "Vanilla +Magic",
+    "gender": "M",
+    "credit": [
+      "IS",
+      "Orihara_Saki"
+    ],
+    "download": "https://drive.google.com/drive/folders/1aeZNeVIcZtomZDGqkoBBlM4YObuR10aC",
+    "dlName": "[T2][AXE][Berserker](Vanilla +Magic)[M]{IS, Orihara_Saki}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1rQz_GzrP8UsoTlW9SRym7HFr4RQf25fd",
+        "static": "1FVwJp2RHP5Nb5cTkWwSkkJfD4COBL081"
+      },
+      {
+        "type": "Axe",
+        "active": "10vZ2vBb5Lnb0AlT9vSParhQbHLNBYD7K",
+        "static": "1ETjXFcR542VeDeDjtXUJ7Y9Tvs4bBazj"
+      },
+      {
+        "type": "Magic",
+        "active": "1MajpL7y9iuqzoJh7S2FTQrstk8D7rruK",
+        "static": "1zAaIq4OR6ij6bPa73S6W3QKHxUGWjQuG"
+      },
+      {
+        "type": "Staff",
+        "active": "1AeLOR_21H3VKTIa8QjUc-dqnuuR3ROR_",
+        "static": "1vTpo1CHU9w45ElBPb0gdRdAnAziOqaNN"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1UeUfHck5jdB7Scmeo4PPLy3j5_0ZA6xR",
+        "static": "1Wvq8bTgR7TmUXRtfjgntpzmD2AkZAiEB"
+      }
+    ]
+  },
+  {
+    "tier": "T2",
+    "category": "AXE",
+    "feClass": "Warrior",
+    "name": "Vanilla +Magic",
+    "gender": "M",
+    "credit": [
+      "IS",
+      "Orihara_Saki"
+    ],
+    "download": "https://drive.google.com/drive/folders/1LKXyV6Y29WWHVbjoi26XfPeaaXpteJL5",
+    "dlName": "[T2][AXE][Warrior](Vanilla +Magic)[M]{IS, Orihara_Saki}",
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "1gf3OjQ7StJ50eZIVFasDgJXPjKl6tZbE",
+        "static": "1pOluBK97HbXLSw9UcNJXjp34tMNWj_Uq"
+      },
+      {
+        "type": "Magic",
+        "active": "1-0aoOgFK14hlPDnH7TunL-S2Zb20isiq",
+        "static": "1XhsJEDlLic97-Avu1PASuqoKb8lvvj2e"
+      },
+      {
+        "type": "Axe",
+        "active": "1HvH_5T4kxMX2rlx79s3z7tB0y_pyF5NE",
+        "static": "1ByRFtefln0oBKGkvlM8L1HfqsBTmOoSN"
+      },
+      {
+        "type": "Staff",
+        "active": "1i6iGhGdvAvbql8VOrPou723JsPSu_MnB",
+        "static": "1o98Lqn8UqRCrhkweAEZLj4rF6sDJQiC6"
+      },
+      {
+        "type": "Bow",
+        "active": "1_cI446UYI78K0D1s9bydNRQTqcf-NbDD",
+        "static": "1nUlHDqasaQZtNVBg4AlnAFYYcMTPLAcx"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1T29yFeBwM60fZAQ4fbtxvSqK8OFCHkQe",
+        "static": "1q_GyDXqMgJF0a5roqKrcv8MCTUPibZhZ"
       }
     ]
   },
@@ -992,7 +1227,21 @@ export default [
     ],
     "download": "https://drive.google.com/drive/folders/1D84wAEXHxjwYIc21hjPmhOJ-qixTNDvz",
     "dlName": "[T2][AXE][Berserker][Natserker][F]{Serif, eCut, Skitty, Pikmin1211}",
-    "weapons": []
+    "weapons": [
+      {
+        "type": "Unarmed"
+      },
+      {
+        "type": "Handaxe",
+        "active": "1GZXRikX5nOFTUnYdiXH0GnTtmRmvLcUG",
+        "static": "1G4bf9HWplQwygGaE9rMhU-S9dJgdPdUW"
+      },
+      {
+        "type": "Axe",
+        "static": "1FQKaXToaRV3wmWc_rCqliV73izTsVDyb",
+        "active": "1FKCrAbEeXs5qFpAw_zVqH8MPWIlnYb4B"
+      }
+    ]
   },
   {
     "tier": "T2",
@@ -2188,7 +2437,23 @@ export default [
     ],
     "download": "https://drive.google.com/drive/folders/1OG-GWgeA0oGlIgaDrhsMJufIpfgw3YAZ",
     "dlName": "[T1][AXE][Fighter](Tellius)[F]{Pikmin1211, Maiser6, MK404}",
-    "weapons": []
+    "weapons": [
+      {
+        "type": "Unarmed",
+        "active": "16PQeJYtPbhZzS264L7D-orLfX-rq5TIM",
+        "static": "1XKcSyTauwbumRsdOi_k5BoJOoQ5cCvlf"
+      },
+      {
+        "type": "Handaxe",
+        "active": "10te0-lPrYTH39txep7wDLbx54zwTrqnX",
+        "static": "1bjX-f9COHmFIGyqkrxZqP3r2TT0aJQse"
+      },
+      {
+        "type": "Axe",
+        "active": "1XYN9zk8zTSHF_apAdUMXkQStkk8yAYDi",
+        "static": "12xOPmqspZZ_ZDtN3UVcVmEfEdavNudw1"
+      }
+    ]
   },
   {
     "tier": "T1",
@@ -4961,51 +5226,6 @@ export default [
   },
   {
     "tier": "T2",
-    "category": "AXE",
-    "feClass": "Warrior",
-    "name": "Vanilla +Weapons",
-    "gender": "M",
-    "credit": [
-      "IS",
-      "Orihara_Saki"
-    ],
-    "download": "https://drive.google.com/drive/folders/1LKXyV6Y29WWHVbjoi26XfPeaaXpteJL5",
-    "dlName": "[T2][AXE][Warrior](Vanilla +Weapons)[M]{IS, Orihara_Saki}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1gf3OjQ7StJ50eZIVFasDgJXPjKl6tZbE",
-        "static": "1pOluBK97HbXLSw9UcNJXjp34tMNWj_Uq"
-      },
-      {
-        "type": "Magic",
-        "active": "1-0aoOgFK14hlPDnH7TunL-S2Zb20isiq",
-        "static": "1XhsJEDlLic97-Avu1PASuqoKb8lvvj2e"
-      },
-      {
-        "type": "Axe",
-        "active": "1HvH_5T4kxMX2rlx79s3z7tB0y_pyF5NE",
-        "static": "1ByRFtefln0oBKGkvlM8L1HfqsBTmOoSN"
-      },
-      {
-        "type": "Staff",
-        "active": "1i6iGhGdvAvbql8VOrPou723JsPSu_MnB",
-        "static": "1o98Lqn8UqRCrhkweAEZLj4rF6sDJQiC6"
-      },
-      {
-        "type": "Bow",
-        "active": "1_cI446UYI78K0D1s9bydNRQTqcf-NbDD",
-        "static": "1nUlHDqasaQZtNVBg4AlnAFYYcMTPLAcx"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1T29yFeBwM60fZAQ4fbtxvSqK8OFCHkQe",
-        "static": "1q_GyDXqMgJF0a5roqKrcv8MCTUPibZhZ"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
     "category": "SWD",
     "feClass": "Swordmaster",
     "name": "Denitaro",
@@ -6057,46 +6277,6 @@ export default [
         "type": "Sword",
         "active": "16c0Yoo7cMxIv8Q4kag1idECzoGEOVOLp",
         "static": "1QYu7xkmT_QO9v1q7daUYdbDhzIUn2BwL"
-      }
-    ]
-  },
-  {
-    "tier": "T2",
-    "category": "AXE",
-    "feClass": "Berserker",
-    "name": "Vanilla +Weapons",
-    "gender": "M",
-    "credit": [
-      "IS",
-      "Orihara_Saki"
-    ],
-    "download": "https://drive.google.com/drive/folders/1aeZNeVIcZtomZDGqkoBBlM4YObuR10aC",
-    "dlName": "[T2][AXE][Berserker](Vanilla +Weapons)[M]{IS, Orihara_Saki}",
-    "weapons": [
-      {
-        "type": "Unarmed",
-        "active": "1rQz_GzrP8UsoTlW9SRym7HFr4RQf25fd",
-        "static": "1FVwJp2RHP5Nb5cTkWwSkkJfD4COBL081"
-      },
-      {
-        "type": "Axe",
-        "active": "10vZ2vBb5Lnb0AlT9vSParhQbHLNBYD7K",
-        "static": "1ETjXFcR542VeDeDjtXUJ7Y9Tvs4bBazj"
-      },
-      {
-        "type": "Magic",
-        "active": "1MajpL7y9iuqzoJh7S2FTQrstk8D7rruK",
-        "static": "1zAaIq4OR6ij6bPa73S6W3QKHxUGWjQuG"
-      },
-      {
-        "type": "Staff",
-        "active": "1AeLOR_21H3VKTIa8QjUc-dqnuuR3ROR_",
-        "static": "1vTpo1CHU9w45ElBPb0gdRdAnAziOqaNN"
-      },
-      {
-        "type": "Handaxe",
-        "active": "1UeUfHck5jdB7Scmeo4PPLy3j5_0ZA6xR",
-        "static": "1Wvq8bTgR7TmUXRtfjgntpzmD2AkZAiEB"
       }
     ]
   },
@@ -10067,6 +10247,55 @@ export default [
     ]
   },
   {
+    "tier": "T1",
+    "category": "MAG",
+    "feClass": "Custom Magi",
+    "name": "Tactician Mark",
+    "gender": "M",
+    "credit": [
+      "IMarlon0024",
+      "Asael"
+    ],
+    "download": "https://drive.google.com/drive/folders/1Xl5Rzwm9ZREJnqkkhkGHoHip7RCYSGXS",
+    "dlName": "[T1][MAG][Custom Magi](Tactician Mark)[M]{IMarlon0024, Asael}",
+    "weapons": []
+  },
+  {
+    "tier": "T2",
+    "category": "MAG",
+    "feClass": "Bishop",
+    "name": "Vanilla FE7, FE8",
+    "gender": "M",
+    "credit": [
+      "IS",
+      "Beansy"
+    ],
+    "download": "https://drive.google.com/drive/folders/1aY2D7SihDPPhkSwrbwIsVFPy-opOYj9A",
+    "dlName": "[T2][MAG][Bishop](Vanilla FE7, FE8)[M]{IS, Beansy}",
+    "weapons": [
+      {
+        "type": "Sword",
+        "active": "19UZAkZKJDmea52vMAd28VDfMo5BYtgBP",
+        "static": "1qV9N1Sov4CI1oqpSZqbzQbHYfAdTh4KA"
+      },
+      {
+        "type": "Unarmed",
+        "active": "1WGFC2zC-wmYCB2ZQbQd9BWtrjnpPN5pe",
+        "static": "1nwclSIwN2GRnQKRSJatceMZCZQzxQlpE"
+      },
+      {
+        "type": "Magic",
+        "active": "1Ic-3TYv8VrR1pYsvvJWNiZ8cVQk0IUA5",
+        "static": "1pzAD9Kt42jBMuX3u_8-c25BdeB1IlxeN"
+      },
+      {
+        "type": "Staff",
+        "active": "1M5GkZKl9GQLGom_K8vFVtOf7dHDfOE-R",
+        "static": "1exWKcwqVvX1tyD6ms8LjbuT4FAIJxY91"
+      }
+    ]
+  },
+  {
     "tier": "T2",
     "category": "MAG",
     "feClass": "Mage Knight",
@@ -10336,38 +10565,6 @@ export default [
         "type": "Staff",
         "active": "15k5XxeQWN5ljxlUdJMSHxv-m9MC8GFtn",
         "static": "1_kA4a_ZIjRkdW0M-wM6kYjTe-v1LH1kg"
-      }
-    ]
-  },
-  {
-    "tier": "",
-    "category": "",
-    "feClass": "",
-    "name": "",
-    "gender": "",
-    "credit": [],
-    "download": "https://drive.google.com/drive/folders/1aY2D7SihDPPhkSwrbwIsVFPy-opOYj9A",
-    "dlName": "[T2][MAG][Bishop](Vanilla FE7, FE8 +Sword)[M] {IS, Beansy}",
-    "weapons": [
-      {
-        "type": "Sword",
-        "active": "19UZAkZKJDmea52vMAd28VDfMo5BYtgBP",
-        "static": "1qV9N1Sov4CI1oqpSZqbzQbHYfAdTh4KA"
-      },
-      {
-        "type": "Unarmed",
-        "active": "1WGFC2zC-wmYCB2ZQbQd9BWtrjnpPN5pe",
-        "static": "1nwclSIwN2GRnQKRSJatceMZCZQzxQlpE"
-      },
-      {
-        "type": "Magic",
-        "active": "1Ic-3TYv8VrR1pYsvvJWNiZ8cVQk0IUA5",
-        "static": "1pzAD9Kt42jBMuX3u_8-c25BdeB1IlxeN"
-      },
-      {
-        "type": "Staff",
-        "active": "1M5GkZKl9GQLGom_K8vFVtOf7dHDfOE-R",
-        "static": "1exWKcwqVvX1tyD6ms8LjbuT4FAIJxY91"
       }
     ]
   },
@@ -14236,6 +14433,228 @@ export default [
     "category": "SPL",
     "school": "Anima",
     "element": "",
+    "name": "Giga Flare",
+    "credit": [
+      "St jack",
+      "FF5"
+    ],
+    "download": "https://drive.google.com/drive/folders/1hmF7uZvay0PvFTgXW-TQsEhXwgEQgJyn",
+    "dlName": "[Anima](Giga Flare){St jack, FF5}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1EUZLhL8l002DcHVl3tRoUmN7VDGr2-dL",
+        "active": "1OKEw50lNT2Cx46jwqOXIMYetrvnHtY4B"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Rat Spirit",
+    "credit": [
+      "Shtick",
+      "Haydeos"
+    ],
+    "download": "https://drive.google.com/drive/folders/180JI8Qs_O2kANGroMl2v0Ym_z3AN8K4-",
+    "dlName": "[Anima](Rat Spirit){Shtick, Haydeos}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1-Z3WEhknDGKETXv2p-BGoDSjs2Y1gc1W",
+        "active": "1Dhov_gwfAMY5-l09w4knMcjzAriWeFlk"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Wave Cannon",
+    "credit": [
+      "St jack",
+      "FF5"
+    ],
+    "download": "https://drive.google.com/drive/folders/1GIMOYINDZjyeo87qTuZvynrNJTqdPHPI",
+    "dlName": "[Anima](Wave Cannon){St jack, FF5}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1daxZaRTMzkdUnwUQgK4PutE8m2fHEESX",
+        "static": "1nTeyd0VvtKUKZQQo-v3mjdD4cpSX5dej"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Tidal Wave",
+    "credit": [
+      "St jack",
+      "FF5"
+    ],
+    "download": "https://drive.google.com/drive/folders/1EQ6SRNn5HDROP_-9Qq5B0-9jFtcoZKqu",
+    "dlName": "[Anima](Tidal Wave){St jack, FF5}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "12nF1SMqgm2h3xKXGIegslWlasyKIRc_4",
+        "active": "1lL0Vos4fwjjbnS8uS31m-sDvOpftSow_"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Forblaze - FE7",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1Kf_1DAY9yNsBhAJTPmuWvQbtKMILIHx7",
+    "dlName": "[Anima](Forblaze - FE7){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1Vo2llDd4DmjATdkuRdX4w98tbR52gQao",
+        "static": "1jqj8eraDQaIbdlQuk3m7I_Zz9Pw8MCTs"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Inferno",
+    "credit": [
+      "Teraspark"
+    ],
+    "download": "https://drive.google.com/drive/folders/1FiWVUH_G6VvFjXZtauHd0b6LEjFDm56W",
+    "dlName": "[Anima](Inferno){Teraspark}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "17tNoJKNDUviC-qF2SNoYWsCTl5cVW-Il",
+        "active": "1H2cA0GQwdIAvTAVDcYGfYpUffoniUsdT"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Flare",
+    "credit": [
+      "St jack",
+      "FF5"
+    ],
+    "download": "https://drive.google.com/drive/folders/1pYutnpDVQV50oh6m8TCGWwoq1ma3nFoN",
+    "dlName": "[Anima](Flare){St jack, FF5}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1UJGdmJOcfTeC_aRx92RA8Kx0PWJ3Fehv",
+        "active": "1lI1nE8HV2VjC1KDoIQTgRsPHlljsa_vH"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
+    "name": "Atomic Ray",
+    "credit": [
+      "St jack",
+      "FF5"
+    ],
+    "download": "https://drive.google.com/drive/folders/1BQ1T8_bqohPAffq83s-3CKaKgefUxwiG",
+    "dlName": "[Anima](Atomic Ray){St jack, FF5}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "15Ll4sqz_RvBL1gN7g4vsJQWXIYBk6MHT",
+        "static": "1Sybh5rTQ2oiAA-nULIturINu87sEYLv7"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Other",
+    "element": "",
+    "name": "SteakShot",
+    "credit": [
+      "PurpleMage"
+    ],
+    "download": "https://drive.google.com/drive/folders/1H6v6Y33Ou8j5LIV3U7gg5R2ew3iK_CKK",
+    "dlName": "[Other](SteakShot){PurpleMage}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1KxTx7sSPJQUbPAetMdr8vs1TzVjLQ3wK",
+        "active": "1J2wDfF6O2_gKFbrjvdfedoUd_jRZkzwc"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Other",
+    "element": "",
+    "name": "Divine Breath",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1gSYkVFBH8nC6El3BKtmKriP9REusKy40",
+    "dlName": "[Other](Divine Breath){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1QrtYQbDuDjXkzhp-T57qupK0SC5a4iHt",
+        "active": "1aw5afw7oyro0QJr8VJKq72wowpVKQbkV"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "Fire",
+    "name": "Forblaze - FE6",
+    "credit": [
+      "SHYUTERz"
+    ],
+    "download": "https://drive.google.com/drive/folders/1TkadZEqpRQ7pjgd8QnDiGI_253i8LDxo",
+    "dlName": "[Anima](Fire)(Forblaze - FE6){SHYUTERz}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "active": "1zZjfjsFFsxbpBTqlP6DxHJ38csodkDEs",
+        "static": "10C88YVOG10NEySpx-An1xtDpUD3Fay0M"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "Thunder",
+    "name": "Thoron",
+    "credit": [
+      "Mikey_Seregon"
+    ],
+    "download": "https://drive.google.com/drive/folders/1YpQMKn2Z9iMAkqjJdWpj2jIS17ibkIJh",
+    "dlName": "[Anima](Thunder)(Thoron){Mikey_Seregon}",
+    "weapons": [
+      {
+        "type": "Spell",
+        "static": "1hGXJ2b6iOq1OxQmT0p3gahPIaaUnObBd",
+        "active": "1cUWdSW9wnJhN4CEVXHhFcuZH-j9-6_ao"
+      }
+    ]
+  },
+  {
+    "category": "SPL",
+    "school": "Anima",
+    "element": "",
     "name": "Sagittae - Melee",
     "credit": [
       "HyperGammaSpaces"
@@ -14342,24 +14761,6 @@ export default [
   },
   {
     "category": "SPL",
-    "school": "",
-    "element": "Fire",
-    "name": "Forblaze - FE6",
-    "credit": [
-      "SHYUTERz"
-    ],
-    "download": "https://drive.google.com/drive/folders/1TkadZEqpRQ7pjgd8QnDiGI_253i8LDxo",
-    "dlName": "[Anima][Fire](Forblaze - FE6){SHYUTERz}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "active": "1zZjfjsFFsxbpBTqlP6DxHJ38csodkDEs",
-        "static": "10C88YVOG10NEySpx-An1xtDpUD3Fay0M"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
     "school": "Light",
     "element": "",
     "name": "Aureola",
@@ -14414,24 +14815,6 @@ export default [
   },
   {
     "category": "SPL",
-    "school": "",
-    "element": "Fire",
-    "name": "Forblaze - FE7",
-    "credit": [
-      "SHYUTERz"
-    ],
-    "download": "https://drive.google.com/drive/folders/1Kf_1DAY9yNsBhAJTPmuWvQbtKMILIHx7",
-    "dlName": "[Anima][Fire](Forblaze - FE7){SHYUTERz}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "active": "1Vo2llDd4DmjATdkuRdX4w98tbR52gQao",
-        "static": "1jqj8eraDQaIbdlQuk3m7I_Zz9Pw8MCTs"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
     "school": "Dark",
     "element": "",
     "name": "Revenge of the Devil",
@@ -14481,42 +14864,6 @@ export default [
         "type": "Spell",
         "active": "1ss8XW2PWgmIwYOuIbgA-oYLANOQFWJ5p",
         "static": "1KdtW30votTNhyXtARatO1iogLgyS9Dj7"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Other",
-    "element": "",
-    "name": "SteakShot",
-    "credit": [
-      "PurpleMage"
-    ],
-    "download": "https://drive.google.com/drive/folders/1H6v6Y33Ou8j5LIV3U7gg5R2ew3iK_CKK",
-    "dlName": "[Other][SteakShot]{PurpleMage}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "static": "1KxTx7sSPJQUbPAetMdr8vs1TzVjLQ3wK",
-        "active": "1J2wDfF6O2_gKFbrjvdfedoUd_jRZkzwc"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "Other",
-    "element": "",
-    "name": "Divine Breath",
-    "credit": [
-      "SHYUTERz"
-    ],
-    "download": "https://drive.google.com/drive/folders/1gSYkVFBH8nC6El3BKtmKriP9REusKy40",
-    "dlName": "[Other][Divine Breath]{SHYUTERz}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "static": "1QrtYQbDuDjXkzhp-T57qupK0SC5a4iHt",
-        "active": "1aw5afw7oyro0QJr8VJKq72wowpVKQbkV"
       }
     ]
   },
@@ -15199,25 +15546,6 @@ export default [
   },
   {
     "category": "SPL",
-    "school": "",
-    "element": "Fire",
-    "name": "Giga Flare",
-    "credit": [
-      "St jack",
-      "FF5"
-    ],
-    "download": "https://drive.google.com/drive/folders/1hmF7uZvay0PvFTgXW-TQsEhXwgEQgJyn",
-    "dlName": "[Anima][Fire](Giga Flare){St jack, FF5}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "static": "1EUZLhL8l002DcHVl3tRoUmN7VDGr2-dL",
-        "active": "1OKEw50lNT2Cx46jwqOXIMYetrvnHtY4B"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
     "school": "Anima",
     "element": "",
     "name": "Ice Shuriken",
@@ -15306,25 +15634,6 @@ export default [
         "type": "Spell",
         "static": "1AxLO6ZYzcZMLzX-GpV0QaoUbGqkeMv5_",
         "active": "1CifM5wg5LzgRtBalPgsqCe8lAT2hAfv2"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "",
-    "element": "Thunder",
-    "name": "Wave Cannon",
-    "credit": [
-      "St jack",
-      "FF5"
-    ],
-    "download": "https://drive.google.com/drive/folders/1GIMOYINDZjyeo87qTuZvynrNJTqdPHPI",
-    "dlName": "[Anima][Thunder](Wave Cannon){St jack, FF5}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "active": "1daxZaRTMzkdUnwUQgK4PutE8m2fHEESX",
-        "static": "1nTeyd0VvtKUKZQQo-v3mjdD4cpSX5dej"
       }
     ]
   },
@@ -15452,25 +15761,6 @@ export default [
         "type": "Spell",
         "static": "17dIZEpPeiGbOiJzzHRk3_A2xUMbb9lVt",
         "active": "1Zu5CeB8lCFzQe_H-L7at4dbVJoPNUnLM"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "",
-    "element": "Fire",
-    "name": "Flare",
-    "credit": [
-      "St jack",
-      "FF5"
-    ],
-    "download": "https://drive.google.com/drive/folders/1pYutnpDVQV50oh6m8TCGWwoq1ma3nFoN",
-    "dlName": "[Anima][Fire](Flare){St jack, FF5}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "static": "1UJGdmJOcfTeC_aRx92RA8Kx0PWJ3Fehv",
-        "active": "1lI1nE8HV2VjC1KDoIQTgRsPHlljsa_vH"
       }
     ]
   },
@@ -15660,24 +15950,6 @@ export default [
   },
   {
     "category": "SPL",
-    "school": "",
-    "element": "Thunder",
-    "name": "Thoron",
-    "credit": [
-      "Mikey_Seregon"
-    ],
-    "download": "https://drive.google.com/drive/folders/1YpQMKn2Z9iMAkqjJdWpj2jIS17ibkIJh",
-    "dlName": "[Anima][Thunder](Thoron){Mikey_Seregon}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "static": "1hGXJ2b6iOq1OxQmT0p3gahPIaaUnObBd",
-        "active": "1cUWdSW9wnJhN4CEVXHhFcuZH-j9-6_ao"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
     "school": "Light",
     "element": "",
     "name": "Thani - DS Aura",
@@ -15782,25 +16054,6 @@ export default [
         "type": "Spell",
         "active": "1RcIAgXAFUpTJaqPaYDg3lAhG5XRmTD_C",
         "static": "1z8Kay2v2UjuSP_F0aFrRKbx64t0t3Q9k"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "",
-    "element": "Water",
-    "name": "Tidal Wave",
-    "credit": [
-      "St jack",
-      "FF5"
-    ],
-    "download": "https://drive.google.com/drive/folders/1EQ6SRNn5HDROP_-9Qq5B0-9jFtcoZKqu",
-    "dlName": "[Anima][Water](Tidal Wave){St jack, FF5}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "static": "12nF1SMqgm2h3xKXGIegslWlasyKIRc_4",
-        "active": "1lL0Vos4fwjjbnS8uS31m-sDvOpftSow_"
       }
     ]
   },
@@ -16133,24 +16386,6 @@ export default [
   },
   {
     "category": "SPL",
-    "school": "",
-    "element": "Fire",
-    "name": "Inferno",
-    "credit": [
-      "Teraspark"
-    ],
-    "download": "https://drive.google.com/drive/folders/1FiWVUH_G6VvFjXZtauHd0b6LEjFDm56W",
-    "dlName": "[Anima][Fire](Inferno){Teraspark}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "static": "17tNoJKNDUviC-qF2SNoYWsCTl5cVW-Il",
-        "active": "1H2cA0GQwdIAvTAVDcYGfYpUffoniUsdT"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
     "school": "Anima",
     "element": "",
     "name": "Wind",
@@ -16200,25 +16435,6 @@ export default [
         "type": "Spell",
         "static": "1CSPqmInUUruRDZjhfmnSiZeGLBMfLSQ4",
         "active": "1d4IQ-4_ALks4ur9l7CQ1svOBb-Hz-xKM"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "",
-    "element": "Fire",
-    "name": "Atomic Ray",
-    "credit": [
-      "St jack",
-      "FF5"
-    ],
-    "download": "https://drive.google.com/drive/folders/1BQ1T8_bqohPAffq83s-3CKaKgefUxwiG",
-    "dlName": "[Anima][Fire](Atomic Ray){St jack, FF5}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "active": "15Ll4sqz_RvBL1gN7g4vsJQWXIYBk6MHT",
-        "static": "1Sybh5rTQ2oiAA-nULIturINu87sEYLv7"
       }
     ]
   },
@@ -16839,25 +17055,6 @@ export default [
         "type": "Spell",
         "static": "1nEZj4cgEHhd-mbh9aJz1LPob-hq6zVFT",
         "active": "1qcGn-3a3oMqGHNtIm4397uuvKj1aH6Ls"
-      }
-    ]
-  },
-  {
-    "category": "SPL",
-    "school": "",
-    "element": "Generic",
-    "name": "Rat Spirit",
-    "credit": [
-      "Shtick",
-      "Haydeos"
-    ],
-    "download": "https://drive.google.com/drive/folders/180JI8Qs_O2kANGroMl2v0Ym_z3AN8K4-",
-    "dlName": "[Anima][Generic](Rat Spirit){Shtick, Haydeos}",
-    "weapons": [
-      {
-        "type": "Spell",
-        "static": "1-Z3WEhknDGKETXv2p-BGoDSjs2Y1gc1W",
-        "active": "1Dhov_gwfAMY5-l09w4knMcjzAriWeFlk"
       }
     ]
   },
