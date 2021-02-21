@@ -42,7 +42,8 @@ formatItems("Fliers", "img/peg.gif", "false", [
 	"Pegasus Knight", "Falcoknight", "Griffon Knight", "Wyvern Rider", "Wyvern Lord", "Wyvern Knight", "Custom Flier"
 ])
 formatItems("Unique", "img/lord.gif", "false", [
-	"Lord", "Great Lord", "Refresh", "Miscellaneous", "Crossover"
+	"Eirika-Base", "Eliwood-Base", "Ephraim-Base", "Lyn-Base", "Hector-Base", "Roy-Base",
+	"Refresh", "Miscellaneous", "Crossover"
 ], "right")
 formatItems("Magi", "img/mage.gif", "false", [
 	"Pupil", "Mage", "Sage", "Archsage",
